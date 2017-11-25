@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9,"i2":9,"i3":9};
+var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -146,6 +146,21 @@ extends java.lang.Object</pre>
 </td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code>static java.util.concurrent.ExecutorService</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/concurrent/MoreExecutors.html#newFixedThreadPool-int-java.lang.String-">newFixedThreadPool</a></span>(int&nbsp;nThreads,
+                  java.lang.String&nbsp;name)</code>
+<div class="block">Creates a new <code>ExecutorService</code> using <code>nThreads</code> processors, that will be closed when the application
+ will exit.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>static java.util.concurrent.ExecutorService</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/concurrent/MoreExecutors.html#newFixedThreadPool-java.lang.String-">newFixedThreadPool</a></span>(java.lang.String&nbsp;name)</code>
+<div class="block">Creates a new <code>ExecutorService</code> using the maximum <code>available
+ processors</code>, that will be closed when the application will exit.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/concurrent/MoreExecutors.html#shutdown-java.util.concurrent.ExecutorService-long-java.util.concurrent.TimeUnit-boolean-">shutdown</a></span>(java.util.concurrent.ExecutorService&nbsp;service,
         long&nbsp;timeout,
@@ -154,7 +169,7 @@ extends java.lang.Object</pre>
 <div class="block">Cleanly closes the <code>service</code>.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>static java.util.concurrent.ExecutorService</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/concurrent/MoreExecutors.html#shutdownAtExit-java.util.concurrent.ExecutorService-long-java.util.concurrent.TimeUnit-boolean-">shutdownAtExit</a></span>(java.util.concurrent.ExecutorService&nbsp;service,
               long&nbsp;timeout,
@@ -185,6 +200,46 @@ extends java.lang.Object</pre>
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="newFixedThreadPool--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>newFixedThreadPool</h4>
+<pre>@Nonnull
+public static&nbsp;java.util.concurrent.ExecutorService&nbsp;newFixedThreadPool()</pre>
+<div class="block">Creates a new <code>ExecutorService</code> using the maximum <code>available
+ processors</code>, that will be closed when the application will exit.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new immutable service</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if <code>nThreads &lt;= 0</code></dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../fr/inria/atlanmod/commons/concurrent/MoreExecutors.html#newFixedThreadPool-int-"><code>newFixedThreadPool(int)</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="newFixedThreadPool-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>newFixedThreadPool</h4>
+<pre>@Nonnull
+public static&nbsp;java.util.concurrent.ExecutorService&nbsp;newFixedThreadPool(java.lang.String&nbsp;name)</pre>
+<div class="block">Creates a new <code>ExecutorService</code> using the maximum <code>available
+ processors</code>, that will be closed when the application will exit.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new immutable service</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if <code>nThreads &lt;= 0</code></dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../../fr/inria/atlanmod/commons/concurrent/MoreExecutors.html#newFixedThreadPool-int-"><code>newFixedThreadPool(int)</code></a></dd>
+</dl>
+</li>
+</ul>
 <a name="newFixedThreadPool-int-">
 <!--   -->
 </a>
@@ -203,39 +258,69 @@ public static&nbsp;java.util.concurrent.ExecutorService&nbsp;newFixedThreadPool(
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.IllegalArgumentException</code> - if <code>nThreads &lt;= 0</code></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><code>Executors.newFixedThreadPool(int)</code>, 
-<a href="../../../../../fr/inria/atlanmod/commons/concurrent/MoreThreads.html#newThreadFactory--"><code>MoreThreads.newThreadFactory()</code></a>, 
-<a href="../../../../../fr/inria/atlanmod/commons/concurrent/MoreExecutors.html#shutdownAtExit-java.util.concurrent.ExecutorService-long-java.util.concurrent.TimeUnit-boolean-"><code>shutdownAtExit(ExecutorService, long, TimeUnit, boolean)</code></a></dd>
+<dd><a href="../../../../../fr/inria/atlanmod/commons/concurrent/MoreExecutors.html#newFixedThreadPool-int-java.lang.String-"><code>newFixedThreadPool(int, String)</code></a></dd>
 </dl>
 </li>
 </ul>
-<a name="newFixedThreadPool--">
+<a name="newFixedThreadPool-int-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>newFixedThreadPool</h4>
 <pre>@Nonnull
-public static&nbsp;java.util.concurrent.ExecutorService&nbsp;newFixedThreadPool()</pre>
-<div class="block">Creates a new <code>ExecutorService</code> using the maximum <code>available
- processors</code>, that will be closed when the application will exit.</div>
+public static&nbsp;java.util.concurrent.ExecutorService&nbsp;newFixedThreadPool(int&nbsp;nThreads,
+                                                                               @Nullable
+                                                                               java.lang.String&nbsp;name)</pre>
+<div class="block">Creates a new <code>ExecutorService</code> using <code>nThreads</code> processors, that will be closed when the application
+ will exit.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>nThreads</code> - the number of threads in the pool</dd>
+<dd><code>name</code> - the name of the pool</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>a new immutable service</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.IllegalArgumentException</code> - if <code>nThreads &lt;= 0</code></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><code>Executors.newFixedThreadPool(int)</code>, 
-<code>Runtime.availableProcessors()</code>, 
 <a href="../../../../../fr/inria/atlanmod/commons/concurrent/MoreThreads.html#newThreadFactory--"><code>MoreThreads.newThreadFactory()</code></a>, 
 <a href="../../../../../fr/inria/atlanmod/commons/concurrent/MoreExecutors.html#shutdownAtExit-java.util.concurrent.ExecutorService-long-java.util.concurrent.TimeUnit-boolean-"><code>shutdownAtExit(ExecutorService, long, TimeUnit, boolean)</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="shutdown-java.util.concurrent.ExecutorService-long-java.util.concurrent.TimeUnit-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>shutdown</h4>
+<pre>public static&nbsp;void&nbsp;shutdown(java.util.concurrent.ExecutorService&nbsp;service,
+                            long&nbsp;timeout,
+                            java.util.concurrent.TimeUnit&nbsp;unit,
+                            boolean&nbsp;executeUnfinished)</pre>
+<div class="block">Cleanly closes the <code>service</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>service</code> - the service to close</dd>
+<dd><code>timeout</code> - the maximum time to wait</dd>
+<dd><code>unit</code> - the time unit of the timeout argument</dd>
+<dd><code>executeUnfinished</code> - <code>true</code> if the remaining tasks must be executed synchronously if they have not
+                          completed their execution after the shutdown request</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.NullPointerException</code> - if any argument is <code>null</code></dd>
+<dd><code>java.lang.IllegalArgumentException</code> - if <code>timeout &lt; 0</code></dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><code>ExecutorService.shutdown()</code>, 
+<code>ExecutorService.awaitTermination(long, TimeUnit)</code>, 
+<code>ExecutorService.shutdownNow()</code></dd>
 </dl>
 </li>
 </ul>
 <a name="shutdownAtExit-java.util.concurrent.ExecutorService-long-java.util.concurrent.TimeUnit-boolean-">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>shutdownAtExit</h4>
 <pre>@Nonnull
@@ -253,34 +338,6 @@ public static&nbsp;java.util.concurrent.ExecutorService&nbsp;shutdownAtExit(java
                           completed their execution after the shutdown request</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the <code>service</code></dd>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.NullPointerException</code> - if any argument is <code>null</code></dd>
-<dd><code>java.lang.IllegalArgumentException</code> - if <code>timeout &lt; 0</code></dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><code>ExecutorService.shutdown()</code>, 
-<code>ExecutorService.awaitTermination(long, TimeUnit)</code>, 
-<code>ExecutorService.shutdownNow()</code></dd>
-</dl>
-</li>
-</ul>
-<a name="shutdown-java.util.concurrent.ExecutorService-long-java.util.concurrent.TimeUnit-boolean-">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>shutdown</h4>
-<pre>public static&nbsp;void&nbsp;shutdown(java.util.concurrent.ExecutorService&nbsp;service,
-                            long&nbsp;timeout,
-                            java.util.concurrent.TimeUnit&nbsp;unit,
-                            boolean&nbsp;executeUnfinished)</pre>
-<div class="block">Cleanly closes the <code>service</code>.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>service</code> - the service to close</dd>
-<dd><code>timeout</code> - the maximum time to wait</dd>
-<dd><code>unit</code> - the time unit of the timeout argument</dd>
-<dd><code>executeUnfinished</code> - <code>true</code> if the remaining tasks must be executed synchronously if they have not
-                          completed their execution after the shutdown request</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.NullPointerException</code> - if any argument is <code>null</code></dd>
 <dd><code>java.lang.IllegalArgumentException</code> - if <code>timeout &lt; 0</code></dd>
