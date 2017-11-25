@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9,"i2":9};
+var methods = {"i0":9,"i1":9,"i2":9,"i3":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -146,6 +146,15 @@ extends java.lang.Object</pre>
 </td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/concurrent/MoreExecutors.html#shutdown-java.util.concurrent.ExecutorService-long-java.util.concurrent.TimeUnit-boolean-">shutdown</a></span>(java.util.concurrent.ExecutorService&nbsp;service,
+        long&nbsp;timeout,
+        java.util.concurrent.TimeUnit&nbsp;unit,
+        boolean&nbsp;executeUnfinished)</code>
+<div class="block">Cleanly closes the <code>service</code>.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>static java.util.concurrent.ExecutorService</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/concurrent/MoreExecutors.html#shutdownAtExit-java.util.concurrent.ExecutorService-long-java.util.concurrent.TimeUnit-boolean-">shutdownAtExit</a></span>(java.util.concurrent.ExecutorService&nbsp;service,
               long&nbsp;timeout,
@@ -226,7 +235,7 @@ public static&nbsp;java.util.concurrent.ExecutorService&nbsp;newFixedThreadPool(
 <a name="shutdownAtExit-java.util.concurrent.ExecutorService-long-java.util.concurrent.TimeUnit-boolean-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>shutdownAtExit</h4>
 <pre>@Nonnull
@@ -244,6 +253,34 @@ public static&nbsp;java.util.concurrent.ExecutorService&nbsp;shutdownAtExit(java
                           completed their execution after the shutdown request</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the <code>service</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.NullPointerException</code> - if any argument is <code>null</code></dd>
+<dd><code>java.lang.IllegalArgumentException</code> - if <code>timeout &lt; 0</code></dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><code>ExecutorService.shutdown()</code>, 
+<code>ExecutorService.awaitTermination(long, TimeUnit)</code>, 
+<code>ExecutorService.shutdownNow()</code></dd>
+</dl>
+</li>
+</ul>
+<a name="shutdown-java.util.concurrent.ExecutorService-long-java.util.concurrent.TimeUnit-boolean-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>shutdown</h4>
+<pre>public static&nbsp;void&nbsp;shutdown(java.util.concurrent.ExecutorService&nbsp;service,
+                            long&nbsp;timeout,
+                            java.util.concurrent.TimeUnit&nbsp;unit,
+                            boolean&nbsp;executeUnfinished)</pre>
+<div class="block">Cleanly closes the <code>service</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>service</code> - the service to close</dd>
+<dd><code>timeout</code> - the maximum time to wait</dd>
+<dd><code>unit</code> - the time unit of the timeout argument</dd>
+<dd><code>executeUnfinished</code> - <code>true</code> if the remaining tasks must be executed synchronously if they have not
+                          completed their execution after the shutdown request</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.NullPointerException</code> - if any argument is <code>null</code></dd>
 <dd><code>java.lang.IllegalArgumentException</code> - if <code>timeout &lt; 0</code></dd>
