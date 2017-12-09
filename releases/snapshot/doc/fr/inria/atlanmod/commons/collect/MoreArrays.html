@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9,"i8":9};
+var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9,"i8":9,"i9":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -217,6 +217,14 @@ extends java.lang.Object</pre>
 <div class="block">Resizes the <code>array</code> with the given <code>length</code>.</div>
 </td>
 </tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>static &lt;T&gt;&nbsp;T[]</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/collect/MoreArrays.html#set-T:A-int-T-">set</a></span>(T[]&nbsp;array,
+   int&nbsp;index,
+   T&nbsp;value)</code>
+<div class="block">Sets the specified <code>element</code> at the <code>index</code> in the <code>array</code>.</div>
+</td>
+</tr>
 </table>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -283,6 +291,39 @@ public static&nbsp;&lt;T&gt;&nbsp;T[]&nbsp;newArray(java.lang.Class&lt;?&gt;&nbs
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.NullPointerException</code> - if the <code>type</code> is <code>null</code></dd>
 <dd><code>java.lang.IllegalArgumentException</code> - if the <code>length</code> is negative</dd>
+</dl>
+</li>
+</ul>
+<a name="set-java.lang.Object:A-int-java.lang.Object-">
+<!--   -->
+</a><a name="set-T:A-int-T-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>set</h4>
+<pre>@Nonnull
+public static&nbsp;&lt;T&gt;&nbsp;T[]&nbsp;set(T[]&nbsp;array,
+                                   @Nonnegative
+                                   int&nbsp;index,
+                                   @Nullable
+                                   T&nbsp;value)</pre>
+<div class="block">Sets the specified <code>element</code> at the <code>index</code> in the <code>array</code>.
+ <p>
+ This method is similar to:
+ <pre><code>
+ array[index] = value;
+ return array;
+ </code></pre></div>
+<dl>
+<dt><span class="paramLabel">Type Parameters:</span></dt>
+<dd><code>T</code> - the component type of the array</dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>array</code> - the array to set the element to</dd>
+<dd><code>index</code> - the position of the object</dd>
+<dd><code>value</code> - the object to set</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the <code>array</code> containing the existing elements and the new element</dd>
 </dl>
 </li>
 </ul>
@@ -377,9 +418,10 @@ public static&nbsp;&lt;T&gt;&nbsp;T[]&nbsp;add(T[]&nbsp;array,
 <ul class="blockList">
 <li class="blockList">
 <h4>addAll</h4>
-<pre>public static&nbsp;&lt;T&gt;&nbsp;T[]&nbsp;addAll(T[]&nbsp;array,
-                             int&nbsp;index,
-                             java.util.Collection&lt;? extends T&gt;&nbsp;elements)</pre>
+<pre>@Nonnull
+public static&nbsp;&lt;T&gt;&nbsp;T[]&nbsp;addAll(T[]&nbsp;array,
+                                      int&nbsp;index,
+                                      java.util.Collection&lt;? extends T&gt;&nbsp;elements)</pre>
 <div class="block">Adds all <code>elements</code> at the end of the <code>array</code>.</div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
