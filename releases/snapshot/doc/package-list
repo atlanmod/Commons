@@ -9,3 +9,4 @@ fr.inria.atlanmod.commons.io
 fr.inria.atlanmod.commons.io.serializer
 fr.inria.atlanmod.commons.log
 fr.inria.atlanmod.commons.primitive
+fr.inria.atlanmod.commons.reflect
