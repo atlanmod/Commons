@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9,"i8":9,"i9":9,"i10":9,"i11":9};
+var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9,"i8":9,"i9":9,"i10":9,"i11":9,"i12":9,"i13":9,"i14":9,"i15":9,"i16":9,"i17":9,"i18":9,"i19":9,"i20":9,"i21":9,"i22":9,"i23":9,"i24":9,"i25":9,"i26":9,"i27":9,"i28":9,"i29":9,"i30":9,"i31":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -163,32 +163,191 @@ extends java.lang.Object</pre>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>static boolean</code></td>
+<td class="colFirst"><code>static int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Preconditions.html#checkElementIndex-int-int-">checkElementIndex</a></span>(int&nbsp;index,
                  int&nbsp;size)</code>
 <div class="block">Ensures that <code>index</code> specifies a valid <i>element</i> in an array, list or string of <code>size</code>.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
+<td class="colFirst"><code>static &lt;T&gt;&nbsp;T</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Preconditions.html#checkEqualTo-T-T-">checkEqualTo</a></span>(T&nbsp;value,
+            T&nbsp;other)</code>
+<div class="block">Ensures that a <code>value</code> passed as a parameter to the calling method is equal to <code>other</code>.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>static &lt;T&gt;&nbsp;T</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Preconditions.html#checkEqualTo-T-T-java.lang.String-">checkEqualTo</a></span>(T&nbsp;value,
+            T&nbsp;other,
+            java.lang.String&nbsp;message)</code>
+<div class="block">Ensures that a <code>value</code> passed as a parameter to the calling method is equal to <code>other</code>.</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>static &lt;T&gt;&nbsp;T</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Preconditions.html#checkEqualTo-T-T-java.lang.String-java.lang.Object...-">checkEqualTo</a></span>(T&nbsp;value,
+            T&nbsp;other,
+            java.lang.String&nbsp;pattern,
+            java.lang.Object...&nbsp;args)</code>
+<div class="block">Ensures that a <code>value</code> passed as a parameter to the calling method is equal to <code>other</code>.</div>
+</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>static &lt;C extends java.lang.Comparable&lt;C&gt;&gt;<br>C</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Preconditions.html#checkGreaterThan-C-C-">checkGreaterThan</a></span>(C&nbsp;value,
+                C&nbsp;lowerBoundExclusive)</code>
+<div class="block">Ensures that a <code>value</code> passed as a parameter to the calling method is strictly greater than <code>lowerBoundExclusive</code>.</div>
+</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>static &lt;C extends java.lang.Comparable&lt;C&gt;&gt;<br>C</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Preconditions.html#checkGreaterThan-C-C-java.lang.String-">checkGreaterThan</a></span>(C&nbsp;value,
+                C&nbsp;lowerBoundExclusive,
+                java.lang.String&nbsp;message)</code>
+<div class="block">Ensures that a <code>value</code> passed as a parameter to the calling method is strictly greater than <code>lowerBoundExclusive</code>.</div>
+</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>static &lt;C extends java.lang.Comparable&lt;C&gt;&gt;<br>C</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Preconditions.html#checkGreaterThan-C-C-java.lang.String-java.lang.Object...-">checkGreaterThan</a></span>(C&nbsp;value,
+                C&nbsp;lowerBoundExclusive,
+                java.lang.String&nbsp;pattern,
+                java.lang.Object...&nbsp;args)</code>
+<div class="block">Ensures that a <code>value</code> passed as a parameter to the calling method is strictly greater than <code>lowerBoundExclusive</code>.</div>
+</td>
+</tr>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code>static &lt;C extends java.lang.Comparable&lt;C&gt;&gt;<br>C</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Preconditions.html#checkGreaterThanOrEqualTo-C-C-">checkGreaterThanOrEqualTo</a></span>(C&nbsp;value,
+                         C&nbsp;lowerBoundInclusive)</code>
+<div class="block">Ensures that a <code>value</code> passed as a parameter to the calling method is greater than or equal to <code>lowerBoundInclusive</code>.</div>
+</td>
+</tr>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code>static &lt;C extends java.lang.Comparable&lt;C&gt;&gt;<br>C</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Preconditions.html#checkGreaterThanOrEqualTo-C-C-java.lang.String-">checkGreaterThanOrEqualTo</a></span>(C&nbsp;value,
+                         C&nbsp;lowerBoundInclusive,
+                         java.lang.String&nbsp;message)</code>
+<div class="block">Ensures that a <code>value</code> passed as a parameter to the calling method is greater than or equal to <code>lowerBoundInclusive</code>.</div>
+</td>
+</tr>
+<tr id="i12" class="altColor">
+<td class="colFirst"><code>static &lt;C extends java.lang.Comparable&lt;C&gt;&gt;<br>C</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Preconditions.html#checkGreaterThanOrEqualTo-C-C-java.lang.String-java.lang.Object...-">checkGreaterThanOrEqualTo</a></span>(C&nbsp;value,
+                         C&nbsp;lowerBoundInclusive,
+                         java.lang.String&nbsp;pattern,
+                         java.lang.Object...&nbsp;args)</code>
+<div class="block">Ensures that a <code>value</code> passed as a parameter to the calling method is greater than or equal to <code>lowerBoundInclusive</code>.</div>
+</td>
+</tr>
+<tr id="i13" class="rowColor">
+<td class="colFirst"><code>static &lt;T&gt;&nbsp;T</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Preconditions.html#checkInstanceOf-T-java.lang.Class-">checkInstanceOf</a></span>(T&nbsp;reference,
+               java.lang.Class&lt;?&gt;&nbsp;type)</code>
+<div class="block">Ensures that an object <code>reference</code> passed as a parameter to the calling method is instance of <code>type</code>.</div>
+</td>
+</tr>
+<tr id="i14" class="altColor">
+<td class="colFirst"><code>static &lt;T&gt;&nbsp;T</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Preconditions.html#checkInstanceOf-T-java.lang.Class-java.lang.String-">checkInstanceOf</a></span>(T&nbsp;reference,
+               java.lang.Class&lt;?&gt;&nbsp;type,
+               java.lang.String&nbsp;message)</code>
+<div class="block">Ensures that an object <code>reference</code> passed as a parameter to the calling method is instance of <code>type</code>.</div>
+</td>
+</tr>
+<tr id="i15" class="rowColor">
+<td class="colFirst"><code>static &lt;T&gt;&nbsp;T</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Preconditions.html#checkInstanceOf-T-java.lang.Class-java.lang.String-java.lang.Object...-">checkInstanceOf</a></span>(T&nbsp;reference,
+               java.lang.Class&lt;?&gt;&nbsp;type,
+               java.lang.String&nbsp;pattern,
+               java.lang.Object...&nbsp;args)</code>
+<div class="block">Ensures that an object <code>reference</code> passed as a parameter to the calling method is instance of <code>type</code>.</div>
+</td>
+</tr>
+<tr id="i16" class="altColor">
+<td class="colFirst"><code>static &lt;C extends java.lang.Comparable&lt;C&gt;&gt;<br>C</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Preconditions.html#checkLessThan-C-C-">checkLessThan</a></span>(C&nbsp;value,
+             C&nbsp;upperBoundExclusive)</code>
+<div class="block">Ensures that a <code>value</code> passed as a parameter to the calling method is strictly less than <code>upperBoundExclusive</code>.</div>
+</td>
+</tr>
+<tr id="i17" class="rowColor">
+<td class="colFirst"><code>static &lt;C extends java.lang.Comparable&lt;C&gt;&gt;<br>C</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Preconditions.html#checkLessThan-C-C-java.lang.String-">checkLessThan</a></span>(C&nbsp;value,
+             C&nbsp;upperBoundExclusive,
+             java.lang.String&nbsp;message)</code>
+<div class="block">Ensures that a <code>value</code> passed as a parameter to the calling method is strictly less than <code>upperBoundExclusive</code>.</div>
+</td>
+</tr>
+<tr id="i18" class="altColor">
+<td class="colFirst"><code>static &lt;C extends java.lang.Comparable&lt;C&gt;&gt;<br>C</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Preconditions.html#checkLessThan-C-C-java.lang.String-java.lang.Object...-">checkLessThan</a></span>(C&nbsp;value,
+             C&nbsp;upperBoundExclusive,
+             java.lang.String&nbsp;pattern,
+             java.lang.Object...&nbsp;args)</code>
+<div class="block">Ensures that a <code>value</code> passed as a parameter to the calling method is strictly less than <code>upperBoundExclusive</code>.</div>
+</td>
+</tr>
+<tr id="i19" class="rowColor">
+<td class="colFirst"><code>static &lt;C extends java.lang.Comparable&lt;C&gt;&gt;<br>C</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Preconditions.html#checkLessThanOrEqualTo-C-C-">checkLessThanOrEqualTo</a></span>(C&nbsp;value,
+                      C&nbsp;upperBoundInclusive)</code>
+<div class="block">Ensures that a <code>value</code> passed as a parameter to the calling method is less than or equal to <code>upperBoundInclusive</code>.</div>
+</td>
+</tr>
+<tr id="i20" class="altColor">
+<td class="colFirst"><code>static &lt;C extends java.lang.Comparable&lt;C&gt;&gt;<br>C</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Preconditions.html#checkLessThanOrEqualTo-C-C-java.lang.String-">checkLessThanOrEqualTo</a></span>(C&nbsp;value,
+                      C&nbsp;upperBoundInclusive,
+                      java.lang.String&nbsp;message)</code>
+<div class="block">Ensures that a <code>value</code> passed as a parameter to the calling method is less than or equal to <code>upperBoundInclusive</code>.</div>
+</td>
+</tr>
+<tr id="i21" class="rowColor">
+<td class="colFirst"><code>static &lt;C extends java.lang.Comparable&lt;C&gt;&gt;<br>C</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Preconditions.html#checkLessThanOrEqualTo-C-C-java.lang.String-java.lang.Object...-">checkLessThanOrEqualTo</a></span>(C&nbsp;value,
+                      C&nbsp;upperBoundInclusive,
+                      java.lang.String&nbsp;pattern,
+                      java.lang.Object...&nbsp;args)</code>
+<div class="block">Ensures that a <code>value</code> passed as a parameter to the calling method is less than or equal to <code>upperBoundInclusive</code>.</div>
+</td>
+</tr>
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>static &lt;C extends java.util.Collection&lt;? extends T&gt;,T&gt;<br>C</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Preconditions.html#checkNotContainsNull-C-">checkNotContainsNull</a></span>(C&nbsp;collection)</code>
 <div class="block">Ensures that a <code>collection</code> passed as a parameter to the calling method is not <code>null</code> and does not contains any <code>null</code> element.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i23" class="rowColor">
+<td class="colFirst"><code>static &lt;C extends java.util.Collection&lt;? extends T&gt;,T&gt;<br>C</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Preconditions.html#checkNotContainsNull-C-java.lang.String-">checkNotContainsNull</a></span>(C&nbsp;collection,
+                    java.lang.String&nbsp;message)</code>
+<div class="block">Ensures that a <code>collection</code> passed as a parameter to the calling method is not <code>null</code> and does not contains any <code>null</code> element.</div>
+</td>
+</tr>
+<tr id="i24" class="altColor">
+<td class="colFirst"><code>static &lt;C extends java.util.Collection&lt;? extends T&gt;,T&gt;<br>C</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Preconditions.html#checkNotContainsNull-C-java.lang.String-java.lang.Object...-">checkNotContainsNull</a></span>(C&nbsp;collection,
+                    java.lang.String&nbsp;pattern,
+                    java.lang.Object...&nbsp;args)</code>
+<div class="block">Ensures that a <code>collection</code> passed as a parameter to the calling method is not <code>null</code> and does not contains any <code>null</code> element.</div>
+</td>
+</tr>
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;T</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Preconditions.html#checkNotNull-T-">checkNotNull</a></span>(T&nbsp;reference)</code>
 <div class="block">Ensures that an object <code>reference</code> passed as a parameter to the calling method is not <code>null</code>.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;T</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Preconditions.html#checkNotNull-T-java.lang.String-">checkNotNull</a></span>(T&nbsp;reference,
             java.lang.String&nbsp;message)</code>
 <div class="block">Ensures that an object <code>reference</code> passed as a parameter to the calling method is not <code>null</code>.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;T</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Preconditions.html#checkNotNull-T-java.lang.String-java.lang.Object...-">checkNotNull</a></span>(T&nbsp;reference,
             java.lang.String&nbsp;pattern,
@@ -196,21 +355,21 @@ extends java.lang.Object</pre>
 <div class="block">Ensures that an object <code>reference</code> passed as a parameter to the calling method is not <code>null</code>.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
-<td class="colFirst"><code>static boolean</code></td>
+<tr id="i28" class="altColor">
+<td class="colFirst"><code>static int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Preconditions.html#checkPositionIndex-int-int-">checkPositionIndex</a></span>(int&nbsp;index,
                   int&nbsp;size)</code>
 <div class="block">Ensures that <code>index</code> specifies a valid <i>position</i> in an array, list or string of <code>size</code>.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Preconditions.html#checkState-boolean-">checkState</a></span>(boolean&nbsp;expression)</code>
 <div class="block">Ensures the truth of an expression involving the state of the calling instance, but not involving any parameters
  to the calling method.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Preconditions.html#checkState-boolean-java.lang.String-">checkState</a></span>(boolean&nbsp;expression,
           java.lang.String&nbsp;message)</code>
@@ -218,7 +377,7 @@ extends java.lang.Object</pre>
  to the calling method.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Preconditions.html#checkState-boolean-java.lang.String-java.lang.Object...-">checkState</a></span>(boolean&nbsp;expression,
           java.lang.String&nbsp;pattern,
@@ -456,16 +615,525 @@ public static&nbsp;&lt;C extends java.util.Collection&lt;? extends T&gt;,T&gt;&n
 </dl>
 </li>
 </ul>
+<a name="checkNotContainsNull-java.util.Collection-java.lang.String-">
+<!--   -->
+</a><a name="checkNotContainsNull-C-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>checkNotContainsNull</h4>
+<pre>@Nonnull
+public static&nbsp;&lt;C extends java.util.Collection&lt;? extends T&gt;,T&gt;&nbsp;C&nbsp;checkNotContainsNull(C&nbsp;collection,
+                                                                                              java.lang.String&nbsp;message)</pre>
+<div class="block">Ensures that a <code>collection</code> passed as a parameter to the calling method is not <code>null</code> and does not contains any <code>null</code> element.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>collection</code> - a collection</dd>
+<dd><code>message</code> - the exception message to use if the check fails</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the non-null collection that was validated</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.NullPointerException</code> - if <code>collection</code> is null or contains at least one <code>null</code> element</dd>
+</dl>
+</li>
+</ul>
+<a name="checkNotContainsNull-java.util.Collection-java.lang.String-java.lang.Object:A-">
+<!--   -->
+</a><a name="checkNotContainsNull-C-java.lang.String-java.lang.Object...-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>checkNotContainsNull</h4>
+<pre>@Nonnull
+public static&nbsp;&lt;C extends java.util.Collection&lt;? extends T&gt;,T&gt;&nbsp;C&nbsp;checkNotContainsNull(C&nbsp;collection,
+                                                                                              java.lang.String&nbsp;pattern,
+                                                                                              java.lang.Object...&nbsp;args)</pre>
+<div class="block">Ensures that a <code>collection</code> passed as a parameter to the calling method is not <code>null</code> and does not contains any <code>null</code> element.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>collection</code> - a collection</dd>
+<dd><code>pattern</code> - a template for the exception message should the check fail</dd>
+<dd><code>args</code> - the arguments to be substituted into the message template. Arguments are converted to strings
+                   using <code>String.valueOf(Object)</code>.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the non-null collection that was validated</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.NullPointerException</code> - if <code>collection</code> is null or contains at least one <code>null</code> element</dd>
+</dl>
+</li>
+</ul>
+<a name="checkInstanceOf-java.lang.Object-java.lang.Class-">
+<!--   -->
+</a><a name="checkInstanceOf-T-java.lang.Class-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>checkInstanceOf</h4>
+<pre>@Nonnull
+public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;checkInstanceOf(T&nbsp;reference,
+                                             java.lang.Class&lt;?&gt;&nbsp;type)</pre>
+<div class="block">Ensures that an object <code>reference</code> passed as a parameter to the calling method is instance of <code>type</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>reference</code> - an object reference</dd>
+<dd><code>type</code> - the expected type of <code>reference</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the reference that was validated</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if <code>reference</code> is not instance of <code>type</code></dd>
+</dl>
+</li>
+</ul>
+<a name="checkInstanceOf-java.lang.Object-java.lang.Class-java.lang.String-">
+<!--   -->
+</a><a name="checkInstanceOf-T-java.lang.Class-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>checkInstanceOf</h4>
+<pre>@Nonnull
+public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;checkInstanceOf(T&nbsp;reference,
+                                             java.lang.Class&lt;?&gt;&nbsp;type,
+                                             java.lang.String&nbsp;message)</pre>
+<div class="block">Ensures that an object <code>reference</code> passed as a parameter to the calling method is instance of <code>type</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>reference</code> - an object reference</dd>
+<dd><code>type</code> - the expected type of <code>reference</code></dd>
+<dd><code>message</code> - the exception message to use if the check fails</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the reference that was validated</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if <code>reference</code> is not instance of <code>type</code></dd>
+</dl>
+</li>
+</ul>
+<a name="checkInstanceOf-java.lang.Object-java.lang.Class-java.lang.String-java.lang.Object:A-">
+<!--   -->
+</a><a name="checkInstanceOf-T-java.lang.Class-java.lang.String-java.lang.Object...-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>checkInstanceOf</h4>
+<pre>@Nonnull
+public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;checkInstanceOf(T&nbsp;reference,
+                                             java.lang.Class&lt;?&gt;&nbsp;type,
+                                             java.lang.String&nbsp;pattern,
+                                             java.lang.Object...&nbsp;args)</pre>
+<div class="block">Ensures that an object <code>reference</code> passed as a parameter to the calling method is instance of <code>type</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>reference</code> - an object reference</dd>
+<dd><code>type</code> - the expected type of <code>reference</code></dd>
+<dd><code>pattern</code> - a template for the exception message should the check fail</dd>
+<dd><code>args</code> - the arguments to be substituted into the message template. Arguments are converted to strings
+                  using <code>String.valueOf(Object)</code>.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the reference that was validated</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if <code>reference</code> is not instance of <code>type</code></dd>
+</dl>
+</li>
+</ul>
+<a name="checkEqualTo-java.lang.Object-java.lang.Object-">
+<!--   -->
+</a><a name="checkEqualTo-T-T-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>checkEqualTo</h4>
+<pre>public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;checkEqualTo(@Nullable
+                                 T&nbsp;value,
+                                 @Nullable
+                                 T&nbsp;other)</pre>
+<div class="block">Ensures that a <code>value</code> passed as a parameter to the calling method is equal to <code>other</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>value</code> - an object reference</dd>
+<dd><code>other</code> - another object reference</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value that was validated</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if <code>value</code> is not equal to <code>other</code></dd>
+</dl>
+</li>
+</ul>
+<a name="checkEqualTo-java.lang.Object-java.lang.Object-java.lang.String-">
+<!--   -->
+</a><a name="checkEqualTo-T-T-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>checkEqualTo</h4>
+<pre>public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;checkEqualTo(@Nullable
+                                 T&nbsp;value,
+                                 @Nullable
+                                 T&nbsp;other,
+                                 java.lang.String&nbsp;message)</pre>
+<div class="block">Ensures that a <code>value</code> passed as a parameter to the calling method is equal to <code>other</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>value</code> - an object reference</dd>
+<dd><code>other</code> - another object reference</dd>
+<dd><code>message</code> - the exception message to use if the check fails</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value that was validated</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if <code>value</code> is not equal to <code>other</code></dd>
+</dl>
+</li>
+</ul>
+<a name="checkEqualTo-java.lang.Object-java.lang.Object-java.lang.String-java.lang.Object:A-">
+<!--   -->
+</a><a name="checkEqualTo-T-T-java.lang.String-java.lang.Object...-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>checkEqualTo</h4>
+<pre>public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;checkEqualTo(@Nullable
+                                 T&nbsp;value,
+                                 @Nullable
+                                 T&nbsp;other,
+                                 java.lang.String&nbsp;pattern,
+                                 java.lang.Object...&nbsp;args)</pre>
+<div class="block">Ensures that a <code>value</code> passed as a parameter to the calling method is equal to <code>other</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>value</code> - an object reference</dd>
+<dd><code>other</code> - another object reference</dd>
+<dd><code>pattern</code> - a template for the exception message should the check fail</dd>
+<dd><code>args</code> - the arguments to be substituted into the message template. Arguments are converted to strings
+                using <code>String.valueOf(Object)</code>.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value that was validated</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if <code>value</code> is not equal to <code>other</code></dd>
+</dl>
+</li>
+</ul>
+<a name="checkGreaterThan-java.lang.Comparable-java.lang.Comparable-">
+<!--   -->
+</a><a name="checkGreaterThan-C-C-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>checkGreaterThan</h4>
+<pre>@Nonnull
+public static&nbsp;&lt;C extends java.lang.Comparable&lt;C&gt;&gt;&nbsp;C&nbsp;checkGreaterThan(C&nbsp;value,
+                                                                              C&nbsp;lowerBoundExclusive)</pre>
+<div class="block">Ensures that a <code>value</code> passed as a parameter to the calling method is strictly greater than <code>lowerBoundExclusive</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>value</code> - a comparable</dd>
+<dd><code>lowerBoundExclusive</code> - the lower bound (exclusive)</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value that was validated</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if <code>value</code> is less than or equal to <code>lowerBoundExclusive</code></dd>
+</dl>
+</li>
+</ul>
+<a name="checkGreaterThan-java.lang.Comparable-java.lang.Comparable-java.lang.String-">
+<!--   -->
+</a><a name="checkGreaterThan-C-C-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>checkGreaterThan</h4>
+<pre>@Nonnull
+public static&nbsp;&lt;C extends java.lang.Comparable&lt;C&gt;&gt;&nbsp;C&nbsp;checkGreaterThan(C&nbsp;value,
+                                                                              C&nbsp;lowerBoundExclusive,
+                                                                              java.lang.String&nbsp;message)</pre>
+<div class="block">Ensures that a <code>value</code> passed as a parameter to the calling method is strictly greater than <code>lowerBoundExclusive</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>value</code> - a comparable</dd>
+<dd><code>lowerBoundExclusive</code> - the lower bound (exclusive)</dd>
+<dd><code>message</code> - the exception message to use if the check fails</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value that was validated</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if <code>value</code> is less than or equal to <code>lowerBoundExclusive</code></dd>
+</dl>
+</li>
+</ul>
+<a name="checkGreaterThan-java.lang.Comparable-java.lang.Comparable-java.lang.String-java.lang.Object:A-">
+<!--   -->
+</a><a name="checkGreaterThan-C-C-java.lang.String-java.lang.Object...-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>checkGreaterThan</h4>
+<pre>@Nonnull
+public static&nbsp;&lt;C extends java.lang.Comparable&lt;C&gt;&gt;&nbsp;C&nbsp;checkGreaterThan(C&nbsp;value,
+                                                                              C&nbsp;lowerBoundExclusive,
+                                                                              java.lang.String&nbsp;pattern,
+                                                                              java.lang.Object...&nbsp;args)</pre>
+<div class="block">Ensures that a <code>value</code> passed as a parameter to the calling method is strictly greater than <code>lowerBoundExclusive</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>value</code> - a comparable</dd>
+<dd><code>lowerBoundExclusive</code> - the lower bound (exclusive)</dd>
+<dd><code>pattern</code> - a template for the exception message should the check fail</dd>
+<dd><code>args</code> - the arguments to be substituted into the message template. Arguments are converted to strings
+                            using <code>String.valueOf(Object)</code>.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value that was validated</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if <code>value</code> is less than or equal to <code>lowerBoundExclusive</code></dd>
+</dl>
+</li>
+</ul>
+<a name="checkGreaterThanOrEqualTo-java.lang.Comparable-java.lang.Comparable-">
+<!--   -->
+</a><a name="checkGreaterThanOrEqualTo-C-C-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>checkGreaterThanOrEqualTo</h4>
+<pre>@Nonnull
+public static&nbsp;&lt;C extends java.lang.Comparable&lt;C&gt;&gt;&nbsp;C&nbsp;checkGreaterThanOrEqualTo(C&nbsp;value,
+                                                                                       C&nbsp;lowerBoundInclusive)</pre>
+<div class="block">Ensures that a <code>value</code> passed as a parameter to the calling method is greater than or equal to <code>lowerBoundInclusive</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>value</code> - a comparable</dd>
+<dd><code>lowerBoundInclusive</code> - the lower bound (inclusive)</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value that was validated</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if <code>value</code> is less than <code>lowerBoundInclusive</code></dd>
+</dl>
+</li>
+</ul>
+<a name="checkGreaterThanOrEqualTo-java.lang.Comparable-java.lang.Comparable-java.lang.String-">
+<!--   -->
+</a><a name="checkGreaterThanOrEqualTo-C-C-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>checkGreaterThanOrEqualTo</h4>
+<pre>@Nonnull
+public static&nbsp;&lt;C extends java.lang.Comparable&lt;C&gt;&gt;&nbsp;C&nbsp;checkGreaterThanOrEqualTo(C&nbsp;value,
+                                                                                       C&nbsp;lowerBoundInclusive,
+                                                                                       java.lang.String&nbsp;message)</pre>
+<div class="block">Ensures that a <code>value</code> passed as a parameter to the calling method is greater than or equal to <code>lowerBoundInclusive</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>value</code> - a comparable</dd>
+<dd><code>lowerBoundInclusive</code> - the lower bound (inclusive)</dd>
+<dd><code>message</code> - the exception message to use if the check fails</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value that was validated</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if <code>value</code> is less than <code>lowerBoundInclusive</code></dd>
+</dl>
+</li>
+</ul>
+<a name="checkGreaterThanOrEqualTo-java.lang.Comparable-java.lang.Comparable-java.lang.String-java.lang.Object:A-">
+<!--   -->
+</a><a name="checkGreaterThanOrEqualTo-C-C-java.lang.String-java.lang.Object...-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>checkGreaterThanOrEqualTo</h4>
+<pre>@Nonnull
+public static&nbsp;&lt;C extends java.lang.Comparable&lt;C&gt;&gt;&nbsp;C&nbsp;checkGreaterThanOrEqualTo(C&nbsp;value,
+                                                                                       C&nbsp;lowerBoundInclusive,
+                                                                                       java.lang.String&nbsp;pattern,
+                                                                                       java.lang.Object...&nbsp;args)</pre>
+<div class="block">Ensures that a <code>value</code> passed as a parameter to the calling method is greater than or equal to <code>lowerBoundInclusive</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>value</code> - a comparable</dd>
+<dd><code>lowerBoundInclusive</code> - the lower bound (inclusive)</dd>
+<dd><code>pattern</code> - a template for the exception message should the check fail</dd>
+<dd><code>args</code> - the arguments to be substituted into the message template. Arguments are converted to strings
+                            using <code>String.valueOf(Object)</code>.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value that was validated</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if <code>value</code> is less than <code>lowerBoundInclusive</code></dd>
+</dl>
+</li>
+</ul>
+<a name="checkLessThan-java.lang.Comparable-java.lang.Comparable-">
+<!--   -->
+</a><a name="checkLessThan-C-C-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>checkLessThan</h4>
+<pre>@Nonnull
+public static&nbsp;&lt;C extends java.lang.Comparable&lt;C&gt;&gt;&nbsp;C&nbsp;checkLessThan(C&nbsp;value,
+                                                                           C&nbsp;upperBoundExclusive)</pre>
+<div class="block">Ensures that a <code>value</code> passed as a parameter to the calling method is strictly less than <code>upperBoundExclusive</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>value</code> - a comparable</dd>
+<dd><code>upperBoundExclusive</code> - the upper bound (exclusive)</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value that was validated</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if <code>value</code> is greater than or equal to <code>upperBoundExclusive</code></dd>
+</dl>
+</li>
+</ul>
+<a name="checkLessThan-java.lang.Comparable-java.lang.Comparable-java.lang.String-">
+<!--   -->
+</a><a name="checkLessThan-C-C-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>checkLessThan</h4>
+<pre>@Nonnull
+public static&nbsp;&lt;C extends java.lang.Comparable&lt;C&gt;&gt;&nbsp;C&nbsp;checkLessThan(C&nbsp;value,
+                                                                           C&nbsp;upperBoundExclusive,
+                                                                           java.lang.String&nbsp;message)</pre>
+<div class="block">Ensures that a <code>value</code> passed as a parameter to the calling method is strictly less than <code>upperBoundExclusive</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>value</code> - a comparable</dd>
+<dd><code>upperBoundExclusive</code> - the upper bound (exclusive)</dd>
+<dd><code>message</code> - the exception message to use if the check fails</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value that was validated</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if <code>value</code> is greater than or equal to <code>upperBoundExclusive</code></dd>
+</dl>
+</li>
+</ul>
+<a name="checkLessThan-java.lang.Comparable-java.lang.Comparable-java.lang.String-java.lang.Object:A-">
+<!--   -->
+</a><a name="checkLessThan-C-C-java.lang.String-java.lang.Object...-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>checkLessThan</h4>
+<pre>@Nonnull
+public static&nbsp;&lt;C extends java.lang.Comparable&lt;C&gt;&gt;&nbsp;C&nbsp;checkLessThan(C&nbsp;value,
+                                                                           C&nbsp;upperBoundExclusive,
+                                                                           java.lang.String&nbsp;pattern,
+                                                                           java.lang.Object...&nbsp;args)</pre>
+<div class="block">Ensures that a <code>value</code> passed as a parameter to the calling method is strictly less than <code>upperBoundExclusive</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>value</code> - a comparable</dd>
+<dd><code>upperBoundExclusive</code> - the upper bound (exclusive)</dd>
+<dd><code>pattern</code> - a template for the exception message should the check fail</dd>
+<dd><code>args</code> - the arguments to be substituted into the message template. Arguments are converted to strings
+                            using <code>String.valueOf(Object)</code>.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value that was validated</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if <code>value</code> is greater than or equal to <code>upperBoundExclusive</code></dd>
+</dl>
+</li>
+</ul>
+<a name="checkLessThanOrEqualTo-java.lang.Comparable-java.lang.Comparable-">
+<!--   -->
+</a><a name="checkLessThanOrEqualTo-C-C-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>checkLessThanOrEqualTo</h4>
+<pre>@Nonnull
+public static&nbsp;&lt;C extends java.lang.Comparable&lt;C&gt;&gt;&nbsp;C&nbsp;checkLessThanOrEqualTo(C&nbsp;value,
+                                                                                    C&nbsp;upperBoundInclusive)</pre>
+<div class="block">Ensures that a <code>value</code> passed as a parameter to the calling method is less than or equal to <code>upperBoundInclusive</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>value</code> - a comparable</dd>
+<dd><code>upperBoundInclusive</code> - the upper bound (inclusive)</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value that was validated</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if <code>value</code> is greater than <code>upperBoundInclusive</code></dd>
+</dl>
+</li>
+</ul>
+<a name="checkLessThanOrEqualTo-java.lang.Comparable-java.lang.Comparable-java.lang.String-">
+<!--   -->
+</a><a name="checkLessThanOrEqualTo-C-C-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>checkLessThanOrEqualTo</h4>
+<pre>@Nonnull
+public static&nbsp;&lt;C extends java.lang.Comparable&lt;C&gt;&gt;&nbsp;C&nbsp;checkLessThanOrEqualTo(C&nbsp;value,
+                                                                                    C&nbsp;upperBoundInclusive,
+                                                                                    java.lang.String&nbsp;message)</pre>
+<div class="block">Ensures that a <code>value</code> passed as a parameter to the calling method is less than or equal to <code>upperBoundInclusive</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>value</code> - a comparable</dd>
+<dd><code>upperBoundInclusive</code> - the upper bound (inclusive)</dd>
+<dd><code>message</code> - the exception message to use if the check fails</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value that was validated</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if <code>value</code> is greater than <code>upperBoundInclusive</code></dd>
+</dl>
+</li>
+</ul>
+<a name="checkLessThanOrEqualTo-java.lang.Comparable-java.lang.Comparable-java.lang.String-java.lang.Object:A-">
+<!--   -->
+</a><a name="checkLessThanOrEqualTo-C-C-java.lang.String-java.lang.Object...-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>checkLessThanOrEqualTo</h4>
+<pre>@Nonnull
+public static&nbsp;&lt;C extends java.lang.Comparable&lt;C&gt;&gt;&nbsp;C&nbsp;checkLessThanOrEqualTo(C&nbsp;value,
+                                                                                    C&nbsp;upperBoundInclusive,
+                                                                                    java.lang.String&nbsp;pattern,
+                                                                                    java.lang.Object...&nbsp;args)</pre>
+<div class="block">Ensures that a <code>value</code> passed as a parameter to the calling method is less than or equal to <code>upperBoundInclusive</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>value</code> - a comparable</dd>
+<dd><code>upperBoundInclusive</code> - the upper bound (inclusive)</dd>
+<dd><code>pattern</code> - a template for the exception message should the check fail</dd>
+<dd><code>args</code> - the arguments to be substituted into the message template. Arguments are converted to strings
+                            using <code>String.valueOf(Object)</code>.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value that was validated</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if <code>value</code> is greater than <code>upperBoundInclusive</code></dd>
+</dl>
+</li>
+</ul>
 <a name="checkElementIndex-int-int-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>checkElementIndex</h4>
-<pre>public static&nbsp;boolean&nbsp;checkElementIndex(@Nonnegative
-                                        int&nbsp;index,
-                                        @Nonnegative
-                                        int&nbsp;size)</pre>
+<pre>@Nonnegative
+public static&nbsp;int&nbsp;checkElementIndex(@Nonnegative
+                                                 int&nbsp;index,
+                                                 @Nonnegative
+                                                 int&nbsp;size)</pre>
 <div class="block">Ensures that <code>index</code> specifies a valid <i>element</i> in an array, list or string of <code>size</code>. An
  element index may range from zero, inclusive, to <code>size</code>, exclusive.</div>
 <dl>
@@ -473,7 +1141,7 @@ public static&nbsp;&lt;C extends java.util.Collection&lt;? extends T&gt;,T&gt;&n
 <dd><code>index</code> - a user-supplied index identifying an element of an array, list or string</dd>
 <dd><code>size</code> - the size of that array, list or string</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the value of <code>index</code></dd>
+<dd>the index that was validated</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.IndexOutOfBoundsException</code> - if <code>index</code> is negative or is not less than <code>size</code></dd>
 <dd><code>java.lang.IllegalArgumentException</code> - if <code>size</code> is negative</dd>
@@ -486,10 +1154,11 @@ public static&nbsp;&lt;C extends java.util.Collection&lt;? extends T&gt;,T&gt;&n
 <ul class="blockListLast">
 <li class="blockList">
 <h4>checkPositionIndex</h4>
-<pre>public static&nbsp;boolean&nbsp;checkPositionIndex(@Nonnegative
-                                         int&nbsp;index,
-                                         @Nonnegative
-                                         int&nbsp;size)</pre>
+<pre>@Nonnegative
+public static&nbsp;int&nbsp;checkPositionIndex(@Nonnegative
+                                                  int&nbsp;index,
+                                                  @Nonnegative
+                                                  int&nbsp;size)</pre>
 <div class="block">Ensures that <code>index</code> specifies a valid <i>position</i> in an array, list or string of <code>size</code>. A
  position index may range from zero to <code>size</code>, inclusive.</div>
 <dl>
@@ -497,7 +1166,7 @@ public static&nbsp;&lt;C extends java.util.Collection&lt;? extends T&gt;,T&gt;&n
 <dd><code>index</code> - a user-supplied index identifying a position in an array, list or string</dd>
 <dd><code>size</code> - the size of that array, list or string</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the value of <code>index</code></dd>
+<dd>the index that was validated</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.IndexOutOfBoundsException</code> - if <code>index</code> is negative or is greater than <code>size</code></dd>
 <dd><code>java.lang.IllegalArgumentException</code> - if <code>size</code> is negative</dd>
