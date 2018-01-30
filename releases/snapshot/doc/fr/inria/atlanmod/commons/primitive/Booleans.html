@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9};
+var methods = {"i0":9,"i1":9,"i2":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -143,6 +143,12 @@ extends java.lang.Object</pre>
 <div class="block">Encodes a <code>Boolean</code> to a <code>byte</code> array.</div>
 </td>
 </tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/primitive/Booleans.html#toInt-boolean-">toInt</a></span>(boolean&nbsp;value)</code>
+<div class="block">Returns the integer value of a boolean <code>value</code>.</div>
+</td>
+</tr>
 </table>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -185,7 +191,7 @@ public static&nbsp;byte[]&nbsp;toBytes(boolean&nbsp;value)</pre>
 <a name="toBytes-java.lang.Boolean-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>toBytes</h4>
 <pre>@Nonnull
@@ -198,6 +204,24 @@ public static&nbsp;byte[]&nbsp;toBytes(java.lang.Boolean&nbsp;value)</pre>
 <dd>a <code>byte</code> array</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.NullPointerException</code> - if the <code>value</code> is <code>null</code></dd>
+</dl>
+</li>
+</ul>
+<a name="toInt-boolean-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>toInt</h4>
+<pre>@Nonnegative
+public static&nbsp;int&nbsp;toInt(boolean&nbsp;value)</pre>
+<div class="block">Returns the integer value of a boolean <code>value</code>.
+ In other words, returns <code>1</code> when <code>value == true</code>, <code>0</code> otherwise.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>value</code> - the boolean value</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>an <code>int</code></dd>
 </dl>
 </li>
 </ul>
