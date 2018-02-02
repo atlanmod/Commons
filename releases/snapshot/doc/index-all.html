@@ -86,10 +86,14 @@
 <dd>
 <div class="block">Performs this operation on the given arguments.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/commons/collect/DelegatedListIterator.html#add-R-">add(R)</a></span> - Method in class fr.inria.atlanmod.commons.collect.<a href="fr/inria/atlanmod/commons/collect/DelegatedListIterator.html" title="class in fr.inria.atlanmod.commons.collect">DelegatedListIterator</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/commons/collect/MoreArrays.html#add-T:A-int-T-">add(T[], int, T)</a></span> - Static method in class fr.inria.atlanmod.commons.collect.<a href="fr/inria/atlanmod/commons/collect/MoreArrays.html" title="class in fr.inria.atlanmod.commons.collect">MoreArrays</a></dt>
 <dd>
 <div class="block">Adds the specified <code>element</code> at the specified <code>position</code> in the <code>array</code>.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/commons/collect/SizedListIterator.html#add-E-">add(E)</a></span> - Method in class fr.inria.atlanmod.commons.collect.<a href="fr/inria/atlanmod/commons/collect/SizedListIterator.html" title="class in fr.inria.atlanmod.commons.collect">SizedListIterator</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/commons/collect/MoreArrays.html#addAll-T:A-int-java.util.Collection-">addAll(T[], int, Collection&lt;? extends T&gt;)</a></span> - Static method in class fr.inria.atlanmod.commons.collect.<a href="fr/inria/atlanmod/commons/collect/MoreArrays.html" title="class in fr.inria.atlanmod.commons.collect">MoreArrays</a></dt>
 <dd>
 <div class="block">Adds all <code>elements</code> at the end of the <code>array</code>.</div>
@@ -346,6 +350,11 @@
 <div class="block">A closeable <code>Iterator</code> that allows implementations to clean up any resources they need to keep open to iterate
  over elements.</div>
 </dd>
+<dt><a href="fr/inria/atlanmod/commons/collect/CloseableListIterator.html" title="interface in fr.inria.atlanmod.commons.collect"><span class="typeNameLink">CloseableListIterator</span></a>&lt;<a href="fr/inria/atlanmod/commons/collect/CloseableListIterator.html" title="type parameter in CloseableListIterator">E</a>&gt; - Interface in <a href="fr/inria/atlanmod/commons/collect/package-summary.html">fr.inria.atlanmod.commons.collect</a></dt>
+<dd>
+<div class="block">A closeable <code>ListIterator</code> that allows implementations to clean up any resources they need to keep open to
+ iterate over elements.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/commons/collect/Range.html#closed-C-C-">closed(C, C)</a></span> - Static method in interface fr.inria.atlanmod.commons.collect.<a href="fr/inria/atlanmod/commons/collect/Range.html" title="interface in fr.inria.atlanmod.commons.collect">Range</a></dt>
 <dd>
 <div class="block">Creates a <code>Range</code> that contains all values greater than or equal to <code>lower</code> and less than or equal to
@@ -467,6 +476,14 @@
 <div class="block">An <code>Iterator</code> that iterates over another.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/commons/collect/DelegatedIterator.html#DelegatedIterator-java.util.Iterator-java.util.function.Function-">DelegatedIterator(Iterator&lt;T&gt;, Function&lt;T, R&gt;)</a></span> - Constructor for class fr.inria.atlanmod.commons.collect.<a href="fr/inria/atlanmod/commons/collect/DelegatedIterator.html" title="class in fr.inria.atlanmod.commons.collect">DelegatedIterator</a></dt>
+<dd>
+<div class="block">Constructs a new <code>DelegatedIterator</code>.</div>
+</dd>
+<dt><a href="fr/inria/atlanmod/commons/collect/DelegatedListIterator.html" title="class in fr.inria.atlanmod.commons.collect"><span class="typeNameLink">DelegatedListIterator</span></a>&lt;<a href="fr/inria/atlanmod/commons/collect/DelegatedListIterator.html" title="type parameter in DelegatedListIterator">T</a>,<a href="fr/inria/atlanmod/commons/collect/DelegatedListIterator.html" title="type parameter in DelegatedListIterator">R</a>&gt; - Class in <a href="fr/inria/atlanmod/commons/collect/package-summary.html">fr.inria.atlanmod.commons.collect</a></dt>
+<dd>
+<div class="block">A <code>ListIterator</code> that iterates over another.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/commons/collect/DelegatedListIterator.html#DelegatedListIterator-java.util.ListIterator-java.util.function.Function-">DelegatedListIterator(ListIterator&lt;T&gt;, Function&lt;T, R&gt;)</a></span> - Constructor for class fr.inria.atlanmod.commons.collect.<a href="fr/inria/atlanmod/commons/collect/DelegatedListIterator.html" title="class in fr.inria.atlanmod.commons.collect">DelegatedListIterator</a></dt>
 <dd>
 <div class="block">Constructs a new <code>DelegatedIterator</code>.</div>
 </dd>
@@ -751,7 +768,15 @@
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/commons/collect/DelegatedIterator.html#hasNext--">hasNext()</a></span> - Method in class fr.inria.atlanmod.commons.collect.<a href="fr/inria/atlanmod/commons/collect/DelegatedIterator.html" title="class in fr.inria.atlanmod.commons.collect">DelegatedIterator</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/commons/collect/DelegatedListIterator.html#hasNext--">hasNext()</a></span> - Method in class fr.inria.atlanmod.commons.collect.<a href="fr/inria/atlanmod/commons/collect/DelegatedListIterator.html" title="class in fr.inria.atlanmod.commons.collect">DelegatedListIterator</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/commons/collect/SizedIterator.html#hasNext--">hasNext()</a></span> - Method in class fr.inria.atlanmod.commons.collect.<a href="fr/inria/atlanmod/commons/collect/SizedIterator.html" title="class in fr.inria.atlanmod.commons.collect">SizedIterator</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/commons/collect/SizedListIterator.html#hasNext--">hasNext()</a></span> - Method in class fr.inria.atlanmod.commons.collect.<a href="fr/inria/atlanmod/commons/collect/SizedListIterator.html" title="class in fr.inria.atlanmod.commons.collect">SizedListIterator</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/commons/collect/DelegatedListIterator.html#hasPrevious--">hasPrevious()</a></span> - Method in class fr.inria.atlanmod.commons.collect.<a href="fr/inria/atlanmod/commons/collect/DelegatedListIterator.html" title="class in fr.inria.atlanmod.commons.collect">DelegatedListIterator</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/commons/collect/SizedListIterator.html#hasPrevious--">hasPrevious()</a></span> - Method in class fr.inria.atlanmod.commons.collect.<a href="fr/inria/atlanmod/commons/collect/SizedListIterator.html" title="class in fr.inria.atlanmod.commons.collect">SizedListIterator</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/commons/cache/CacheStats.html#hitCount--">hitCount()</a></span> - Method in class fr.inria.atlanmod.commons.cache.<a href="fr/inria/atlanmod/commons/cache/CacheStats.html" title="class in fr.inria.atlanmod.commons.cache">CacheStats</a></dt>
 <dd>
@@ -1108,7 +1133,15 @@
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/commons/collect/DelegatedIterator.html#next--">next()</a></span> - Method in class fr.inria.atlanmod.commons.collect.<a href="fr/inria/atlanmod/commons/collect/DelegatedIterator.html" title="class in fr.inria.atlanmod.commons.collect">DelegatedIterator</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/commons/collect/DelegatedListIterator.html#next--">next()</a></span> - Method in class fr.inria.atlanmod.commons.collect.<a href="fr/inria/atlanmod/commons/collect/DelegatedListIterator.html" title="class in fr.inria.atlanmod.commons.collect">DelegatedListIterator</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/commons/collect/SizedIterator.html#next--">next()</a></span> - Method in class fr.inria.atlanmod.commons.collect.<a href="fr/inria/atlanmod/commons/collect/SizedIterator.html" title="class in fr.inria.atlanmod.commons.collect">SizedIterator</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/commons/collect/SizedListIterator.html#next--">next()</a></span> - Method in class fr.inria.atlanmod.commons.collect.<a href="fr/inria/atlanmod/commons/collect/SizedListIterator.html" title="class in fr.inria.atlanmod.commons.collect">SizedListIterator</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/commons/collect/DelegatedListIterator.html#nextIndex--">nextIndex()</a></span> - Method in class fr.inria.atlanmod.commons.collect.<a href="fr/inria/atlanmod/commons/collect/DelegatedListIterator.html" title="class in fr.inria.atlanmod.commons.collect">DelegatedListIterator</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/commons/collect/SizedListIterator.html#nextIndex--">nextIndex()</a></span> - Method in class fr.inria.atlanmod.commons.collect.<a href="fr/inria/atlanmod/commons/collect/SizedListIterator.html" title="class in fr.inria.atlanmod.commons.collect">SizedListIterator</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/commons/log/Logger.html#NO_EXCEPTION">NO_EXCEPTION</a></span> - Static variable in interface fr.inria.atlanmod.commons.log.<a href="fr/inria/atlanmod/commons/log/Logger.html" title="interface in fr.inria.atlanmod.commons.log">Logger</a></dt>
 <dd>
@@ -1197,6 +1230,14 @@
 <div class="block">Static convenience methods that help a method or constructor check whether it was invoked correctly (whether its
  <i>preconditions</i> have been met).</div>
 </dd>
+<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/commons/collect/DelegatedListIterator.html#previous--">previous()</a></span> - Method in class fr.inria.atlanmod.commons.collect.<a href="fr/inria/atlanmod/commons/collect/DelegatedListIterator.html" title="class in fr.inria.atlanmod.commons.collect">DelegatedListIterator</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/commons/collect/SizedListIterator.html#previous--">previous()</a></span> - Method in class fr.inria.atlanmod.commons.collect.<a href="fr/inria/atlanmod/commons/collect/SizedListIterator.html" title="class in fr.inria.atlanmod.commons.collect">SizedListIterator</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/commons/collect/DelegatedListIterator.html#previousIndex--">previousIndex()</a></span> - Method in class fr.inria.atlanmod.commons.collect.<a href="fr/inria/atlanmod/commons/collect/DelegatedListIterator.html" title="class in fr.inria.atlanmod.commons.collect">DelegatedListIterator</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/commons/collect/SizedListIterator.html#previousIndex--">previousIndex()</a></span> - Method in class fr.inria.atlanmod.commons.collect.<a href="fr/inria/atlanmod/commons/collect/SizedListIterator.html" title="class in fr.inria.atlanmod.commons.collect">SizedListIterator</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="fr/inria/atlanmod/commons/primitive/Primitives.html" title="class in fr.inria.atlanmod.commons.primitive"><span class="typeNameLink">Primitives</span></a> - Class in <a href="fr/inria/atlanmod/commons/primitive/package-summary.html">fr.inria.atlanmod.commons.primitive</a></dt>
 <dd>
 <div class="block">Static utility methods related to Java primitive types.</div>
@@ -1251,10 +1292,14 @@
 <dd>
 <div class="block">Loads a new value for the <code>key</code>, asynchronously.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/commons/collect/DelegatedListIterator.html#remove--">remove()</a></span> - Method in class fr.inria.atlanmod.commons.collect.<a href="fr/inria/atlanmod/commons/collect/DelegatedListIterator.html" title="class in fr.inria.atlanmod.commons.collect">DelegatedListIterator</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/commons/collect/MoreArrays.html#remove-T:A-int-">remove(T[], int)</a></span> - Static method in class fr.inria.atlanmod.commons.collect.<a href="fr/inria/atlanmod/commons/collect/MoreArrays.html" title="class in fr.inria.atlanmod.commons.collect">MoreArrays</a></dt>
 <dd>
 <div class="block">Removes the element at the specified <code>index</code> from the specified <code>array</code>.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/commons/collect/SizedListIterator.html#remove--">remove()</a></span> - Method in class fr.inria.atlanmod.commons.collect.<a href="fr/inria/atlanmod/commons/collect/SizedListIterator.html" title="class in fr.inria.atlanmod.commons.collect">SizedListIterator</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/commons/cache/CacheStats.html#requestCount--">requestCount()</a></span> - Method in class fr.inria.atlanmod.commons.cache.<a href="fr/inria/atlanmod/commons/cache/CacheStats.html" title="class in fr.inria.atlanmod.commons.cache">CacheStats</a></dt>
 <dd>
 <div class="block">Returns the number of times <a href="fr/inria/atlanmod/commons/cache/Cache.html" title="interface in fr.inria.atlanmod.commons.cache"><code>Cache</code></a> lookup methods have returned either a cached or uncached value.</div>
@@ -1325,10 +1370,14 @@
 <dd>
 <div class="block">Constructs a new <code>SerializerFactory</code>.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/commons/collect/DelegatedListIterator.html#set-R-">set(R)</a></span> - Method in class fr.inria.atlanmod.commons.collect.<a href="fr/inria/atlanmod/commons/collect/DelegatedListIterator.html" title="class in fr.inria.atlanmod.commons.collect">DelegatedListIterator</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/commons/collect/MoreArrays.html#set-T:A-int-T-">set(T[], int, T)</a></span> - Static method in class fr.inria.atlanmod.commons.collect.<a href="fr/inria/atlanmod/commons/collect/MoreArrays.html" title="class in fr.inria.atlanmod.commons.collect">MoreArrays</a></dt>
 <dd>
 <div class="block">Sets the specified <code>element</code> at the <code>index</code> in the <code>array</code>.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/commons/collect/SizedListIterator.html#set-E-">set(E)</a></span> - Method in class fr.inria.atlanmod.commons.collect.<a href="fr/inria/atlanmod/commons/collect/SizedListIterator.html" title="class in fr.inria.atlanmod.commons.collect">SizedListIterator</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/commons/hash/StandardHashers.html#SHA1">SHA1</a></span> - Static variable in class fr.inria.atlanmod.commons.hash.<a href="fr/inria/atlanmod/commons/hash/StandardHashers.html" title="class in fr.inria.atlanmod.commons.hash">StandardHashers</a></dt>
 <dd>
 <div class="block">A <a href="fr/inria/atlanmod/commons/hash/Hasher.html" title="interface in fr.inria.atlanmod.commons.hash"><code>Hasher</code></a> that uses the <code>SHA-1</code> algorithm (160 bits).</div>
@@ -1374,6 +1423,22 @@
 <div class="block">A size-based <code>Iterator</code> that loads each value with a <code>IntFunction</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="fr/inria/atlanmod/commons/collect/SizedIterator.html#SizedIterator-int-java.util.function.IntFunction-">SizedIterator(int, IntFunction&lt;E&gt;)</a></span> - Constructor for class fr.inria.atlanmod.commons.collect.<a href="fr/inria/atlanmod/commons/collect/SizedIterator.html" title="class in fr.inria.atlanmod.commons.collect">SizedIterator</a></dt>
+<dd>
+<div class="block">Constructs a new <code>SizedIterator</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/commons/collect/SizedIterator.html#SizedIterator-int-java.util.function.IntFunction-int-">SizedIterator(int, IntFunction&lt;E&gt;, int)</a></span> - Constructor for class fr.inria.atlanmod.commons.collect.<a href="fr/inria/atlanmod/commons/collect/SizedIterator.html" title="class in fr.inria.atlanmod.commons.collect">SizedIterator</a></dt>
+<dd>
+<div class="block">Constructs a new <code>SizedIterator</code>.</div>
+</dd>
+<dt><a href="fr/inria/atlanmod/commons/collect/SizedListIterator.html" title="class in fr.inria.atlanmod.commons.collect"><span class="typeNameLink">SizedListIterator</span></a>&lt;<a href="fr/inria/atlanmod/commons/collect/SizedListIterator.html" title="type parameter in SizedListIterator">E</a>&gt; - Class in <a href="fr/inria/atlanmod/commons/collect/package-summary.html">fr.inria.atlanmod.commons.collect</a></dt>
+<dd>
+<div class="block">A size-based <code>Iterator</code> that loads each value with a <code>IntFunction</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/commons/collect/SizedListIterator.html#SizedListIterator-int-java.util.function.IntFunction-">SizedListIterator(int, IntFunction&lt;E&gt;)</a></span> - Constructor for class fr.inria.atlanmod.commons.collect.<a href="fr/inria/atlanmod/commons/collect/SizedListIterator.html" title="class in fr.inria.atlanmod.commons.collect">SizedListIterator</a></dt>
+<dd>
+<div class="block">Constructs a new <code>SizedIterator</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="fr/inria/atlanmod/commons/collect/SizedListIterator.html#SizedListIterator-int-java.util.function.IntFunction-int-">SizedListIterator(int, IntFunction&lt;E&gt;, int)</a></span> - Constructor for class fr.inria.atlanmod.commons.collect.<a href="fr/inria/atlanmod/commons/collect/SizedListIterator.html" title="class in fr.inria.atlanmod.commons.collect">SizedListIterator</a></dt>
 <dd>
 <div class="block">Constructs a new <code>SizedIterator</code>.</div>
 </dd>
