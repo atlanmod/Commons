@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9};
+var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -133,19 +133,25 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>static java.util.concurrent.ExecutorService</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/concurrent/MoreExecutors.html#newDirectPool--">newDirectPool</a></span>()</code>
+<div class="block">Creates a new <code>ExecutorService</code> that runs each task in the thread that invokes <code>execute/submit</code>.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>static java.util.concurrent.ExecutorService</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/concurrent/MoreExecutors.html#newFixedThreadPool--">newFixedThreadPool</a></span>()</code>
 <div class="block">Creates a new <code>ExecutorService</code> using the maximum <code>available
  processors</code>, that will be closed when the application will exit.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>static java.util.concurrent.ExecutorService</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/concurrent/MoreExecutors.html#newFixedThreadPool-int-">newFixedThreadPool</a></span>(int&nbsp;nThreads)</code>
 <div class="block">Creates a new <code>ExecutorService</code> using <code>nThreads</code> processors, that will be closed when the application
  will exit.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>static java.util.concurrent.ExecutorService</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/concurrent/MoreExecutors.html#newFixedThreadPool-int-java.lang.String-">newFixedThreadPool</a></span>(int&nbsp;nThreads,
                   java.lang.String&nbsp;name)</code>
@@ -153,14 +159,14 @@ extends java.lang.Object</pre>
  will exit.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>static java.util.concurrent.ExecutorService</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/concurrent/MoreExecutors.html#newFixedThreadPool-java.lang.String-">newFixedThreadPool</a></span>(java.lang.String&nbsp;name)</code>
 <div class="block">Creates a new <code>ExecutorService</code> using the maximum <code>available
  processors</code>, that will be closed when the application will exit.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>static java.util.List&lt;java.lang.Runnable&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/concurrent/MoreExecutors.html#shutdown-java.util.concurrent.ExecutorService-long-java.util.concurrent.TimeUnit-">shutdown</a></span>(java.util.concurrent.ExecutorService&nbsp;service,
         long&nbsp;timeout,
@@ -168,7 +174,7 @@ extends java.lang.Object</pre>
 <div class="block">Cleanly closes the <code>service</code>.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/concurrent/MoreExecutors.html#shutdown-java.util.concurrent.ExecutorService-long-java.util.concurrent.TimeUnit-boolean-">shutdown</a></span>(java.util.concurrent.ExecutorService&nbsp;service,
         long&nbsp;timeout,
@@ -177,7 +183,7 @@ extends java.lang.Object</pre>
 <div class="block">Cleanly closes the <code>service</code>.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>static java.util.concurrent.ExecutorService</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/concurrent/MoreExecutors.html#shutdownAtExit-java.util.concurrent.ExecutorService-long-java.util.concurrent.TimeUnit-boolean-">shutdownAtExit</a></span>(java.util.concurrent.ExecutorService&nbsp;service,
               long&nbsp;timeout,
@@ -208,6 +214,28 @@ extends java.lang.Object</pre>
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="newDirectPool--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>newDirectPool</h4>
+<pre>@Nonnull
+public static&nbsp;java.util.concurrent.ExecutorService&nbsp;newDirectPool()</pre>
+<div class="block">Creates a new <code>ExecutorService</code> that runs each task in the thread that invokes <code>execute/submit</code>.
+ This applies both to individually submitted tasks and to collections of tasks submitted via <code>invokeAll</code> or
+ <code>invokeAny</code>.
+ In the latter case, tasks will run serially on the calling thread.
+ Tasks are run to completion before a <code>Future</code> is returned to the caller (unless the executor has been shutdown).
+ <p>
+ Although all tasks are immediately executed in the thread that submitted the task, this <code>ExecutorService</code>
+ imposes a small locking overhead on each task submission in order to implement shutdown and termination behavior.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new service</dd>
+</dl>
+</li>
+</ul>
 <a name="newFixedThreadPool--">
 <!--   -->
 </a>
