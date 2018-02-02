@@ -280,6 +280,7 @@ public&nbsp;byte[]&nbsp;serialize(<a href="../../../../../../fr/inria/atlanmod/c
 <li class="blockList">
 <h4>serialize</h4>
 <pre>public&nbsp;void&nbsp;serialize(<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/AbstractSerializer.html" title="type parameter in AbstractSerializer">T</a>&nbsp;t,
+                      @WillNotClose
                       java.io.OutputStream&nbsp;os)
                throws java.io.IOException</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html#serialize-T-java.io.OutputStream-">Serializer</a></code></span></div>
@@ -328,7 +329,8 @@ public&nbsp;<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/A
 <li class="blockList">
 <h4>deserialize</h4>
 <pre>@Nonnull
-public&nbsp;<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/AbstractSerializer.html" title="type parameter in AbstractSerializer">T</a>&nbsp;deserialize(java.io.InputStream&nbsp;is)
+public&nbsp;<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/AbstractSerializer.html" title="type parameter in AbstractSerializer">T</a>&nbsp;deserialize(@WillNotClose
+                              java.io.InputStream&nbsp;is)
                        throws java.io.IOException</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html#deserialize-java.io.InputStream-">Serializer</a></code></span></div>
 <div class="block">Reads and assembles an object of type <code>T</code> from the given <code>is</code>.
