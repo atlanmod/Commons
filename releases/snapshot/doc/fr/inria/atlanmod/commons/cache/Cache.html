@@ -18,8 +18,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":18,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":18,"i12":6,"i13":6,"i14":6};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -127,7 +127,7 @@ public interface <span class="typeNameLabel">Cache&lt;K,V&gt;</span></pre>
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t5" class="tableTab"><span><a href="javascript:show(16);">Default Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
@@ -145,7 +145,7 @@ public interface <span class="typeNameLabel">Cache&lt;K,V&gt;</span></pre>
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>default boolean</code></td>
+<td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html#contains-K-">contains</a></span>(<a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html" title="type parameter in Cache">K</a>&nbsp;key)</code>
 <div class="block">Returns <code>true</code> if this map contains a mapping for the specified <code>key</code>.</div>
 </td>
@@ -202,7 +202,7 @@ public interface <span class="typeNameLabel">Cache&lt;K,V&gt;</span></pre>
 </td>
 </tr>
 <tr id="i11" class="rowColor">
-<td class="colFirst"><code>default void</code></td>
+<td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html#putIfAbsent-K-V-">putIfAbsent</a></span>(<a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html" title="type parameter in Cache">K</a>&nbsp;key,
            <a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html" title="type parameter in Cache">V</a>&nbsp;value)</code>
 <div class="block">Associates the <code>value</code> with the <code>key</code> in this cache, only if the <code>key</code> does not already exist.</div>
@@ -335,8 +335,8 @@ java.util.Map&lt;<a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.h
 <ul class="blockList">
 <li class="blockList">
 <h4>putIfAbsent</h4>
-<pre>default&nbsp;void&nbsp;putIfAbsent(<a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html" title="type parameter in Cache">K</a>&nbsp;key,
-                         <a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html" title="type parameter in Cache">V</a>&nbsp;value)</pre>
+<pre>void&nbsp;putIfAbsent(<a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html" title="type parameter in Cache">K</a>&nbsp;key,
+                 <a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html" title="type parameter in Cache">V</a>&nbsp;value)</pre>
 <div class="block">Associates the <code>value</code> with the <code>key</code> in this cache, only if the <code>key</code> does not already exist.
  If the cache previously contained a value associated with the <code>key</code>, then the call does nothing.</div>
 <dl>
@@ -411,7 +411,7 @@ java.util.Map&lt;<a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.h
 <ul class="blockList">
 <li class="blockList">
 <h4>contains</h4>
-<pre>default&nbsp;boolean&nbsp;contains(<a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html" title="type parameter in Cache">K</a>&nbsp;key)</pre>
+<pre>boolean&nbsp;contains(<a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html" title="type parameter in Cache">K</a>&nbsp;key)</pre>
 <div class="block">Returns <code>true</code> if this map contains a mapping for the specified <code>key</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
