@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":9,"i3":10,"i4":9};
+var methods = {"i0":10,"i1":10,"i2":9,"i3":10,"i4":10,"i5":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -161,6 +161,12 @@ extends java.lang.Object</pre>
 </td>
 </tr>
 <tr id="i4" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Lazy.html#update-java.util.function.UnaryOperator-">update</a></span>(java.util.function.UnaryOperator&lt;<a href="../../../../fr/inria/atlanmod/commons/Lazy.html" title="type parameter in Lazy">T</a>&gt;&nbsp;updateOperator)</code>
+<div class="block">Updates the wrapped value with a <code>UnaryOperator</code>.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;<a href="../../../../fr/inria/atlanmod/commons/Lazy.html" title="class in fr.inria.atlanmod.commons">Lazy</a>&lt;T&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Lazy.html#with-java.util.function.Supplier-">with</a></span>(java.util.function.Supplier&lt;T&gt;&nbsp;loadFunction)</code>
 <div class="block">Creates a new lazy object with the <code>Supplier</code> to load the embed value.</div>
@@ -256,6 +262,20 @@ public static&nbsp;&lt;T&gt;&nbsp;<a href="../../../../fr/inria/atlanmod/commons
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>newValue</code> - the new value</dd>
+</dl>
+</li>
+</ul>
+<a name="update-java.util.function.UnaryOperator-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>update</h4>
+<pre>public&nbsp;void&nbsp;update(java.util.function.UnaryOperator&lt;<a href="../../../../fr/inria/atlanmod/commons/Lazy.html" title="type parameter in Lazy">T</a>&gt;&nbsp;updateOperator)</pre>
+<div class="block">Updates the wrapped value with a <code>UnaryOperator</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>updateOperator</code> - the operator to update the wrapped value</dd>
 </dl>
 </li>
 </ul>
