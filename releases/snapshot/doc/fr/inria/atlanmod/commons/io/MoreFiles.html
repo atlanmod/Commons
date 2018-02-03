@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9};
+var methods = {"i0":9,"i1":9,"i2":9,"i3":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -133,14 +133,26 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>static java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/io/MoreFiles.html#fileExtension-java.lang.String-">fileExtension</a></span>(java.lang.String&nbsp;file)</code>
-<div class="block">Returns the file extension for the given <code>file</code> name, or the empty string if the file has no extension.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/io/MoreFiles.html#fileExtension-java.io.File-">fileExtension</a></span>(java.io.File&nbsp;file)</code>
+<div class="block">Returns the file extension for the given <code>file</code>, or the empty string if the file has no extension.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>static java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/io/MoreFiles.html#nameWithoutExtension-java.lang.String-">nameWithoutExtension</a></span>(java.lang.String&nbsp;file)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/io/MoreFiles.html#fileExtension-java.lang.String-">fileExtension</a></span>(java.lang.String&nbsp;fullName)</code>
+<div class="block">Returns the file extension for the given file name, or the empty string if the fullName has no extension.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>static java.lang.String</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/io/MoreFiles.html#nameWithoutExtension-java.io.File-">nameWithoutExtension</a></span>(java.io.File&nbsp;file)</code>
 <div class="block">Returns the <code>file</code> name without its file extension or path.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>static java.lang.String</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/io/MoreFiles.html#nameWithoutExtension-java.lang.String-">nameWithoutExtension</a></span>(java.lang.String&nbsp;fullName)</code>
+<div class="block">Returns the file name without its fullName extension or path.</div>
 </td>
 </tr>
 </table>
@@ -165,6 +177,24 @@ extends java.lang.Object</pre>
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="fileExtension-java.io.File-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>fileExtension</h4>
+<pre>@Nonnull
+public static&nbsp;java.lang.String&nbsp;fileExtension(java.io.File&nbsp;file)</pre>
+<div class="block">Returns the file extension for the given <code>file</code>, or the empty string if the file has no extension.
+ The result does not include the '<code>.</code>'.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>file</code> - the file</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the file extension</dd>
+</dl>
+</li>
+</ul>
 <a name="fileExtension-java.lang.String-">
 <!--   -->
 </a>
@@ -172,14 +202,33 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>fileExtension</h4>
 <pre>@Nonnull
-public static&nbsp;java.lang.String&nbsp;fileExtension(java.lang.String&nbsp;file)</pre>
-<div class="block">Returns the file extension for the given <code>file</code> name, or the empty string if the file has no extension. The
- result does not include the '<code>.</code>'.</div>
+public static&nbsp;java.lang.String&nbsp;fileExtension(java.lang.String&nbsp;fullName)</pre>
+<div class="block">Returns the file extension for the given file name, or the empty string if the fullName has no extension.
+ The result does not include the '<code>.</code>'.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>file</code> - the file name</dd>
+<dd><code>fullName</code> - the file name</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the filename extension</dd>
+<dd>the fullName extension</dd>
+</dl>
+</li>
+</ul>
+<a name="nameWithoutExtension-java.io.File-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>nameWithoutExtension</h4>
+<pre>@Nonnull
+public static&nbsp;java.lang.String&nbsp;nameWithoutExtension(java.io.File&nbsp;file)</pre>
+<div class="block">Returns the <code>file</code> name without its file extension or path.
+ This is similar to the <code>basename</code> unix command.
+ The result does not include the '<code>.</code>'.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>file</code> - the file</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the file name without its extension</dd>
 </dl>
 </li>
 </ul>
@@ -190,14 +239,15 @@ public static&nbsp;java.lang.String&nbsp;fileExtension(java.lang.String&nbsp;fil
 <li class="blockList">
 <h4>nameWithoutExtension</h4>
 <pre>@Nonnull
-public static&nbsp;java.lang.String&nbsp;nameWithoutExtension(java.lang.String&nbsp;file)</pre>
-<div class="block">Returns the <code>file</code> name without its file extension or path. This is similar to the <code>basename</code> unix
- command. The result does not include the '<code>.</code>'.</div>
+public static&nbsp;java.lang.String&nbsp;nameWithoutExtension(java.lang.String&nbsp;fullName)</pre>
+<div class="block">Returns the file name without its fullName extension or path.
+ This is similar to the <code>basename</code> unix command.
+ The result does not include the '<code>.</code>'.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>file</code> - the file name</dd>
+<dd><code>fullName</code> - the file name</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the filename without its extension</dd>
+<dd>the fullName name without its extension</dd>
 </dl>
 </li>
 </ul>
