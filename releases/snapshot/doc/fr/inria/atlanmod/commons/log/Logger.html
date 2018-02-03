@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":18,"i1":18,"i2":18,"i3":18,"i4":18,"i5":18,"i6":18,"i7":18,"i8":18,"i9":18,"i10":18,"i11":18,"i12":18,"i13":18,"i14":18,"i15":18,"i16":18,"i17":18,"i18":18,"i19":6,"i20":18,"i21":18,"i22":18,"i23":18,"i24":18,"i25":18,"i26":18,"i27":18,"i28":18,"i29":18};
+var methods = {"i0":18,"i1":18,"i2":18,"i3":18,"i4":18,"i5":18,"i6":18,"i7":18,"i8":18,"i9":18,"i10":18,"i11":18,"i12":18,"i13":18,"i14":18,"i15":18,"i16":18,"i17":18,"i18":18,"i19":18,"i20":18,"i21":18,"i22":18,"i23":6,"i24":18,"i25":18,"i26":18,"i27":18,"i28":18,"i29":18,"i30":18,"i31":18,"i32":18,"i33":18,"i34":18,"i35":18};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -180,18 +180,24 @@ public interface <span class="typeNameLabel">Logger</span></pre>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>default void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/log/Logger.html#debug-java.lang.Object-">debug</a></span>(java.lang.Object&nbsp;obj)</code>
+<div class="block">Logs an object at the <a href="../../../../../fr/inria/atlanmod/commons/log/Level.html#DEBUG"><code>DEBUG</code></a> level.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>default void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/log/Logger.html#debug-java.lang.Throwable-">debug</a></span>(java.lang.Throwable&nbsp;e)</code>
 <div class="block">Logs the stack trace of the given <code>Throwable</code> at the <a href="../../../../../fr/inria/atlanmod/commons/log/Level.html#DEBUG"><code>DEBUG</code></a> level.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>default void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/log/Logger.html#debug-java.lang.Throwable-java.lang.CharSequence-">debug</a></span>(java.lang.Throwable&nbsp;e,
      java.lang.CharSequence&nbsp;message)</code>
 <div class="block">Logs a message at the <a href="../../../../../fr/inria/atlanmod/commons/log/Level.html#DEBUG"><code>DEBUG</code></a> level including the stack trace of the given <code>Throwable</code>.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>default void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/log/Logger.html#debug-java.lang.Throwable-java.lang.CharSequence-java.lang.Object...-">debug</a></span>(java.lang.Throwable&nbsp;e,
      java.lang.CharSequence&nbsp;message,
@@ -200,33 +206,39 @@ public interface <span class="typeNameLabel">Logger</span></pre>
  <code>Throwable</code>.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>default void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/log/Logger.html#error-java.lang.CharSequence-">error</a></span>(java.lang.CharSequence&nbsp;message)</code>
 <div class="block">Logs a message at the <a href="../../../../../fr/inria/atlanmod/commons/log/Level.html#ERROR"><code>ERROR</code></a> level.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>default void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/log/Logger.html#error-java.lang.CharSequence-java.lang.Object...-">error</a></span>(java.lang.CharSequence&nbsp;message,
      java.lang.Object...&nbsp;params)</code>
 <div class="block">Logs a message with parameters at the <a href="../../../../../fr/inria/atlanmod/commons/log/Level.html#ERROR"><code>ERROR</code></a> level.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>default void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/log/Logger.html#error-java.lang.Object-">error</a></span>(java.lang.Object&nbsp;obj)</code>
+<div class="block">Logs an object at the <a href="../../../../../fr/inria/atlanmod/commons/log/Level.html#ERROR"><code>ERROR</code></a> level.</div>
+</td>
+</tr>
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>default void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/log/Logger.html#error-java.lang.Throwable-">error</a></span>(java.lang.Throwable&nbsp;e)</code>
 <div class="block">Logs the stack trace of the given <code>Throwable</code> at the <a href="../../../../../fr/inria/atlanmod/commons/log/Level.html#ERROR"><code>ERROR</code></a> level.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>default void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/log/Logger.html#error-java.lang.Throwable-java.lang.CharSequence-">error</a></span>(java.lang.Throwable&nbsp;e,
      java.lang.CharSequence&nbsp;message)</code>
 <div class="block">Logs a message at the <a href="../../../../../fr/inria/atlanmod/commons/log/Level.html#ERROR"><code>ERROR</code></a> level including the stack trace of the given <code>Throwable</code>.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>default void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/log/Logger.html#error-java.lang.Throwable-java.lang.CharSequence-java.lang.Object...-">error</a></span>(java.lang.Throwable&nbsp;e,
      java.lang.CharSequence&nbsp;message,
@@ -235,33 +247,39 @@ public interface <span class="typeNameLabel">Logger</span></pre>
  <code>Throwable</code>.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>default void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/log/Logger.html#info-java.lang.CharSequence-">info</a></span>(java.lang.CharSequence&nbsp;message)</code>
 <div class="block">Logs a message at the <a href="../../../../../fr/inria/atlanmod/commons/log/Level.html#INFO"><code>INFO</code></a> level.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>default void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/log/Logger.html#info-java.lang.CharSequence-java.lang.Object...-">info</a></span>(java.lang.CharSequence&nbsp;message,
     java.lang.Object...&nbsp;params)</code>
 <div class="block">Logs a message with parameters at the <a href="../../../../../fr/inria/atlanmod/commons/log/Level.html#INFO"><code>INFO</code></a> level.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i14" class="altColor">
+<td class="colFirst"><code>default void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/log/Logger.html#info-java.lang.Object-">info</a></span>(java.lang.Object&nbsp;obj)</code>
+<div class="block">Logs an object at the <a href="../../../../../fr/inria/atlanmod/commons/log/Level.html#INFO"><code>INFO</code></a> level.</div>
+</td>
+</tr>
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>default void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/log/Logger.html#info-java.lang.Throwable-">info</a></span>(java.lang.Throwable&nbsp;e)</code>
 <div class="block">Logs the stack trace of the given <code>Throwable</code> at the <a href="../../../../../fr/inria/atlanmod/commons/log/Level.html#INFO"><code>INFO</code></a> level.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>default void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/log/Logger.html#info-java.lang.Throwable-java.lang.CharSequence-">info</a></span>(java.lang.Throwable&nbsp;e,
     java.lang.CharSequence&nbsp;message)</code>
 <div class="block">Logs a message at the <a href="../../../../../fr/inria/atlanmod/commons/log/Level.html#INFO"><code>INFO</code></a> level including the stack trace of the given <code>Throwable</code>.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>default void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/log/Logger.html#info-java.lang.Throwable-java.lang.CharSequence-java.lang.Object...-">info</a></span>(java.lang.Throwable&nbsp;e,
     java.lang.CharSequence&nbsp;message,
@@ -269,14 +287,14 @@ public interface <span class="typeNameLabel">Logger</span></pre>
 <div class="block">Logs a message with parameters at the <a href="../../../../../fr/inria/atlanmod/commons/log/Level.html#INFO"><code>INFO</code></a> level including the stack trace of the given <code>Throwable</code>.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>default void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/log/Logger.html#log-fr.inria.atlanmod.commons.log.Level-java.lang.CharSequence-">log</a></span>(<a href="../../../../../fr/inria/atlanmod/commons/log/Level.html" title="enum in fr.inria.atlanmod.commons.log">Level</a>&nbsp;level,
    java.lang.CharSequence&nbsp;message)</code>
 <div class="block">Logs a message at the given <code>level</code>.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>default void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/log/Logger.html#log-fr.inria.atlanmod.commons.log.Level-java.lang.CharSequence-java.lang.Object...-">log</a></span>(<a href="../../../../../fr/inria/atlanmod/commons/log/Level.html" title="enum in fr.inria.atlanmod.commons.log">Level</a>&nbsp;level,
    java.lang.CharSequence&nbsp;message,
@@ -284,14 +302,21 @@ public interface <span class="typeNameLabel">Logger</span></pre>
 <div class="block">Logs a message with parameters at the given <code>level</code>.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i20" class="altColor">
+<td class="colFirst"><code>default void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/log/Logger.html#log-fr.inria.atlanmod.commons.log.Level-java.lang.Object-">log</a></span>(<a href="../../../../../fr/inria/atlanmod/commons/log/Level.html" title="enum in fr.inria.atlanmod.commons.log">Level</a>&nbsp;level,
+   java.lang.Object&nbsp;obj)</code>
+<div class="block">Logs an object at the given <code>level</code>.</div>
+</td>
+</tr>
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>default void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/log/Logger.html#log-fr.inria.atlanmod.commons.log.Level-java.lang.Throwable-">log</a></span>(<a href="../../../../../fr/inria/atlanmod/commons/log/Level.html" title="enum in fr.inria.atlanmod.commons.log">Level</a>&nbsp;level,
    java.lang.Throwable&nbsp;e)</code>
 <div class="block">Logs the stack trace of the given <code>Throwable</code> at the given <code>level</code>.</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>default void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/log/Logger.html#log-fr.inria.atlanmod.commons.log.Level-java.lang.Throwable-java.lang.CharSequence-">log</a></span>(<a href="../../../../../fr/inria/atlanmod/commons/log/Level.html" title="enum in fr.inria.atlanmod.commons.log">Level</a>&nbsp;level,
    java.lang.Throwable&nbsp;e,
@@ -299,7 +324,7 @@ public interface <span class="typeNameLabel">Logger</span></pre>
 <div class="block">Logs a message at the given <code>level</code> including the stack trace of the given <code>Throwable</code>.</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/log/Logger.html#log-fr.inria.atlanmod.commons.log.Level-java.lang.Throwable-java.lang.CharSequence-java.lang.Object...-">log</a></span>(<a href="../../../../../fr/inria/atlanmod/commons/log/Level.html" title="enum in fr.inria.atlanmod.commons.log">Level</a>&nbsp;level,
    java.lang.Throwable&nbsp;e,
@@ -308,33 +333,39 @@ public interface <span class="typeNameLabel">Logger</span></pre>
 <div class="block">Logs a message with parameters at the given <code>level</code> including the stack trace of the given <code>Throwable</code>.</div>
 </td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>default void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/log/Logger.html#trace-java.lang.CharSequence-">trace</a></span>(java.lang.CharSequence&nbsp;message)</code>
 <div class="block">Logs a message at the <a href="../../../../../fr/inria/atlanmod/commons/log/Level.html#TRACE"><code>TRACE</code></a> level.</div>
 </td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>default void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/log/Logger.html#trace-java.lang.CharSequence-java.lang.Object...-">trace</a></span>(java.lang.CharSequence&nbsp;message,
      java.lang.Object...&nbsp;params)</code>
 <div class="block">Logs a message with parameters at the <a href="../../../../../fr/inria/atlanmod/commons/log/Level.html#TRACE"><code>TRACE</code></a> level.</div>
 </td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i26" class="altColor">
+<td class="colFirst"><code>default void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/log/Logger.html#trace-java.lang.Object-">trace</a></span>(java.lang.Object&nbsp;obj)</code>
+<div class="block">Logs an object at the <a href="../../../../../fr/inria/atlanmod/commons/log/Level.html#TRACE"><code>TRACE</code></a> level.</div>
+</td>
+</tr>
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>default void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/log/Logger.html#trace-java.lang.Throwable-">trace</a></span>(java.lang.Throwable&nbsp;e)</code>
 <div class="block">Logs the stack trace of the given <code>Throwable</code> at the <a href="../../../../../fr/inria/atlanmod/commons/log/Level.html#TRACE"><code>TRACE</code></a> level.</div>
 </td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code>default void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/log/Logger.html#trace-java.lang.Throwable-java.lang.CharSequence-">trace</a></span>(java.lang.Throwable&nbsp;e,
      java.lang.CharSequence&nbsp;message)</code>
 <div class="block">Logs a message at the <a href="../../../../../fr/inria/atlanmod/commons/log/Level.html#TRACE"><code>TRACE</code></a> level including the stack trace of the given <code>Throwable</code>.</div>
 </td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code>default void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/log/Logger.html#trace-java.lang.Throwable-java.lang.CharSequence-java.lang.Object...-">trace</a></span>(java.lang.Throwable&nbsp;e,
      java.lang.CharSequence&nbsp;message,
@@ -343,33 +374,39 @@ public interface <span class="typeNameLabel">Logger</span></pre>
  <code>Throwable</code>.</div>
 </td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code>default void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/log/Logger.html#warn-java.lang.CharSequence-">warn</a></span>(java.lang.CharSequence&nbsp;message)</code>
 <div class="block">Logs a message at the <a href="../../../../../fr/inria/atlanmod/commons/log/Level.html#WARN"><code>WARN</code></a> level.</div>
 </td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code>default void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/log/Logger.html#warn-java.lang.CharSequence-java.lang.Object...-">warn</a></span>(java.lang.CharSequence&nbsp;message,
     java.lang.Object...&nbsp;params)</code>
 <div class="block">Logs a message with parameters at the <a href="../../../../../fr/inria/atlanmod/commons/log/Level.html#WARN"><code>WARN</code></a> level.</div>
 </td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i32" class="altColor">
+<td class="colFirst"><code>default void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/log/Logger.html#warn-java.lang.Object-">warn</a></span>(java.lang.Object&nbsp;obj)</code>
+<div class="block">Logs an object at the <a href="../../../../../fr/inria/atlanmod/commons/log/Level.html#WARN"><code>WARN</code></a> level.</div>
+</td>
+</tr>
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code>default void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/log/Logger.html#warn-java.lang.Throwable-">warn</a></span>(java.lang.Throwable&nbsp;e)</code>
 <div class="block">Logs the stack trace of the given <code>Throwable</code> at the <a href="../../../../../fr/inria/atlanmod/commons/log/Level.html#WARN"><code>WARN</code></a> level.</div>
 </td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i34" class="altColor">
 <td class="colFirst"><code>default void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/log/Logger.html#warn-java.lang.Throwable-java.lang.CharSequence-">warn</a></span>(java.lang.Throwable&nbsp;e,
     java.lang.CharSequence&nbsp;message)</code>
 <div class="block">Logs a message at the <a href="../../../../../fr/inria/atlanmod/commons/log/Level.html#WARN"><code>WARN</code></a> level including the stack trace of the given <code>Throwable</code>.</div>
 </td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i35" class="rowColor">
 <td class="colFirst"><code>default void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/log/Logger.html#warn-java.lang.Throwable-java.lang.CharSequence-java.lang.Object...-">warn</a></span>(java.lang.Throwable&nbsp;e,
     java.lang.CharSequence&nbsp;message,
@@ -442,6 +479,20 @@ static final&nbsp;java.lang.Object[] NO_PARAMS</pre>
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="trace-java.lang.Object-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>trace</h4>
+<pre>default&nbsp;void&nbsp;trace(java.lang.Object&nbsp;obj)</pre>
+<div class="block">Logs an object at the <a href="../../../../../fr/inria/atlanmod/commons/log/Level.html#TRACE"><code>TRACE</code></a> level.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>obj</code> - the object to log</dd>
+</dl>
+</li>
+</ul>
 <a name="trace-java.lang.CharSequence-">
 <!--   -->
 </a>
@@ -518,6 +569,20 @@ static final&nbsp;java.lang.Object[] NO_PARAMS</pre>
 <dd><code>e</code> - the exception to log, including its stack trace</dd>
 <dd><code>message</code> - the message to log; the format depends on the <code>MessageFormat</code></dd>
 <dd><code>params</code> - parameters to the message</dd>
+</dl>
+</li>
+</ul>
+<a name="debug-java.lang.Object-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>debug</h4>
+<pre>default&nbsp;void&nbsp;debug(java.lang.Object&nbsp;obj)</pre>
+<div class="block">Logs an object at the <a href="../../../../../fr/inria/atlanmod/commons/log/Level.html#DEBUG"><code>DEBUG</code></a> level.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>obj</code> - the object to log</dd>
 </dl>
 </li>
 </ul>
@@ -600,6 +665,20 @@ static final&nbsp;java.lang.Object[] NO_PARAMS</pre>
 </dl>
 </li>
 </ul>
+<a name="info-java.lang.Object-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>info</h4>
+<pre>default&nbsp;void&nbsp;info(java.lang.Object&nbsp;obj)</pre>
+<div class="block">Logs an object at the <a href="../../../../../fr/inria/atlanmod/commons/log/Level.html#INFO"><code>INFO</code></a> level.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>obj</code> - the object to log</dd>
+</dl>
+</li>
+</ul>
 <a name="info-java.lang.CharSequence-">
 <!--   -->
 </a>
@@ -675,6 +754,20 @@ static final&nbsp;java.lang.Object[] NO_PARAMS</pre>
 <dd><code>e</code> - the exception to log, including its stack trace</dd>
 <dd><code>message</code> - the message to log; the format depends on the <code>MessageFormat</code></dd>
 <dd><code>params</code> - parameters to the message</dd>
+</dl>
+</li>
+</ul>
+<a name="warn-java.lang.Object-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>warn</h4>
+<pre>default&nbsp;void&nbsp;warn(java.lang.Object&nbsp;obj)</pre>
+<div class="block">Logs an object at the <a href="../../../../../fr/inria/atlanmod/commons/log/Level.html#WARN"><code>WARN</code></a> level.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>obj</code> - the object to log</dd>
 </dl>
 </li>
 </ul>
@@ -756,6 +849,20 @@ static final&nbsp;java.lang.Object[] NO_PARAMS</pre>
 </dl>
 </li>
 </ul>
+<a name="error-java.lang.Object-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>error</h4>
+<pre>default&nbsp;void&nbsp;error(java.lang.Object&nbsp;obj)</pre>
+<div class="block">Logs an object at the <a href="../../../../../fr/inria/atlanmod/commons/log/Level.html#ERROR"><code>ERROR</code></a> level.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>obj</code> - the object to log</dd>
+</dl>
+</li>
+</ul>
 <a name="error-java.lang.CharSequence-">
 <!--   -->
 </a>
@@ -832,6 +939,23 @@ static final&nbsp;java.lang.Object[] NO_PARAMS</pre>
 <dd><code>e</code> - the exception to log, including its stack trace</dd>
 <dd><code>message</code> - the message to log; the format depends on the <code>MessageFormat</code></dd>
 <dd><code>params</code> - parameters to the message</dd>
+</dl>
+</li>
+</ul>
+<a name="log-fr.inria.atlanmod.commons.log.Level-java.lang.Object-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>log</h4>
+<pre>default&nbsp;void&nbsp;log(@Nonnull
+                 <a href="../../../../../fr/inria/atlanmod/commons/log/Level.html" title="enum in fr.inria.atlanmod.commons.log">Level</a>&nbsp;level,
+                 java.lang.Object&nbsp;obj)</pre>
+<div class="block">Logs an object at the given <code>level</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>level</code> - the logging level</dd>
+<dd><code>obj</code> - the object to log</dd>
 </dl>
 </li>
 </ul>
