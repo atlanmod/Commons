@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":9,"i3":10,"i4":10,"i5":9};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":9,"i4":10,"i5":10,"i6":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -143,30 +143,36 @@ extends java.lang.Object</pre>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Lazy.html#ifLoaded-java.util.function.Consumer-">ifLoaded</a></span>(java.util.function.Consumer&lt;<a href="../../../../fr/inria/atlanmod/commons/Lazy.html" title="type parameter in Lazy">T</a>&gt;&nbsp;consumer)</code>
+<div class="block">If a value is loaded, invoke the specified <code>consumer</code> with the value, otherwise do nothing.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Lazy.html#isLoaded--">isLoaded</a></span>()</code>
 <div class="block">Returns <code>true</code> if the value has been loaded.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;<a href="../../../../fr/inria/atlanmod/commons/Lazy.html" title="class in fr.inria.atlanmod.commons">Lazy</a>&lt;T&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Lazy.html#of-T-">of</a></span>(T&nbsp;value)</code>
 <div class="block">Creates a new lazy object with the embed value.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Lazy.html#update-T-">update</a></span>(<a href="../../../../fr/inria/atlanmod/commons/Lazy.html" title="type parameter in Lazy">T</a>&nbsp;newValue)</code>
 <div class="block">Updates the wrapped value.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Lazy.html#update-java.util.function.UnaryOperator-">update</a></span>(java.util.function.UnaryOperator&lt;<a href="../../../../fr/inria/atlanmod/commons/Lazy.html" title="type parameter in Lazy">T</a>&gt;&nbsp;updateOperator)</code>
 <div class="block">Updates the wrapped value with a <code>UnaryOperator</code>.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;<a href="../../../../fr/inria/atlanmod/commons/Lazy.html" title="class in fr.inria.atlanmod.commons">Lazy</a>&lt;T&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Lazy.html#with-java.util.function.Supplier-">with</a></span>(java.util.function.Supplier&lt;T&gt;&nbsp;loadFunction)</code>
 <div class="block">Creates a new lazy object with the <code>Supplier</code> to load the embed value.</div>
@@ -282,7 +288,7 @@ public static&nbsp;&lt;T&gt;&nbsp;<a href="../../../../fr/inria/atlanmod/commons
 <a name="isLoaded--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>isLoaded</h4>
 <pre>public&nbsp;boolean&nbsp;isLoaded()</pre>
@@ -290,6 +296,20 @@ public static&nbsp;&lt;T&gt;&nbsp;<a href="../../../../fr/inria/atlanmod/commons
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd><code>true</code> if the value has been loaded</dd>
+</dl>
+</li>
+</ul>
+<a name="ifLoaded-java.util.function.Consumer-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>ifLoaded</h4>
+<pre>public&nbsp;void&nbsp;ifLoaded(java.util.function.Consumer&lt;<a href="../../../../fr/inria/atlanmod/commons/Lazy.html" title="type parameter in Lazy">T</a>&gt;&nbsp;consumer)</pre>
+<div class="block">If a value is loaded, invoke the specified <code>consumer</code> with the value, otherwise do nothing.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>consumer</code> - action to be executed if a value is present</dd>
 </dl>
 </li>
 </ul>
