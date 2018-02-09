@@ -111,22 +111,55 @@
 </tr>
 <tbody>
 <tr class="altColor">
+<td class="colFirst"><code>static &lt;T,U,R&gt;&nbsp;<a href="../../../../../../fr/inria/atlanmod/commons/function/Converter.html" title="interface in fr.inria.atlanmod.commons.function">Converter</a>&lt;T,R&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">Converter.</span><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/commons/function/Converter.html#compose-fr.inria.atlanmod.commons.function.Converter-fr.inria.atlanmod.commons.function.Converter-">compose</a></span>(<a href="../../../../../../fr/inria/atlanmod/commons/function/Converter.html" title="interface in fr.inria.atlanmod.commons.function">Converter</a>&lt;T,U&gt;&nbsp;before,
+       <a href="../../../../../../fr/inria/atlanmod/commons/function/Converter.html" title="interface in fr.inria.atlanmod.commons.function">Converter</a>&lt;U,R&gt;&nbsp;after)</code>
+<div class="block">Returns a composed converter that first applies the <code>before</code> function to its input, and then applies the
+ <code>after</code> function to the result.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>static &lt;T,R&gt;&nbsp;<a href="../../../../../../fr/inria/atlanmod/commons/function/Converter.html" title="interface in fr.inria.atlanmod.commons.function">Converter</a>&lt;T,R&gt;</code></td>
 <td class="colLast"><span class="typeNameLabel">Converter.</span><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/commons/function/Converter.html#from-java.util.function.Function-java.util.function.Function-">from</a></span>(java.util.function.Function&lt;? super T,? extends R&gt;&nbsp;convertFunc,
     java.util.function.Function&lt;? super R,? extends T&gt;&nbsp;revertFunc)</code>
 <div class="block">Creates a converter based on separate forward and backward functions.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;<a href="../../../../../../fr/inria/atlanmod/commons/function/Converter.html" title="interface in fr.inria.atlanmod.commons.function">Converter</a>&lt;T,T&gt;</code></td>
 <td class="colLast"><span class="typeNameLabel">Converter.</span><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/commons/function/Converter.html#identity--">identity</a></span>()</code>
 <div class="block">Creates a converter that always converts or reverses an object to itself.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>default <a href="../../../../../../fr/inria/atlanmod/commons/function/Converter.html" title="interface in fr.inria.atlanmod.commons.function">Converter</a>&lt;<a href="../../../../../../fr/inria/atlanmod/commons/function/Converter.html" title="type parameter in Converter">R</a>,<a href="../../../../../../fr/inria/atlanmod/commons/function/Converter.html" title="type parameter in Converter">T</a>&gt;</code></td>
 <td class="colLast"><span class="typeNameLabel">Converter.</span><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/commons/function/Converter.html#reverse--">reverse</a></span>()</code>
 <div class="block">Returns the reversed converter of this converter.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../../fr/inria/atlanmod/commons/function/package-summary.html">fr.inria.atlanmod.commons.function</a> with parameters of type <a href="../../../../../../fr/inria/atlanmod/commons/function/Converter.html" title="interface in fr.inria.atlanmod.commons.function">Converter</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>static &lt;T,U,R&gt;&nbsp;<a href="../../../../../../fr/inria/atlanmod/commons/function/Converter.html" title="interface in fr.inria.atlanmod.commons.function">Converter</a>&lt;T,R&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">Converter.</span><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/commons/function/Converter.html#compose-fr.inria.atlanmod.commons.function.Converter-fr.inria.atlanmod.commons.function.Converter-">compose</a></span>(<a href="../../../../../../fr/inria/atlanmod/commons/function/Converter.html" title="interface in fr.inria.atlanmod.commons.function">Converter</a>&lt;T,U&gt;&nbsp;before,
+       <a href="../../../../../../fr/inria/atlanmod/commons/function/Converter.html" title="interface in fr.inria.atlanmod.commons.function">Converter</a>&lt;U,R&gt;&nbsp;after)</code>
+<div class="block">Returns a composed converter that first applies the <code>before</code> function to its input, and then applies the
+ <code>after</code> function to the result.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static &lt;T,U,R&gt;&nbsp;<a href="../../../../../../fr/inria/atlanmod/commons/function/Converter.html" title="interface in fr.inria.atlanmod.commons.function">Converter</a>&lt;T,R&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">Converter.</span><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/commons/function/Converter.html#compose-fr.inria.atlanmod.commons.function.Converter-fr.inria.atlanmod.commons.function.Converter-">compose</a></span>(<a href="../../../../../../fr/inria/atlanmod/commons/function/Converter.html" title="interface in fr.inria.atlanmod.commons.function">Converter</a>&lt;T,U&gt;&nbsp;before,
+       <a href="../../../../../../fr/inria/atlanmod/commons/function/Converter.html" title="interface in fr.inria.atlanmod.commons.function">Converter</a>&lt;U,R&gt;&nbsp;after)</code>
+<div class="block">Returns a composed converter that first applies the <code>before</code> function to its input, and then applies the
+ <code>after</code> function to the result.</div>
 </td>
 </tr>
 </tbody>
