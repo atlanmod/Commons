@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9};
+var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -132,30 +132,36 @@ extends java.lang.Object</pre>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>static &lt;E&gt;&nbsp;java.util.Optional&lt;E&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/collect/MoreIterables.html#firstElement-java.lang.Iterable-">firstElement</a></span>(java.lang.Iterable&lt;E&gt;&nbsp;iterable)</code>
+<div class="block">Returns the first element contained in <code>iterable</code>.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>static boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/collect/MoreIterables.html#isEmpty-java.lang.Iterable-">isEmpty</a></span>(java.lang.Iterable&lt;?&gt;&nbsp;iterable)</code>
 <div class="block">Determines if the given <code>iterable</code> contains no element.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>static boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/collect/MoreIterables.html#notEmpty-java.lang.Iterable-">notEmpty</a></span>(java.lang.Iterable&lt;?&gt;&nbsp;iterable)</code>
 <div class="block">Determines if the given <code>iterable</code> contains at least one element.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>static &lt;E&gt;&nbsp;java.util.Optional&lt;E&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/collect/MoreIterables.html#onlyElement-java.lang.Iterable-">onlyElement</a></span>(java.lang.Iterable&lt;E&gt;&nbsp;iterable)</code>
 <div class="block">Returns the single element contained in <code>iterable</code>.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>static &lt;E&gt;&nbsp;java.util.stream.Stream&lt;E&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/collect/MoreIterables.html#parallelStream-java.lang.Iterable-">parallelStream</a></span>(java.lang.Iterable&lt;E&gt;&nbsp;iterable)</code>
 <div class="block">Returns a parallel <code>Stream</code> of the contents of <code>iterable</code>.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>static &lt;E&gt;&nbsp;java.util.stream.Stream&lt;E&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/collect/MoreIterables.html#stream-java.lang.Iterable-">stream</a></span>(java.lang.Iterable&lt;E&gt;&nbsp;iterable)</code>
 <div class="block">Returns a sequential <code>Stream</code> of the contents of <code>iterable</code>.</div>
@@ -254,7 +260,7 @@ public static&nbsp;&lt;E&gt;&nbsp;java.util.stream.Stream&lt;E&gt;&nbsp;parallel
 <a name="onlyElement-java.lang.Iterable-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>onlyElement</h4>
 <pre>@Nonnull
@@ -265,6 +271,26 @@ public static&nbsp;&lt;E&gt;&nbsp;java.util.Optional&lt;E&gt;&nbsp;onlyElement(j
 <dd><code>iterable</code> - the iterable</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>an <code>Optional</code> containing the single element of the <code>iterable</code>, or <code>Optional.empty()</code> if
+ the <code>iterable</code> is empty.</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if the <code>iterable</code> contains more than one element</dd>
+</dl>
+</li>
+</ul>
+<a name="firstElement-java.lang.Iterable-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>firstElement</h4>
+<pre>@Nonnull
+public static&nbsp;&lt;E&gt;&nbsp;java.util.Optional&lt;E&gt;&nbsp;firstElement(java.lang.Iterable&lt;E&gt;&nbsp;iterable)</pre>
+<div class="block">Returns the first element contained in <code>iterable</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>iterable</code> - the iterable</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>an <code>Optional</code> containing the first element of the <code>iterable</code>, or <code>Optional.empty()</code> if
  the <code>iterable</code> is empty.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.IllegalArgumentException</code> - if the <code>iterable</code> contains more than one element</dd>
