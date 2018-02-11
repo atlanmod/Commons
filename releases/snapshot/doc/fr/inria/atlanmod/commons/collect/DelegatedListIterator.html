@@ -141,8 +141,8 @@ implements java.util.ListIterator&lt;R&gt;</pre>
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/collect/DelegatedListIterator.html#DelegatedListIterator-java.util.ListIterator-java.util.function.Function-">DelegatedListIterator</a></span>(java.util.ListIterator&lt;<a href="../../../../../fr/inria/atlanmod/commons/collect/DelegatedListIterator.html" title="type parameter in DelegatedListIterator">T</a>&gt;&nbsp;delegate,
-                     java.util.function.Function&lt;<a href="../../../../../fr/inria/atlanmod/commons/collect/DelegatedListIterator.html" title="type parameter in DelegatedListIterator">T</a>,<a href="../../../../../fr/inria/atlanmod/commons/collect/DelegatedListIterator.html" title="type parameter in DelegatedListIterator">R</a>&gt;&nbsp;mappingFunction)</code>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/collect/DelegatedListIterator.html#DelegatedListIterator-java.util.ListIterator-fr.inria.atlanmod.commons.function.Converter-">DelegatedListIterator</a></span>(java.util.ListIterator&lt;<a href="../../../../../fr/inria/atlanmod/commons/collect/DelegatedListIterator.html" title="type parameter in DelegatedListIterator">T</a>&gt;&nbsp;delegate,
+                     <a href="../../../../../fr/inria/atlanmod/commons/function/Converter.html" title="interface in fr.inria.atlanmod.commons.function">Converter</a>&lt;<a href="../../../../../fr/inria/atlanmod/commons/collect/DelegatedListIterator.html" title="type parameter in DelegatedListIterator">T</a>,<a href="../../../../../fr/inria/atlanmod/commons/collect/DelegatedListIterator.html" title="type parameter in DelegatedListIterator">R</a>&gt;&nbsp;converter)</code>
 <div class="block">Constructs a new <code>DelegatedIterator</code>.</div>
 </td>
 </tr>
@@ -226,19 +226,19 @@ implements java.util.ListIterator&lt;R&gt;</pre>
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="DelegatedListIterator-java.util.ListIterator-java.util.function.Function-">
+<a name="DelegatedListIterator-java.util.ListIterator-fr.inria.atlanmod.commons.function.Converter-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>DelegatedListIterator</h4>
 <pre>public&nbsp;DelegatedListIterator(java.util.ListIterator&lt;<a href="../../../../../fr/inria/atlanmod/commons/collect/DelegatedListIterator.html" title="type parameter in DelegatedListIterator">T</a>&gt;&nbsp;delegate,
-                             java.util.function.Function&lt;<a href="../../../../../fr/inria/atlanmod/commons/collect/DelegatedListIterator.html" title="type parameter in DelegatedListIterator">T</a>,<a href="../../../../../fr/inria/atlanmod/commons/collect/DelegatedListIterator.html" title="type parameter in DelegatedListIterator">R</a>&gt;&nbsp;mappingFunction)</pre>
+                             <a href="../../../../../fr/inria/atlanmod/commons/function/Converter.html" title="interface in fr.inria.atlanmod.commons.function">Converter</a>&lt;<a href="../../../../../fr/inria/atlanmod/commons/collect/DelegatedListIterator.html" title="type parameter in DelegatedListIterator">T</a>,<a href="../../../../../fr/inria/atlanmod/commons/collect/DelegatedListIterator.html" title="type parameter in DelegatedListIterator">R</a>&gt;&nbsp;converter)</pre>
 <div class="block">Constructs a new <code>DelegatedIterator</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>delegate</code> - the delegated list iterator</dd>
-<dd><code>mappingFunction</code> - the function used to map elements from the <code>delegate</code></dd>
+<dd><code>converter</code> - the function used to map elements from the <code>delegate</code></dd>
 </dl>
 </li>
 </ul>
