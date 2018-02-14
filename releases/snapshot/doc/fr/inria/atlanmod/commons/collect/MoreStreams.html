@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9,"i2":9};
+var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -146,6 +146,20 @@ extends java.lang.Object</pre>
 </td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code>static java.util.function.IntUnaryOperator</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/collect/MoreStreams.html#reverseOrder-int-int-">reverseOrder</a></span>(int&nbsp;startInclusive,
+            int&nbsp;endExclusive)</code>
+<div class="block">Returns an unary operator to iterates over an <code>IntStream</code> in the reverse direction.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>static java.util.function.LongUnaryOperator</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/collect/MoreStreams.html#reverseOrder-long-long-">reverseOrder</a></span>(long&nbsp;startInclusive,
+            long&nbsp;endExclusive)</code>
+<div class="block">Returns an unary operator to iterates over an <code>LongStream</code> in the reverse direction.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>static java.util.Optional&lt;java.lang.Integer&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/collect/MoreStreams.html#size-java.util.stream.Stream-">size</a></span>(java.util.stream.Stream&lt;?&gt;&nbsp;stream)</code>
 <div class="block">Returns the number of element in the <code>stream</code> as an integer;</div>
@@ -216,7 +230,7 @@ public static&nbsp;java.util.Optional&lt;java.lang.Integer&gt;&nbsp;lastIndexOf(
 <a name="size-java.util.stream.Stream-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>size</h4>
 <pre>@Nonnull
@@ -227,6 +241,48 @@ public static&nbsp;java.util.Optional&lt;java.lang.Integer&gt;&nbsp;size(java.ut
 <dd><code>stream</code> - the stream</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>an <code>Optional</code> containing the size, <code>Optional.empty()</code> if the stream is empty</dd>
+</dl>
+</li>
+</ul>
+<a name="reverseOrder-int-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>reverseOrder</h4>
+<pre>@Nonnull
+public static&nbsp;java.util.function.IntUnaryOperator&nbsp;reverseOrder(int&nbsp;startInclusive,
+                                                                        int&nbsp;endExclusive)</pre>
+<div class="block">Returns an unary operator to iterates over an <code>IntStream</code> in the reverse direction.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>startInclusive</code> - the (inclusive) initial value</dd>
+<dd><code>endExclusive</code> - the exclusive upper bound</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>an unary operator</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><code>IntStream.range(int, int)</code></dd>
+</dl>
+</li>
+</ul>
+<a name="reverseOrder-long-long-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>reverseOrder</h4>
+<pre>@Nonnull
+public static&nbsp;java.util.function.LongUnaryOperator&nbsp;reverseOrder(long&nbsp;startInclusive,
+                                                                         long&nbsp;endExclusive)</pre>
+<div class="block">Returns an unary operator to iterates over an <code>LongStream</code> in the reverse direction.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>startInclusive</code> - the (inclusive) initial value</dd>
+<dd><code>endExclusive</code> - the exclusive upper bound</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>an unary operator</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><code>LongStream.range(long, long)</code></dd>
 </dl>
 </li>
 </ul>
