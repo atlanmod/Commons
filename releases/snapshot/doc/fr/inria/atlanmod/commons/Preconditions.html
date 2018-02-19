@@ -316,14 +316,16 @@ extends java.lang.Object</pre>
 <tr id="i22" class="altColor">
 <td class="colFirst"><code>static &lt;C extends java.util.Collection&lt;? extends T&gt;,T&gt;<br>C</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Preconditions.html#checkNotContainsNull-C-">checkNotContainsNull</a></span>(C&nbsp;collection)</code>
-<div class="block">Ensures that a <code>collection</code> passed as a parameter to the calling method is not <code>null</code> and does not contains any <code>null</code> element.</div>
+<div class="block">Ensures that a <code>collection</code> passed as a parameter to the calling method is not <code>null</code> and does not
+ contains any <code>null</code> element.</div>
 </td>
 </tr>
 <tr id="i23" class="rowColor">
 <td class="colFirst"><code>static &lt;C extends java.util.Collection&lt;? extends T&gt;,T&gt;<br>C</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Preconditions.html#checkNotContainsNull-C-java.lang.String-">checkNotContainsNull</a></span>(C&nbsp;collection,
                     java.lang.String&nbsp;message)</code>
-<div class="block">Ensures that a <code>collection</code> passed as a parameter to the calling method is not <code>null</code> and does not contains any <code>null</code> element.</div>
+<div class="block">Ensures that a <code>collection</code> passed as a parameter to the calling method is not <code>null</code> and does not
+ contains any <code>null</code> element.</div>
 </td>
 </tr>
 <tr id="i24" class="altColor">
@@ -331,7 +333,8 @@ extends java.lang.Object</pre>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Preconditions.html#checkNotContainsNull-C-java.lang.String-java.lang.Object...-">checkNotContainsNull</a></span>(C&nbsp;collection,
                     java.lang.String&nbsp;pattern,
                     java.lang.Object...&nbsp;args)</code>
-<div class="block">Ensures that a <code>collection</code> passed as a parameter to the calling method is not <code>null</code> and does not contains any <code>null</code> element.</div>
+<div class="block">Ensures that a <code>collection</code> passed as a parameter to the calling method is not <code>null</code> and does not
+ contains any <code>null</code> element.</div>
 </td>
 </tr>
 <tr id="i25" class="rowColor">
@@ -604,7 +607,8 @@ public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;checkNotNull(@Nullable
 <h4>checkNotContainsNull</h4>
 <pre>@Nonnull
 public static&nbsp;&lt;C extends java.util.Collection&lt;? extends T&gt;,T&gt;&nbsp;C&nbsp;checkNotContainsNull(C&nbsp;collection)</pre>
-<div class="block">Ensures that a <code>collection</code> passed as a parameter to the calling method is not <code>null</code> and does not contains any <code>null</code> element.</div>
+<div class="block">Ensures that a <code>collection</code> passed as a parameter to the calling method is not <code>null</code> and does not
+ contains any <code>null</code> element.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>collection</code> - a collection</dd>
@@ -626,7 +630,8 @@ public static&nbsp;&lt;C extends java.util.Collection&lt;? extends T&gt;,T&gt;&n
 <pre>@Nonnull
 public static&nbsp;&lt;C extends java.util.Collection&lt;? extends T&gt;,T&gt;&nbsp;C&nbsp;checkNotContainsNull(C&nbsp;collection,
                                                                                               java.lang.String&nbsp;message)</pre>
-<div class="block">Ensures that a <code>collection</code> passed as a parameter to the calling method is not <code>null</code> and does not contains any <code>null</code> element.</div>
+<div class="block">Ensures that a <code>collection</code> passed as a parameter to the calling method is not <code>null</code> and does not
+ contains any <code>null</code> element.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>collection</code> - a collection</dd>
@@ -650,7 +655,8 @@ public static&nbsp;&lt;C extends java.util.Collection&lt;? extends T&gt;,T&gt;&n
 public static&nbsp;&lt;C extends java.util.Collection&lt;? extends T&gt;,T&gt;&nbsp;C&nbsp;checkNotContainsNull(C&nbsp;collection,
                                                                                               java.lang.String&nbsp;pattern,
                                                                                               java.lang.Object...&nbsp;args)</pre>
-<div class="block">Ensures that a <code>collection</code> passed as a parameter to the calling method is not <code>null</code> and does not contains any <code>null</code> element.</div>
+<div class="block">Ensures that a <code>collection</code> passed as a parameter to the calling method is not <code>null</code> and does not
+ contains any <code>null</code> element.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>collection</code> - a collection</dd>
@@ -886,8 +892,8 @@ public static&nbsp;&lt;C extends java.lang.Comparable&lt;C&gt;&gt;&nbsp;C&nbsp;c
 <dd><code>value</code> - a comparable</dd>
 <dd><code>lowerBoundExclusive</code> - the lower bound (exclusive)</dd>
 <dd><code>pattern</code> - a template for the exception message should the check fail</dd>
-<dd><code>args</code> - the arguments to be substituted into the message template. Arguments are converted to strings
-                            using <code>String.valueOf(Object)</code>.</dd>
+<dd><code>args</code> - the arguments to be substituted into the message template. Arguments are converted to
+                            strings using <code>String.valueOf(Object)</code>.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value that was validated</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -962,8 +968,8 @@ public static&nbsp;&lt;C extends java.lang.Comparable&lt;C&gt;&gt;&nbsp;C&nbsp;c
 <dd><code>value</code> - a comparable</dd>
 <dd><code>lowerBoundInclusive</code> - the lower bound (inclusive)</dd>
 <dd><code>pattern</code> - a template for the exception message should the check fail</dd>
-<dd><code>args</code> - the arguments to be substituted into the message template. Arguments are converted to strings
-                            using <code>String.valueOf(Object)</code>.</dd>
+<dd><code>args</code> - the arguments to be substituted into the message template. Arguments are converted to
+                            strings using <code>String.valueOf(Object)</code>.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value that was validated</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -1038,8 +1044,8 @@ public static&nbsp;&lt;C extends java.lang.Comparable&lt;C&gt;&gt;&nbsp;C&nbsp;c
 <dd><code>value</code> - a comparable</dd>
 <dd><code>upperBoundExclusive</code> - the upper bound (exclusive)</dd>
 <dd><code>pattern</code> - a template for the exception message should the check fail</dd>
-<dd><code>args</code> - the arguments to be substituted into the message template. Arguments are converted to strings
-                            using <code>String.valueOf(Object)</code>.</dd>
+<dd><code>args</code> - the arguments to be substituted into the message template. Arguments are converted to
+                            strings using <code>String.valueOf(Object)</code>.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value that was validated</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -1114,8 +1120,8 @@ public static&nbsp;&lt;C extends java.lang.Comparable&lt;C&gt;&gt;&nbsp;C&nbsp;c
 <dd><code>value</code> - a comparable</dd>
 <dd><code>upperBoundInclusive</code> - the upper bound (inclusive)</dd>
 <dd><code>pattern</code> - a template for the exception message should the check fail</dd>
-<dd><code>args</code> - the arguments to be substituted into the message template. Arguments are converted to strings
-                            using <code>String.valueOf(Object)</code>.</dd>
+<dd><code>args</code> - the arguments to be substituted into the message template. Arguments are converted to
+                            strings using <code>String.valueOf(Object)</code>.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value that was validated</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>

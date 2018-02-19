@@ -222,14 +222,14 @@ extends java.lang.Object</pre>
 <h4>newDirectPool</h4>
 <pre>@Nonnull
 public static&nbsp;java.util.concurrent.ExecutorService&nbsp;newDirectPool()</pre>
-<div class="block">Creates a new <code>ExecutorService</code> that runs each task in the thread that invokes <code>execute/submit</code>.
- This applies both to individually submitted tasks and to collections of tasks submitted via <code>invokeAll</code> or
- <code>invokeAny</code>.
- In the latter case, tasks will run serially on the calling thread.
- Tasks are run to completion before a <code>Future</code> is returned to the caller (unless the executor has been shutdown).
+<div class="block">Creates a new <code>ExecutorService</code> that runs each task in the thread that invokes <code>execute/submit</code>. This
+ applies both to individually submitted tasks and to collections of tasks submitted via <code>invokeAll</code> or
+ <code>invokeAny</code>. In the latter case, tasks will run serially on the calling thread. Tasks are run to completion
+ before a <code>Future</code> is returned to the caller (unless the executor has been shutdown).
  <p>
  Although all tasks are immediately executed in the thread that submitted the task, this <code>ExecutorService</code>
- imposes a small locking overhead on each task submission in order to implement shutdown and termination behavior.</div>
+ imposes a small locking overhead on each task submission in order to implement shutdown and termination
+ behavior.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>a new service</dd>
