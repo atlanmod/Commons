@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":18,"i1":6,"i2":6,"i3":6,"i4":18,"i5":6,"i6":6,"i7":6};
+var methods = {"i0":18,"i1":6,"i2":18,"i3":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -49,8 +49,8 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/AbstractStringSerializer.html" title="class in fr.inria.atlanmod.commons.io.serializer"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/SerializerFactory.html" title="class in fr.inria.atlanmod.commons.io.serializer"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/BinarySerializerFactory.html" title="class in fr.inria.atlanmod.commons.io.serializer"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/StringSerializer.html" title="interface in fr.inria.atlanmod.commons.io.serializer"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../../index.html?fr/inria/atlanmod/commons/io/serializer/Serializer.html" target="_top">Frames</a></li>
@@ -93,7 +93,7 @@ var activeTableTab = "activeTableTab";
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
 <div class="subTitle">fr.inria.atlanmod.commons.io.serializer</div>
-<h2 title="Interface Serializer" class="title">Interface Serializer&lt;T&gt;</h2>
+<h2 title="Interface Serializer" class="title">Interface Serializer&lt;T,U&gt;</h2>
 </div>
 <div class="contentContainer">
 <div class="description">
@@ -102,21 +102,26 @@ var activeTableTab = "activeTableTab";
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
 <dd><code>T</code> - the type of (de)serialized objects</dd>
+<dd><code>U</code> - the type of the basic representation of the objects</dd>
 </dl>
 <dl>
 <dt>All Superinterfaces:</dt>
-<dd><a href="../../../../../../fr/inria/atlanmod/commons/function/Converter.html" title="interface in fr.inria.atlanmod.commons.function">Converter</a>&lt;T,byte[]&gt;, java.util.function.Function&lt;T,byte[]&gt;, java.io.Serializable</dd>
+<dd><a href="../../../../../../fr/inria/atlanmod/commons/function/Converter.html" title="interface in fr.inria.atlanmod.commons.function">Converter</a>&lt;T,U&gt;, java.util.function.Function&lt;T,U&gt;</dd>
+</dl>
+<dl>
+<dt>All Known Subinterfaces:</dt>
+<dd><a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/BinarySerializer.html" title="interface in fr.inria.atlanmod.commons.io.serializer">BinarySerializer</a>&lt;T&gt;, <a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/StringSerializer.html" title="interface in fr.inria.atlanmod.commons.io.serializer">StringSerializer</a>&lt;T&gt;</dd>
 </dl>
 <dl>
 <dt>All Known Implementing Classes:</dt>
-<dd><a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/AbstractSerializer.html" title="class in fr.inria.atlanmod.commons.io.serializer">AbstractSerializer</a></dd>
+<dd><a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/AbstractBinarySerializer.html" title="class in fr.inria.atlanmod.commons.io.serializer">AbstractBinarySerializer</a>, <a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/AbstractStringSerializer.html" title="class in fr.inria.atlanmod.commons.io.serializer">AbstractStringSerializer</a></dd>
 </dl>
 <hr>
 <br>
 <pre>@ParametersAreNonnullByDefault
-public interface <span class="typeNameLabel">Serializer&lt;T&gt;</span>
-extends <a href="../../../../../../fr/inria/atlanmod/commons/function/Converter.html" title="interface in fr.inria.atlanmod.commons.function">Converter</a>&lt;T,byte[]&gt;, java.io.Serializable</pre>
-<div class="block">An object that is responsible of <code>Object</code> to <code>byte[]</code> encoding and decoding.</div>
+public interface <span class="typeNameLabel">Serializer&lt;T,U&gt;</span>
+extends <a href="../../../../../../fr/inria/atlanmod/commons/function/Converter.html" title="interface in fr.inria.atlanmod.commons.function">Converter</a>&lt;T,U&gt;</pre>
+<div class="block">An object that is responsible for encoding and decoding the basic representation of <code>Object</code>s.</div>
 </li>
 </ul>
 </div>
@@ -136,53 +141,27 @@ extends <a href="../../../../../../fr/inria/atlanmod/commons/function/Converter.
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>default byte[]</code></td>
+<td class="colFirst"><code>default <a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html" title="type parameter in Serializer">U</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html#convert-T-">convert</a></span>(<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html" title="type parameter in Serializer">T</a>&nbsp;t)</code>
 <div class="block">Returns a representation of <code>t</code> as an instance of type <code>R</code>.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html" title="type parameter in Serializer">T</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html#deserialize-byte:A-">deserialize</a></span>(byte[]&nbsp;data)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html#deserialize-U-">deserialize</a></span>(<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html" title="type parameter in Serializer">U</a>&nbsp;data)</code>
 <div class="block">Reads and assembles an object of type <code>T</code> from the given <code>data</code>.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html" title="type parameter in Serializer">T</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html#deserialize-java.io.DataInput-">deserialize</a></span>(java.io.DataInput&nbsp;in)</code>
-<div class="block">Reads and assembles an object of type <code>T</code> from the given <code>in</code>.</div>
-</td>
-</tr>
-<tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html" title="type parameter in Serializer">T</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html#deserialize-java.io.InputStream-">deserialize</a></span>(java.io.InputStream&nbsp;is)</code>
-<div class="block">Reads and assembles an object of type <code>T</code> from the given <code>is</code>.</div>
-</td>
-</tr>
-<tr id="i4" class="altColor">
 <td class="colFirst"><code>default <a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html" title="type parameter in Serializer">T</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html#revert-byte:A-">revert</a></span>(byte[]&nbsp;bytes)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html#revert-U-">revert</a></span>(<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html" title="type parameter in Serializer">U</a>&nbsp;data)</code>
 <div class="block">Returns a representation of <code>r</code> as an instance of type <code>T</code>.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
-<td class="colFirst"><code>byte[]</code></td>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html" title="type parameter in Serializer">U</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html#serialize-T-">serialize</a></span>(<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html" title="type parameter in Serializer">T</a>&nbsp;t)</code>
-<div class="block">Write an object of type <code>T</code> to a <code>byte</code> array.</div>
-</td>
-</tr>
-<tr id="i6" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html#serialize-T-java.io.DataOutput-">serialize</a></span>(<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html" title="type parameter in Serializer">T</a>&nbsp;t,
-         java.io.DataOutput&nbsp;out)</code>
-<div class="block">Write an object of type <code>T</code> to the given <code>out</code>.</div>
-</td>
-</tr>
-<tr id="i7" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html#serialize-T-java.io.OutputStream-">serialize</a></span>(<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html" title="type parameter in Serializer">T</a>&nbsp;t,
-         java.io.OutputStream&nbsp;os)</code>
-<div class="block">Write an object of type <code>T</code> to the given <code>os</code>.</div>
+<div class="block">Write an object of type <code>T</code> into its basic representation.</div>
 </td>
 </tr>
 </table>
@@ -223,11 +202,11 @@ extends <a href="../../../../../../fr/inria/atlanmod/commons/function/Converter.
 <li class="blockList">
 <h4>convert</h4>
 <pre>@Nonnull
-default&nbsp;byte[]&nbsp;convert(<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html" title="type parameter in Serializer">T</a>&nbsp;t)</pre>
+default&nbsp;<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html" title="type parameter in Serializer">U</a>&nbsp;convert(<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html" title="type parameter in Serializer">T</a>&nbsp;t)</pre>
 <div class="block">Returns a representation of <code>t</code> as an instance of type <code>R</code>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../fr/inria/atlanmod/commons/function/Converter.html#convert-T-">convert</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/commons/function/Converter.html" title="interface in fr.inria.atlanmod.commons.function">Converter</a>&lt;<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html" title="type parameter in Serializer">T</a>,byte[]&gt;</code></dd>
+<dd><code><a href="../../../../../../fr/inria/atlanmod/commons/function/Converter.html#convert-T-">convert</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/commons/function/Converter.html" title="interface in fr.inria.atlanmod.commons.function">Converter</a>&lt;<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html" title="type parameter in Serializer">T</a>,<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html" title="type parameter in Serializer">U</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>t</code> - the instance to convert</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -237,24 +216,26 @@ default&nbsp;byte[]&nbsp;convert(<a href="../../../../../../fr/inria/atlanmod/co
 </dl>
 </li>
 </ul>
-<a name="revert-byte:A-">
+<a name="revert-java.lang.Object-">
+<!--   -->
+</a><a name="revert-U-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>revert</h4>
 <pre>@Nonnull
-default&nbsp;<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html" title="type parameter in Serializer">T</a>&nbsp;revert(byte[]&nbsp;bytes)</pre>
+default&nbsp;<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html" title="type parameter in Serializer">T</a>&nbsp;revert(<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html" title="type parameter in Serializer">U</a>&nbsp;data)</pre>
 <div class="block">Returns a representation of <code>r</code> as an instance of type <code>T</code>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../fr/inria/atlanmod/commons/function/Converter.html#revert-R-">revert</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/commons/function/Converter.html" title="interface in fr.inria.atlanmod.commons.function">Converter</a>&lt;<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html" title="type parameter in Serializer">T</a>,byte[]&gt;</code></dd>
+<dd><code><a href="../../../../../../fr/inria/atlanmod/commons/function/Converter.html#revert-R-">revert</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/commons/function/Converter.html" title="interface in fr.inria.atlanmod.commons.function">Converter</a>&lt;<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html" title="type parameter in Serializer">T</a>,<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html" title="type parameter in Serializer">U</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>bytes</code> - the instance to convert</dd>
+<dd><code>data</code> - the instance to convert</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the converted instance</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html#deserialize-byte:A-"><code>deserialize(byte[])</code></a></dd>
+<dd><a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html#deserialize-U-"><code>deserialize(Object)</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -267,124 +248,34 @@ default&nbsp;<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/
 <li class="blockList">
 <h4>serialize</h4>
 <pre>@Nonnull
-byte[]&nbsp;serialize(<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html" title="type parameter in Serializer">T</a>&nbsp;t)
-                   throws java.io.IOException</pre>
-<div class="block">Write an object of type <code>T</code> to a <code>byte</code> array.</div>
+<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html" title="type parameter in Serializer">U</a>&nbsp;serialize(<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html" title="type parameter in Serializer">T</a>&nbsp;t)
+              throws java.io.IOException</pre>
+<div class="block">Write an object of type <code>T</code> into its basic representation.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>t</code> - the object to serialize</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the serialized object as a byte array</dd>
+<dd>the serialized object</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.io.IOException</code> - if an I/O error occurs during the serialization</dd>
 </dl>
 </li>
 </ul>
-<a name="serialize-java.lang.Object-java.io.OutputStream-">
+<a name="deserialize-java.lang.Object-">
 <!--   -->
-</a><a name="serialize-T-java.io.OutputStream-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>serialize</h4>
-<pre>void&nbsp;serialize(<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html" title="type parameter in Serializer">T</a>&nbsp;t,
-               @WillNotClose
-               java.io.OutputStream&nbsp;os)
-        throws java.io.IOException</pre>
-<div class="block">Write an object of type <code>T</code> to the given <code>os</code>.
- <p>
- If the <code>os</code> also implements <code>DataOutput</code>, prefer using <a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html#serialize-T-java.io.DataOutput-"><code>serialize(Object, DataOutput)</code></a>. This
- method will create a adapter on <code>os</code> before calling it.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>t</code> - the object to serialize</dd>
-<dd><code>os</code> - the output stream</dd>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.io.IOException</code> - if an I/O error occurs during the serialization</dd>
-</dl>
-</li>
-</ul>
-<a name="serialize-java.lang.Object-java.io.DataOutput-">
-<!--   -->
-</a><a name="serialize-T-java.io.DataOutput-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>serialize</h4>
-<pre>void&nbsp;serialize(<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html" title="type parameter in Serializer">T</a>&nbsp;t,
-               @WillNotClose
-               java.io.DataOutput&nbsp;out)
-        throws java.io.IOException</pre>
-<div class="block">Write an object of type <code>T</code> to the given <code>out</code>.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>t</code> - the object to serialize</dd>
-<dd><code>out</code> - the output stream</dd>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.io.IOException</code> - if an I/O error occurs during the serialization</dd>
-</dl>
-</li>
-</ul>
-<a name="deserialize-byte:A-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>deserialize</h4>
-<pre>@Nonnull
-<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html" title="type parameter in Serializer">T</a>&nbsp;deserialize(byte[]&nbsp;data)
-                throws java.io.IOException</pre>
-<div class="block">Reads and assembles an object of type <code>T</code> from the given <code>data</code>.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>data</code> - a byte array</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the deserialized object</dd>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.io.IOException</code> - if an I/O error occurs during the deserialization</dd>
-</dl>
-</li>
-</ul>
-<a name="deserialize-java.io.InputStream-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>deserialize</h4>
-<pre>@Nonnull
-<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html" title="type parameter in Serializer">T</a>&nbsp;deserialize(@WillNotClose
-                       java.io.InputStream&nbsp;is)
-                throws java.io.IOException</pre>
-<div class="block">Reads and assembles an object of type <code>T</code> from the given <code>is</code>.
- <p>
- If the <code>is</code> also implements <code>DataInput</code>, prefer using <a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html#deserialize-java.io.DataInput-"><code>deserialize(DataInput)</code></a>. This method
- will create a adapter on <code>is</code> before calling it.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>is</code> - the input stream</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the deserialized object</dd>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.io.IOException</code> - if an I/O error occurs during the deserialization</dd>
-</dl>
-</li>
-</ul>
-<a name="deserialize-java.io.DataInput-">
+</a><a name="deserialize-U-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>deserialize</h4>
 <pre>@Nonnull
-<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html" title="type parameter in Serializer">T</a>&nbsp;deserialize(@WillNotClose
-                       java.io.DataInput&nbsp;in)
+<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html" title="type parameter in Serializer">T</a>&nbsp;deserialize(<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html" title="type parameter in Serializer">U</a>&nbsp;data)
                 throws java.io.IOException</pre>
-<div class="block">Reads and assembles an object of type <code>T</code> from the given <code>in</code>.</div>
+<div class="block">Reads and assembles an object of type <code>T</code> from the given <code>data</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>in</code> - the input stream</dd>
+<dd><code>data</code> - the basic representation of the object</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the deserialized object</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -420,8 +311,8 @@ byte[]&nbsp;serialize(<a href="../../../../../../fr/inria/atlanmod/commons/io/se
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/AbstractStringSerializer.html" title="class in fr.inria.atlanmod.commons.io.serializer"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/SerializerFactory.html" title="class in fr.inria.atlanmod.commons.io.serializer"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/BinarySerializerFactory.html" title="class in fr.inria.atlanmod.commons.io.serializer"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/StringSerializer.html" title="interface in fr.inria.atlanmod.commons.io.serializer"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../../index.html?fr/inria/atlanmod/commons/io/serializer/Serializer.html" target="_top">Frames</a></li>

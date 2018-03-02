@@ -49,8 +49,8 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/AbstractSerializer.html" title="class in fr.inria.atlanmod.commons.io.serializer"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html" title="interface in fr.inria.atlanmod.commons.io.serializer"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/AbstractBinarySerializer.html" title="class in fr.inria.atlanmod.commons.io.serializer"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/BinarySerializer.html" title="interface in fr.inria.atlanmod.commons.io.serializer"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../../index.html?fr/inria/atlanmod/commons/io/serializer/AbstractStringSerializer.html" target="_top">Frames</a></li>
@@ -113,7 +113,7 @@ var activeTableTab = "activeTableTab";
 </dl>
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../../../../fr/inria/atlanmod/commons/function/Converter.html" title="interface in fr.inria.atlanmod.commons.function">Converter</a>&lt;T,java.lang.String&gt;, <a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/StringSerializer.html" title="interface in fr.inria.atlanmod.commons.io.serializer">StringSerializer</a>&lt;T&gt;, java.util.function.Function&lt;T,java.lang.String&gt;</dd>
+<dd><a href="../../../../../../fr/inria/atlanmod/commons/function/Converter.html" title="interface in fr.inria.atlanmod.commons.function">Converter</a>&lt;T,java.lang.String&gt;, <a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html" title="interface in fr.inria.atlanmod.commons.io.serializer">Serializer</a>&lt;T,java.lang.String&gt;, <a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/StringSerializer.html" title="interface in fr.inria.atlanmod.commons.io.serializer">StringSerializer</a>&lt;T&gt;, java.util.function.Function&lt;T,java.lang.String&gt;</dd>
 </dl>
 <hr>
 <br>
@@ -142,8 +142,8 @@ implements <a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/St
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected </code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/AbstractStringSerializer.html#AbstractStringSerializer-fr.inria.atlanmod.commons.io.serializer.Serializer-">AbstractStringSerializer</a></span>(<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html" title="interface in fr.inria.atlanmod.commons.io.serializer">Serializer</a>&lt;<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/AbstractStringSerializer.html" title="type parameter in AbstractStringSerializer">T</a>&gt;&nbsp;serializer)</code>
-<div class="block">Constructs a new <code>Serializer</code>.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/AbstractStringSerializer.html#AbstractStringSerializer-fr.inria.atlanmod.commons.io.serializer.BinarySerializer-">AbstractStringSerializer</a></span>(<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/BinarySerializer.html" title="interface in fr.inria.atlanmod.commons.io.serializer">BinarySerializer</a>&lt;<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/AbstractStringSerializer.html" title="type parameter in AbstractStringSerializer">T</a>&gt;&nbsp;serializer)</code>
+<div class="block">Constructs a new <code>BinarySerializer</code>.</div>
 </td>
 </tr>
 </table>
@@ -170,7 +170,7 @@ implements <a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/St
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/AbstractStringSerializer.html" title="type parameter in AbstractStringSerializer">T</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/AbstractStringSerializer.html#deserialize-java.lang.String-">deserialize</a></span>(java.lang.String&nbsp;data)</code>
-<div class="block">Reads and assembles an object of type <code>T</code> from the given <code>string</code>.</div>
+<div class="block">Reads and assembles an object of type <code>T</code> from the given <code>data</code>.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
@@ -182,7 +182,7 @@ implements <a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/St
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/AbstractStringSerializer.html#serialize-T-">serialize</a></span>(<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/AbstractStringSerializer.html" title="type parameter in AbstractStringSerializer">T</a>&nbsp;t)</code>
-<div class="block">Write an object of type <code>T</code> as a <code>String</code>.</div>
+<div class="block">Write an object of type <code>T</code> into its basic representation.</div>
 </td>
 </tr>
 </table>
@@ -194,11 +194,11 @@ implements <a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/St
 <code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
 </ul>
 <ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.fr.inria.atlanmod.commons.io.serializer.StringSerializer">
+<li class="blockList"><a name="methods.inherited.from.class.fr.inria.atlanmod.commons.io.serializer.Serializer">
 <!--   -->
 </a>
-<h3>Methods inherited from interface&nbsp;fr.inria.atlanmod.commons.io.serializer.<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/StringSerializer.html" title="interface in fr.inria.atlanmod.commons.io.serializer">StringSerializer</a></h3>
-<code><a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/StringSerializer.html#convert-T-">convert</a>, <a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/StringSerializer.html#revert-java.lang.String-">revert</a></code></li>
+<h3>Methods inherited from interface&nbsp;fr.inria.atlanmod.commons.io.serializer.<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html" title="interface in fr.inria.atlanmod.commons.io.serializer">Serializer</a></h3>
+<code><a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html#convert-T-">convert</a>, <a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html#revert-U-">revert</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.fr.inria.atlanmod.commons.function.Converter">
@@ -228,15 +228,15 @@ implements <a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/St
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="AbstractStringSerializer-fr.inria.atlanmod.commons.io.serializer.Serializer-">
+<a name="AbstractStringSerializer-fr.inria.atlanmod.commons.io.serializer.BinarySerializer-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>AbstractStringSerializer</h4>
 <pre>protected&nbsp;AbstractStringSerializer(@Nonnull
-                                   <a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html" title="interface in fr.inria.atlanmod.commons.io.serializer">Serializer</a>&lt;<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/AbstractStringSerializer.html" title="type parameter in AbstractStringSerializer">T</a>&gt;&nbsp;serializer)</pre>
-<div class="block">Constructs a new <code>Serializer</code>.</div>
+                                   <a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/BinarySerializer.html" title="interface in fr.inria.atlanmod.commons.io.serializer">BinarySerializer</a>&lt;<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/AbstractStringSerializer.html" title="type parameter in AbstractStringSerializer">T</a>&gt;&nbsp;serializer)</pre>
+<div class="block">Constructs a new <code>BinarySerializer</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>serializer</code> - the serializer to use before applying a <code>String</code> encoding or decoding</dd>
@@ -261,15 +261,15 @@ implements <a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/St
 <h4>serialize</h4>
 <pre>@Nonnull
 public&nbsp;java.lang.String&nbsp;serialize(<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/AbstractStringSerializer.html" title="type parameter in AbstractStringSerializer">T</a>&nbsp;t)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/StringSerializer.html#serialize-T-">StringSerializer</a></code></span></div>
-<div class="block">Write an object of type <code>T</code> as a <code>String</code>.</div>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html#serialize-T-">Serializer</a></code></span></div>
+<div class="block">Write an object of type <code>T</code> into its basic representation.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/StringSerializer.html#serialize-T-">serialize</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/StringSerializer.html" title="interface in fr.inria.atlanmod.commons.io.serializer">StringSerializer</a>&lt;<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/AbstractStringSerializer.html" title="type parameter in AbstractStringSerializer">T</a>&gt;</code></dd>
+<dd><code><a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html#serialize-T-">serialize</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html" title="interface in fr.inria.atlanmod.commons.io.serializer">Serializer</a>&lt;<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/AbstractStringSerializer.html" title="type parameter in AbstractStringSerializer">T</a>,java.lang.String&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>t</code> - the object to serialize</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the serialized object as a string</dd>
+<dd>the serialized object</dd>
 </dl>
 </li>
 </ul>
@@ -281,13 +281,13 @@ public&nbsp;java.lang.String&nbsp;serialize(<a href="../../../../../../fr/inria/
 <h4>deserialize</h4>
 <pre>@Nonnull
 public&nbsp;<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/AbstractStringSerializer.html" title="type parameter in AbstractStringSerializer">T</a>&nbsp;deserialize(java.lang.String&nbsp;data)</pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/StringSerializer.html#deserialize-java.lang.String-">StringSerializer</a></code></span></div>
-<div class="block">Reads and assembles an object of type <code>T</code> from the given <code>string</code>.</div>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html#deserialize-U-">Serializer</a></code></span></div>
+<div class="block">Reads and assembles an object of type <code>T</code> from the given <code>data</code>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/StringSerializer.html#deserialize-java.lang.String-">deserialize</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/StringSerializer.html" title="interface in fr.inria.atlanmod.commons.io.serializer">StringSerializer</a>&lt;<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/AbstractStringSerializer.html" title="type parameter in AbstractStringSerializer">T</a>&gt;</code></dd>
+<dd><code><a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html#deserialize-U-">deserialize</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html" title="interface in fr.inria.atlanmod.commons.io.serializer">Serializer</a>&lt;<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/AbstractStringSerializer.html" title="type parameter in AbstractStringSerializer">T</a>,java.lang.String&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>data</code> - a string</dd>
+<dd><code>data</code> - the basic representation of the object</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the deserialized object</dd>
 </dl>
@@ -355,8 +355,8 @@ protected abstract&nbsp;byte[]&nbsp;decode(java.lang.String&nbsp;data)</pre>
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/AbstractSerializer.html" title="class in fr.inria.atlanmod.commons.io.serializer"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html" title="interface in fr.inria.atlanmod.commons.io.serializer"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/AbstractBinarySerializer.html" title="class in fr.inria.atlanmod.commons.io.serializer"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/BinarySerializer.html" title="interface in fr.inria.atlanmod.commons.io.serializer"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../../index.html?fr/inria/atlanmod/commons/io/serializer/AbstractStringSerializer.html" target="_top">Frames</a></li>
