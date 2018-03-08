@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":9,"i9":9,"i10":10,"i11":10,"i12":10,"i13":9,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":9,"i11":9,"i12":10,"i13":10,"i14":10,"i15":9,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -109,8 +109,10 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
-<dd><code>K</code> - the base key type for all caches created by this builder</dd>
-<dd><code>V</code> - the base value type for all caches created by this builder</dd>
+<dd><code>K</code> - the most general key type this builder will be able to create caches for. This is
+     normally <code>Object</code> unless it is constrained by using a method like <code>#removalListener</code></dd>
+<dd><code>V</code> - the most general value type this builder will be able to create caches for. This is
+     normally <code>Object</code> unless it is constrained by using a method like <code>#removalListener</code></dd>
 </dl>
 <hr>
 <br>
@@ -159,16 +161,16 @@ extends java.lang.Object</pre>
  <p>
  Entries are automatically evicted from the cache when any of
  <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#maximumSize-long-">maximumSize</a>, <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#maximumWeight-long-">maximumWeight</a>,
- <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#expireAfter-com.github.benmanes.caffeine.cache.Expiry-">expireAfter</a>, <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#expireAfterWrite-long-java.util.concurrent.TimeUnit-">expireAfterWrite</a>,
- <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#expireAfterAccess-long-java.util.concurrent.TimeUnit-">expireAfterAccess</a>, <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#weakKeys--">weakKeys</a>,
+ <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#expireAfter-com.github.benmanes.caffeine.cache.Expiry-">expireAfter</a>, <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#expireAfterWrite-java.time.Duration-">expireAfterWrite</a>,
+ <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#expireAfterAccess-java.time.Duration-">expireAfterAccess</a>, <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#weakKeys--">weakKeys</a>,
  <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#weakValues--">weakValues</a>, or <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#softValues--">softValues</a> are requested.
  <p>
  If <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#maximumSize-long-">maximumSize</a> or <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#maximumWeight-long-">maximumWeight</a>
  is requested entries may be evicted on each cache modification.
  <p>
  If <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#expireAfter-com.github.benmanes.caffeine.cache.Expiry-">expireAfter</a>,
- <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#expireAfterWrite-long-java.util.concurrent.TimeUnit-">expireAfterWrite</a>, or
- <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#expireAfterAccess-long-java.util.concurrent.TimeUnit-">expireAfterAccess</a> is requested entries may be evicted on each
+ <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#expireAfterWrite-java.time.Duration-">expireAfterWrite</a>, or
+ <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#expireAfterAccess-java.time.Duration-">expireAfterAccess</a> is requested entries may be evicted on each
  cache modification, on occasional cache accesses, or on calls to <a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html#cleanUp--"><code>Cache.cleanUp()</code></a>. Expired
  entries may be counted by <a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html#estimatedSize--"><code>Cache.estimatedSize()</code></a>, but will never be visible to read or
  write operations.
@@ -185,8 +187,8 @@ extends java.lang.Object</pre>
  writes. The <a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html#cleanUp--"><code>Cache.cleanUp()</code></a> method of the returned cache will also perform maintenance, but
  calling it should not be necessary with a high throughput cache. Only caches built with
  <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#maximumSize">maximumSize</a>, <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#maximumWeight">maximumWeight</a>,
- <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#expireAfter-com.github.benmanes.caffeine.cache.Expiry-">expireAfter</a>, <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#expireAfterWrite-long-java.util.concurrent.TimeUnit-">expireAfterWrite</a>,
- <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#expireAfterAccess-long-java.util.concurrent.TimeUnit-">expireAfterAccess</a>, <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#weakKeys--">weakKeys</a>,
+ <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#expireAfter-com.github.benmanes.caffeine.cache.Expiry-">expireAfter</a>, <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#expireAfterWrite-java.time.Duration-">expireAfterWrite</a>,
+ <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#expireAfterAccess-java.time.Duration-">expireAfterAccess</a>, <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#weakKeys--">weakKeys</a>,
  <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#weakValues--">weakValues</a>, or <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#softValues--">softValues</a> perform periodic
  maintenance.
  <p>
@@ -256,8 +258,7 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#expireAfterAccess-long-java.util.concurrent.TimeUnit-">expireAfterAccess</a></span>(long&nbsp;duration,
-                 java.util.concurrent.TimeUnit&nbsp;unit)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#expireAfterAccess-java.time.Duration-">expireAfterAccess</a></span>(java.time.Duration&nbsp;duration)</code>
 <div class="block">Specifies that each entry should be automatically removed from the cache once a fixed duration
  has elapsed after the entry's creation, the most recent replacement of its value, or its last
  read.</div>
@@ -265,62 +266,85 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#expireAfterAccess-long-java.util.concurrent.TimeUnit-">expireAfterAccess</a></span>(long&nbsp;duration,
+                 java.util.concurrent.TimeUnit&nbsp;unit)</code>
+<div class="block">Specifies that each entry should be automatically removed from the cache once a fixed duration
+ has elapsed after the entry's creation, the most recent replacement of its value, or its last
+ read.</div>
+</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#expireAfterWrite-java.time.Duration-">expireAfterWrite</a></span>(java.time.Duration&nbsp;duration)</code>
+<div class="block">Specifies that each entry should be automatically removed from the cache once a fixed duration
+ has elapsed after the entry's creation, or the most recent replacement of its value.</div>
+</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#expireAfterWrite-long-java.util.concurrent.TimeUnit-">expireAfterWrite</a></span>(long&nbsp;duration,
                 java.util.concurrent.TimeUnit&nbsp;unit)</code>
 <div class="block">Specifies that each entry should be automatically removed from the cache once a fixed duration
  has elapsed after the entry's creation, or the most recent replacement of its value.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;java.lang.Object,java.lang.Object&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#from-com.github.benmanes.caffeine.cache.CaffeineSpec-">from</a></span>(<a href="../../../../../com/github/benmanes/caffeine/cache/CaffeineSpec.html" title="class in com.github.benmanes.caffeine.cache">CaffeineSpec</a>&nbsp;spec)</code>
 <div class="block">Constructs a new <code>Caffeine</code> instance with the settings specified in <code>spec</code>.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;java.lang.Object,java.lang.Object&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#from-java.lang.String-">from</a></span>(java.lang.String&nbsp;spec)</code>
 <div class="block">Constructs a new <code>Caffeine</code> instance with the settings specified in <code>spec</code>.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#initialCapacity-int-">initialCapacity</a></span>(int&nbsp;initialCapacity)</code>
 <div class="block">Sets the minimum total size for the internal data structures.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#maximumSize-long-">maximumSize</a></span>(long&nbsp;maximumSize)</code>
 <div class="block">Specifies the maximum number of entries the cache may contain.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#maximumWeight-long-">maximumWeight</a></span>(long&nbsp;maximumWeight)</code>
 <div class="block">Specifies the maximum weight of entries the cache may contain.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;java.lang.Object,java.lang.Object&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#newBuilder--">newBuilder</a></span>()</code>
 <div class="block">Constructs a new <code>Caffeine</code> instance with default settings, including strong keys, strong
  values, and no automatic eviction of any kind.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#recordStats--">recordStats</a></span>()</code>
 <div class="block">Enables the accumulation of <a href="../../../../../com/github/benmanes/caffeine/cache/stats/CacheStats.html" title="class in com.github.benmanes.caffeine.cache.stats"><code>CacheStats</code></a> during the operation of the cache.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#recordStats-java.util.function.Supplier-">recordStats</a></span>(java.util.function.Supplier&lt;? extends <a href="../../../../../com/github/benmanes/caffeine/cache/stats/StatsCounter.html" title="interface in com.github.benmanes.caffeine.cache.stats">StatsCounter</a>&gt;&nbsp;statsCounterSupplier)</code>
 <div class="block">Enables the accumulation of <a href="../../../../../com/github/benmanes/caffeine/cache/stats/CacheStats.html" title="class in com.github.benmanes.caffeine.cache.stats"><code>CacheStats</code></a> during the operation of the cache.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i18" class="altColor">
+<td class="colFirst"><code><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#refreshAfterWrite-java.time.Duration-">refreshAfterWrite</a></span>(java.time.Duration&nbsp;duration)</code>
+<div class="block">Specifies that active entries are eligible for automatic refresh once a fixed duration has
+ elapsed after the entry's creation, or the most recent replacement of its value.</div>
+</td>
+</tr>
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#refreshAfterWrite-long-java.util.concurrent.TimeUnit-">refreshAfterWrite</a></span>(long&nbsp;duration,
                  java.util.concurrent.TimeUnit&nbsp;unit)</code>
@@ -328,54 +352,54 @@ extends java.lang.Object</pre>
  elapsed after the entry's creation, or the most recent replacement of its value.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>&lt;K1 extends <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,V1 extends <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;<br><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;K1,V1&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#removalListener-com.github.benmanes.caffeine.cache.RemovalListener-">removalListener</a></span>(<a href="../../../../../com/github/benmanes/caffeine/cache/RemovalListener.html" title="interface in com.github.benmanes.caffeine.cache">RemovalListener</a>&lt;? super K1,? super V1&gt;&nbsp;removalListener)</code>
 <div class="block">Specifies a listener instance that caches should notify each time an entry is removed for any
  <a href="../../../../../com/github/benmanes/caffeine/cache/RemovalCause.html" title="enum in com.github.benmanes.caffeine.cache">reason</a>.</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#softValues--">softValues</a></span>()</code>
 <div class="block">Specifies that each value (not key) stored in the cache should be wrapped in a
  <code>SoftReference</code> (by default, strong references are used).</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#ticker-com.github.benmanes.caffeine.cache.Ticker-">ticker</a></span>(<a href="../../../../../com/github/benmanes/caffeine/cache/Ticker.html" title="interface in com.github.benmanes.caffeine.cache">Ticker</a>&nbsp;ticker)</code>
 <div class="block">Specifies a nanosecond-precision time source for use in determining when entries should be
  expired or refreshed.</div>
 </td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#toString--">toString</a></span>()</code>
 <div class="block">Returns a string representation for this Caffeine instance.</div>
 </td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#weakKeys--">weakKeys</a></span>()</code>
 <div class="block">Specifies that each key (not value) stored in the cache should be wrapped in a
  <code>WeakReference</code> (by default, strong references are used).</div>
 </td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#weakValues--">weakValues</a></span>()</code>
 <div class="block">Specifies that each value (not key) stored in the cache should be wrapped in a
  <code>WeakReference</code> (by default, strong references are used).</div>
 </td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>&lt;K1 extends <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,V1 extends <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;<br><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;K1,V1&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#weigher-com.github.benmanes.caffeine.cache.Weigher-">weigher</a></span>(<a href="../../../../../com/github/benmanes/caffeine/cache/Weigher.html" title="interface in com.github.benmanes.caffeine.cache">Weigher</a>&lt;? super K1,? super V1&gt;&nbsp;weigher)</code>
 <div class="block">Specifies the weigher to use in determining the weight of entries.</div>
 </td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>&lt;K1 extends <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,V1 extends <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;<br><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;K1,V1&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#writer-com.github.benmanes.caffeine.cache.CacheWriter-">writer</a></span>(<a href="../../../../../com/github/benmanes/caffeine/cache/CacheWriter.html" title="interface in com.github.benmanes.caffeine.cache">CacheWriter</a>&lt;? super K1,? super V1&gt;&nbsp;writer)</code>
 <div class="block">Specifies a writer instance that caches should notify each time an entry is explicitly created
@@ -413,7 +437,10 @@ extends java.lang.Object</pre>
 <pre>@Nonnull
 public static&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;java.lang.Object,java.lang.Object&gt;&nbsp;newBuilder()</pre>
 <div class="block">Constructs a new <code>Caffeine</code> instance with default settings, including strong keys, strong
- values, and no automatic eviction of any kind.</div>
+ values, and no automatic eviction of any kind.
+ <p>
+ Note that while this return type is <code>Caffeine&lt;Object, Object&gt;</code>, type parameters on the
+ <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#build--"><code>build()</code></a> methods allow you to create a cache of any key and value type desired.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>a new instance with default settings</dd>
@@ -488,7 +515,7 @@ public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.
                                        java.util.concurrent.Executor&nbsp;executor)</pre>
 <div class="block">Specifies the executor to use when running asynchronous tasks. The executor is delegated to
  when sending removal notifications, when asynchronous computations are performed by
- <a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="interface in com.github.benmanes.caffeine.cache"><code>AsyncLoadingCache</code></a> or <a href="../../../../../com/github/benmanes/caffeine/cache/LoadingCache.html#refresh-K-"><code>LoadingCache.refresh(K)</code></a> or <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#refreshAfterWrite-long-java.util.concurrent.TimeUnit-"><code>refreshAfterWrite(long, java.util.concurrent.TimeUnit)</code></a>, or
+ <a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="interface in com.github.benmanes.caffeine.cache"><code>AsyncLoadingCache</code></a> or <a href="../../../../../com/github/benmanes/caffeine/cache/LoadingCache.html#refresh-K-"><code>LoadingCache.refresh(K)</code></a> or <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#refreshAfterWrite-java.time.Duration-"><code>refreshAfterWrite(java.time.Duration)</code></a>, or
  when performing periodic maintenance. By default, <code>ForkJoinPool.commonPool()</code> is used.
  <p>
  The primary intent of this method is to facilitate testing of caches which have been
@@ -710,6 +737,33 @@ public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.
 </dl>
 </li>
 </ul>
+<a name="expireAfterWrite-java.time.Duration-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>expireAfterWrite</h4>
+<pre>@Nonnull
+public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;&nbsp;expireAfterWrite(@Nonnull
+                                               java.time.Duration&nbsp;duration)</pre>
+<div class="block">Specifies that each entry should be automatically removed from the cache once a fixed duration
+ has elapsed after the entry's creation, or the most recent replacement of its value.
+ <p>
+ Expired entries may be counted in <a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html#estimatedSize--"><code>Cache.estimatedSize()</code></a>, but will never be visible to
+ read or write operations. Expired entries are cleaned up as part of the routine maintenance
+ described in the class javadoc.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>duration</code> - the amount of time after an entry is created that it should be automatically
+        removed</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>this builder instance</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if the length of time is negative</dd>
+<dd><code>java.lang.IllegalStateException</code> - if the time to live or variable expiration was already set</dd>
+</dl>
+</li>
+</ul>
 <a name="expireAfterWrite-long-java.util.concurrent.TimeUnit-">
 <!--   -->
 </a>
@@ -737,6 +791,36 @@ public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.IllegalArgumentException</code> - if <code>duration</code> is negative</dd>
 <dd><code>java.lang.IllegalStateException</code> - if the time to live or variable expiration was already set</dd>
+</dl>
+</li>
+</ul>
+<a name="expireAfterAccess-java.time.Duration-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>expireAfterAccess</h4>
+<pre>@Nonnull
+public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;&nbsp;expireAfterAccess(@Nonnull
+                                                java.time.Duration&nbsp;duration)</pre>
+<div class="block">Specifies that each entry should be automatically removed from the cache once a fixed duration
+ has elapsed after the entry's creation, the most recent replacement of its value, or its last
+ read. Access time is reset by all cache read and write operations (including
+ <code>Cache.asMap().get(Object)</code> and <code>Cache.asMap().put(K, V)</code>), but not by operations
+ on the collection-views of <a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html#asMap--"><code>Cache.asMap()</code></a>.
+ <p>
+ Expired entries may be counted in <a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html#estimatedSize--"><code>Cache.estimatedSize()</code></a>, but will never be visible to
+ read or write operations. Expired entries are cleaned up as part of the routine maintenance
+ described in the class javadoc.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>duration</code> - the amount of time after an entry is created that it should be automatically
+        removed</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>this builder instance</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if the length of time is negative</dd>
+<dd><code>java.lang.IllegalStateException</code> - if the time to idle or variable expiration was already set</dd>
 </dl>
 </li>
 </ul>
@@ -804,6 +888,37 @@ public&nbsp;&lt;K1 extends <a href="../../../../../com/github/benmanes/caffeine/
 </dl>
 </li>
 </ul>
+<a name="refreshAfterWrite-java.time.Duration-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>refreshAfterWrite</h4>
+<pre>@Nonnull
+public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;&nbsp;refreshAfterWrite(@Nonnull
+                                                java.time.Duration&nbsp;duration)</pre>
+<div class="block">Specifies that active entries are eligible for automatic refresh once a fixed duration has
+ elapsed after the entry's creation, or the most recent replacement of its value. The semantics
+ of refreshes are specified in <a href="../../../../../com/github/benmanes/caffeine/cache/LoadingCache.html#refresh-K-"><code>LoadingCache.refresh(K)</code></a>, and are performed by calling
+ <a href="../../../../../com/github/benmanes/caffeine/cache/CacheLoader.html#reload-K-V-"><code>CacheLoader.reload(K, V)</code></a>.
+ <p>
+ Automatic refreshes are performed when the first stale request for an entry occurs. The request
+ triggering refresh will make an asynchronous call to <a href="../../../../../com/github/benmanes/caffeine/cache/CacheLoader.html#reload-K-V-"><code>CacheLoader.reload(K, V)</code></a> and immediately
+ return the old value.
+ <p>
+ <b>Note:</b> <i>all exceptions thrown during refresh will be logged and then swallowed</i>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>duration</code> - the amount of time after an entry is created that it should be automatically
+        removed</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>this builder instance</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if the length of time is zero or negative</dd>
+<dd><code>java.lang.IllegalStateException</code> - if the refresh interval was already set</dd>
+</dl>
+</li>
+</ul>
 <a name="refreshAfterWrite-long-java.util.concurrent.TimeUnit-">
 <!--   -->
 </a>
@@ -833,7 +948,7 @@ public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>this builder instance</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalArgumentException</code> - if <code>duration</code> is negative</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - if <code>duration</code> is zero or negative</dd>
 <dd><code>java.lang.IllegalStateException</code> - if the refresh interval was already set</dd>
 </dl>
 </li>
@@ -851,7 +966,7 @@ public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.
  expired or refreshed. By default, <code>System.nanoTime()</code> is used.
  <p>
  The primary intent of this method is to facilitate testing of caches which have been configured
- with <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#expireAfterWrite-long-java.util.concurrent.TimeUnit-"><code>expireAfterWrite(long, java.util.concurrent.TimeUnit)</code></a>, <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#expireAfterAccess-long-java.util.concurrent.TimeUnit-"><code>expireAfterAccess(long, java.util.concurrent.TimeUnit)</code></a>, or <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#refreshAfterWrite-long-java.util.concurrent.TimeUnit-"><code>refreshAfterWrite(long, java.util.concurrent.TimeUnit)</code></a>.</div>
+ with <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#expireAfterWrite-java.time.Duration-"><code>expireAfterWrite(java.time.Duration)</code></a>, <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#expireAfterAccess-java.time.Duration-"><code>expireAfterAccess(java.time.Duration)</code></a>, or <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#refreshAfterWrite-java.time.Duration-"><code>refreshAfterWrite(java.time.Duration)</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>ticker</code> - a nanosecond-precision time source</dd>
@@ -1032,8 +1147,6 @@ public&nbsp;&lt;K1 extends <a href="../../../../../com/github/benmanes/caffeine/
 <dd><code>loader</code> - the cache loader used to obtain new values</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>a cache having the requested features</dd>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.NullPointerException</code> - if the specified cache loader is null</dd>
 </dl>
 </li>
 </ul>
@@ -1053,7 +1166,10 @@ public&nbsp;&lt;K1 extends <a href="../../../../../com/github/benmanes/caffeine/
  multiple threads can concurrently load values for distinct keys.
  <p>
  This method does not alter the state of this <code>Caffeine</code> instance, so it can be invoked
- again to create multiple independent caches.</div>
+ again to create multiple independent caches.
+ <p>
+ This construction cannot be used with <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#weakValues--"><code>weakValues()</code></a>, <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#softValues--"><code>softValues()</code></a>, or
+ <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#writer"><code>writer</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
 <dd><code>K1</code> - the key type of the loader</dd>
@@ -1062,9 +1178,6 @@ public&nbsp;&lt;K1 extends <a href="../../../../../com/github/benmanes/caffeine/
 <dd><code>loader</code> - the cache loader used to obtain new values</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>a cache having the requested features</dd>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalStateException</code> - if the value strength is weak or soft</dd>
-<dd><code>java.lang.NullPointerException</code> - if the specified cache loader is null</dd>
 </dl>
 </li>
 </ul>
@@ -1084,7 +1197,10 @@ public&nbsp;&lt;K1 extends <a href="../../../../../com/github/benmanes/caffeine/
  removed. Note that multiple threads can concurrently load values for distinct keys.
  <p>
  This method does not alter the state of this <code>Caffeine</code> instance, so it can be invoked
- again to create multiple independent caches.</div>
+ again to create multiple independent caches.
+ <p>
+ This construction cannot be used with <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#weakValues--"><code>weakValues()</code></a>, <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#softValues--"><code>softValues()</code></a>, or
+ <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#writer"><code>writer</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
 <dd><code>K1</code> - the key type of the loader</dd>
@@ -1093,9 +1209,6 @@ public&nbsp;&lt;K1 extends <a href="../../../../../com/github/benmanes/caffeine/
 <dd><code>loader</code> - the cache loader used to obtain new values</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>a cache having the requested features</dd>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalStateException</code> - if the value strength is weak or soft</dd>
-<dd><code>java.lang.NullPointerException</code> - if the specified cache loader is null</dd>
 </dl>
 </li>
 </ul>
@@ -1183,6 +1296,6 @@ public&nbsp;&lt;K1 extends <a href="../../../../../com/github/benmanes/caffeine/
 <!--   -->
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
-<p class="legalCopy"><small>Copyright &#169; 2017&#x2013;2018 <a href="http://www.emn.fr/z-info/atlanmod/index.php/Main_Page">Atlanmod, Inria, LS2N, and IMT Nantes</a>. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2017&#x2013;2018 <a href="http://www.atlanmod.org">Atlanmod, Inria, LS2N, and IMT Nantes</a>. All rights reserved.</small></p>
 </body>
 </html>

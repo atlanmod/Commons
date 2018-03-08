@@ -253,7 +253,7 @@ default&nbsp;java.util.concurrent.CompletableFuture&lt;<a href="../../../../../c
 <div class="block">Asynchronously computes or retrieves a replacement value corresponding to an already-cached
  <code>key</code>. If the replacement value is not found then the mapping will be removed if
  <code>null</code> is computed. This method is called when an existing cache entry is refreshed by
- <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#refreshAfterWrite-long-java.util.concurrent.TimeUnit-"><code>Caffeine.refreshAfterWrite(long, java.util.concurrent.TimeUnit)</code></a>, or through a call to <a href="../../../../../com/github/benmanes/caffeine/cache/LoadingCache.html#refresh-K-"><code>LoadingCache.refresh(K)</code></a>.
+ <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#refreshAfterWrite-java.time.Duration-"><code>Caffeine.refreshAfterWrite(java.time.Duration)</code></a>, or through a call to <a href="../../../../../com/github/benmanes/caffeine/cache/LoadingCache.html#refresh-K-"><code>LoadingCache.refresh(K)</code></a>.
  <p>
  <b>Note:</b> <i>all exceptions thrown by this method will be logged and then swallowed</i>.</div>
 <dl>
@@ -336,6 +336,6 @@ default&nbsp;java.util.concurrent.CompletableFuture&lt;<a href="../../../../../c
 <!--   -->
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
-<p class="legalCopy"><small>Copyright &#169; 2017&#x2013;2018 <a href="http://www.emn.fr/z-info/atlanmod/index.php/Main_Page">Atlanmod, Inria, LS2N, and IMT Nantes</a>. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2017&#x2013;2018 <a href="http://www.atlanmod.org">Atlanmod, Inria, LS2N, and IMT Nantes</a>. All rights reserved.</small></p>
 </body>
 </html>

@@ -18,8 +18,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
+var methods = {"i0":18,"i1":6,"i2":18,"i3":6,"i4":6,"i5":18,"i6":6,"i7":6};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -120,32 +120,52 @@ var activeTableTab = "activeTableTab";
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t5" class="tableTab"><span><a href="javascript:show(16);">Default Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>default java.util.Optional&lt;java.time.Duration&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Policy.Expiration.html#ageOf-K-">ageOf</a></span>(<a href="../../../../../com/github/benmanes/caffeine/cache/Policy.Expiration.html" title="type parameter in Policy.Expiration">K</a>&nbsp;key)</code>
+<div class="block">Returns the age of the entry based on the expiration policy.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>java.util.OptionalLong</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Policy.Expiration.html#ageOf-K-java.util.concurrent.TimeUnit-">ageOf</a></span>(<a href="../../../../../com/github/benmanes/caffeine/cache/Policy.Expiration.html" title="type parameter in Policy.Expiration">K</a>&nbsp;key,
      java.util.concurrent.TimeUnit&nbsp;unit)</code>
 <div class="block">Returns the age of the entry based on the expiration policy.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>default java.time.Duration</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Policy.Expiration.html#getExpiresAfter--">getExpiresAfter</a></span>()</code>
+<div class="block">Returns the fixed duration used to determine if an entry should be automatically removed due
+ to elapsing this time bound.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>long</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Policy.Expiration.html#getExpiresAfter-java.util.concurrent.TimeUnit-">getExpiresAfter</a></span>(java.util.concurrent.TimeUnit&nbsp;unit)</code>
 <div class="block">Returns the fixed duration used to determine if an entry should be automatically removed due
  to elapsing this time bound.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>java.util.Map&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Policy.Expiration.html" title="type parameter in Policy.Expiration">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Policy.Expiration.html" title="type parameter in Policy.Expiration">V</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Policy.Expiration.html#oldest-int-">oldest</a></span>(int&nbsp;limit)</code>
 <div class="block">Returns an unmodifiable snapshot <code>Map</code> view of the cache with ordered traversal.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>default void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Policy.Expiration.html#setExpiresAfter-java.time.Duration-">setExpiresAfter</a></span>(java.time.Duration&nbsp;duration)</code>
+<div class="block">Specifies that each entry should be automatically removed from the cache once a fixed
+ duration has elapsed.</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Policy.Expiration.html#setExpiresAfter-long-java.util.concurrent.TimeUnit-">setExpiresAfter</a></span>(long&nbsp;duration,
                java.util.concurrent.TimeUnit&nbsp;unit)</code>
@@ -153,7 +173,7 @@ var activeTableTab = "activeTableTab";
  duration has elapsed.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>java.util.Map&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Policy.Expiration.html" title="type parameter in Policy.Expiration">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Policy.Expiration.html" title="type parameter in Policy.Expiration">V</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Policy.Expiration.html#youngest-int-">youngest</a></span>(int&nbsp;limit)</code>
 <div class="block">Returns an unmodifiable snapshot <code>Map</code> view of the cache with ordered traversal.</div>
@@ -192,11 +212,38 @@ java.util.OptionalLong&nbsp;ageOf(@Nonnull
  <p>
  An expiration policy uses the age to determine if an entry is fresh or stale by comparing it
  to the freshness lifetime. This is calculated as <code>fresh = freshnessLifetime &gt; age</code>
- where <code>freshnessLifetime = expires - currentTime</code>.</div>
+ where <code>freshnessLifetime = expires - currentTime</code>.
+ <p>
+ This method is scheduled for removal in version 3.0.0.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>key</code> - the key for the entry being queried</dd>
 <dd><code>unit</code> - the unit that <code>age</code> is expressed in</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the age if the entry is present in the cache</dd>
+</dl>
+</li>
+</ul>
+<a name="ageOf-java.lang.Object-">
+<!--   -->
+</a><a name="ageOf-K-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ageOf</h4>
+<pre>@Nonnull
+default&nbsp;java.util.Optional&lt;java.time.Duration&gt;&nbsp;ageOf(@Nonnull
+                                                              <a href="../../../../../com/github/benmanes/caffeine/cache/Policy.Expiration.html" title="type parameter in Policy.Expiration">K</a>&nbsp;key)</pre>
+<div class="block">Returns the age of the entry based on the expiration policy. The entry's age is the cache's
+ estimate of the amount of time since the entry's expiration was last reset.
+ <p>
+ An expiration policy uses the age to determine if an entry is fresh or stale by comparing it
+ to the freshness lifetime. This is calculated as <code>fresh = freshnessLifetime &gt; age</code>
+ where <code>freshnessLifetime = expires - currentTime</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - the key for the entry being queried</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the age if the entry is present in the cache</dd>
 </dl>
@@ -214,10 +261,30 @@ long&nbsp;getExpiresAfter(@Nonnull
 <div class="block">Returns the fixed duration used to determine if an entry should be automatically removed due
  to elapsing this time bound. An entry is considered fresh if its age is less than this
  duration, and stale otherwise. The expiration policy determines when the entry's age is
- reset.</div>
+ reset.
+ <p>
+ This method is scheduled for removal in version 3.0.0.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>unit</code> - the unit that duration is expressed in</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the length of time after which an entry should be automatically removed</dd>
+</dl>
+</li>
+</ul>
+<a name="getExpiresAfter--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getExpiresAfter</h4>
+<pre>@Nonnull
+default&nbsp;java.time.Duration&nbsp;getExpiresAfter()</pre>
+<div class="block">Returns the fixed duration used to determine if an entry should be automatically removed due
+ to elapsing this time bound. An entry is considered fresh if its age is less than this
+ duration, and stale otherwise. The expiration policy determines when the entry's age is
+ reset.</div>
+<dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the length of time after which an entry should be automatically removed</dd>
 </dl>
@@ -234,11 +301,31 @@ long&nbsp;getExpiresAfter(@Nonnull
                      @Nonnull
                      java.util.concurrent.TimeUnit&nbsp;unit)</pre>
 <div class="block">Specifies that each entry should be automatically removed from the cache once a fixed
- duration has elapsed. The expiration policy determines when the entry's age is reset.</div>
+ duration has elapsed. The expiration policy determines when the entry's age is reset.
+ <p>
+ This method is scheduled for removal in version 3.0.0.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>duration</code> - the length of time after which an entry should be automatically removed</dd>
 <dd><code>unit</code> - the unit that <code>duration</code> is expressed in</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if <code>duration</code> is negative</dd>
+</dl>
+</li>
+</ul>
+<a name="setExpiresAfter-java.time.Duration-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setExpiresAfter</h4>
+<pre>default&nbsp;void&nbsp;setExpiresAfter(@Nonnull
+                             java.time.Duration&nbsp;duration)</pre>
+<div class="block">Specifies that each entry should be automatically removed from the cache once a fixed
+ duration has elapsed. The expiration policy determines when the entry's age is reset.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>duration</code> - the length of time after which an entry should be automatically removed</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.IllegalArgumentException</code> - if <code>duration</code> is negative</dd>
 </dl>
@@ -365,6 +452,6 @@ java.util.Map&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Poli
 <!--   -->
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
-<p class="legalCopy"><small>Copyright &#169; 2017&#x2013;2018 <a href="http://www.emn.fr/z-info/atlanmod/index.php/Main_Page">Atlanmod, Inria, LS2N, and IMT Nantes</a>. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2017&#x2013;2018 <a href="http://www.atlanmod.org">Atlanmod, Inria, LS2N, and IMT Nantes</a>. All rights reserved.</small></p>
 </body>
 </html>

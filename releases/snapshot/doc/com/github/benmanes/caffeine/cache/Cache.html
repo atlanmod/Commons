@@ -240,9 +240,9 @@ public interface <span class="typeNameLabel">Cache&lt;K,V&gt;</span></pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getIfPresent</h4>
-<pre>@CheckForNull
+<pre>@Nullable
 <a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html" title="type parameter in Cache">V</a>&nbsp;getIfPresent(@Nonnull
-                             java.lang.Object&nbsp;key)</pre>
+                         java.lang.Object&nbsp;key)</pre>
 <div class="block">Returns the value associated with the <code>key</code> in this cache, or <code>null</code> if there is no
  cached value for the <code>key</code>.</div>
 <dl>
@@ -264,11 +264,11 @@ public interface <span class="typeNameLabel">Cache&lt;K,V&gt;</span></pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>get</h4>
-<pre>@CheckForNull
+<pre>@Nullable
 <a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html" title="type parameter in Cache">V</a>&nbsp;get(@Nonnull
-                    <a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html" title="type parameter in Cache">K</a>&nbsp;key,
-                    @Nonnull
-                    java.util.function.Function&lt;? super <a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html" title="type parameter in Cache">K</a>,? extends <a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html" title="type parameter in Cache">V</a>&gt;&nbsp;mappingFunction)</pre>
+                <a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html" title="type parameter in Cache">K</a>&nbsp;key,
+                @Nonnull
+                java.util.function.Function&lt;? super <a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html" title="type parameter in Cache">K</a>,? extends <a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html" title="type parameter in Cache">V</a>&gt;&nbsp;mappingFunction)</pre>
 <div class="block">Returns the value associated with the <code>key</code> in this cache, obtaining that value from the
  <code>mappingFunction</code> if necessary. This method provides a simple substitute for the
  conventional "if cached, return; otherwise create, cache and return" pattern.
@@ -571,6 +571,6 @@ java.util.concurrent.ConcurrentMap&lt;<a href="../../../../../com/github/benmane
 <!--   -->
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
-<p class="legalCopy"><small>Copyright &#169; 2017&#x2013;2018 <a href="http://www.emn.fr/z-info/atlanmod/index.php/Main_Page">Atlanmod, Inria, LS2N, and IMT Nantes</a>. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2017&#x2013;2018 <a href="http://www.atlanmod.org">Atlanmod, Inria, LS2N, and IMT Nantes</a>. All rights reserved.</small></p>
 </body>
 </html>

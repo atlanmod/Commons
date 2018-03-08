@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":18,"i3":18,"i4":6,"i5":6};
+var methods = {"i0":18,"i1":6,"i2":6,"i3":18,"i4":18,"i5":18,"i6":18,"i7":18,"i8":6,"i9":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -126,19 +126,33 @@ var activeTableTab = "activeTableTab";
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>default java.util.Optional&lt;java.time.Duration&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Policy.VarExpiration.html#getExpiresAfter-K-">getExpiresAfter</a></span>(<a href="../../../../../com/github/benmanes/caffeine/cache/Policy.VarExpiration.html" title="type parameter in Policy.VarExpiration">K</a>&nbsp;key)</code>
+<div class="block">Returns the duration until the entry should be automatically removed.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>java.util.OptionalLong</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Policy.VarExpiration.html#getExpiresAfter-K-java.util.concurrent.TimeUnit-">getExpiresAfter</a></span>(<a href="../../../../../com/github/benmanes/caffeine/cache/Policy.VarExpiration.html" title="type parameter in Policy.VarExpiration">K</a>&nbsp;key,
                java.util.concurrent.TimeUnit&nbsp;unit)</code>
 <div class="block">Returns the duration until the entry should be automatically removed.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>java.util.Map&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Policy.VarExpiration.html" title="type parameter in Policy.VarExpiration">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Policy.VarExpiration.html" title="type parameter in Policy.VarExpiration">V</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Policy.VarExpiration.html#oldest-int-">oldest</a></span>(int&nbsp;limit)</code>
 <div class="block">Returns an unmodifiable snapshot <code>Map</code> view of the cache with ordered traversal.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>default void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Policy.VarExpiration.html#put-K-V-java.time.Duration-">put</a></span>(<a href="../../../../../com/github/benmanes/caffeine/cache/Policy.VarExpiration.html" title="type parameter in Policy.VarExpiration">K</a>&nbsp;key,
+   <a href="../../../../../com/github/benmanes/caffeine/cache/Policy.VarExpiration.html" title="type parameter in Policy.VarExpiration">V</a>&nbsp;value,
+   java.time.Duration&nbsp;duration)</code>
+<div class="block">Associates the <code>value</code> with the <code>key</code> in this cache.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>default void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Policy.VarExpiration.html#put-K-V-long-java.util.concurrent.TimeUnit-">put</a></span>(<a href="../../../../../com/github/benmanes/caffeine/cache/Policy.VarExpiration.html" title="type parameter in Policy.VarExpiration">K</a>&nbsp;key,
    <a href="../../../../../com/github/benmanes/caffeine/cache/Policy.VarExpiration.html" title="type parameter in Policy.VarExpiration">V</a>&nbsp;value,
@@ -147,7 +161,16 @@ var activeTableTab = "activeTableTab";
 <div class="block">Associates the <code>value</code> with the <code>key</code> in this cache.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>default boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Policy.VarExpiration.html#putIfAbsent-K-V-java.time.Duration-">putIfAbsent</a></span>(<a href="../../../../../com/github/benmanes/caffeine/cache/Policy.VarExpiration.html" title="type parameter in Policy.VarExpiration">K</a>&nbsp;key,
+           <a href="../../../../../com/github/benmanes/caffeine/cache/Policy.VarExpiration.html" title="type parameter in Policy.VarExpiration">V</a>&nbsp;value,
+           java.time.Duration&nbsp;duration)</code>
+<div class="block">Associates the <code>value</code> with the <code>key</code> in this cache if the specified key is not
+ already associated with a value.</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>default boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Policy.VarExpiration.html#putIfAbsent-K-V-long-java.util.concurrent.TimeUnit-">putIfAbsent</a></span>(<a href="../../../../../com/github/benmanes/caffeine/cache/Policy.VarExpiration.html" title="type parameter in Policy.VarExpiration">K</a>&nbsp;key,
            <a href="../../../../../com/github/benmanes/caffeine/cache/Policy.VarExpiration.html" title="type parameter in Policy.VarExpiration">V</a>&nbsp;value,
@@ -157,7 +180,15 @@ var activeTableTab = "activeTableTab";
  already associated with a value.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>default void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Policy.VarExpiration.html#setExpiresAfter-K-java.time.Duration-">setExpiresAfter</a></span>(<a href="../../../../../com/github/benmanes/caffeine/cache/Policy.VarExpiration.html" title="type parameter in Policy.VarExpiration">K</a>&nbsp;key,
+               java.time.Duration&nbsp;duration)</code>
+<div class="block">Specifies that the entry should be automatically removed from the cache once the duration has
+ elapsed.</div>
+</td>
+</tr>
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Policy.VarExpiration.html#setExpiresAfter-K-long-java.util.concurrent.TimeUnit-">setExpiresAfter</a></span>(<a href="../../../../../com/github/benmanes/caffeine/cache/Policy.VarExpiration.html" title="type parameter in Policy.VarExpiration">K</a>&nbsp;key,
                long&nbsp;duration,
@@ -166,7 +197,7 @@ var activeTableTab = "activeTableTab";
  elapsed.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>java.util.Map&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Policy.VarExpiration.html" title="type parameter in Policy.VarExpiration">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Policy.VarExpiration.html" title="type parameter in Policy.VarExpiration">V</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Policy.VarExpiration.html#youngest-int-">youngest</a></span>(int&nbsp;limit)</code>
 <div class="block">Returns an unmodifiable snapshot <code>Map</code> view of the cache with ordered traversal.</div>
@@ -201,11 +232,34 @@ java.util.OptionalLong&nbsp;getExpiresAfter(@Nonnull
                                                 @Nonnull
                                                 java.util.concurrent.TimeUnit&nbsp;unit)</pre>
 <div class="block">Returns the duration until the entry should be automatically removed. The expiration policy
- determines when the entry's duration is reset.</div>
+ determines when the entry's duration is reset.
+ <p>
+ This method is scheduled for removal in version 3.0.0.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>key</code> - the key for the entry being queried</dd>
 <dd><code>unit</code> - the unit that <code>age</code> is expressed in</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the duration if the entry is present in the cache</dd>
+</dl>
+</li>
+</ul>
+<a name="getExpiresAfter-java.lang.Object-">
+<!--   -->
+</a><a name="getExpiresAfter-K-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getExpiresAfter</h4>
+<pre>@Nonnull
+default&nbsp;java.util.Optional&lt;java.time.Duration&gt;&nbsp;getExpiresAfter(@Nonnull
+                                                                        <a href="../../../../../com/github/benmanes/caffeine/cache/Policy.VarExpiration.html" title="type parameter in Policy.VarExpiration">K</a>&nbsp;key)</pre>
+<div class="block">Returns the duration until the entry should be automatically removed. The expiration policy
+ determines when the entry's duration is reset.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - the key for the entry being queried</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the duration if the entry is present in the cache</dd>
 </dl>
@@ -238,6 +292,29 @@ java.util.OptionalLong&nbsp;getExpiresAfter(@Nonnull
 </dl>
 </li>
 </ul>
+<a name="setExpiresAfter-java.lang.Object-java.time.Duration-">
+<!--   -->
+</a><a name="setExpiresAfter-K-java.time.Duration-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setExpiresAfter</h4>
+<pre>default&nbsp;void&nbsp;setExpiresAfter(@Nonnull
+                             <a href="../../../../../com/github/benmanes/caffeine/cache/Policy.VarExpiration.html" title="type parameter in Policy.VarExpiration">K</a>&nbsp;key,
+                             @Nonnull
+                             java.time.Duration&nbsp;duration)</pre>
+<div class="block">Specifies that the entry should be automatically removed from the cache once the duration has
+ elapsed. The expiration policy determines when the entry's age is reset.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - the key for the entry being set</dd>
+<dd><code>duration</code> - the length of time from now when the entry should be automatically removed</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if <code>duration</code> is negative</dd>
+</dl>
+</li>
+</ul>
 <a name="putIfAbsent-java.lang.Object-java.lang.Object-long-java.util.concurrent.TimeUnit-">
 <!--   -->
 </a><a name="putIfAbsent-K-V-long-java.util.concurrent.TimeUnit-">
@@ -257,7 +334,9 @@ java.util.OptionalLong&nbsp;getExpiresAfter(@Nonnull
 <div class="block">Associates the <code>value</code> with the <code>key</code> in this cache if the specified key is not
  already associated with a value. This method differs from <code>Map.putIfAbsent(K, V)</code> by
  substituting the configured <a href="../../../../../com/github/benmanes/caffeine/cache/Expiry.html" title="interface in com.github.benmanes.caffeine.cache"><code>Expiry</code></a> with the specified write duration, has no effect
- on the duration if the entry was present, and returns the success rather than a value.</div>
+ on the duration if the entry was present, and returns the success rather than a value.
+ <p>
+ This method is scheduled for removal in version 3.0.0.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>key</code> - the key with which the specified value is to be associated</dd>
@@ -268,7 +347,36 @@ java.util.OptionalLong&nbsp;getExpiresAfter(@Nonnull
 <dd><tt>true</tt> if this cache did not already contain the specified entry</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.IllegalArgumentException</code> - if <code>duration</code> is negative</dd>
-<dd><code>java.lang.NullPointerException</code> - if the specified key or value is null</dd>
+</dl>
+</li>
+</ul>
+<a name="putIfAbsent-java.lang.Object-java.lang.Object-java.time.Duration-">
+<!--   -->
+</a><a name="putIfAbsent-K-V-java.time.Duration-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>putIfAbsent</h4>
+<pre>default&nbsp;boolean&nbsp;putIfAbsent(@Nonnull
+                            <a href="../../../../../com/github/benmanes/caffeine/cache/Policy.VarExpiration.html" title="type parameter in Policy.VarExpiration">K</a>&nbsp;key,
+                            @Nonnull
+                            <a href="../../../../../com/github/benmanes/caffeine/cache/Policy.VarExpiration.html" title="type parameter in Policy.VarExpiration">V</a>&nbsp;value,
+                            @Nonnull
+                            java.time.Duration&nbsp;duration)</pre>
+<div class="block">Associates the <code>value</code> with the <code>key</code> in this cache if the specified key is not
+ already associated with a value. This method differs from <code>Map.putIfAbsent(K, V)</code> by
+ substituting the configured <a href="../../../../../com/github/benmanes/caffeine/cache/Expiry.html" title="interface in com.github.benmanes.caffeine.cache"><code>Expiry</code></a> with the specified write duration, has no effect
+ on the duration if the entry was present, and returns the success rather than a value.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - the key with which the specified value is to be associated</dd>
+<dd><code>value</code> - value to be associated with the specified key</dd>
+<dd><code>duration</code> - the length of time from now when the entry should be automatically removed</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><tt>true</tt> if this cache did not already contain the specified entry</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if <code>duration</code> is negative</dd>
 </dl>
 </li>
 </ul>
@@ -291,7 +399,9 @@ java.util.OptionalLong&nbsp;getExpiresAfter(@Nonnull
 <div class="block">Associates the <code>value</code> with the <code>key</code> in this cache. If the cache previously
  contained a value associated with the <code>key</code>, the old value is replaced by the new
  <code>value</code>. This method differs from <a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html#put-K-V-"><code>Cache.put(K, V)</code></a> by substituting the
- configured <a href="../../../../../com/github/benmanes/caffeine/cache/Expiry.html" title="interface in com.github.benmanes.caffeine.cache"><code>Expiry</code></a> with the specified write duration.</div>
+ configured <a href="../../../../../com/github/benmanes/caffeine/cache/Expiry.html" title="interface in com.github.benmanes.caffeine.cache"><code>Expiry</code></a> with the specified write duration.
+ <p>
+ This method is scheduled for removal in version 3.0.0.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>key</code> - the key with which the specified value is to be associated</dd>
@@ -301,6 +411,34 @@ java.util.OptionalLong&nbsp;getExpiresAfter(@Nonnull
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.IllegalArgumentException</code> - if <code>duration</code> is negative</dd>
 <dd><code>java.lang.NullPointerException</code> - if the specified key or value is null</dd>
+</dl>
+</li>
+</ul>
+<a name="put-java.lang.Object-java.lang.Object-java.time.Duration-">
+<!--   -->
+</a><a name="put-K-V-java.time.Duration-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>put</h4>
+<pre>default&nbsp;void&nbsp;put(@Nonnull
+                 <a href="../../../../../com/github/benmanes/caffeine/cache/Policy.VarExpiration.html" title="type parameter in Policy.VarExpiration">K</a>&nbsp;key,
+                 @Nonnull
+                 <a href="../../../../../com/github/benmanes/caffeine/cache/Policy.VarExpiration.html" title="type parameter in Policy.VarExpiration">V</a>&nbsp;value,
+                 @Nonnull
+                 java.time.Duration&nbsp;duration)</pre>
+<div class="block">Associates the <code>value</code> with the <code>key</code> in this cache. If the cache previously
+ contained a value associated with the <code>key</code>, the old value is replaced by the new
+ <code>value</code>. This method differs from <a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html#put-K-V-"><code>Cache.put(K, V)</code></a> by substituting the
+ configured <a href="../../../../../com/github/benmanes/caffeine/cache/Expiry.html" title="interface in com.github.benmanes.caffeine.cache"><code>Expiry</code></a> with the specified write duration.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - the key with which the specified value is to be associated</dd>
+<dd><code>value</code> - value to be associated with the specified key</dd>
+<dd><code>duration</code> - the length of time from now when the entry should be automatically removed</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if <code>duration</code> is negative</dd>
 </dl>
 </li>
 </ul>
@@ -425,6 +563,6 @@ java.util.Map&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Poli
 <!--   -->
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
-<p class="legalCopy"><small>Copyright &#169; 2017&#x2013;2018 <a href="http://www.emn.fr/z-info/atlanmod/index.php/Main_Page">Atlanmod, Inria, LS2N, and IMT Nantes</a>. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2017&#x2013;2018 <a href="http://www.atlanmod.org">Atlanmod, Inria, LS2N, and IMT Nantes</a>. All rights reserved.</small></p>
 </body>
 </html>

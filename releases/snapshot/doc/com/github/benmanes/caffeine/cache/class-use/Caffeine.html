@@ -120,11 +120,26 @@
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">Caffeine.</span><code><span class="memberNameLink"><a href="../../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#expireAfterAccess-java.time.Duration-">expireAfterAccess</a></span>(java.time.Duration&nbsp;duration)</code>
+<div class="block">Specifies that each entry should be automatically removed from the cache once a fixed duration
+ has elapsed after the entry's creation, the most recent replacement of its value, or its last
+ read.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;</code></td>
 <td class="colLast"><span class="typeNameLabel">Caffeine.</span><code><span class="memberNameLink"><a href="../../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#expireAfterAccess-long-java.util.concurrent.TimeUnit-">expireAfterAccess</a></span>(long&nbsp;duration,
                  java.util.concurrent.TimeUnit&nbsp;unit)</code>
 <div class="block">Specifies that each entry should be automatically removed from the cache once a fixed duration
  has elapsed after the entry's creation, the most recent replacement of its value, or its last
  read.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">Caffeine.</span><code><span class="memberNameLink"><a href="../../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#expireAfterWrite-java.time.Duration-">expireAfterWrite</a></span>(java.time.Duration&nbsp;duration)</code>
+<div class="block">Specifies that each entry should be automatically removed from the cache once a fixed duration
+ has elapsed after the entry's creation, or the most recent replacement of its value.</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -186,54 +201,61 @@
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">Caffeine.</span><code><span class="memberNameLink"><a href="../../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#refreshAfterWrite-java.time.Duration-">refreshAfterWrite</a></span>(java.time.Duration&nbsp;duration)</code>
+<div class="block">Specifies that active entries are eligible for automatic refresh once a fixed duration has
+ elapsed after the entry's creation, or the most recent replacement of its value.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;</code></td>
 <td class="colLast"><span class="typeNameLabel">Caffeine.</span><code><span class="memberNameLink"><a href="../../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#refreshAfterWrite-long-java.util.concurrent.TimeUnit-">refreshAfterWrite</a></span>(long&nbsp;duration,
                  java.util.concurrent.TimeUnit&nbsp;unit)</code>
 <div class="block">Specifies that active entries are eligible for automatic refresh once a fixed duration has
  elapsed after the entry's creation, or the most recent replacement of its value.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>&lt;K1 extends <a href="../../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,V1 extends <a href="../../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;<br><a href="../../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;K1,V1&gt;</code></td>
 <td class="colLast"><span class="typeNameLabel">Caffeine.</span><code><span class="memberNameLink"><a href="../../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#removalListener-com.github.benmanes.caffeine.cache.RemovalListener-">removalListener</a></span>(<a href="../../../../../../com/github/benmanes/caffeine/cache/RemovalListener.html" title="interface in com.github.benmanes.caffeine.cache">RemovalListener</a>&lt;? super K1,? super V1&gt;&nbsp;removalListener)</code>
 <div class="block">Specifies a listener instance that caches should notify each time an entry is removed for any
  <a href="../../../../../../com/github/benmanes/caffeine/cache/RemovalCause.html" title="enum in com.github.benmanes.caffeine.cache">reason</a>.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;</code></td>
 <td class="colLast"><span class="typeNameLabel">Caffeine.</span><code><span class="memberNameLink"><a href="../../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#softValues--">softValues</a></span>()</code>
 <div class="block">Specifies that each value (not key) stored in the cache should be wrapped in a
  <code>SoftReference</code> (by default, strong references are used).</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;</code></td>
 <td class="colLast"><span class="typeNameLabel">Caffeine.</span><code><span class="memberNameLink"><a href="../../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#ticker-com.github.benmanes.caffeine.cache.Ticker-">ticker</a></span>(<a href="../../../../../../com/github/benmanes/caffeine/cache/Ticker.html" title="interface in com.github.benmanes.caffeine.cache">Ticker</a>&nbsp;ticker)</code>
 <div class="block">Specifies a nanosecond-precision time source for use in determining when entries should be
  expired or refreshed.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;</code></td>
 <td class="colLast"><span class="typeNameLabel">Caffeine.</span><code><span class="memberNameLink"><a href="../../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#weakKeys--">weakKeys</a></span>()</code>
 <div class="block">Specifies that each key (not value) stored in the cache should be wrapped in a
  <code>WeakReference</code> (by default, strong references are used).</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;</code></td>
 <td class="colLast"><span class="typeNameLabel">Caffeine.</span><code><span class="memberNameLink"><a href="../../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#weakValues--">weakValues</a></span>()</code>
 <div class="block">Specifies that each value (not key) stored in the cache should be wrapped in a
  <code>WeakReference</code> (by default, strong references are used).</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>&lt;K1 extends <a href="../../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,V1 extends <a href="../../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;<br><a href="../../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;K1,V1&gt;</code></td>
 <td class="colLast"><span class="typeNameLabel">Caffeine.</span><code><span class="memberNameLink"><a href="../../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#weigher-com.github.benmanes.caffeine.cache.Weigher-">weigher</a></span>(<a href="../../../../../../com/github/benmanes/caffeine/cache/Weigher.html" title="interface in com.github.benmanes.caffeine.cache">Weigher</a>&lt;? super K1,? super V1&gt;&nbsp;weigher)</code>
 <div class="block">Specifies the weigher to use in determining the weight of entries.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>&lt;K1 extends <a href="../../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,V1 extends <a href="../../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;<br><a href="../../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;K1,V1&gt;</code></td>
 <td class="colLast"><span class="typeNameLabel">Caffeine.</span><code><span class="memberNameLink"><a href="../../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#writer-com.github.benmanes.caffeine.cache.CacheWriter-">writer</a></span>(<a href="../../../../../../com/github/benmanes/caffeine/cache/CacheWriter.html" title="interface in com.github.benmanes.caffeine.cache">CacheWriter</a>&lt;? super K1,? super V1&gt;&nbsp;writer)</code>
 <div class="block">Specifies a writer instance that caches should notify each time an entry is explicitly created
@@ -294,6 +316,6 @@
 <!--   -->
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
-<p class="legalCopy"><small>Copyright &#169; 2017&#x2013;2018 <a href="http://www.emn.fr/z-info/atlanmod/index.php/Main_Page">Atlanmod, Inria, LS2N, and IMT Nantes</a>. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2017&#x2013;2018 <a href="http://www.atlanmod.org">Atlanmod, Inria, LS2N, and IMT Nantes</a>. All rights reserved.</small></p>
 </body>
 </html>
