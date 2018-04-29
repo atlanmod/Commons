@@ -117,7 +117,7 @@ extends java.lang.Object</pre>
  be <code>true</code> (or in the case of <code>checkNotNull</code>, an object reference which is expected to be non-null). When
  <code>false</code> (or <code>null</code>) is passed instead, the <code>Preconditions</code> method throws an unchecked exception,
  which helps the calling method communicate to <i>its</i> caller that <i>that</i> caller has made a mistake.
- <p>
+
  <b>Warning:</b> The goal of this class is to improve readability of code, but in some circumstances this may come at
  a significant performance cost. Remember that parameter values for message construction must all be computed eagerly,
  and autoboxing and varargs array creation may happen as well, even when the precondition check then succeeds (as it
@@ -417,7 +417,9 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>checkArgument</h4>
-<pre>public static&nbsp;void&nbsp;checkArgument(boolean&nbsp;expression)</pre>
+<pre>@Contract(value="false -&gt; fail",
+          pure=true)
+public static&nbsp;void&nbsp;checkArgument(boolean&nbsp;expression)</pre>
 <div class="block">Ensures the truth of an expression involving one or more parameters to the calling method.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -433,8 +435,10 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>checkArgument</h4>
-<pre>public static&nbsp;void&nbsp;checkArgument(boolean&nbsp;expression,
-                                 java.lang.String&nbsp;message)</pre>
+<pre>@Contract(value="false, _ -&gt; fail",
+          pure=true)
+public static&nbsp;void&nbsp;checkArgument(boolean&nbsp;expression,
+                                                                                          java.lang.String&nbsp;message)</pre>
 <div class="block">Ensures the truth of an expression involving one or more parameters to the calling method.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -451,9 +455,11 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>checkArgument</h4>
-<pre>public static&nbsp;void&nbsp;checkArgument(boolean&nbsp;expression,
-                                 java.lang.String&nbsp;pattern,
-                                 java.lang.Object...&nbsp;args)</pre>
+<pre>@Contract(value="false, _, _ -&gt; fail",
+          pure=true)
+public static&nbsp;void&nbsp;checkArgument(boolean&nbsp;expression,
+                                                                                             java.lang.String&nbsp;pattern,
+                                                                                             java.lang.Object...&nbsp;args)</pre>
 <div class="block">Ensures the truth of an expression involving one or more parameters to the calling method.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -472,7 +478,9 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>checkState</h4>
-<pre>public static&nbsp;void&nbsp;checkState(boolean&nbsp;expression)</pre>
+<pre>@Contract(value="false -&gt; fail",
+          pure=true)
+public static&nbsp;void&nbsp;checkState(boolean&nbsp;expression)</pre>
 <div class="block">Ensures the truth of an expression involving the state of the calling instance, but not involving any parameters
  to the calling method.</div>
 <dl>
@@ -489,8 +497,10 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>checkState</h4>
-<pre>public static&nbsp;void&nbsp;checkState(boolean&nbsp;expression,
-                              java.lang.String&nbsp;message)</pre>
+<pre>@Contract(value="false, _ -&gt; fail",
+          pure=true)
+public static&nbsp;void&nbsp;checkState(boolean&nbsp;expression,
+                                                                                       java.lang.String&nbsp;message)</pre>
 <div class="block">Ensures the truth of an expression involving the state of the calling instance, but not involving any parameters
  to the calling method.</div>
 <dl>
@@ -508,9 +518,11 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>checkState</h4>
-<pre>public static&nbsp;void&nbsp;checkState(boolean&nbsp;expression,
-                              java.lang.String&nbsp;pattern,
-                              java.lang.Object...&nbsp;args)</pre>
+<pre>@Contract(value="false, _, _ -&gt; fail",
+          pure=true)
+public static&nbsp;void&nbsp;checkState(boolean&nbsp;expression,
+                                                                                          java.lang.String&nbsp;pattern,
+                                                                                          java.lang.Object...&nbsp;args)</pre>
 <div class="block">Ensures the truth of an expression involving the state of the calling instance, but not involving any parameters
  to the calling method.</div>
 <dl>
@@ -533,8 +545,10 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>checkNotNull</h4>
 <pre>@Nonnull
+ @Contract(value="null -&gt; fail",
+          pure=true)
 public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;checkNotNull(@Nullable
-                                          T&nbsp;reference)</pre>
+                                                                                                T&nbsp;reference)</pre>
 <div class="block">Ensures that an object <code>reference</code> passed as a parameter to the calling method is not <code>null</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -555,9 +569,11 @@ public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;checkNotNull(@Nullable
 <li class="blockList">
 <h4>checkNotNull</h4>
 <pre>@Nonnull
+ @Contract(value="null, _ -&gt; fail",
+          pure=true)
 public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;checkNotNull(@Nullable
-                                          T&nbsp;reference,
-                                          java.lang.String&nbsp;message)</pre>
+                                                                                                   T&nbsp;reference,
+                                                                                                   java.lang.String&nbsp;message)</pre>
 <div class="block">Ensures that an object <code>reference</code> passed as a parameter to the calling method is not <code>null</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -579,10 +595,12 @@ public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;checkNotNull(@Nullable
 <li class="blockList">
 <h4>checkNotNull</h4>
 <pre>@Nonnull
+ @Contract(value="null, _, _ -&gt; fail",
+          pure=true)
 public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;checkNotNull(@Nullable
-                                          T&nbsp;reference,
-                                          java.lang.String&nbsp;pattern,
-                                          java.lang.Object...&nbsp;args)</pre>
+                                                                                                      T&nbsp;reference,
+                                                                                                      java.lang.String&nbsp;pattern,
+                                                                                                      java.lang.Object...&nbsp;args)</pre>
 <div class="block">Ensures that an object <code>reference</code> passed as a parameter to the calling method is not <code>null</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
