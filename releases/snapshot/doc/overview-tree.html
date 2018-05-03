@@ -85,6 +85,7 @@
 <li><a href="fr/inria/atlanmod/commons/log/package-tree.html">fr.inria.atlanmod.commons.log</a>, </li>
 <li><a href="fr/inria/atlanmod/commons/primitive/package-tree.html">fr.inria.atlanmod.commons.primitive</a>, </li>
 <li><a href="fr/inria/atlanmod/commons/reflect/package-tree.html">fr.inria.atlanmod.commons.reflect</a>, </li>
+<li><a href="fr/inria/atlanmod/commons/service/package-tree.html">fr.inria.atlanmod.commons.service</a>, </li>
 <li><a href="fr/inria/atlanmod/commons/time/package-tree.html">fr.inria.atlanmod.commons.time</a></li>
 </ul>
 </div>
@@ -121,8 +122,11 @@
 <li type="circle">fr.inria.atlanmod.commons.reflect.<a href="fr/inria/atlanmod/commons/reflect/MoreReflection.html" title="class in fr.inria.atlanmod.commons.reflect"><span class="typeNameLink">MoreReflection</span></a></li>
 <li type="circle">fr.inria.atlanmod.commons.collect.<a href="fr/inria/atlanmod/commons/collect/MoreStreams.html" title="class in fr.inria.atlanmod.commons.collect"><span class="typeNameLink">MoreStreams</span></a></li>
 <li type="circle">fr.inria.atlanmod.commons.concurrent.<a href="fr/inria/atlanmod/commons/concurrent/MoreThreads.html" title="class in fr.inria.atlanmod.commons.concurrent"><span class="typeNameLink">MoreThreads</span></a></li>
+<li type="circle">fr.inria.atlanmod.commons.service.<a href="fr/inria/atlanmod/commons/service/OSGiContext.html" title="class in fr.inria.atlanmod.commons.service"><span class="typeNameLink">OSGiContext</span></a> (implements fr.inria.atlanmod.commons.service.<a href="fr/inria/atlanmod/commons/service/ServiceContext.html" title="interface in fr.inria.atlanmod.commons.service">ServiceContext</a>)</li>
 <li type="circle">fr.inria.atlanmod.commons.<a href="fr/inria/atlanmod/commons/Preconditions.html" title="class in fr.inria.atlanmod.commons"><span class="typeNameLink">Preconditions</span></a></li>
 <li type="circle">fr.inria.atlanmod.commons.primitive.<a href="fr/inria/atlanmod/commons/primitive/Primitives.html" title="class in fr.inria.atlanmod.commons.primitive"><span class="typeNameLink">Primitives</span></a></li>
+<li type="circle">fr.inria.atlanmod.commons.service.<a href="fr/inria/atlanmod/commons/service/ServiceLoaderContext.html" title="class in fr.inria.atlanmod.commons.service"><span class="typeNameLink">ServiceLoaderContext</span></a> (implements fr.inria.atlanmod.commons.service.<a href="fr/inria/atlanmod/commons/service/ServiceContext.html" title="interface in fr.inria.atlanmod.commons.service">ServiceContext</a>)</li>
+<li type="circle">fr.inria.atlanmod.commons.service.<a href="fr/inria/atlanmod/commons/service/ServiceProvider.html" title="class in fr.inria.atlanmod.commons.service"><span class="typeNameLink">ServiceProvider</span></a></li>
 <li type="circle">fr.inria.atlanmod.commons.primitive.<a href="fr/inria/atlanmod/commons/primitive/Shorts.html" title="class in fr.inria.atlanmod.commons.primitive"><span class="typeNameLink">Shorts</span></a></li>
 <li type="circle">fr.inria.atlanmod.commons.collect.<a href="fr/inria/atlanmod/commons/collect/SizedIterator.html" title="class in fr.inria.atlanmod.commons.collect"><span class="typeNameLink">SizedIterator</span></a>&lt;E&gt; (implements java.util.Iterator&lt;E&gt;)</li>
 <li type="circle">fr.inria.atlanmod.commons.collect.<a href="fr/inria/atlanmod/commons/collect/SizedListIterator.html" title="class in fr.inria.atlanmod.commons.collect"><span class="typeNameLink">SizedListIterator</span></a>&lt;E&gt; (implements java.util.ListIterator&lt;E&gt;)</li>
@@ -231,6 +235,12 @@
 <li type="circle">fr.inria.atlanmod.commons.hash.<a href="fr/inria/atlanmod/commons/hash/HashCode.html" title="interface in fr.inria.atlanmod.commons.hash"><span class="typeNameLink">HashCode</span></a></li>
 </ul>
 </li>
+<li type="circle">fr.inria.atlanmod.commons.service.<a href="fr/inria/atlanmod/commons/service/ServiceContext.html" title="interface in fr.inria.atlanmod.commons.service"><span class="typeNameLink">ServiceContext</span></a></li>
+<li type="circle">java.util.function.Supplier&lt;T&gt;
+<ul>
+<li type="circle">fr.inria.atlanmod.commons.service.<a href="fr/inria/atlanmod/commons/service/ServiceDefinition.html" title="interface in fr.inria.atlanmod.commons.service"><span class="typeNameLink">ServiceDefinition</span></a>&lt;T&gt;</li>
+</ul>
+</li>
 <li type="circle">fr.inria.atlanmod.commons.function.<a href="fr/inria/atlanmod/commons/function/TriConsumer.html" title="interface in fr.inria.atlanmod.commons.function"><span class="typeNameLink">TriConsumer</span></a>&lt;T,U,V&gt;</li>
 </ul>
 <h2 title="Annotation Type Hierarchy">Annotation Type Hierarchy</h2>
@@ -238,9 +248,9 @@
 <li type="circle">fr.inria.atlanmod.commons.annotation.<a href="fr/inria/atlanmod/commons/annotation/Beta.html" title="annotation in fr.inria.atlanmod.commons.annotation"><span class="typeNameLink">Beta</span></a> (implements java.lang.annotation.Annotation)</li>
 <li type="circle">fr.inria.atlanmod.commons.annotation.<a href="fr/inria/atlanmod/commons/annotation/VisibleForTesting.html" title="annotation in fr.inria.atlanmod.commons.annotation"><span class="typeNameLink">VisibleForTesting</span></a> (implements java.lang.annotation.Annotation)</li>
 <li type="circle">fr.inria.atlanmod.commons.annotation.<a href="fr/inria/atlanmod/commons/annotation/Singleton.html" title="annotation in fr.inria.atlanmod.commons.annotation"><span class="typeNameLink">Singleton</span></a> (implements java.lang.annotation.Annotation)</li>
-<li type="circle">fr.inria.atlanmod.commons.annotation.<a href="fr/inria/atlanmod/commons/annotation/VisibleForReflection.html" title="annotation in fr.inria.atlanmod.commons.annotation"><span class="typeNameLink">VisibleForReflection</span></a> (implements java.lang.annotation.Annotation)</li>
 <li type="circle">fr.inria.atlanmod.commons.annotation.<a href="fr/inria/atlanmod/commons/annotation/Builder.html" title="annotation in fr.inria.atlanmod.commons.annotation"><span class="typeNameLink">Builder</span></a> (implements java.lang.annotation.Annotation)</li>
 <li type="circle">fr.inria.atlanmod.commons.annotation.<a href="fr/inria/atlanmod/commons/annotation/Static.html" title="annotation in fr.inria.atlanmod.commons.annotation"><span class="typeNameLink">Static</span></a> (implements java.lang.annotation.Annotation)</li>
+<li type="circle">fr.inria.atlanmod.commons.annotation.<a href="fr/inria/atlanmod/commons/annotation/VisibleForReflection.html" title="annotation in fr.inria.atlanmod.commons.annotation"><span class="typeNameLink">VisibleForReflection</span></a> (implements java.lang.annotation.Annotation)</li>
 </ul>
 <h2 title="Enum Hierarchy">Enum Hierarchy</h2>
 <ul>
