@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9,"i8":9,"i9":9};
+var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9,"i8":9,"i9":9,"i10":9,"i11":9,"i12":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -161,6 +161,13 @@ extends java.lang.Object</pre>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code>static byte[]</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/collect/MoreArrays.html#addAll-byte:A-byte...-">addAll</a></span>(byte[]&nbsp;array1,
+      byte...&nbsp;array2)</code>
+<div class="block">Adds all <code>array2</code> at the end of the <code>array1</code>.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;T[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/collect/MoreArrays.html#addAll-T:A-int-java.util.Collection-">addAll</a></span>(T[]&nbsp;array,
       int&nbsp;index,
@@ -168,61 +175,73 @@ extends java.lang.Object</pre>
 <div class="block">Adds all <code>elements</code> at the end of the <code>array</code>.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;T[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/collect/MoreArrays.html#append-T:A-T-">append</a></span>(T[]&nbsp;array,
       T&nbsp;element)</code>
 <div class="block">Adds the specified <code>element</code> at the last position in the <code>array</code>.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/collect/MoreArrays.html#contains-T:A-T-">contains</a></span>(T[]&nbsp;array,
         T&nbsp;value)</code>
 <div class="block">Checks if the <code>value</code> is in the given <code>array</code>.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/collect/MoreArrays.html#indexOf-T:A-T-">indexOf</a></span>(T[]&nbsp;array,
        T&nbsp;value)</code>
 <div class="block">Finds the index of the given <code>value</code> in the <code>array</code>.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/collect/MoreArrays.html#lastIndexOf-T:A-T-">lastIndexOf</a></span>(T[]&nbsp;array,
            T&nbsp;value)</code>
 <div class="block">Finds the last index of the given <code>value</code> in the <code>array</code>.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;T[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/collect/MoreArrays.html#newArray-java.lang.Class-int-">newArray</a></span>(java.lang.Class&lt;?&gt;&nbsp;type,
         int&nbsp;length)</code>
 <div class="block">Creates a new array with the specified component <code>type</code> and <code>length</code>.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;T[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/collect/MoreArrays.html#remove-T:A-int-">remove</a></span>(T[]&nbsp;array,
       int&nbsp;index)</code>
 <div class="block">Removes the element at the specified <code>index</code> from the specified <code>array</code>.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;T[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/collect/MoreArrays.html#resize-T:A-int-">resize</a></span>(T[]&nbsp;array,
       int&nbsp;length)</code>
 <div class="block">Resizes the <code>array</code> with the given <code>length</code>.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;T[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/collect/MoreArrays.html#set-T:A-int-T-">set</a></span>(T[]&nbsp;array,
    int&nbsp;index,
    T&nbsp;value)</code>
 <div class="block">Sets the specified <code>element</code> at the <code>index</code> in the <code>array</code>.</div>
+</td>
+</tr>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code>static java.lang.Byte[]</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/collect/MoreArrays.html#toObject-byte...-">toObject</a></span>(byte...&nbsp;primitiveArray)</code>
+<div class="block">Converts an array of primitive types <code>byte</code> to an array of Objects .</div>
+</td>
+</tr>
+<tr id="i12" class="altColor">
+<td class="colFirst"><code>static byte[]</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/collect/MoreArrays.html#toPrimitive-java.lang.Byte...-">toPrimitive</a></span>(java.lang.Byte...&nbsp;boxedArray)</code>
+<div class="block">Converts an array of <code>Byte</code> to an array of primitive types <code>byte</code>.</div>
 </td>
 </tr>
 </table>
@@ -436,6 +455,27 @@ public static&nbsp;&lt;T&gt;&nbsp;T[]&nbsp;addAll(T[]&nbsp;array,
 </dl>
 </li>
 </ul>
+<a name="addAll-byte:A-byte...-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addAll</h4>
+<pre>@Nonnull
+public static&nbsp;byte[]&nbsp;addAll(byte[]&nbsp;array1,
+                                     byte...&nbsp;array2)</pre>
+<div class="block">Adds all <code>array2</code> at the end of the <code>array1</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>array1</code> - the array to add the element to</dd>
+<dd><code>array2</code> - the values to add</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new array of bytes containing all the existing elements in arrays 1 and 2.</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.NullPointerException</code> - if any argument is <code>null</code></dd>
+</dl>
+</li>
+</ul>
 <a name="remove-java.lang.Object:A-int-">
 <!--   -->
 </a><a name="remove-T:A-int-">
@@ -514,7 +554,7 @@ public static&nbsp;&lt;T&gt;&nbsp;T[]&nbsp;remove(T[]&nbsp;array,
 </a><a name="lastIndexOf-T:A-T-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>lastIndexOf</h4>
 <pre>public static&nbsp;&lt;T&gt;&nbsp;int&nbsp;lastIndexOf(T[]&nbsp;array,
@@ -529,6 +569,41 @@ public static&nbsp;&lt;T&gt;&nbsp;T[]&nbsp;remove(T[]&nbsp;array,
 <dd>the last index of the object within the array, <code>-1</code> if not found</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.NullPointerException</code> - if the <code>array</code> is <code>null</code></dd>
+</dl>
+</li>
+</ul>
+<a name="toPrimitive-java.lang.Byte...-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toPrimitive</h4>
+<pre>@Nonnull
+public static&nbsp;byte[]&nbsp;toPrimitive(java.lang.Byte...&nbsp;boxedArray)</pre>
+<div class="block">Converts an array of <code>Byte</code> to an array of primitive types <code>byte</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>boxedArray</code> - The array of <code>Byte</code> to convert.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>An array of <code>byte</code> containing the same elements as <code>boxedArray</code>,
+ in the same order, converted to primitives.</dd>
+</dl>
+</li>
+</ul>
+<a name="toObject-byte...-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>toObject</h4>
+<pre>public static&nbsp;java.lang.Byte[]&nbsp;toObject(byte...&nbsp;primitiveArray)</pre>
+<div class="block">Converts an array of primitive types <code>byte</code> to an array of Objects .</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>primitiveArray</code> - The array of  to convert.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>An array of <code>Byte</code>  containing the same elements as <code>primitiveArray</code>, in the same order,
+ converted to boxed types.</dd>
 </dl>
 </li>
 </ul>
