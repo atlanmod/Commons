@@ -97,7 +97,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="contentContainer">
 <ul class="inheritance">
-<li>java.lang.Object</li>
+<li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
 <li>com.github.benmanes.caffeine.cache.Caffeine&lt;K,V&gt;</li>
@@ -117,7 +117,7 @@ var activeTableTab = "activeTableTab";
 <hr>
 <br>
 <pre>public final class <span class="typeNameLabel">Caffeine&lt;K,V&gt;</span>
-extends java.lang.Object</pre>
+extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
 <div class="block">A builder of <a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="interface in com.github.benmanes.caffeine.cache"><code>AsyncLoadingCache</code></a>, <a href="../../../../../com/github/benmanes/caffeine/cache/LoadingCache.html" title="interface in com.github.benmanes.caffeine.cache"><code>LoadingCache</code></a>, and <a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html" title="interface in com.github.benmanes.caffeine.cache"><code>Cache</code></a> instances
  having a combination of the following features:
  <ul>
@@ -125,9 +125,9 @@ extends java.lang.Object</pre>
    <li>size-based eviction when a maximum is exceeded based on frequency and recency
    <li>time-based expiration of entries, measured since last access or last write
    <li>asynchronously refresh when the first stale request for an entry occurs
-   <li>keys automatically wrapped in weak references
-   <li>values automatically wrapped in weak or
-       soft references
+   <li>keys automatically wrapped in <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/ref/WeakReference.html?is-external=true" title="class or interface in java.lang.ref">weak</a> references
+   <li>values automatically wrapped in <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/ref/WeakReference.html?is-external=true" title="class or interface in java.lang.ref">weak</a> or
+       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/ref/SoftReference.html?is-external=true" title="class or interface in java.lang.ref">soft</a> references
    <li>writes propagated to an external resource
    <li>notification of evicted (or otherwise removed) entries
    <li>accumulation of cache access statistics
@@ -147,14 +147,14 @@ extends java.lang.Object</pre>
  </code></pre>
  <p>
  The returned cache is implemented as a hash table with similar performance characteristics to
- <code>ConcurrentHashMap</code>. The <code>asMap</code> view (and its collection views) have <i>weakly
+ <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentHashMap.html?is-external=true" title="class or interface in java.util.concurrent"><code>ConcurrentHashMap</code></a>. The <code>asMap</code> view (and its collection views) have <i>weakly
  consistent iterators</i>. This means that they are safe for concurrent use, but if other threads
  modify the cache after the iterator is created, it is undefined which of these changes, if any,
  are reflected in that iterator. These iterators never throw
- <code>ConcurrentModificationException</code>.
+ <a href="https://docs.oracle.com/javase/8/docs/api/java/util/ConcurrentModificationException.html?is-external=true" title="class or interface in java.util"><code>ConcurrentModificationException</code></a>.
  <p>
  <b>Note:</b> by default, the returned cache uses equality comparisons (the
- <code>equals</code> method) to determine equality for keys or values. However, if
+ <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang"><code>equals</code></a> method) to determine equality for keys or values. However, if
  <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#weakKeys--"><code>weakKeys()</code></a> was specified, the cache uses identity (<code>==</code>) comparisons instead for
  keys. Likewise, if <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#weakValues--"><code>weakValues()</code></a> or <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#softValues--"><code>softValues()</code></a> was specified, the cache uses
  identity comparisons for values.
@@ -229,7 +229,7 @@ extends java.lang.Object</pre>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>&lt;K1 extends <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,V1 extends <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;<br><a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="interface in com.github.benmanes.caffeine.cache">AsyncLoadingCache</a>&lt;K1,V1&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#buildAsync-com.github.benmanes.caffeine.cache.AsyncCacheLoader-">buildAsync</a></span>(<a href="../../../../../com/github/benmanes/caffeine/cache/AsyncCacheLoader.html" title="interface in com.github.benmanes.caffeine.cache">AsyncCacheLoader</a>&lt;? super K1,V1&gt;&nbsp;loader)</code>
-<div class="block">Builds a cache, which either returns a <code>CompletableFuture</code> already loaded or currently
+<div class="block">Builds a cache, which either returns a <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent"><code>CompletableFuture</code></a> already loaded or currently
  computing the value for a given key, or atomically computes the value asynchronously through a
  supplied mapping function or the supplied <code>AsyncCacheLoader</code>.</div>
 </td>
@@ -237,14 +237,14 @@ extends java.lang.Object</pre>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>&lt;K1 extends <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,V1 extends <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;<br><a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="interface in com.github.benmanes.caffeine.cache">AsyncLoadingCache</a>&lt;K1,V1&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#buildAsync-com.github.benmanes.caffeine.cache.CacheLoader-">buildAsync</a></span>(<a href="../../../../../com/github/benmanes/caffeine/cache/CacheLoader.html" title="interface in com.github.benmanes.caffeine.cache">CacheLoader</a>&lt;? super K1,V1&gt;&nbsp;loader)</code>
-<div class="block">Builds a cache, which either returns a <code>CompletableFuture</code> already loaded or currently
+<div class="block">Builds a cache, which either returns a <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent"><code>CompletableFuture</code></a> already loaded or currently
  computing the value for a given key, or atomically computes the value asynchronously through a
  supplied mapping function or the supplied <code>CacheLoader</code>.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#executor-java.util.concurrent.Executor-">executor</a></span>(java.util.concurrent.Executor&nbsp;executor)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#executor-java.util.concurrent.Executor-">executor</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Executor.html?is-external=true" title="class or interface in java.util.concurrent">Executor</a>&nbsp;executor)</code>
 <div class="block">Specifies the executor to use when running asynchronous tasks.</div>
 </td>
 </tr>
@@ -258,7 +258,7 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#expireAfterAccess-java.time.Duration-">expireAfterAccess</a></span>(java.time.Duration&nbsp;duration)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#expireAfterAccess-java.time.Duration-">expireAfterAccess</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html?is-external=true" title="class or interface in java.time">Duration</a>&nbsp;duration)</code>
 <div class="block">Specifies that each entry should be automatically removed from the cache once a fixed duration
  has elapsed after the entry's creation, the most recent replacement of its value, or its last
  read.</div>
@@ -267,7 +267,7 @@ extends java.lang.Object</pre>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#expireAfterAccess-long-java.util.concurrent.TimeUnit-">expireAfterAccess</a></span>(long&nbsp;duration,
-                 java.util.concurrent.TimeUnit&nbsp;unit)</code>
+                 <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/TimeUnit.html?is-external=true" title="class or interface in java.util.concurrent">TimeUnit</a>&nbsp;unit)</code>
 <div class="block">Specifies that each entry should be automatically removed from the cache once a fixed duration
  has elapsed after the entry's creation, the most recent replacement of its value, or its last
  read.</div>
@@ -275,7 +275,7 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#expireAfterWrite-java.time.Duration-">expireAfterWrite</a></span>(java.time.Duration&nbsp;duration)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#expireAfterWrite-java.time.Duration-">expireAfterWrite</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html?is-external=true" title="class or interface in java.time">Duration</a>&nbsp;duration)</code>
 <div class="block">Specifies that each entry should be automatically removed from the cache once a fixed duration
  has elapsed after the entry's creation, or the most recent replacement of its value.</div>
 </td>
@@ -283,20 +283,20 @@ extends java.lang.Object</pre>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#expireAfterWrite-long-java.util.concurrent.TimeUnit-">expireAfterWrite</a></span>(long&nbsp;duration,
-                java.util.concurrent.TimeUnit&nbsp;unit)</code>
+                <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/TimeUnit.html?is-external=true" title="class or interface in java.util.concurrent">TimeUnit</a>&nbsp;unit)</code>
 <div class="block">Specifies that each entry should be automatically removed from the cache once a fixed duration
  has elapsed after the entry's creation, or the most recent replacement of its value.</div>
 </td>
 </tr>
 <tr id="i10" class="altColor">
-<td class="colFirst"><code>static <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;java.lang.Object,java.lang.Object&gt;</code></td>
+<td class="colFirst"><code>static <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#from-com.github.benmanes.caffeine.cache.CaffeineSpec-">from</a></span>(<a href="../../../../../com/github/benmanes/caffeine/cache/CaffeineSpec.html" title="class in com.github.benmanes.caffeine.cache">CaffeineSpec</a>&nbsp;spec)</code>
 <div class="block">Constructs a new <code>Caffeine</code> instance with the settings specified in <code>spec</code>.</div>
 </td>
 </tr>
 <tr id="i11" class="rowColor">
-<td class="colFirst"><code>static <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;java.lang.Object,java.lang.Object&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#from-java.lang.String-">from</a></span>(java.lang.String&nbsp;spec)</code>
+<td class="colFirst"><code>static <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#from-java.lang.String-">from</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;spec)</code>
 <div class="block">Constructs a new <code>Caffeine</code> instance with the settings specified in <code>spec</code>.</div>
 </td>
 </tr>
@@ -319,7 +319,7 @@ extends java.lang.Object</pre>
 </td>
 </tr>
 <tr id="i15" class="rowColor">
-<td class="colFirst"><code>static <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;java.lang.Object,java.lang.Object&gt;</code></td>
+<td class="colFirst"><code>static <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#newBuilder--">newBuilder</a></span>()</code>
 <div class="block">Constructs a new <code>Caffeine</code> instance with default settings, including strong keys, strong
  values, and no automatic eviction of any kind.</div>
@@ -333,13 +333,13 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i17" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#recordStats-java.util.function.Supplier-">recordStats</a></span>(java.util.function.Supplier&lt;? extends <a href="../../../../../com/github/benmanes/caffeine/cache/stats/StatsCounter.html" title="interface in com.github.benmanes.caffeine.cache.stats">StatsCounter</a>&gt;&nbsp;statsCounterSupplier)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#recordStats-java.util.function.Supplier-">recordStats</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function">Supplier</a>&lt;? extends <a href="../../../../../com/github/benmanes/caffeine/cache/stats/StatsCounter.html" title="interface in com.github.benmanes.caffeine.cache.stats">StatsCounter</a>&gt;&nbsp;statsCounterSupplier)</code>
 <div class="block">Enables the accumulation of <a href="../../../../../com/github/benmanes/caffeine/cache/stats/CacheStats.html" title="class in com.github.benmanes.caffeine.cache.stats"><code>CacheStats</code></a> during the operation of the cache.</div>
 </td>
 </tr>
 <tr id="i18" class="altColor">
 <td class="colFirst"><code><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#refreshAfterWrite-java.time.Duration-">refreshAfterWrite</a></span>(java.time.Duration&nbsp;duration)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#refreshAfterWrite-java.time.Duration-">refreshAfterWrite</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html?is-external=true" title="class or interface in java.time">Duration</a>&nbsp;duration)</code>
 <div class="block">Specifies that active entries are eligible for automatic refresh once a fixed duration has
  elapsed after the entry's creation, or the most recent replacement of its value.</div>
 </td>
@@ -347,7 +347,7 @@ extends java.lang.Object</pre>
 <tr id="i19" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#refreshAfterWrite-long-java.util.concurrent.TimeUnit-">refreshAfterWrite</a></span>(long&nbsp;duration,
-                 java.util.concurrent.TimeUnit&nbsp;unit)</code>
+                 <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/TimeUnit.html?is-external=true" title="class or interface in java.util.concurrent">TimeUnit</a>&nbsp;unit)</code>
 <div class="block">Specifies that active entries are eligible for automatic refresh once a fixed duration has
  elapsed after the entry's creation, or the most recent replacement of its value.</div>
 </td>
@@ -363,7 +363,7 @@ extends java.lang.Object</pre>
 <td class="colFirst"><code><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#softValues--">softValues</a></span>()</code>
 <div class="block">Specifies that each value (not key) stored in the cache should be wrapped in a
- <code>SoftReference</code> (by default, strong references are used).</div>
+ <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/ref/SoftReference.html?is-external=true" title="class or interface in java.lang.ref"><code>SoftReference</code></a> (by default, strong references are used).</div>
 </td>
 </tr>
 <tr id="i22" class="altColor">
@@ -374,7 +374,7 @@ extends java.lang.Object</pre>
 </td>
 </tr>
 <tr id="i23" class="rowColor">
-<td class="colFirst"><code>java.lang.String</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#toString--">toString</a></span>()</code>
 <div class="block">Returns a string representation for this Caffeine instance.</div>
 </td>
@@ -383,14 +383,14 @@ extends java.lang.Object</pre>
 <td class="colFirst"><code><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#weakKeys--">weakKeys</a></span>()</code>
 <div class="block">Specifies that each key (not value) stored in the cache should be wrapped in a
- <code>WeakReference</code> (by default, strong references are used).</div>
+ <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/ref/WeakReference.html?is-external=true" title="class or interface in java.lang.ref"><code>WeakReference</code></a> (by default, strong references are used).</div>
 </td>
 </tr>
 <tr id="i25" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#weakValues--">weakValues</a></span>()</code>
 <div class="block">Specifies that each value (not key) stored in the cache should be wrapped in a
- <code>WeakReference</code> (by default, strong references are used).</div>
+ <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/ref/WeakReference.html?is-external=true" title="class or interface in java.lang.ref"><code>WeakReference</code></a> (by default, strong references are used).</div>
 </td>
 </tr>
 <tr id="i26" class="altColor">
@@ -411,8 +411,8 @@ extends java.lang.Object</pre>
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;java.lang.Object</h3>
-<code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait</code></li>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
 </ul>
 </li>
 </ul>
@@ -434,8 +434,8 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>newBuilder</h4>
-<pre>@Nonnull
-public static&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;java.lang.Object,java.lang.Object&gt;&nbsp;newBuilder()</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public static&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;&nbsp;newBuilder()</pre>
 <div class="block">Constructs a new <code>Caffeine</code> instance with default settings, including strong keys, strong
  values, and no automatic eviction of any kind.
  <p>
@@ -453,8 +453,8 @@ public static&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Ca
 <ul class="blockList">
 <li class="blockList">
 <h4>from</h4>
-<pre>@Nonnull
-public static&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;java.lang.Object,java.lang.Object&gt;&nbsp;from(<a href="../../../../../com/github/benmanes/caffeine/cache/CaffeineSpec.html" title="class in com.github.benmanes.caffeine.cache">CaffeineSpec</a>&nbsp;spec)</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public static&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;&nbsp;from(<a href="../../../../../com/github/benmanes/caffeine/cache/CaffeineSpec.html" title="class in com.github.benmanes.caffeine.cache">CaffeineSpec</a>&nbsp;spec)</pre>
 <div class="block">Constructs a new <code>Caffeine</code> instance with the settings specified in <code>spec</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -470,8 +470,8 @@ public static&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Ca
 <ul class="blockList">
 <li class="blockList">
 <h4>from</h4>
-<pre>@Nonnull
-public static&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;java.lang.Object,java.lang.Object&gt;&nbsp;from(java.lang.String&nbsp;spec)</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public static&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;&nbsp;from(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;spec)</pre>
 <div class="block">Constructs a new <code>Caffeine</code> instance with the settings specified in <code>spec</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -487,8 +487,8 @@ public static&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Ca
 <ul class="blockList">
 <li class="blockList">
 <h4>initialCapacity</h4>
-<pre>@Nonnull
-public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;&nbsp;initialCapacity(@Nonnegative
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;&nbsp;initialCapacity(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnegative.html?is-external=true" title="class or interface in javax.annotation">@Nonnegative</a>
                                               int&nbsp;initialCapacity)</pre>
 <div class="block">Sets the minimum total size for the internal data structures. Providing a large enough estimate
  at construction time avoids the need for expensive resizing operations later, but setting this
@@ -499,8 +499,8 @@ public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>this builder instance</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalArgumentException</code> - if <code>initialCapacity</code> is negative</dd>
-<dd><code>java.lang.IllegalStateException</code> - if an initial capacity was already set</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if <code>initialCapacity</code> is negative</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang">IllegalStateException</a></code> - if an initial capacity was already set</dd>
 </dl>
 </li>
 </ul>
@@ -510,19 +510,19 @@ public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.
 <ul class="blockList">
 <li class="blockList">
 <h4>executor</h4>
-<pre>@Nonnull
-public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;&nbsp;executor(@Nonnull
-                                       java.util.concurrent.Executor&nbsp;executor)</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;&nbsp;executor(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                                       <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Executor.html?is-external=true" title="class or interface in java.util.concurrent">Executor</a>&nbsp;executor)</pre>
 <div class="block">Specifies the executor to use when running asynchronous tasks. The executor is delegated to
  when sending removal notifications, when asynchronous computations are performed by
  <a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="interface in com.github.benmanes.caffeine.cache"><code>AsyncLoadingCache</code></a> or <a href="../../../../../com/github/benmanes/caffeine/cache/LoadingCache.html#refresh-K-"><code>LoadingCache.refresh(K)</code></a> or <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#refreshAfterWrite-java.time.Duration-"><code>refreshAfterWrite(java.time.Duration)</code></a>, or
- when performing periodic maintenance. By default, <code>ForkJoinPool.commonPool()</code> is used.
+ when performing periodic maintenance. By default, <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinPool.html?is-external=true#commonPool--" title="class or interface in java.util.concurrent"><code>ForkJoinPool.commonPool()</code></a> is used.
  <p>
  The primary intent of this method is to facilitate testing of caches which have been
  configured with <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#removalListener"><code>removalListener</code></a> or utilize asynchronous computations. A test may
  instead prefer to configure the cache to execute tasks directly on the same thread.
  <p>
- Beware that configuring a cache with an executor that throws <code>RejectedExecutionException</code>
+ Beware that configuring a cache with an executor that throws <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/RejectedExecutionException.html?is-external=true" title="class or interface in java.util.concurrent"><code>RejectedExecutionException</code></a>
  may experience non-deterministic behavior.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -530,7 +530,7 @@ public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>this builder instance</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.NullPointerException</code> - if the specified executor is null</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the specified executor is null</dd>
 </dl>
 </li>
 </ul>
@@ -540,8 +540,8 @@ public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.
 <ul class="blockList">
 <li class="blockList">
 <h4>maximumSize</h4>
-<pre>@Nonnull
-public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;&nbsp;maximumSize(@Nonnegative
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;&nbsp;maximumSize(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnegative.html?is-external=true" title="class or interface in javax.annotation">@Nonnegative</a>
                                           long&nbsp;maximumSize)</pre>
 <div class="block">Specifies the maximum number of entries the cache may contain. Note that the cache <b>may evict
  an entry before this limit is exceeded or temporarily exceed the threshold while evicting</b>.
@@ -559,8 +559,8 @@ public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>this builder instance</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalArgumentException</code> - if <code>size</code> is negative</dd>
-<dd><code>java.lang.IllegalStateException</code> - if a maximum size or weight was already set</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if <code>size</code> is negative</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang">IllegalStateException</a></code> - if a maximum size or weight was already set</dd>
 </dl>
 </li>
 </ul>
@@ -570,8 +570,8 @@ public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.
 <ul class="blockList">
 <li class="blockList">
 <h4>maximumWeight</h4>
-<pre>@Nonnull
-public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;&nbsp;maximumWeight(@Nonnegative
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;&nbsp;maximumWeight(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnegative.html?is-external=true" title="class or interface in javax.annotation">@Nonnegative</a>
                                             long&nbsp;maximumWeight)</pre>
 <div class="block">Specifies the maximum weight of entries the cache may contain. Weight is determined using the
  <a href="../../../../../com/github/benmanes/caffeine/cache/Weigher.html" title="interface in com.github.benmanes.caffeine.cache"><code>Weigher</code></a> specified with <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#weigher"><code>weigher</code></a>, and use of this method requires a
@@ -596,8 +596,8 @@ public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>this builder instance</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalArgumentException</code> - if <code>maximumWeight</code> is negative</dd>
-<dd><code>java.lang.IllegalStateException</code> - if a maximum weight or size was already set</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if <code>maximumWeight</code> is negative</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang">IllegalStateException</a></code> - if a maximum weight or size was already set</dd>
 </dl>
 </li>
 </ul>
@@ -607,8 +607,8 @@ public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.
 <ul class="blockList">
 <li class="blockList">
 <h4>weigher</h4>
-<pre>@Nonnull
-public&nbsp;&lt;K1 extends <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,V1 extends <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;K1,V1&gt;&nbsp;weigher(@Nonnull
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public&nbsp;&lt;K1 extends <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,V1 extends <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;K1,V1&gt;&nbsp;weigher(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
                                                                     <a href="../../../../../com/github/benmanes/caffeine/cache/Weigher.html" title="interface in com.github.benmanes.caffeine.cache">Weigher</a>&lt;? super K1,? super V1&gt;&nbsp;weigher)</pre>
 <div class="block">Specifies the weigher to use in determining the weight of entries. Entry weight is taken into
  consideration by <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#maximumWeight-long-"><code>maximumWeight(long)</code></a> when determining which entries to evict, and use
@@ -630,7 +630,7 @@ public&nbsp;&lt;K1 extends <a href="../../../../../com/github/benmanes/caffeine/
  <p>
  <b>Warning:</b> if you ignore the above advice, and use this <code>Caffeine</code> to build a cache
  whose key or value type is incompatible with the weigher, you will likely experience a
- <code>ClassCastException</code> at some <i>undefined</i> point in the future.</div>
+ <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/ClassCastException.html?is-external=true" title="class or interface in java.lang"><code>ClassCastException</code></a> at some <i>undefined</i> point in the future.</div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
 <dd><code>K1</code> - key type of the weigher</dd>
@@ -641,7 +641,7 @@ public&nbsp;&lt;K1 extends <a href="../../../../../com/github/benmanes/caffeine/
 <dd>the cache builder reference that should be used instead of <code>this</code> for any
          remaining configuration and cache building</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalStateException</code> - if a weigher was already set</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang">IllegalStateException</a></code> - if a weigher was already set</dd>
 </dl>
 </li>
 </ul>
@@ -651,14 +651,14 @@ public&nbsp;&lt;K1 extends <a href="../../../../../com/github/benmanes/caffeine/
 <ul class="blockList">
 <li class="blockList">
 <h4>weakKeys</h4>
-<pre>@Nonnull
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
 public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;&nbsp;weakKeys()</pre>
 <div class="block">Specifies that each key (not value) stored in the cache should be wrapped in a
- <code>WeakReference</code> (by default, strong references are used).
+ <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/ref/WeakReference.html?is-external=true" title="class or interface in java.lang.ref"><code>WeakReference</code></a> (by default, strong references are used).
  <p>
  <b>Warning:</b> when this method is used, the resulting cache will use identity (<code>==</code>)
  comparison to determine equality of keys. Its <a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html#asMap--"><code>Cache.asMap()</code></a> view will therefore
- technically violate the <code>Map</code> specification (in the same way that <code>IdentityHashMap</code>
+ technically violate the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util"><code>Map</code></a> specification (in the same way that <a href="https://docs.oracle.com/javase/8/docs/api/java/util/IdentityHashMap.html?is-external=true" title="class or interface in java.util"><code>IdentityHashMap</code></a>
  does).
  <p>
  Entries with keys that have been garbage collected may be counted in
@@ -670,7 +670,7 @@ public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>this builder instance</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalStateException</code> - if the key strength was already set or the writer was set</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang">IllegalStateException</a></code> - if the key strength was already set or the writer was set</dd>
 </dl>
 </li>
 </ul>
@@ -680,10 +680,10 @@ public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.
 <ul class="blockList">
 <li class="blockList">
 <h4>weakValues</h4>
-<pre>@Nonnull
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
 public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;&nbsp;weakValues()</pre>
 <div class="block">Specifies that each value (not key) stored in the cache should be wrapped in a
- <code>WeakReference</code> (by default, strong references are used).
+ <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/ref/WeakReference.html?is-external=true" title="class or interface in java.lang.ref"><code>WeakReference</code></a> (by default, strong references are used).
  <p>
  Weak values will be garbage collected once they are weakly reachable. This makes them a poor
  candidate for caching; consider <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#softValues--"><code>softValues()</code></a> instead.
@@ -700,7 +700,7 @@ public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>this builder instance</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalStateException</code> - if the value strength was already set</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang">IllegalStateException</a></code> - if the value strength was already set</dd>
 </dl>
 </li>
 </ul>
@@ -710,10 +710,10 @@ public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.
 <ul class="blockList">
 <li class="blockList">
 <h4>softValues</h4>
-<pre>@Nonnull
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
 public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;&nbsp;softValues()</pre>
 <div class="block">Specifies that each value (not key) stored in the cache should be wrapped in a
- <code>SoftReference</code> (by default, strong references are used). Softly-referenced objects will
+ <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/ref/SoftReference.html?is-external=true" title="class or interface in java.lang.ref"><code>SoftReference</code></a> (by default, strong references are used). Softly-referenced objects will
  be garbage-collected in a <i>globally</i> least-recently-used manner, in response to memory
  demand.
  <p>
@@ -733,7 +733,7 @@ public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>this builder instance</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalStateException</code> - if the value strength was already set</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang">IllegalStateException</a></code> - if the value strength was already set</dd>
 </dl>
 </li>
 </ul>
@@ -743,9 +743,9 @@ public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.
 <ul class="blockList">
 <li class="blockList">
 <h4>expireAfterWrite</h4>
-<pre>@Nonnull
-public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;&nbsp;expireAfterWrite(@Nonnull
-                                               java.time.Duration&nbsp;duration)</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;&nbsp;expireAfterWrite(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                                               <a href="https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html?is-external=true" title="class or interface in java.time">Duration</a>&nbsp;duration)</pre>
 <div class="block">Specifies that each entry should be automatically removed from the cache once a fixed duration
  has elapsed after the entry's creation, or the most recent replacement of its value.
  <p>
@@ -759,8 +759,8 @@ public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>this builder instance</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalArgumentException</code> - if the length of time is negative</dd>
-<dd><code>java.lang.IllegalStateException</code> - if the time to live or variable expiration was already set</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if the length of time is negative</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang">IllegalStateException</a></code> - if the time to live or variable expiration was already set</dd>
 </dl>
 </li>
 </ul>
@@ -770,11 +770,11 @@ public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.
 <ul class="blockList">
 <li class="blockList">
 <h4>expireAfterWrite</h4>
-<pre>@Nonnull
-public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;&nbsp;expireAfterWrite(@Nonnegative
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;&nbsp;expireAfterWrite(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnegative.html?is-external=true" title="class or interface in javax.annotation">@Nonnegative</a>
                                                long&nbsp;duration,
-                                               @Nonnull
-                                               java.util.concurrent.TimeUnit&nbsp;unit)</pre>
+                                               <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                                               <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/TimeUnit.html?is-external=true" title="class or interface in java.util.concurrent">TimeUnit</a>&nbsp;unit)</pre>
 <div class="block">Specifies that each entry should be automatically removed from the cache once a fixed duration
  has elapsed after the entry's creation, or the most recent replacement of its value.
  <p>
@@ -789,8 +789,8 @@ public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>this builder instance</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalArgumentException</code> - if <code>duration</code> is negative</dd>
-<dd><code>java.lang.IllegalStateException</code> - if the time to live or variable expiration was already set</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if <code>duration</code> is negative</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang">IllegalStateException</a></code> - if the time to live or variable expiration was already set</dd>
 </dl>
 </li>
 </ul>
@@ -800,9 +800,9 @@ public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.
 <ul class="blockList">
 <li class="blockList">
 <h4>expireAfterAccess</h4>
-<pre>@Nonnull
-public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;&nbsp;expireAfterAccess(@Nonnull
-                                                java.time.Duration&nbsp;duration)</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;&nbsp;expireAfterAccess(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                                                <a href="https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html?is-external=true" title="class or interface in java.time">Duration</a>&nbsp;duration)</pre>
 <div class="block">Specifies that each entry should be automatically removed from the cache once a fixed duration
  has elapsed after the entry's creation, the most recent replacement of its value, or its last
  read. Access time is reset by all cache read and write operations (including
@@ -819,8 +819,8 @@ public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>this builder instance</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalArgumentException</code> - if the length of time is negative</dd>
-<dd><code>java.lang.IllegalStateException</code> - if the time to idle or variable expiration was already set</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if the length of time is negative</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang">IllegalStateException</a></code> - if the time to idle or variable expiration was already set</dd>
 </dl>
 </li>
 </ul>
@@ -830,11 +830,11 @@ public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.
 <ul class="blockList">
 <li class="blockList">
 <h4>expireAfterAccess</h4>
-<pre>@Nonnull
-public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;&nbsp;expireAfterAccess(@Nonnegative
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;&nbsp;expireAfterAccess(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnegative.html?is-external=true" title="class or interface in javax.annotation">@Nonnegative</a>
                                                 long&nbsp;duration,
-                                                @Nonnull
-                                                java.util.concurrent.TimeUnit&nbsp;unit)</pre>
+                                                <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                                                <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/TimeUnit.html?is-external=true" title="class or interface in java.util.concurrent">TimeUnit</a>&nbsp;unit)</pre>
 <div class="block">Specifies that each entry should be automatically removed from the cache once a fixed duration
  has elapsed after the entry's creation, the most recent replacement of its value, or its last
  read. Access time is reset by all cache read and write operations (including
@@ -852,8 +852,8 @@ public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>this builder instance</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalArgumentException</code> - if <code>duration</code> is negative</dd>
-<dd><code>java.lang.IllegalStateException</code> - if the time to idle or variable expiration was already set</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if <code>duration</code> is negative</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang">IllegalStateException</a></code> - if the time to idle or variable expiration was already set</dd>
 </dl>
 </li>
 </ul>
@@ -863,8 +863,8 @@ public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.
 <ul class="blockList">
 <li class="blockList">
 <h4>expireAfter</h4>
-<pre>@Nonnull
-public&nbsp;&lt;K1 extends <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,V1 extends <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;K1,V1&gt;&nbsp;expireAfter(@Nonnull
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public&nbsp;&lt;K1 extends <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,V1 extends <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;K1,V1&gt;&nbsp;expireAfter(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
                                                                         <a href="../../../../../com/github/benmanes/caffeine/cache/Expiry.html" title="interface in com.github.benmanes.caffeine.cache">Expiry</a>&lt;? super K1,? super V1&gt;&nbsp;expiry)</pre>
 <div class="block">Specifies that each entry should be automatically removed from the cache once a duration has
  elapsed after the entry's creation, the most recent replacement of its value, or its last
@@ -884,7 +884,7 @@ public&nbsp;&lt;K1 extends <a href="../../../../../com/github/benmanes/caffeine/
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>this builder instance</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalStateException</code> - if expiration was already set</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang">IllegalStateException</a></code> - if expiration was already set</dd>
 </dl>
 </li>
 </ul>
@@ -894,9 +894,9 @@ public&nbsp;&lt;K1 extends <a href="../../../../../com/github/benmanes/caffeine/
 <ul class="blockList">
 <li class="blockList">
 <h4>refreshAfterWrite</h4>
-<pre>@Nonnull
-public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;&nbsp;refreshAfterWrite(@Nonnull
-                                                java.time.Duration&nbsp;duration)</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;&nbsp;refreshAfterWrite(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                                                <a href="https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html?is-external=true" title="class or interface in java.time">Duration</a>&nbsp;duration)</pre>
 <div class="block">Specifies that active entries are eligible for automatic refresh once a fixed duration has
  elapsed after the entry's creation, or the most recent replacement of its value. The semantics
  of refreshes are specified in <a href="../../../../../com/github/benmanes/caffeine/cache/LoadingCache.html#refresh-K-"><code>LoadingCache.refresh(K)</code></a>, and are performed by calling
@@ -914,8 +914,8 @@ public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>this builder instance</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalArgumentException</code> - if the length of time is zero or negative</dd>
-<dd><code>java.lang.IllegalStateException</code> - if the refresh interval was already set</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if the length of time is zero or negative</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang">IllegalStateException</a></code> - if the refresh interval was already set</dd>
 </dl>
 </li>
 </ul>
@@ -925,11 +925,11 @@ public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.
 <ul class="blockList">
 <li class="blockList">
 <h4>refreshAfterWrite</h4>
-<pre>@Nonnull
-public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;&nbsp;refreshAfterWrite(@Nonnegative
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;&nbsp;refreshAfterWrite(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnegative.html?is-external=true" title="class or interface in javax.annotation">@Nonnegative</a>
                                                 long&nbsp;duration,
-                                                @Nonnull
-                                                java.util.concurrent.TimeUnit&nbsp;unit)</pre>
+                                                <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                                                <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/TimeUnit.html?is-external=true" title="class or interface in java.util.concurrent">TimeUnit</a>&nbsp;unit)</pre>
 <div class="block">Specifies that active entries are eligible for automatic refresh once a fixed duration has
  elapsed after the entry's creation, or the most recent replacement of its value. The semantics
  of refreshes are specified in <a href="../../../../../com/github/benmanes/caffeine/cache/LoadingCache.html#refresh-K-"><code>LoadingCache.refresh(K)</code></a>, and are performed by calling
@@ -948,8 +948,8 @@ public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>this builder instance</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalArgumentException</code> - if <code>duration</code> is zero or negative</dd>
-<dd><code>java.lang.IllegalStateException</code> - if the refresh interval was already set</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if <code>duration</code> is zero or negative</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang">IllegalStateException</a></code> - if the refresh interval was already set</dd>
 </dl>
 </li>
 </ul>
@@ -959,11 +959,11 @@ public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.
 <ul class="blockList">
 <li class="blockList">
 <h4>ticker</h4>
-<pre>@Nonnull
-public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;&nbsp;ticker(@Nonnull
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;&nbsp;ticker(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
                                      <a href="../../../../../com/github/benmanes/caffeine/cache/Ticker.html" title="interface in com.github.benmanes.caffeine.cache">Ticker</a>&nbsp;ticker)</pre>
 <div class="block">Specifies a nanosecond-precision time source for use in determining when entries should be
- expired or refreshed. By default, <code>System.nanoTime()</code> is used.
+ expired or refreshed. By default, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/System.html?is-external=true#nanoTime--" title="class or interface in java.lang"><code>System.nanoTime()</code></a> is used.
  <p>
  The primary intent of this method is to facilitate testing of caches which have been configured
  with <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#expireAfterWrite-java.time.Duration-"><code>expireAfterWrite(java.time.Duration)</code></a>, <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#expireAfterAccess-java.time.Duration-"><code>expireAfterAccess(java.time.Duration)</code></a>, or <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#refreshAfterWrite-java.time.Duration-"><code>refreshAfterWrite(java.time.Duration)</code></a>.</div>
@@ -973,8 +973,8 @@ public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>this builder instance</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalStateException</code> - if a ticker was already set</dd>
-<dd><code>java.lang.NullPointerException</code> - if the specified ticker is null</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang">IllegalStateException</a></code> - if a ticker was already set</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the specified ticker is null</dd>
 </dl>
 </li>
 </ul>
@@ -984,8 +984,8 @@ public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.
 <ul class="blockList">
 <li class="blockList">
 <h4>removalListener</h4>
-<pre>@Nonnull
-public&nbsp;&lt;K1 extends <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,V1 extends <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;K1,V1&gt;&nbsp;removalListener(@Nonnull
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public&nbsp;&lt;K1 extends <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,V1 extends <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;K1,V1&gt;&nbsp;removalListener(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
                                                                             <a href="../../../../../com/github/benmanes/caffeine/cache/RemovalListener.html" title="interface in com.github.benmanes.caffeine.cache">RemovalListener</a>&lt;? super K1,? super V1&gt;&nbsp;removalListener)</pre>
 <div class="block">Specifies a listener instance that caches should notify each time an entry is removed for any
  <a href="../../../../../com/github/benmanes/caffeine/cache/RemovalCause.html" title="enum in com.github.benmanes.caffeine.cache">reason</a>. Each cache created by this builder will invoke this listener
@@ -996,11 +996,11 @@ public&nbsp;&lt;K1 extends <a href="../../../../../com/github/benmanes/caffeine/
  same instance, but only the returned reference has the correct generic type information so as
  to ensure type safety. For best results, use the standard method-chaining idiom illustrated in
  the class documentation above, configuring a builder and building your cache in a single
- statement. Failure to heed this advice can result in a <code>ClassCastException</code> being thrown
+ statement. Failure to heed this advice can result in a <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/ClassCastException.html?is-external=true" title="class or interface in java.lang"><code>ClassCastException</code></a> being thrown
  by a cache operation at some <i>undefined</i> point in the future.
  <p>
  <b>Warning:</b> any exception thrown by <code>listener</code> will <i>not</i> be propagated to the
- <code>Cache</code> user, only logged via a <code>Logger</code>.</div>
+ <code>Cache</code> user, only logged via a <a href="https://docs.oracle.com/javase/8/docs/api/java/util/logging/Logger.html?is-external=true" title="class or interface in java.util.logging"><code>Logger</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
 <dd><code>K1</code> - the key type of the listener</dd>
@@ -1012,8 +1012,8 @@ public&nbsp;&lt;K1 extends <a href="../../../../../com/github/benmanes/caffeine/
 <dd>the cache builder reference that should be used instead of <code>this</code> for any
          remaining configuration and cache building</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalStateException</code> - if a removal listener was already set</dd>
-<dd><code>java.lang.NullPointerException</code> - if the specified removal listener is null</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang">IllegalStateException</a></code> - if a removal listener was already set</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the specified removal listener is null</dd>
 </dl>
 </li>
 </ul>
@@ -1023,8 +1023,8 @@ public&nbsp;&lt;K1 extends <a href="../../../../../com/github/benmanes/caffeine/
 <ul class="blockList">
 <li class="blockList">
 <h4>writer</h4>
-<pre>@Nonnull
-public&nbsp;&lt;K1 extends <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,V1 extends <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;K1,V1&gt;&nbsp;writer(@Nonnull
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public&nbsp;&lt;K1 extends <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,V1 extends <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;K1,V1&gt;&nbsp;writer(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
                                                                    <a href="../../../../../com/github/benmanes/caffeine/cache/CacheWriter.html" title="interface in com.github.benmanes.caffeine.cache">CacheWriter</a>&lt;? super K1,? super V1&gt;&nbsp;writer)</pre>
 <div class="block">Specifies a writer instance that caches should notify each time an entry is explicitly created
  or modified, or removed for any <a href="../../../../../com/github/benmanes/caffeine/cache/RemovalCause.html" title="enum in com.github.benmanes.caffeine.cache">reason</a>. The writer is not notified
@@ -1036,7 +1036,7 @@ public&nbsp;&lt;K1 extends <a href="../../../../../com/github/benmanes/caffeine/
  same instance, but only the returned reference has the correct generic type information so as
  to ensure type safety. For best results, use the standard method-chaining idiom illustrated in
  the class documentation above, configuring a builder and building your cache in a single
- statement. Failure to heed this advice can result in a <code>ClassCastException</code> being thrown
+ statement. Failure to heed this advice can result in a <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/ClassCastException.html?is-external=true" title="class or interface in java.lang"><code>ClassCastException</code></a> being thrown
  by a cache operation at some <i>undefined</i> point in the future.
  <p>
  <b>Warning:</b> any exception thrown by <code>writer</code> will be propagated to the <code>Cache</code>
@@ -1054,8 +1054,8 @@ public&nbsp;&lt;K1 extends <a href="../../../../../com/github/benmanes/caffeine/
 <dd>the cache builder reference that should be used instead of <code>this</code> for any
          remaining configuration and cache building</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalStateException</code> - if a writer was already set or if the key strength is weak</dd>
-<dd><code>java.lang.NullPointerException</code> - if the specified writer is null</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang">IllegalStateException</a></code> - if a writer was already set or if the key strength is weak</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the specified writer is null</dd>
 </dl>
 </li>
 </ul>
@@ -1065,7 +1065,7 @@ public&nbsp;&lt;K1 extends <a href="../../../../../com/github/benmanes/caffeine/
 <ul class="blockList">
 <li class="blockList">
 <h4>recordStats</h4>
-<pre>@Nonnull
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
 public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;&nbsp;recordStats()</pre>
 <div class="block">Enables the accumulation of <a href="../../../../../com/github/benmanes/caffeine/cache/stats/CacheStats.html" title="class in com.github.benmanes.caffeine.cache.stats"><code>CacheStats</code></a> during the operation of the cache. Without this
  <a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html#stats--"><code>Cache.stats()</code></a> will return zero for all statistics. Note that recording statistics
@@ -1083,9 +1083,9 @@ public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.
 <ul class="blockList">
 <li class="blockList">
 <h4>recordStats</h4>
-<pre>@Nonnull
-public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;&nbsp;recordStats(@Nonnull
-                                          java.util.function.Supplier&lt;? extends <a href="../../../../../com/github/benmanes/caffeine/cache/stats/StatsCounter.html" title="interface in com.github.benmanes.caffeine.cache.stats">StatsCounter</a>&gt;&nbsp;statsCounterSupplier)</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="class in com.github.benmanes.caffeine.cache">Caffeine</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;&nbsp;recordStats(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                                          <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html?is-external=true" title="class or interface in java.util.function">Supplier</a>&lt;? extends <a href="../../../../../com/github/benmanes/caffeine/cache/stats/StatsCounter.html" title="interface in com.github.benmanes.caffeine.cache.stats">StatsCounter</a>&gt;&nbsp;statsCounterSupplier)</pre>
 <div class="block">Enables the accumulation of <a href="../../../../../com/github/benmanes/caffeine/cache/stats/CacheStats.html" title="class in com.github.benmanes.caffeine.cache.stats"><code>CacheStats</code></a> during the operation of the cache. Without this
  <a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html#stats--"><code>Cache.stats()</code></a> will return zero for all statistics. Note that recording statistics
  requires bookkeeping to be performed with each operation, and thus imposes a performance
@@ -1105,7 +1105,7 @@ public&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.
 <ul class="blockList">
 <li class="blockList">
 <h4>build</h4>
-<pre>@Nonnull
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
 public&nbsp;&lt;K1 extends <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,V1 extends <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html" title="interface in com.github.benmanes.caffeine.cache">Cache</a>&lt;K1,V1&gt;&nbsp;build()</pre>
 <div class="block">Builds a cache which does not automatically load values when keys are requested.
  <p>
@@ -1129,8 +1129,8 @@ public&nbsp;&lt;K1 extends <a href="../../../../../com/github/benmanes/caffeine/
 <ul class="blockList">
 <li class="blockList">
 <h4>build</h4>
-<pre>@Nonnull
-public&nbsp;&lt;K1 extends <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,V1 extends <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/LoadingCache.html" title="interface in com.github.benmanes.caffeine.cache">LoadingCache</a>&lt;K1,V1&gt;&nbsp;build(@Nonnull
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public&nbsp;&lt;K1 extends <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,V1 extends <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/LoadingCache.html" title="interface in com.github.benmanes.caffeine.cache">LoadingCache</a>&lt;K1,V1&gt;&nbsp;build(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
                                                                       <a href="../../../../../com/github/benmanes/caffeine/cache/CacheLoader.html" title="interface in com.github.benmanes.caffeine.cache">CacheLoader</a>&lt;? super K1,V1&gt;&nbsp;loader)</pre>
 <div class="block">Builds a cache, which either returns an already-loaded value for a given key or atomically
  computes or retrieves it using the supplied <code>CacheLoader</code>. If another thread is currently
@@ -1156,10 +1156,10 @@ public&nbsp;&lt;K1 extends <a href="../../../../../com/github/benmanes/caffeine/
 <ul class="blockList">
 <li class="blockList">
 <h4>buildAsync</h4>
-<pre>@Nonnull
-public&nbsp;&lt;K1 extends <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,V1 extends <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="interface in com.github.benmanes.caffeine.cache">AsyncLoadingCache</a>&lt;K1,V1&gt;&nbsp;buildAsync(@Nonnull
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public&nbsp;&lt;K1 extends <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,V1 extends <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="interface in com.github.benmanes.caffeine.cache">AsyncLoadingCache</a>&lt;K1,V1&gt;&nbsp;buildAsync(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
                                                                                 <a href="../../../../../com/github/benmanes/caffeine/cache/CacheLoader.html" title="interface in com.github.benmanes.caffeine.cache">CacheLoader</a>&lt;? super K1,V1&gt;&nbsp;loader)</pre>
-<div class="block">Builds a cache, which either returns a <code>CompletableFuture</code> already loaded or currently
+<div class="block">Builds a cache, which either returns a <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent"><code>CompletableFuture</code></a> already loaded or currently
  computing the value for a given key, or atomically computes the value asynchronously through a
  supplied mapping function or the supplied <code>CacheLoader</code>. If the asynchronous computation
  fails or computes a <code>null</code> value then the entry will be automatically removed. Note that
@@ -1187,10 +1187,10 @@ public&nbsp;&lt;K1 extends <a href="../../../../../com/github/benmanes/caffeine/
 <ul class="blockList">
 <li class="blockList">
 <h4>buildAsync</h4>
-<pre>@Nonnull
-public&nbsp;&lt;K1 extends <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,V1 extends <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="interface in com.github.benmanes.caffeine.cache">AsyncLoadingCache</a>&lt;K1,V1&gt;&nbsp;buildAsync(@Nonnull
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public&nbsp;&lt;K1 extends <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,V1 extends <a href="../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="interface in com.github.benmanes.caffeine.cache">AsyncLoadingCache</a>&lt;K1,V1&gt;&nbsp;buildAsync(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
                                                                                 <a href="../../../../../com/github/benmanes/caffeine/cache/AsyncCacheLoader.html" title="interface in com.github.benmanes.caffeine.cache">AsyncCacheLoader</a>&lt;? super K1,V1&gt;&nbsp;loader)</pre>
-<div class="block">Builds a cache, which either returns a <code>CompletableFuture</code> already loaded or currently
+<div class="block">Builds a cache, which either returns a <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent"><code>CompletableFuture</code></a> already loaded or currently
  computing the value for a given key, or atomically computes the value asynchronously through a
  supplied mapping function or the supplied <code>AsyncCacheLoader</code>. If the asynchronous
  computation fails or computes a <code>null</code> value then the entry will be automatically
@@ -1218,12 +1218,12 @@ public&nbsp;&lt;K1 extends <a href="../../../../../com/github/benmanes/caffeine/
 <ul class="blockListLast">
 <li class="blockList">
 <h4>toString</h4>
-<pre>public&nbsp;java.lang.String&nbsp;toString()</pre>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toString()</pre>
 <div class="block">Returns a string representation for this Caffeine instance. The exact form of the returned
  string is not specified.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code>toString</code>&nbsp;in class&nbsp;<code>java.lang.Object</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a></code>&nbsp;in class&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></dd>
 </dl>
 </li>
 </ul>

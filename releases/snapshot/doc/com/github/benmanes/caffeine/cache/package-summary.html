@@ -195,9 +195,9 @@
    size-based eviction when a maximum is exceeded based on frequency and recency
    time-based expiration of entries, measured since last access or last write
    asynchronously refresh when the first stale request for an entry occurs
-   keys automatically wrapped in weak references
-   values automatically wrapped in weak or
-       soft references
+   keys automatically wrapped in <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/ref/WeakReference.html?is-external=true" title="class or interface in java.lang.ref">weak</a> references
+   values automatically wrapped in <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/ref/WeakReference.html?is-external=true" title="class or interface in java.lang.ref">weak</a> or
+       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/ref/SoftReference.html?is-external=true" title="class or interface in java.lang.ref">soft</a> references
    writes propagated to an external resource
    notification of evicted (or otherwise removed) entries
    accumulation of cache access statistics

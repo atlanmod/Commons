@@ -106,8 +106,8 @@ var activeTableTab = "activeTableTab";
 </dl>
 <hr>
 <br>
-<pre>@ThreadSafe
- @ParametersAreNonnullByDefault
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/concurrent.ThreadSafe.html?is-external=true" title="class or interface in javax.annotation">@ThreadSafe</a>
+ <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/ParametersAreNonnullByDefault.html?is-external=true" title="class or interface in javax.annotation">@ParametersAreNonnullByDefault</a>
 public interface <span class="typeNameLabel">Cache&lt;K,V&gt;</span></pre>
 <div class="block">A semi-persistent mapping from keys to values. Cache entries are manually added using <a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html#get-K-java.util.function.Function-"><code>get(Object, Function)</code></a>
  or <a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html#put-K-V-"><code>put(Object, Object)</code></a>, and are stored in the cache until either evicted or manually invalidated.
@@ -133,7 +133,7 @@ public interface <span class="typeNameLabel">Cache&lt;K,V&gt;</span></pre>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>java.util.concurrent.ConcurrentMap&lt;<a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html" title="type parameter in Cache">K</a>,<a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html" title="type parameter in Cache">V</a>&gt;</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentMap.html?is-external=true" title="class or interface in java.util.concurrent">ConcurrentMap</a>&lt;<a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html" title="type parameter in Cache">K</a>,<a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html" title="type parameter in Cache">V</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html#asMap--">asMap</a></span>()</code>
 <div class="block">Returns a view of the entries stored in this cache as a thread-safe map.</div>
 </td>
@@ -160,13 +160,13 @@ public interface <span class="typeNameLabel">Cache&lt;K,V&gt;</span></pre>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html" title="type parameter in Cache">V</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html#get-K-java.util.function.Function-">get</a></span>(<a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html" title="type parameter in Cache">K</a>&nbsp;key,
-   java.util.function.Function&lt;? super <a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html" title="type parameter in Cache">K</a>,? extends <a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html" title="type parameter in Cache">V</a>&gt;&nbsp;mappingFunction)</code>
+   <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function">Function</a>&lt;? super <a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html" title="type parameter in Cache">K</a>,? extends <a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html" title="type parameter in Cache">V</a>&gt;&nbsp;mappingFunction)</code>
 <div class="block">Returns the value associated with the <code>key</code> in this cache, obtaining that value from the <code>mappingFunction</code> if necessary.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code>java.util.Map&lt;<a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html" title="type parameter in Cache">K</a>,<a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html" title="type parameter in Cache">V</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html#getAll-java.lang.Iterable-">getAll</a></span>(java.lang.Iterable&lt;? extends <a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html" title="type parameter in Cache">K</a>&gt;&nbsp;keys)</code>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html" title="type parameter in Cache">K</a>,<a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html" title="type parameter in Cache">V</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html#getAll-java.lang.Iterable-">getAll</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;? extends <a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html" title="type parameter in Cache">K</a>&gt;&nbsp;keys)</code>
 <div class="block">Returns a map of the values associated with the <code>keys</code> in this cache.</div>
 </td>
 </tr>
@@ -184,7 +184,7 @@ public interface <span class="typeNameLabel">Cache&lt;K,V&gt;</span></pre>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html#invalidateAll-java.lang.Iterable-">invalidateAll</a></span>(java.lang.Iterable&lt;? extends <a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html" title="type parameter in Cache">K</a>&gt;&nbsp;keys)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html#invalidateAll-java.lang.Iterable-">invalidateAll</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;? extends <a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html" title="type parameter in Cache">K</a>&gt;&nbsp;keys)</code>
 <div class="block">Discards any cached values for the <code>keys</code>.</div>
 </td>
 </tr>
@@ -197,7 +197,7 @@ public interface <span class="typeNameLabel">Cache&lt;K,V&gt;</span></pre>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html#putAll-java.util.Map-">putAll</a></span>(java.util.Map&lt;? extends <a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html" title="type parameter in Cache">K</a>,? extends <a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html" title="type parameter in Cache">V</a>&gt;&nbsp;map)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html#putAll-java.util.Map-">putAll</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;? extends <a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html" title="type parameter in Cache">K</a>,? extends <a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html" title="type parameter in Cache">V</a>&gt;&nbsp;map)</code>
 <div class="block">Copies all of the mappings from the specified map to the cache.</div>
 </td>
 </tr>
@@ -270,7 +270,7 @@ public interface <span class="typeNameLabel">Cache&lt;K,V&gt;</span></pre>
 <li class="blockList">
 <h4>get</h4>
 <pre><a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html" title="type parameter in Cache">V</a>&nbsp;get(<a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html" title="type parameter in Cache">K</a>&nbsp;key,
-      java.util.function.Function&lt;? super <a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html" title="type parameter in Cache">K</a>,? extends <a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html" title="type parameter in Cache">V</a>&gt;&nbsp;mappingFunction)</pre>
+      <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function">Function</a>&lt;? super <a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html" title="type parameter in Cache">K</a>,? extends <a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html" title="type parameter in Cache">V</a>&gt;&nbsp;mappingFunction)</pre>
 <div class="block">Returns the value associated with the <code>key</code> in this cache, obtaining that value from the <code>mappingFunction</code> if necessary.
  <p>
  If the specified <code>key</code> is not already associated with a value, attempts to compute its value using the
@@ -284,9 +284,9 @@ public interface <span class="typeNameLabel">Cache&lt;K,V&gt;</span></pre>
 <dd>the current (existing or computed) value associated with the specified key, or <code>null</code> if the
  computed value is <code>null</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalStateException</code> - if the computation detectably attempts a recursive update to this cache that would
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang">IllegalStateException</a></code> - if the computation detectably attempts a recursive update to this cache that would
                                otherwise never complete</dd>
-<dd><code>java.lang.RuntimeException</code> - if the mappingFunction does so, in which case the mapping is left unestablished</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a></code> - if the mappingFunction does so, in which case the mapping is left unestablished</dd>
 </dl>
 </li>
 </ul>
@@ -296,8 +296,8 @@ public interface <span class="typeNameLabel">Cache&lt;K,V&gt;</span></pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getAll</h4>
-<pre>@Nonnull
-java.util.Map&lt;<a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html" title="type parameter in Cache">K</a>,<a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html" title="type parameter in Cache">V</a>&gt;&nbsp;getAll(java.lang.Iterable&lt;? extends <a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html" title="type parameter in Cache">K</a>&gt;&nbsp;keys)</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html" title="type parameter in Cache">K</a>,<a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html" title="type parameter in Cache">V</a>&gt;&nbsp;getAll(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;? extends <a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html" title="type parameter in Cache">K</a>&gt;&nbsp;keys)</pre>
 <div class="block">Returns a map of the values associated with the <code>keys</code> in this cache. The returned map will only contain
  entries which are already present in the cache.</div>
 <dl>
@@ -352,7 +352,7 @@ java.util.Map&lt;<a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.h
 <ul class="blockList">
 <li class="blockList">
 <h4>putAll</h4>
-<pre>void&nbsp;putAll(java.util.Map&lt;? extends <a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html" title="type parameter in Cache">K</a>,? extends <a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html" title="type parameter in Cache">V</a>&gt;&nbsp;map)</pre>
+<pre>void&nbsp;putAll(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;? extends <a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html" title="type parameter in Cache">K</a>,? extends <a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html" title="type parameter in Cache">V</a>&gt;&nbsp;map)</pre>
 <div class="block">Copies all of the mappings from the specified map to the cache. The effect of this call is equivalent to that of
  calling <a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html#put-K-V-"><code>put(Object, Object)</code></a> on this map once for each mapping from key <code>k</code> to value <code>v</code> in
  the specified map. The behavior of this operation is undefined if the specified map is modified while the
@@ -385,7 +385,7 @@ java.util.Map&lt;<a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.h
 <ul class="blockList">
 <li class="blockList">
 <h4>invalidateAll</h4>
-<pre>void&nbsp;invalidateAll(java.lang.Iterable&lt;? extends <a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html" title="type parameter in Cache">K</a>&gt;&nbsp;keys)</pre>
+<pre>void&nbsp;invalidateAll(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;? extends <a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html" title="type parameter in Cache">K</a>&gt;&nbsp;keys)</pre>
 <div class="block">Discards any cached values for the <code>keys</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -427,7 +427,7 @@ java.util.Map&lt;<a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.h
 <ul class="blockList">
 <li class="blockList">
 <h4>size</h4>
-<pre>@Nonnegative
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnegative.html?is-external=true" title="class or interface in javax.annotation">@Nonnegative</a>
 long&nbsp;size()</pre>
 <div class="block">Returns the approximate number of entries in this cache.</div>
 <dl>
@@ -471,8 +471,8 @@ long&nbsp;size()</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>asMap</h4>
-<pre>@Nonnull
-java.util.concurrent.ConcurrentMap&lt;<a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html" title="type parameter in Cache">K</a>,<a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html" title="type parameter in Cache">V</a>&gt;&nbsp;asMap()</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+<a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentMap.html?is-external=true" title="class or interface in java.util.concurrent">ConcurrentMap</a>&lt;<a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html" title="type parameter in Cache">K</a>,<a href="../../../../../fr/inria/atlanmod/commons/cache/Cache.html" title="type parameter in Cache">V</a>&gt;&nbsp;asMap()</pre>
 <div class="block">Returns a view of the entries stored in this cache as a thread-safe map. Modifications made to the map directly
  affect the cache.
  <p>
@@ -481,7 +481,7 @@ java.util.concurrent.ConcurrentMap&lt;<a href="../../../../../fr/inria/atlanmod/
  (if any) will be reflected in that iterator.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>a thread-safe view of this cache supporting all of the optional <code>Map</code> operations</dd>
+<dd>a thread-safe view of this cache supporting all of the optional <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util"><code>Map</code></a> operations</dd>
 </dl>
 </li>
 </ul>
@@ -491,7 +491,7 @@ java.util.concurrent.ConcurrentMap&lt;<a href="../../../../../fr/inria/atlanmod/
 <ul class="blockListLast">
 <li class="blockList">
 <h4>stats</h4>
-<pre>@Nonnull
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
 <a href="../../../../../fr/inria/atlanmod/commons/cache/CacheStats.html" title="class in fr.inria.atlanmod.commons.cache">CacheStats</a>&nbsp;stats()</pre>
 <div class="block">Returns a current snapshot of this cache's cumulative statistics. All statistics are initialized to zero, and are
  monotonically increasing over the lifetime of the cache.

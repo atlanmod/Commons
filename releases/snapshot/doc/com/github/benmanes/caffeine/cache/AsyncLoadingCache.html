@@ -106,7 +106,7 @@ var activeTableTab = "activeTableTab";
 </dl>
 <hr>
 <br>
-<pre>@ThreadSafe
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/concurrent.ThreadSafe.html?is-external=true" title="class or interface in javax.annotation">@ThreadSafe</a>
 public interface <span class="typeNameLabel">AsyncLoadingCache&lt;K,V&gt;</span></pre>
 <div class="block">A semi-persistent mapping from keys to values. Values are automatically loaded by the cache
  asynchronously, and are stored in the cache until either evicted or manually invalidated.
@@ -132,38 +132,38 @@ public interface <span class="typeNameLabel">AsyncLoadingCache&lt;K,V&gt;</span>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>java.util.concurrent.CompletableFuture&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="type parameter in AsyncLoadingCache">V</a>&gt;</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent">CompletableFuture</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="type parameter in AsyncLoadingCache">V</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html#get-K-">get</a></span>(<a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="type parameter in AsyncLoadingCache">K</a>&nbsp;key)</code>
 <div class="block">Returns the future associated with <code>key</code> in this cache, obtaining that value from
  <a href="../../../../../com/github/benmanes/caffeine/cache/CacheLoader.html#asyncLoad-K-java.util.concurrent.Executor-"><code>CacheLoader.asyncLoad(K, java.util.concurrent.Executor)</code></a> if necessary.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>java.util.concurrent.CompletableFuture&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="type parameter in AsyncLoadingCache">V</a>&gt;</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent">CompletableFuture</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="type parameter in AsyncLoadingCache">V</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html#get-K-java.util.function.BiFunction-">get</a></span>(<a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="type parameter in AsyncLoadingCache">K</a>&nbsp;key,
-   java.util.function.BiFunction&lt;? super <a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="type parameter in AsyncLoadingCache">K</a>,java.util.concurrent.Executor,java.util.concurrent.CompletableFuture&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="type parameter in AsyncLoadingCache">V</a>&gt;&gt;&nbsp;mappingFunction)</code>
+   <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiFunction.html?is-external=true" title="class or interface in java.util.function">BiFunction</a>&lt;? super <a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="type parameter in AsyncLoadingCache">K</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Executor.html?is-external=true" title="class or interface in java.util.concurrent">Executor</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent">CompletableFuture</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="type parameter in AsyncLoadingCache">V</a>&gt;&gt;&nbsp;mappingFunction)</code>
 <div class="block">Returns the future associated with <code>key</code> in this cache, obtaining that value from
  <code>mappingFunction</code> if necessary.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>java.util.concurrent.CompletableFuture&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="type parameter in AsyncLoadingCache">V</a>&gt;</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent">CompletableFuture</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="type parameter in AsyncLoadingCache">V</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html#get-K-java.util.function.Function-">get</a></span>(<a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="type parameter in AsyncLoadingCache">K</a>&nbsp;key,
-   java.util.function.Function&lt;? super <a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="type parameter in AsyncLoadingCache">K</a>,? extends <a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="type parameter in AsyncLoadingCache">V</a>&gt;&nbsp;mappingFunction)</code>
+   <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function">Function</a>&lt;? super <a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="type parameter in AsyncLoadingCache">K</a>,? extends <a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="type parameter in AsyncLoadingCache">V</a>&gt;&nbsp;mappingFunction)</code>
 <div class="block">Returns the future associated with <code>key</code> in this cache, obtaining that value from
  <code>mappingFunction</code> if necessary.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>java.util.concurrent.CompletableFuture&lt;java.util.Map&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="type parameter in AsyncLoadingCache">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="type parameter in AsyncLoadingCache">V</a>&gt;&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html#getAll-java.lang.Iterable-">getAll</a></span>(java.lang.Iterable&lt;? extends <a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="type parameter in AsyncLoadingCache">K</a>&gt;&nbsp;keys)</code>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="type parameter in AsyncLoadingCache">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="type parameter in AsyncLoadingCache">V</a>&gt;&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html#getAll-java.lang.Iterable-">getAll</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;? extends <a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="type parameter in AsyncLoadingCache">K</a>&gt;&nbsp;keys)</code>
 <div class="block">Returns the future of a map of the values associated with <code>keys</code>, creating or retrieving
  those values if necessary.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>java.util.concurrent.CompletableFuture&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="type parameter in AsyncLoadingCache">V</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html#getIfPresent-java.lang.Object-">getIfPresent</a></span>(java.lang.Object&nbsp;key)</code>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent">CompletableFuture</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="type parameter in AsyncLoadingCache">V</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html#getIfPresent-java.lang.Object-">getIfPresent</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;key)</code>
 <div class="block">Returns the future associated with <code>key</code> in this cache, or <code>null</code> if there is no
  cached future for <code>key</code>.</div>
 </td>
@@ -171,7 +171,7 @@ public interface <span class="typeNameLabel">AsyncLoadingCache&lt;K,V&gt;</span>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html#put-K-java.util.concurrent.CompletableFuture-">put</a></span>(<a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="type parameter in AsyncLoadingCache">K</a>&nbsp;key,
-   java.util.concurrent.CompletableFuture&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="type parameter in AsyncLoadingCache">V</a>&gt;&nbsp;valueFuture)</code>
+   <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent">CompletableFuture</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="type parameter in AsyncLoadingCache">V</a>&gt;&nbsp;valueFuture)</code>
 <div class="block">Associates <code>value</code> with <code>key</code> in this cache.</div>
 </td>
 </tr>
@@ -202,9 +202,9 @@ public interface <span class="typeNameLabel">AsyncLoadingCache&lt;K,V&gt;</span>
 <ul class="blockList">
 <li class="blockList">
 <h4>getIfPresent</h4>
-<pre>@Nullable
-java.util.concurrent.CompletableFuture&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="type parameter in AsyncLoadingCache">V</a>&gt;&nbsp;getIfPresent(@Nonnull
-                                                                 java.lang.Object&nbsp;key)</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+<a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent">CompletableFuture</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="type parameter in AsyncLoadingCache">V</a>&gt;&nbsp;getIfPresent(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                                            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;key)</pre>
 <div class="block">Returns the future associated with <code>key</code> in this cache, or <code>null</code> if there is no
  cached future for <code>key</code>.</div>
 <dl>
@@ -214,7 +214,7 @@ java.util.concurrent.CompletableFuture&lt;<a href="../../../../../com/github/ben
 <dd>the current (existing or computed) future value to which the specified key is mapped,
          or <code>null</code> if this map contains no mapping for the key</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.NullPointerException</code> - if the specified key is null</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the specified key is null</dd>
 </dl>
 </li>
 </ul>
@@ -226,11 +226,11 @@ java.util.concurrent.CompletableFuture&lt;<a href="../../../../../com/github/ben
 <ul class="blockList">
 <li class="blockList">
 <h4>get</h4>
-<pre>@Nonnull
-java.util.concurrent.CompletableFuture&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="type parameter in AsyncLoadingCache">V</a>&gt;&nbsp;get(@Nonnull
-                                                       <a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="type parameter in AsyncLoadingCache">K</a>&nbsp;key,
-                                                       @Nonnull
-                                                       java.util.function.Function&lt;? super <a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="type parameter in AsyncLoadingCache">K</a>,? extends <a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="type parameter in AsyncLoadingCache">V</a>&gt;&nbsp;mappingFunction)</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+<a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent">CompletableFuture</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="type parameter in AsyncLoadingCache">V</a>&gt;&nbsp;get(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                                  <a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="type parameter in AsyncLoadingCache">K</a>&nbsp;key,
+                                  <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                                  <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function">Function</a>&lt;? super <a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="type parameter in AsyncLoadingCache">K</a>,? extends <a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="type parameter in AsyncLoadingCache">V</a>&gt;&nbsp;mappingFunction)</pre>
 <div class="block">Returns the future associated with <code>key</code> in this cache, obtaining that value from
  <code>mappingFunction</code> if necessary. This method provides a simple substitute for the
  conventional "if cached, return; otherwise create, cache and return" pattern.
@@ -249,7 +249,7 @@ java.util.concurrent.CompletableFuture&lt;<a href="../../../../../com/github/ben
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the current (existing or computed) future value associated with the specified key</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.NullPointerException</code> - if the specified key or mappingFunction is null</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the specified key or mappingFunction is null</dd>
 </dl>
 </li>
 </ul>
@@ -261,11 +261,11 @@ java.util.concurrent.CompletableFuture&lt;<a href="../../../../../com/github/ben
 <ul class="blockList">
 <li class="blockList">
 <h4>get</h4>
-<pre>@Nonnull
-java.util.concurrent.CompletableFuture&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="type parameter in AsyncLoadingCache">V</a>&gt;&nbsp;get(@Nonnull
-                                                       <a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="type parameter in AsyncLoadingCache">K</a>&nbsp;key,
-                                                       @Nonnull
-                                                       java.util.function.BiFunction&lt;? super <a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="type parameter in AsyncLoadingCache">K</a>,java.util.concurrent.Executor,java.util.concurrent.CompletableFuture&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="type parameter in AsyncLoadingCache">V</a>&gt;&gt;&nbsp;mappingFunction)</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+<a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent">CompletableFuture</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="type parameter in AsyncLoadingCache">V</a>&gt;&nbsp;get(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                                  <a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="type parameter in AsyncLoadingCache">K</a>&nbsp;key,
+                                  <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                                  <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiFunction.html?is-external=true" title="class or interface in java.util.function">BiFunction</a>&lt;? super <a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="type parameter in AsyncLoadingCache">K</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Executor.html?is-external=true" title="class or interface in java.util.concurrent">Executor</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent">CompletableFuture</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="type parameter in AsyncLoadingCache">V</a>&gt;&gt;&nbsp;mappingFunction)</pre>
 <div class="block">Returns the future associated with <code>key</code> in this cache, obtaining that value from
  <code>mappingFunction</code> if necessary. This method provides a simple substitute for the
  conventional "if cached, return; otherwise create, cache and return" pattern.
@@ -284,9 +284,9 @@ java.util.concurrent.CompletableFuture&lt;<a href="../../../../../com/github/ben
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the current (existing or computed) future value associated with the specified key</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.NullPointerException</code> - if the specified key or mappingFunction is null, or if the
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the specified key or mappingFunction is null, or if the
          future returned by the mappingFunction is null</dd>
-<dd><code>java.lang.RuntimeException</code> - or Error if the mappingFunction does when constructing the future,
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a></code> - or Error if the mappingFunction does when constructing the future,
          in which case the mapping is left unestablished</dd>
 </dl>
 </li>
@@ -299,9 +299,9 @@ java.util.concurrent.CompletableFuture&lt;<a href="../../../../../com/github/ben
 <ul class="blockList">
 <li class="blockList">
 <h4>get</h4>
-<pre>@Nonnull
-java.util.concurrent.CompletableFuture&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="type parameter in AsyncLoadingCache">V</a>&gt;&nbsp;get(@Nonnull
-                                                       <a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="type parameter in AsyncLoadingCache">K</a>&nbsp;key)</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+<a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent">CompletableFuture</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="type parameter in AsyncLoadingCache">V</a>&gt;&nbsp;get(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                                  <a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="type parameter in AsyncLoadingCache">K</a>&nbsp;key)</pre>
 <div class="block">Returns the future associated with <code>key</code> in this cache, obtaining that value from
  <a href="../../../../../com/github/benmanes/caffeine/cache/CacheLoader.html#asyncLoad-K-java.util.concurrent.Executor-"><code>CacheLoader.asyncLoad(K, java.util.concurrent.Executor)</code></a> if necessary. If the asynchronous computation fails, the entry
  will be automatically removed from this cache.
@@ -315,9 +315,9 @@ java.util.concurrent.CompletableFuture&lt;<a href="../../../../../com/github/ben
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the current (existing or computed) future value associated with the specified key</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.NullPointerException</code> - if the specified key is null or if the future returned by the
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the specified key is null or if the future returned by the
          <a href="../../../../../com/github/benmanes/caffeine/cache/AsyncCacheLoader.html" title="interface in com.github.benmanes.caffeine.cache"><code>AsyncCacheLoader</code></a> is null</dd>
-<dd><code>java.lang.RuntimeException</code> - or Error if the <a href="../../../../../com/github/benmanes/caffeine/cache/CacheLoader.html" title="interface in com.github.benmanes.caffeine.cache"><code>CacheLoader</code></a> does when constructing the future,
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a></code> - or Error if the <a href="../../../../../com/github/benmanes/caffeine/cache/CacheLoader.html" title="interface in com.github.benmanes.caffeine.cache"><code>CacheLoader</code></a> does when constructing the future,
          in which case the mapping is left unestablished</dd>
 </dl>
 </li>
@@ -328,9 +328,9 @@ java.util.concurrent.CompletableFuture&lt;<a href="../../../../../com/github/ben
 <ul class="blockList">
 <li class="blockList">
 <h4>getAll</h4>
-<pre>@Nonnull
-java.util.concurrent.CompletableFuture&lt;java.util.Map&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="type parameter in AsyncLoadingCache">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="type parameter in AsyncLoadingCache">V</a>&gt;&gt;&nbsp;getAll(@Nonnull
-                                                                           java.lang.Iterable&lt;? extends <a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="type parameter in AsyncLoadingCache">K</a>&gt;&nbsp;keys)</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+<a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="type parameter in AsyncLoadingCache">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="type parameter in AsyncLoadingCache">V</a>&gt;&gt;&nbsp;getAll(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                                            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;? extends <a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="type parameter in AsyncLoadingCache">K</a>&gt;&nbsp;keys)</pre>
 <div class="block">Returns the future of a map of the values associated with <code>keys</code>, creating or retrieving
  those values if necessary. The returned map contains entries that were already cached, combined
  with newly loaded entries; it will never contain null keys or values. If the any of the
@@ -344,7 +344,7 @@ java.util.concurrent.CompletableFuture&lt;java.util.Map&lt;<a href="../../../../
  each key by making individual <a href="../../../../../com/github/benmanes/caffeine/cache/CacheLoader.html#asyncLoad-K-java.util.concurrent.Executor-"><code>CacheLoader.asyncLoad(K, java.util.concurrent.Executor)</code></a> calls. Note that multiple threads
  can concurrently load values for distinct keys.
  <p>
- Note that duplicate elements in <code>keys</code>, as determined by <code>Object.equals(java.lang.Object)</code>, will be
+ Note that duplicate elements in <code>keys</code>, as determined by <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang"><code>Object.equals(java.lang.Object)</code></a>, will be
  ignored.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -353,9 +353,9 @@ java.util.concurrent.CompletableFuture&lt;java.util.Map&lt;<a href="../../../../
 <dd>the future containing an unmodifiable mapping of keys to values for the specified keys
          in this cache</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.NullPointerException</code> - if the specified collection is null or contains a null element, or
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the specified collection is null or contains a null element, or
          if the future returned by the <a href="../../../../../com/github/benmanes/caffeine/cache/AsyncCacheLoader.html" title="interface in com.github.benmanes.caffeine.cache"><code>AsyncCacheLoader</code></a> is null</dd>
-<dd><code>java.lang.RuntimeException</code> - or Error if the <a href="../../../../../com/github/benmanes/caffeine/cache/CacheLoader.html" title="interface in com.github.benmanes.caffeine.cache"><code>CacheLoader</code></a> does so, if
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a></code> - or Error if the <a href="../../../../../com/github/benmanes/caffeine/cache/CacheLoader.html" title="interface in com.github.benmanes.caffeine.cache"><code>CacheLoader</code></a> does so, if
          <a href="../../../../../com/github/benmanes/caffeine/cache/CacheLoader.html#asyncLoadAll-java.lang.Iterable-java.util.concurrent.Executor-"><code>CacheLoader.asyncLoadAll(java.lang.Iterable&lt;? extends K&gt;, java.util.concurrent.Executor)</code></a> returns <code>null</code>, or fails when constructing the
          future, in which case the mapping is left unestablished</dd>
 </dl>
@@ -369,10 +369,10 @@ java.util.concurrent.CompletableFuture&lt;java.util.Map&lt;<a href="../../../../
 <ul class="blockList">
 <li class="blockList">
 <h4>put</h4>
-<pre>void&nbsp;put(@Nonnull
+<pre>void&nbsp;put(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
          <a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="type parameter in AsyncLoadingCache">K</a>&nbsp;key,
-         @Nonnull
-         java.util.concurrent.CompletableFuture&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="type parameter in AsyncLoadingCache">V</a>&gt;&nbsp;valueFuture)</pre>
+         <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+         <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent">CompletableFuture</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="type parameter in AsyncLoadingCache">V</a>&gt;&nbsp;valueFuture)</pre>
 <div class="block">Associates <code>value</code> with <code>key</code> in this cache. If the cache previously contained a
  value associated with <code>key</code>, the old value is replaced by <code>value</code>. If the
  asynchronous computation fails, the entry will be automatically removed.
@@ -384,7 +384,7 @@ java.util.concurrent.CompletableFuture&lt;java.util.Map&lt;<a href="../../../../
 <dd><code>key</code> - key with which the specified value is to be associated</dd>
 <dd><code>valueFuture</code> - value to be associated with the specified key</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.NullPointerException</code> - if the specified key or value is null</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the specified key or value is null</dd>
 </dl>
 </li>
 </ul>
@@ -394,7 +394,7 @@ java.util.concurrent.CompletableFuture&lt;java.util.Map&lt;<a href="../../../../
 <ul class="blockListLast">
 <li class="blockList">
 <h4>synchronous</h4>
-<pre>@Nonnull
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
 <a href="../../../../../com/github/benmanes/caffeine/cache/LoadingCache.html" title="interface in com.github.benmanes.caffeine.cache">LoadingCache</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="type parameter in AsyncLoadingCache">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="type parameter in AsyncLoadingCache">V</a>&gt;&nbsp;synchronous()</pre>
 <div class="block">Returns a view of the entries stored in this cache as a synchronous <a href="../../../../../com/github/benmanes/caffeine/cache/LoadingCache.html" title="interface in com.github.benmanes.caffeine.cache"><code>LoadingCache</code></a>. A
  mapping is not present if the value is currently being loaded. Modifications made to the

@@ -105,7 +105,7 @@ var activeTableTab = "activeTableTab";
 </dl>
 <hr>
 <br>
-<pre>@ThreadSafe
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/concurrent.ThreadSafe.html?is-external=true" title="class or interface in javax.annotation">@ThreadSafe</a>
 public interface <span class="typeNameLabel">StatsCounter</span></pre>
 <div class="block">Accumulates statistics during the operation of a <a href="../../../../../../com/github/benmanes/caffeine/cache/Cache.html" title="interface in com.github.benmanes.caffeine.cache"><code>Cache</code></a> for presentation by
  <a href="../../../../../../com/github/benmanes/caffeine/cache/Cache.html#stats--"><code>Cache.stats()</code></a>. This is solely intended for consumption by <code>Cache</code> implementors.</div>
@@ -206,7 +206,7 @@ public interface <span class="typeNameLabel">StatsCounter</span></pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>recordHits</h4>
-<pre>void&nbsp;recordHits(@Nonnegative
+<pre>void&nbsp;recordHits(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnegative.html?is-external=true" title="class or interface in javax.annotation">@Nonnegative</a>
                 int&nbsp;count)</pre>
 <div class="block">Records cache hits. This should be called when a cache request returns a cached value.</div>
 <dl>
@@ -221,7 +221,7 @@ public interface <span class="typeNameLabel">StatsCounter</span></pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>recordMisses</h4>
-<pre>void&nbsp;recordMisses(@Nonnegative
+<pre>void&nbsp;recordMisses(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnegative.html?is-external=true" title="class or interface in javax.annotation">@Nonnegative</a>
                   int&nbsp;count)</pre>
 <div class="block">Records cache misses. This should be called when a cache request returns a value that was not
  found in the cache. This method should be called by the loading thread, as well as by threads
@@ -241,7 +241,7 @@ public interface <span class="typeNameLabel">StatsCounter</span></pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>recordLoadSuccess</h4>
-<pre>void&nbsp;recordLoadSuccess(@Nonnegative
+<pre>void&nbsp;recordLoadSuccess(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnegative.html?is-external=true" title="class or interface in javax.annotation">@Nonnegative</a>
                        long&nbsp;loadTime)</pre>
 <div class="block">Records the successful load of a new entry. This should be called when a cache request causes
  an entry to be loaded, and the loading completes successfully. In contrast to
@@ -258,7 +258,7 @@ public interface <span class="typeNameLabel">StatsCounter</span></pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>recordLoadFailure</h4>
-<pre>void&nbsp;recordLoadFailure(@Nonnegative
+<pre>void&nbsp;recordLoadFailure(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnegative.html?is-external=true" title="class or interface in javax.annotation">@Nonnegative</a>
                        long&nbsp;loadTime)</pre>
 <div class="block">Records the failed load of a new entry. This should be called when a cache request causes an
  entry to be loaded, but either no value is found or an exception is thrown while loading the
@@ -277,7 +277,7 @@ public interface <span class="typeNameLabel">StatsCounter</span></pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>recordEviction</h4>
-<pre>@Deprecated
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
 void&nbsp;recordEviction()</pre>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">Use <a href="../../../../../../com/github/benmanes/caffeine/cache/stats/StatsCounter.html#recordEviction-int-"><code>recordEviction(int)</code></a> instead. This method is scheduled for
      removal in version <tt>3.0.0</tt>.</span></div>
@@ -308,7 +308,7 @@ void&nbsp;recordEviction()</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>snapshot</h4>
-<pre>@Nonnull
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
 <a href="../../../../../../com/github/benmanes/caffeine/cache/stats/CacheStats.html" title="class in com.github.benmanes.caffeine.cache.stats">CacheStats</a>&nbsp;snapshot()</pre>
 <div class="block">Returns a snapshot of this counter's values. Note that this may be an inconsistent view, as it
  may be interleaved with update operations.</div>
@@ -324,7 +324,7 @@ void&nbsp;recordEviction()</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>disabledStatsCounter</h4>
-<pre>@Nonnull
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
 static&nbsp;<a href="../../../../../../com/github/benmanes/caffeine/cache/stats/StatsCounter.html" title="interface in com.github.benmanes.caffeine.cache.stats">StatsCounter</a>&nbsp;disabledStatsCounter()</pre>
 <div class="block">Returns an accumulator that does not record any cache events.</div>
 <dl>
@@ -339,8 +339,8 @@ static&nbsp;<a href="../../../../../../com/github/benmanes/caffeine/cache/stats/
 <ul class="blockListLast">
 <li class="blockList">
 <h4>guardedStatsCounter</h4>
-<pre>@Nonnull
-static&nbsp;<a href="../../../../../../com/github/benmanes/caffeine/cache/stats/StatsCounter.html" title="interface in com.github.benmanes.caffeine.cache.stats">StatsCounter</a>&nbsp;guardedStatsCounter(@Nonnull
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+static&nbsp;<a href="../../../../../../com/github/benmanes/caffeine/cache/stats/StatsCounter.html" title="interface in com.github.benmanes.caffeine.cache.stats">StatsCounter</a>&nbsp;guardedStatsCounter(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
                                                  <a href="../../../../../../com/github/benmanes/caffeine/cache/stats/StatsCounter.html" title="interface in com.github.benmanes.caffeine.cache.stats">StatsCounter</a>&nbsp;statsCounter)</pre>
 <div class="block">Returns an accumulator that suppresses and logs any exception thrown by the delegate
  <tt>statsCounter</tt>.</div>

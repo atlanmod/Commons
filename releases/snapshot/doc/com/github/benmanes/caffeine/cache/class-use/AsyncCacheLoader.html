@@ -123,7 +123,7 @@
 <tr class="altColor">
 <td class="colFirst"><code>&lt;K1 extends <a href="../../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">K</a>,V1 extends <a href="../../../../../../com/github/benmanes/caffeine/cache/Caffeine.html" title="type parameter in Caffeine">V</a>&gt;<br><a href="../../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="interface in com.github.benmanes.caffeine.cache">AsyncLoadingCache</a>&lt;K1,V1&gt;</code></td>
 <td class="colLast"><span class="typeNameLabel">Caffeine.</span><code><span class="memberNameLink"><a href="../../../../../../com/github/benmanes/caffeine/cache/Caffeine.html#buildAsync-com.github.benmanes.caffeine.cache.AsyncCacheLoader-">buildAsync</a></span>(<a href="../../../../../../com/github/benmanes/caffeine/cache/AsyncCacheLoader.html" title="interface in com.github.benmanes.caffeine.cache">AsyncCacheLoader</a>&lt;? super K1,V1&gt;&nbsp;loader)</code>
-<div class="block">Builds a cache, which either returns a <code>CompletableFuture</code> already loaded or currently
+<div class="block">Builds a cache, which either returns a <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent"><code>CompletableFuture</code></a> already loaded or currently
  computing the value for a given key, or atomically computes the value asynchronously through a
  supplied mapping function or the supplied <code>AsyncCacheLoader</code>.</div>
 </td>

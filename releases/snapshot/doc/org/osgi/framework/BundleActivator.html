@@ -181,7 +181,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>start</h4>
 <pre>void&nbsp;start(<a href="../../../org/osgi/framework/BundleContext.html" title="interface in org.osgi.framework">BundleContext</a>&nbsp;context)
-    throws java.lang.Exception</pre>
+    throws <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></pre>
 <div class="block">Called when this bundle is started so the Framework can perform the
  bundle-specific activities necessary to start this bundle. This method
  can be used to register services or to allocate any resources that this
@@ -193,7 +193,7 @@ var activeTableTab = "activeTableTab";
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>context</code> - The execution context of the bundle being started.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Exception</code> - If this method throws an exception, this bundle is
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></code> - If this method throws an exception, this bundle is
          marked as stopped and the Framework will remove this bundle's
          listeners, unregister all services registered by this bundle, and
          release all services used by this bundle.</dd>
@@ -207,7 +207,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>stop</h4>
 <pre>void&nbsp;stop(<a href="../../../org/osgi/framework/BundleContext.html" title="interface in org.osgi.framework">BundleContext</a>&nbsp;context)
-   throws java.lang.Exception</pre>
+   throws <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></pre>
 <div class="block">Called when this bundle is stopped so the Framework can perform the
  bundle-specific activities necessary to stop the bundle. In general, this
  method should undo the work that the <code>BundleActivator.start</code> method
@@ -221,7 +221,7 @@ var activeTableTab = "activeTableTab";
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>context</code> - The execution context of the bundle being stopped.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Exception</code> - If this method throws an exception, the bundle is still
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></code> - If this method throws an exception, the bundle is still
          marked as stopped, and the Framework will remove the bundle's
          listeners, unregister all services registered by the bundle, and
          release all services used by the bundle.</dd>

@@ -110,7 +110,7 @@ var activeTableTab = "activeTableTab";
 </dl>
 <hr>
 <br>
-<pre>@ThreadSafe
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/concurrent.ThreadSafe.html?is-external=true" title="class or interface in javax.annotation">@ThreadSafe</a>
 public interface <span class="typeNameLabel">LoadingCache&lt;K,V&gt;</span>
 extends <a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html" title="interface in com.github.benmanes.caffeine.cache">Cache</a>&lt;K,V&gt;</pre>
 <div class="block">A semi-persistent mapping from keys to values. Values are automatically loaded by the cache,
@@ -144,8 +144,8 @@ extends <a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html" t
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>java.util.Map&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/LoadingCache.html" title="type parameter in LoadingCache">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/LoadingCache.html" title="type parameter in LoadingCache">V</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/LoadingCache.html#getAll-java.lang.Iterable-">getAll</a></span>(java.lang.Iterable&lt;? extends <a href="../../../../../com/github/benmanes/caffeine/cache/LoadingCache.html" title="type parameter in LoadingCache">K</a>&gt;&nbsp;keys)</code>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/LoadingCache.html" title="type parameter in LoadingCache">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/LoadingCache.html" title="type parameter in LoadingCache">V</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/LoadingCache.html#getAll-java.lang.Iterable-">getAll</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;? extends <a href="../../../../../com/github/benmanes/caffeine/cache/LoadingCache.html" title="type parameter in LoadingCache">K</a>&gt;&nbsp;keys)</code>
 <div class="block">Returns a map of the values associated with the <code>keys</code>, creating or retrieving those
  values if necessary.</div>
 </td>
@@ -186,8 +186,8 @@ extends <a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html" t
 <ul class="blockList">
 <li class="blockList">
 <h4>get</h4>
-<pre>@Nullable
-<a href="../../../../../com/github/benmanes/caffeine/cache/LoadingCache.html" title="type parameter in LoadingCache">V</a>&nbsp;get(@Nonnull
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+<a href="../../../../../com/github/benmanes/caffeine/cache/LoadingCache.html" title="type parameter in LoadingCache">V</a>&nbsp;get(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
                 <a href="../../../../../com/github/benmanes/caffeine/cache/LoadingCache.html" title="type parameter in LoadingCache">K</a>&nbsp;key)</pre>
 <div class="block">Returns the value associated with the <code>key</code> in this cache, obtaining that value from
  <a href="../../../../../com/github/benmanes/caffeine/cache/CacheLoader.html#load-K-"><code>CacheLoader.load(Object)</code></a> if necessary.
@@ -209,11 +209,11 @@ extends <a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html" t
 <dd>the current (existing or computed) value associated with the specified key, or null if
          the computed value is null</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.NullPointerException</code> - if the specified key is null</dd>
-<dd><code>java.lang.IllegalStateException</code> - if the computation detectably attempts a recursive update to this
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the specified key is null</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang">IllegalStateException</a></code> - if the computation detectably attempts a recursive update to this
          cache that would otherwise never complete</dd>
-<dd><code>java.util.concurrent.CompletionException</code> - if a checked exception was thrown while loading the value</dd>
-<dd><code>java.lang.RuntimeException</code> - or Error if the <a href="../../../../../com/github/benmanes/caffeine/cache/CacheLoader.html" title="interface in com.github.benmanes.caffeine.cache"><code>CacheLoader</code></a> does so, in which case the mapping
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletionException.html?is-external=true" title="class or interface in java.util.concurrent">CompletionException</a></code> - if a checked exception was thrown while loading the value</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a></code> - or Error if the <a href="../../../../../com/github/benmanes/caffeine/cache/CacheLoader.html" title="interface in com.github.benmanes.caffeine.cache"><code>CacheLoader</code></a> does so, in which case the mapping
          is left unestablished</dd>
 </dl>
 </li>
@@ -224,9 +224,9 @@ extends <a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html" t
 <ul class="blockList">
 <li class="blockList">
 <h4>getAll</h4>
-<pre>@Nonnull
-java.util.Map&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/LoadingCache.html" title="type parameter in LoadingCache">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/LoadingCache.html" title="type parameter in LoadingCache">V</a>&gt;&nbsp;getAll(@Nonnull
-                                   java.lang.Iterable&lt;? extends <a href="../../../../../com/github/benmanes/caffeine/cache/LoadingCache.html" title="type parameter in LoadingCache">K</a>&gt;&nbsp;keys)</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/LoadingCache.html" title="type parameter in LoadingCache">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/LoadingCache.html" title="type parameter in LoadingCache">V</a>&gt;&nbsp;getAll(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;? extends <a href="../../../../../com/github/benmanes/caffeine/cache/LoadingCache.html" title="type parameter in LoadingCache">K</a>&gt;&nbsp;keys)</pre>
 <div class="block">Returns a map of the values associated with the <code>keys</code>, creating or retrieving those
  values if necessary. The returned map contains entries that were already cached, combined with
  the newly loaded entries; it will never contain null keys or values.
@@ -240,7 +240,7 @@ java.util.Map&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Load
  loads, the last load to complete will replace the existing entry. Note that multiple threads
  can concurrently load values for distinct keys.
  <p>
- Note that duplicate elements in <code>keys</code>, as determined by <code>Object.equals(java.lang.Object)</code>, will be
+ Note that duplicate elements in <code>keys</code>, as determined by <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang"><code>Object.equals(java.lang.Object)</code></a>, will be
  ignored.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -248,9 +248,9 @@ java.util.Map&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Load
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the unmodifiable mapping of keys to values for the specified keys in this cache</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.NullPointerException</code> - if the specified collection is null or contains a null element</dd>
-<dd><code>java.util.concurrent.CompletionException</code> - if a checked exception was thrown while loading the value</dd>
-<dd><code>java.lang.RuntimeException</code> - or Error if the <a href="../../../../../com/github/benmanes/caffeine/cache/CacheLoader.html" title="interface in com.github.benmanes.caffeine.cache"><code>CacheLoader</code></a> does so, if
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the specified collection is null or contains a null element</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletionException.html?is-external=true" title="class or interface in java.util.concurrent">CompletionException</a></code> - if a checked exception was thrown while loading the value</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a></code> - or Error if the <a href="../../../../../com/github/benmanes/caffeine/cache/CacheLoader.html" title="interface in com.github.benmanes.caffeine.cache"><code>CacheLoader</code></a> does so, if
          <a href="../../../../../com/github/benmanes/caffeine/cache/CacheLoader.html#loadAll-java.lang.Iterable-"><code>CacheLoader.loadAll(java.lang.Iterable&lt;? extends K&gt;)</code></a> returns <code>null</code>, returns a map containing null keys or
          values, or fails to return an entry for each requested key. In all cases, the mapping
          is left unestablished</dd>
@@ -265,13 +265,13 @@ java.util.Map&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Load
 <ul class="blockListLast">
 <li class="blockList">
 <h4>refresh</h4>
-<pre>void&nbsp;refresh(@Nonnull
+<pre>void&nbsp;refresh(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
              <a href="../../../../../com/github/benmanes/caffeine/cache/LoadingCache.html" title="type parameter in LoadingCache">K</a>&nbsp;key)</pre>
 <div class="block">Loads a new value for the <code>key</code>, asynchronously. While the new value is loading the
  previous value (if any) will continue to be returned by <code>get(key)</code> unless it is evicted.
  If the new value is loaded successfully it will replace the previous value in the cache; if an
  exception is thrown while refreshing the previous value will remain, <i>and the exception will
- be logged (using <code>Logger</code>) and swallowed</i>.
+ be logged (using <a href="https://docs.oracle.com/javase/8/docs/api/java/util/logging/Logger.html?is-external=true" title="class or interface in java.util.logging"><code>Logger</code></a>) and swallowed</i>.
  <p>
  Caches loaded by a <a href="../../../../../com/github/benmanes/caffeine/cache/CacheLoader.html" title="interface in com.github.benmanes.caffeine.cache"><code>CacheLoader</code></a> will call <a href="../../../../../com/github/benmanes/caffeine/cache/CacheLoader.html#reload-K-V-"><code>CacheLoader.reload(K, V)</code></a> if the cache
  currently contains a value for the <code>key</code>, and <a href="../../../../../com/github/benmanes/caffeine/cache/CacheLoader.html#load-K-"><code>CacheLoader.load(K)</code></a> otherwise. Loading
@@ -280,7 +280,7 @@ java.util.Map&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Load
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>key</code> - key with which a value may be associated</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.NullPointerException</code> - if the specified key is null</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the specified key is null</dd>
 </dl>
 </li>
 </ul>

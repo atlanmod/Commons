@@ -202,7 +202,7 @@ var activeTableTab = "activeTableTab";
  developer or a provisioner to diagnose. Resolver hooks also must not be
  allowed to start another synchronous resolve process (e.g. by calling
  <a href="../../../../../org/osgi/framework/Bundle.html#start--"><code>Bundle.start()</code></a> or <a href="../../../../../org/osgi/framework/wiring/FrameworkWiring.html#resolveBundles-java.util.Collection-"><code>FrameworkWiring.resolveBundles(Collection)</code></a>
- ). The framework must detect this and throw an <code>IllegalStateException</code>.</div>
+ ). The framework must detect this and throw an <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang"><code>IllegalStateException</code></a>.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../org/osgi/framework/hooks/resolver/ResolverHookFactory.html" title="interface in org.osgi.framework.hooks.resolver"><code>ResolverHookFactory</code></a></dd>
@@ -234,20 +234,20 @@ var activeTableTab = "activeTableTab";
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/osgi/framework/hooks/resolver/ResolverHook.html#filterMatches-org.osgi.framework.wiring.BundleRequirement-java.util.Collection-">filterMatches</a></span>(<a href="../../../../../org/osgi/framework/wiring/BundleRequirement.html" title="interface in org.osgi.framework.wiring">BundleRequirement</a>&nbsp;requirement,
-             java.util.Collection&lt;<a href="../../../../../org/osgi/framework/wiring/BundleCapability.html" title="interface in org.osgi.framework.wiring">BundleCapability</a>&gt;&nbsp;candidates)</code>
+             <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../../../org/osgi/framework/wiring/BundleCapability.html" title="interface in org.osgi.framework.wiring">BundleCapability</a>&gt;&nbsp;candidates)</code>
 <div class="block">Filter matches hook method.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/osgi/framework/hooks/resolver/ResolverHook.html#filterResolvable-java.util.Collection-">filterResolvable</a></span>(java.util.Collection&lt;<a href="../../../../../org/osgi/framework/wiring/BundleRevision.html" title="interface in org.osgi.framework.wiring">BundleRevision</a>&gt;&nbsp;candidates)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/osgi/framework/hooks/resolver/ResolverHook.html#filterResolvable-java.util.Collection-">filterResolvable</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../../../org/osgi/framework/wiring/BundleRevision.html" title="interface in org.osgi.framework.wiring">BundleRevision</a>&gt;&nbsp;candidates)</code>
 <div class="block">Filter resolvable candidates hook method.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/osgi/framework/hooks/resolver/ResolverHook.html#filterSingletonCollisions-org.osgi.framework.wiring.BundleCapability-java.util.Collection-">filterSingletonCollisions</a></span>(<a href="../../../../../org/osgi/framework/wiring/BundleCapability.html" title="interface in org.osgi.framework.wiring">BundleCapability</a>&nbsp;singleton,
-                         java.util.Collection&lt;<a href="../../../../../org/osgi/framework/wiring/BundleCapability.html" title="interface in org.osgi.framework.wiring">BundleCapability</a>&gt;&nbsp;collisionCandidates)</code>
+                         <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../../../org/osgi/framework/wiring/BundleCapability.html" title="interface in org.osgi.framework.wiring">BundleCapability</a>&gt;&nbsp;collisionCandidates)</code>
 <div class="block">Filter singleton collisions hook method.</div>
 </td>
 </tr>
@@ -272,7 +272,7 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>filterResolvable</h4>
-<pre>void&nbsp;filterResolvable(java.util.Collection&lt;<a href="../../../../../org/osgi/framework/wiring/BundleRevision.html" title="interface in org.osgi.framework.wiring">BundleRevision</a>&gt;&nbsp;candidates)</pre>
+<pre>void&nbsp;filterResolvable(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../../../org/osgi/framework/wiring/BundleRevision.html" title="interface in org.osgi.framework.wiring">BundleRevision</a>&gt;&nbsp;candidates)</pre>
 <div class="block">Filter resolvable candidates hook method. This method may be called
  multiple times during a single resolve process. This method can filter
  the collection of candidates by removing potential candidates. Removing a
@@ -292,7 +292,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>filterSingletonCollisions</h4>
 <pre>void&nbsp;filterSingletonCollisions(<a href="../../../../../org/osgi/framework/wiring/BundleCapability.html" title="interface in org.osgi.framework.wiring">BundleCapability</a>&nbsp;singleton,
-                               java.util.Collection&lt;<a href="../../../../../org/osgi/framework/wiring/BundleCapability.html" title="interface in org.osgi.framework.wiring">BundleCapability</a>&gt;&nbsp;collisionCandidates)</pre>
+                               <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../../../org/osgi/framework/wiring/BundleCapability.html" title="interface in org.osgi.framework.wiring">BundleCapability</a>&gt;&nbsp;collisionCandidates)</pre>
 <div class="block">Filter singleton collisions hook method. This method is called during the
  resolve process for the specified singleton. The specified singleton
  represents a singleton capability and the specified collection represent
@@ -327,7 +327,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>filterMatches</h4>
 <pre>void&nbsp;filterMatches(<a href="../../../../../org/osgi/framework/wiring/BundleRequirement.html" title="interface in org.osgi.framework.wiring">BundleRequirement</a>&nbsp;requirement,
-                   java.util.Collection&lt;<a href="../../../../../org/osgi/framework/wiring/BundleCapability.html" title="interface in org.osgi.framework.wiring">BundleCapability</a>&gt;&nbsp;candidates)</pre>
+                   <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../../../org/osgi/framework/wiring/BundleCapability.html" title="interface in org.osgi.framework.wiring">BundleCapability</a>&gt;&nbsp;candidates)</pre>
 <div class="block">Filter matches hook method. This method is called during the resolve
  process for the specified requirement. The collection of candidates match
  the specified requirement. This method can filter the collection of

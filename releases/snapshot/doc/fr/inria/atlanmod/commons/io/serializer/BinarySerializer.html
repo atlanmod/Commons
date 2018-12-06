@@ -105,7 +105,7 @@ var activeTableTab = "activeTableTab";
 </dl>
 <dl>
 <dt>All Superinterfaces:</dt>
-<dd><a href="../../../../../../fr/inria/atlanmod/commons/function/Converter.html" title="interface in fr.inria.atlanmod.commons.function">Converter</a>&lt;T,byte[]&gt;, java.util.function.Function&lt;T,byte[]&gt;, java.io.Serializable, <a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html" title="interface in fr.inria.atlanmod.commons.io.serializer">Serializer</a>&lt;T,byte[]&gt;</dd>
+<dd><a href="../../../../../../fr/inria/atlanmod/commons/function/Converter.html" title="interface in fr.inria.atlanmod.commons.function">Converter</a>&lt;T,byte[]&gt;, <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function">Function</a>&lt;T,byte[]&gt;, <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</a>, <a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html" title="interface in fr.inria.atlanmod.commons.io.serializer">Serializer</a>&lt;T,byte[]&gt;</dd>
 </dl>
 <dl>
 <dt>All Known Implementing Classes:</dt>
@@ -113,10 +113,10 @@ var activeTableTab = "activeTableTab";
 </dl>
 <hr>
 <br>
-<pre>@ParametersAreNonnullByDefault
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/ParametersAreNonnullByDefault.html?is-external=true" title="class or interface in javax.annotation">@ParametersAreNonnullByDefault</a>
 public interface <span class="typeNameLabel">BinarySerializer&lt;T&gt;</span>
-extends <a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html" title="interface in fr.inria.atlanmod.commons.io.serializer">Serializer</a>&lt;T,byte[]&gt;, java.io.Serializable</pre>
-<div class="block">An object that is responsible of <code>Object</code> to <code>byte[]</code> encoding and decoding.</div>
+extends <a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html" title="interface in fr.inria.atlanmod.commons.io.serializer">Serializer</a>&lt;T,byte[]&gt;, <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</a></pre>
+<div class="block">An object that is responsible of <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang"><code>Object</code></a> to <code>byte[]</code> encoding and decoding.</div>
 </li>
 </ul>
 </div>
@@ -137,27 +137,27 @@ extends <a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Seria
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/BinarySerializer.html" title="type parameter in BinarySerializer">T</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/BinarySerializer.html#deserialize-java.io.DataInput-">deserialize</a></span>(java.io.DataInput&nbsp;in)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/BinarySerializer.html#deserialize-java.io.DataInput-">deserialize</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/DataInput.html?is-external=true" title="class or interface in java.io">DataInput</a>&nbsp;in)</code>
 <div class="block">Reads and assembles an object of type <code>T</code> from the given <code>in</code>.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/BinarySerializer.html" title="type parameter in BinarySerializer">T</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/BinarySerializer.html#deserialize-java.io.InputStream-">deserialize</a></span>(java.io.InputStream&nbsp;is)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/BinarySerializer.html#deserialize-java.io.InputStream-">deserialize</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</a>&nbsp;is)</code>
 <div class="block">Reads and assembles an object of type <code>T</code> from the given <code>is</code>.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/BinarySerializer.html#serialize-T-java.io.DataOutput-">serialize</a></span>(<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/BinarySerializer.html" title="type parameter in BinarySerializer">T</a>&nbsp;t,
-         java.io.DataOutput&nbsp;out)</code>
+         <a href="https://docs.oracle.com/javase/8/docs/api/java/io/DataOutput.html?is-external=true" title="class or interface in java.io">DataOutput</a>&nbsp;out)</code>
 <div class="block">Write an object of type <code>T</code> to the given <code>out</code>.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/BinarySerializer.html#serialize-T-java.io.OutputStream-">serialize</a></span>(<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/BinarySerializer.html" title="type parameter in BinarySerializer">T</a>&nbsp;t,
-         java.io.OutputStream&nbsp;os)</code>
+         <a href="https://docs.oracle.com/javase/8/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</a>&nbsp;os)</code>
 <div class="block">Write an object of type <code>T</code> to the given <code>os</code>.</div>
 </td>
 </tr>
@@ -180,8 +180,8 @@ extends <a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Seria
 <li class="blockList"><a name="methods.inherited.from.class.java.util.function.Function">
 <!--   -->
 </a>
-<h3>Methods inherited from interface&nbsp;java.util.function.Function</h3>
-<code>andThen, compose</code></li>
+<h3>Methods inherited from interface&nbsp;java.util.function.<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function">Function</a></h3>
+<code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true#andThen-java.util.function.Function-" title="class or interface in java.util.function">andThen</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true#compose-java.util.function.Function-" title="class or interface in java.util.function">compose</a></code></li>
 </ul>
 </li>
 </ul>
@@ -206,19 +206,19 @@ extends <a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Seria
 <li class="blockList">
 <h4>serialize</h4>
 <pre>void&nbsp;serialize(<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/BinarySerializer.html" title="type parameter in BinarySerializer">T</a>&nbsp;t,
-               @WillNotClose
-               java.io.OutputStream&nbsp;os)
-        throws java.io.IOException</pre>
+               <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/WillNotClose.html?is-external=true" title="class or interface in javax.annotation">@WillNotClose</a>
+               <a href="https://docs.oracle.com/javase/8/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</a>&nbsp;os)
+        throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
 <div class="block">Write an object of type <code>T</code> to the given <code>os</code>.
  <p>
- If the <code>os</code> also implements <code>DataOutput</code>, prefer using <a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/BinarySerializer.html#serialize-T-java.io.DataOutput-"><code>serialize(Object, DataOutput)</code></a>. This
+ If the <code>os</code> also implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/DataOutput.html?is-external=true" title="class or interface in java.io"><code>DataOutput</code></a>, prefer using <a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/BinarySerializer.html#serialize-T-java.io.DataOutput-"><code>serialize(Object, DataOutput)</code></a>. This
  method will create a adapter on <code>os</code> before calling it.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>t</code> - the object to serialize</dd>
 <dd><code>os</code> - the output stream</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.io.IOException</code> - if an I/O error occurs during the serialization</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code> - if an I/O error occurs during the serialization</dd>
 </dl>
 </li>
 </ul>
@@ -231,16 +231,16 @@ extends <a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Seria
 <li class="blockList">
 <h4>serialize</h4>
 <pre>void&nbsp;serialize(<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/BinarySerializer.html" title="type parameter in BinarySerializer">T</a>&nbsp;t,
-               @WillNotClose
-               java.io.DataOutput&nbsp;out)
-        throws java.io.IOException</pre>
+               <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/WillNotClose.html?is-external=true" title="class or interface in javax.annotation">@WillNotClose</a>
+               <a href="https://docs.oracle.com/javase/8/docs/api/java/io/DataOutput.html?is-external=true" title="class or interface in java.io">DataOutput</a>&nbsp;out)
+        throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
 <div class="block">Write an object of type <code>T</code> to the given <code>out</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>t</code> - the object to serialize</dd>
 <dd><code>out</code> - the output stream</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.io.IOException</code> - if an I/O error occurs during the serialization</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code> - if an I/O error occurs during the serialization</dd>
 </dl>
 </li>
 </ul>
@@ -250,13 +250,13 @@ extends <a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Seria
 <ul class="blockList">
 <li class="blockList">
 <h4>deserialize</h4>
-<pre>@Nonnull
-<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/BinarySerializer.html" title="type parameter in BinarySerializer">T</a>&nbsp;deserialize(@WillNotClose
-                       java.io.InputStream&nbsp;is)
-                throws java.io.IOException</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/BinarySerializer.html" title="type parameter in BinarySerializer">T</a>&nbsp;deserialize(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/WillNotClose.html?is-external=true" title="class or interface in javax.annotation">@WillNotClose</a>
+                       <a href="https://docs.oracle.com/javase/8/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</a>&nbsp;is)
+                throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
 <div class="block">Reads and assembles an object of type <code>T</code> from the given <code>is</code>.
  <p>
- If the <code>is</code> also implements <code>DataInput</code>, prefer using <a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/BinarySerializer.html#deserialize-java.io.DataInput-"><code>deserialize(DataInput)</code></a>. This method
+ If the <code>is</code> also implements <a href="https://docs.oracle.com/javase/8/docs/api/java/io/DataInput.html?is-external=true" title="class or interface in java.io"><code>DataInput</code></a>, prefer using <a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/BinarySerializer.html#deserialize-java.io.DataInput-"><code>deserialize(DataInput)</code></a>. This method
  will create a adapter on <code>is</code> before calling it.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -264,7 +264,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Seria
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the deserialized object</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.io.IOException</code> - if an I/O error occurs during the deserialization</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code> - if an I/O error occurs during the deserialization</dd>
 </dl>
 </li>
 </ul>
@@ -274,10 +274,10 @@ extends <a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Seria
 <ul class="blockListLast">
 <li class="blockList">
 <h4>deserialize</h4>
-<pre>@Nonnull
-<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/BinarySerializer.html" title="type parameter in BinarySerializer">T</a>&nbsp;deserialize(@WillNotClose
-                       java.io.DataInput&nbsp;in)
-                throws java.io.IOException</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/BinarySerializer.html" title="type parameter in BinarySerializer">T</a>&nbsp;deserialize(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/WillNotClose.html?is-external=true" title="class or interface in javax.annotation">@WillNotClose</a>
+                       <a href="https://docs.oracle.com/javase/8/docs/api/java/io/DataInput.html?is-external=true" title="class or interface in java.io">DataInput</a>&nbsp;in)
+                throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
 <div class="block">Reads and assembles an object of type <code>T</code> from the given <code>in</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -285,7 +285,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Seria
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the deserialized object</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.io.IOException</code> - if an I/O error occurs during the deserialization</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code> - if an I/O error occurs during the deserialization</dd>
 </dl>
 </li>
 </ul>

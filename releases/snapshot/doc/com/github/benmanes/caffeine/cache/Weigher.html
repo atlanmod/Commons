@@ -110,8 +110,8 @@ var activeTableTab = "activeTableTab";
 </dl>
 <hr>
 <br>
-<pre>@ThreadSafe
- @FunctionalInterface
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/concurrent.ThreadSafe.html?is-external=true" title="class or interface in javax.annotation">@ThreadSafe</a>
+ <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/FunctionalInterface.html?is-external=true" title="class or interface in java.lang">@FunctionalInterface</a>
 public interface <span class="typeNameLabel">Weigher&lt;K,V&gt;</span></pre>
 <div class="block">Calculates the weights of cache entries. The total weight threshold is used to determine when an
  eviction is required.</div>
@@ -175,10 +175,10 @@ public interface <span class="typeNameLabel">Weigher&lt;K,V&gt;</span></pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>weigh</h4>
-<pre>@Nonnegative
-int&nbsp;weigh(@Nonnull
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnegative.html?is-external=true" title="class or interface in javax.annotation">@Nonnegative</a>
+int&nbsp;weigh(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
                        <a href="../../../../../com/github/benmanes/caffeine/cache/Weigher.html" title="type parameter in Weigher">K</a>&nbsp;key,
-                       @Nonnull
+                       <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
                        <a href="../../../../../com/github/benmanes/caffeine/cache/Weigher.html" title="type parameter in Weigher">V</a>&nbsp;value)</pre>
 <div class="block">Returns the weight of a cache entry. There is no unit for entry weights; rather they are simply
  relative to each other.</div>
@@ -197,7 +197,7 @@ int&nbsp;weigh(@Nonnull
 <ul class="blockList">
 <li class="blockList">
 <h4>singletonWeigher</h4>
-<pre>@Nonnull
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
 static&nbsp;&lt;K,V&gt;&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Weigher.html" title="interface in com.github.benmanes.caffeine.cache">Weigher</a>&lt;K,V&gt;&nbsp;singletonWeigher()</pre>
 <div class="block">Returns a weigher where an entry has a weight of <code>1</code>.</div>
 <dl>
@@ -215,8 +215,8 @@ static&nbsp;&lt;K,V&gt;&nbsp;<a href="../../../../../com/github/benmanes/caffein
 <ul class="blockListLast">
 <li class="blockList">
 <h4>boundedWeigher</h4>
-<pre>@Nonnull
-static&nbsp;&lt;K,V&gt;&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Weigher.html" title="interface in com.github.benmanes.caffeine.cache">Weigher</a>&lt;K,V&gt;&nbsp;boundedWeigher(@Nonnull
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+static&nbsp;&lt;K,V&gt;&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/Weigher.html" title="interface in com.github.benmanes.caffeine.cache">Weigher</a>&lt;K,V&gt;&nbsp;boundedWeigher(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
                                                   <a href="../../../../../com/github/benmanes/caffeine/cache/Weigher.html" title="interface in com.github.benmanes.caffeine.cache">Weigher</a>&lt;K,V&gt;&nbsp;delegate)</pre>
 <div class="block">Returns a weigher that enforces that the weight is non-negative.</div>
 <dl>

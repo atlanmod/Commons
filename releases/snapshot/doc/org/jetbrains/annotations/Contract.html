@@ -93,9 +93,9 @@
 <li class="blockList">
 <hr>
 <br>
-<pre>@Documented
- @Retention(value=CLASS)
- @Target(value={METHOD,CONSTRUCTOR})
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Documented.html?is-external=true" title="class or interface in java.lang.annotation">@Documented</a>
+ <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Retention.html?is-external=true" title="class or interface in java.lang.annotation">@Retention</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Retention.html?is-external=true#value--" title="class or interface in java.lang.annotation">value</a>=<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/RetentionPolicy.html?is-external=true#CLASS" title="class or interface in java.lang.annotation">CLASS</a>)
+ <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Target.html?is-external=true" title="class or interface in java.lang.annotation">@Target</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Target.html?is-external=true#value--" title="class or interface in java.lang.annotation">value</a>={<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/ElementType.html?is-external=true#METHOD" title="class or interface in java.lang.annotation">METHOD</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/ElementType.html?is-external=true#CONSTRUCTOR" title="class or interface in java.lang.annotation">CONSTRUCTOR</a>})
 public @interface <span class="memberNameLabel">Contract</span></pre>
 <div class="block">Specifies some aspects of the method behavior depending on the arguments. Can be used by tools for advanced data flow analysis.
  Note that this annotation just describes how the code works and doesn't add any functionality by means of code generation.<p>
@@ -140,7 +140,7 @@ public @interface <span class="memberNameLabel">Contract</span></pre>
 <th class="colLast" scope="col">Optional Element and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>java.lang.String</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/jetbrains/annotations/Contract.html#mutates--">mutates</a></span></code>
 <div class="block">Contains a specifier which describes which method parameters can be mutated during the method call.</div>
 </td>
@@ -152,7 +152,7 @@ public @interface <span class="memberNameLabel">Contract</span></pre>
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>java.lang.String</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/jetbrains/annotations/Contract.html#value--">value</a></span></code>
 <div class="block">Contains the contract clauses describing causal relations between call arguments and the returned value</div>
 </td>
@@ -178,7 +178,7 @@ public @interface <span class="memberNameLabel">Contract</span></pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>value</h4>
-<pre>public abstract&nbsp;java.lang.String&nbsp;value</pre>
+<pre>public abstract&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;value</pre>
 <div class="block">Contains the contract clauses describing causal relations between call arguments and the returned value</div>
 <dl>
 <dt>Default:</dt>
@@ -204,8 +204,8 @@ public @interface <span class="memberNameLabel">Contract</span></pre>
  Method should not be marked as pure if it does not produce a side-effect by itself,
  but it could be used to establish a happens-before relation between an event in
  another thread, so changes performed in another thread might become visible in current thread
- after this method invocation. Examples of such methods are <code>Object.wait()</code>, <code>Thread.join()</code>
- or <code>AtomicBoolean.get()</code>. On the other hand, some synchronized methods like <code>Vector.get(int)</code>
+ after this method invocation. Examples of such methods are <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang"><code>Object.wait()</code></a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html?is-external=true#join--" title="class or interface in java.lang"><code>Thread.join()</code></a>
+ or <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/atomic/AtomicBoolean.html?is-external=true#get--" title="class or interface in java.util.concurrent.atomic"><code>AtomicBoolean.get()</code></a>. On the other hand, some synchronized methods like <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Vector.html?is-external=true#get-int-" title="class or interface in java.util"><code>Vector.get(int)</code></a>
  could be marked as pure, because the purpose of synchronization here is to keep the collection internal integrity
  rather than to wait for an event in another thread.
  <p>
@@ -228,7 +228,7 @@ public @interface <span class="memberNameLabel">Contract</span></pre>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>mutates</h4>
-<pre>public abstract&nbsp;java.lang.String&nbsp;mutates</pre>
+<pre>public abstract&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;mutates</pre>
 <div class="block">Contains a specifier which describes which method parameters can be mutated during the method call.
  <p>
    The following values are possible:

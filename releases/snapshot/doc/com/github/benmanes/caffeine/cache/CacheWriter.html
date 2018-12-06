@@ -108,7 +108,7 @@ var activeTableTab = "activeTableTab";
 </dl>
 <hr>
 <br>
-<pre>@ThreadSafe
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/concurrent.ThreadSafe.html?is-external=true" title="class or interface in javax.annotation">@ThreadSafe</a>
 public interface <span class="typeNameLabel">CacheWriter&lt;K,V&gt;</span></pre>
 <div class="block">Communicates the write or deletion of a value, based on a key, to an external resource. A writer
  is notified by the cache each time an entry is explicitly created or modified, or removed for any
@@ -175,9 +175,9 @@ public interface <span class="typeNameLabel">CacheWriter&lt;K,V&gt;</span></pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>write</h4>
-<pre>void&nbsp;write(@Nonnull
+<pre>void&nbsp;write(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
            <a href="../../../../../com/github/benmanes/caffeine/cache/CacheWriter.html" title="type parameter in CacheWriter">K</a>&nbsp;key,
-           @Nonnull
+           <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
            <a href="../../../../../com/github/benmanes/caffeine/cache/CacheWriter.html" title="type parameter in CacheWriter">V</a>&nbsp;value)</pre>
 <div class="block">Writes the value corresponding to the <code>key</code> to the external resource. The cache will
  communicate a write when an entry in the cache is created or modified, except when that was
@@ -187,7 +187,7 @@ public interface <span class="typeNameLabel">CacheWriter&lt;K,V&gt;</span></pre>
 <dd><code>key</code> - the non-null key whose value should be written</dd>
 <dd><code>value</code> - the value associated with <code>key</code> that should be written</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.RuntimeException</code> - or Error, in which case the mapping is unchanged</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a></code> - or Error, in which case the mapping is unchanged</dd>
 </dl>
 </li>
 </ul>
@@ -199,11 +199,11 @@ public interface <span class="typeNameLabel">CacheWriter&lt;K,V&gt;</span></pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>delete</h4>
-<pre>void&nbsp;delete(@Nonnull
+<pre>void&nbsp;delete(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
             <a href="../../../../../com/github/benmanes/caffeine/cache/CacheWriter.html" title="type parameter in CacheWriter">K</a>&nbsp;key,
-            @Nullable
+            <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
             <a href="../../../../../com/github/benmanes/caffeine/cache/CacheWriter.html" title="type parameter in CacheWriter">V</a>&nbsp;value,
-            @Nonnull
+            <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
             <a href="../../../../../com/github/benmanes/caffeine/cache/RemovalCause.html" title="enum in com.github.benmanes.caffeine.cache">RemovalCause</a>&nbsp;cause)</pre>
 <div class="block">Deletes the value corresponding to the <code>key</code> from the external resource. The cache will
  communicate a delete when the entry is explicitly removed or evicted.</div>
@@ -213,7 +213,7 @@ public interface <span class="typeNameLabel">CacheWriter&lt;K,V&gt;</span></pre>
 <dd><code>value</code> - the value associated with <code>key</code>, or <code>null</code> if collected</dd>
 <dd><code>cause</code> - the reason for which the entry was removed</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.RuntimeException</code> - or Error, in which case the mapping is unchanged</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a></code> - or Error, in which case the mapping is unchanged</dd>
 </dl>
 </li>
 </ul>
@@ -223,7 +223,7 @@ public interface <span class="typeNameLabel">CacheWriter&lt;K,V&gt;</span></pre>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>disabledWriter</h4>
-<pre>@Nonnull
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
 static&nbsp;&lt;K,V&gt;&nbsp;<a href="../../../../../com/github/benmanes/caffeine/cache/CacheWriter.html" title="interface in com.github.benmanes.caffeine.cache">CacheWriter</a>&lt;K,V&gt;&nbsp;disabledWriter()</pre>
 <div class="block">Returns a writer that does nothing.</div>
 <dl>

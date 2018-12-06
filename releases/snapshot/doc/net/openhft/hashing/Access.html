@@ -97,7 +97,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="contentContainer">
 <ul class="inheritance">
-<li>java.lang.Object</li>
+<li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
 <li>net.openhft.hashing.Access&lt;T&gt;</li>
@@ -114,10 +114,10 @@ var activeTableTab = "activeTableTab";
 <hr>
 <br>
 <pre>public abstract class <span class="typeNameLabel">Access&lt;T&gt;</span>
-extends java.lang.Object</pre>
+extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
 <div class="block">Strategy of reading bytes, defines the abstraction of <code>T</code> class instances as ordered byte
  sequence. All <code>getXXX(input, offset)</code> should be consistent to each other in terms of
- <i>ordered byte sequence</i> each <code>T</code> instance represents. For example, if some <code>Access</code> implementation returns <code>ByteOrder.LITTLE_ENDIAN</code> on <a href="../../../net/openhft/hashing/Access.html#byteOrder-T-"><code>byteOrder(input)</code></a> call, the following expressions should always have the same value:
+ <i>ordered byte sequence</i> each <code>T</code> instance represents. For example, if some <code>Access</code> implementation returns <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/ByteOrder.html?is-external=true#LITTLE_ENDIAN" title="class or interface in java.nio"><code>ByteOrder.LITTLE_ENDIAN</code></a> on <a href="../../../net/openhft/hashing/Access.html#byteOrder-T-"><code>byteOrder(input)</code></a> call, the following expressions should always have the same value:
  <ul>
      <li><code>getLong(input, 0)</code></li>
      <li><code>getUnsignedInt(input, 0) | (getUnsignedInt(input, 4) &lt;&lt; 32)</code></li>
@@ -185,7 +185,7 @@ extends java.lang.Object</pre>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>abstract java.nio.ByteOrder</code></td>
+<td class="colFirst"><code>abstract <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/ByteOrder.html?is-external=true" title="class or interface in java.nio">ByteOrder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/openhft/hashing/Access.html#byteOrder-T-">byteOrder</a></span>(<a href="../../../net/openhft/hashing/Access.html" title="type parameter in Access">T</a>&nbsp;input)</code>
 <div class="block">The byte order in which all multi-byte <code>getXXX()</code> reads from the given <code>input</code>
  are performed.</div>
@@ -245,22 +245,22 @@ extends java.lang.Object</pre>
 </td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code>static <a href="../../../net/openhft/hashing/Access.html" title="class in net.openhft.hashing">Access</a>&lt;java.nio.ByteBuffer&gt;</code></td>
+<td class="colFirst"><code>static <a href="../../../net/openhft/hashing/Access.html" title="class in net.openhft.hashing">Access</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/nio/ByteBuffer.html?is-external=true" title="class or interface in java.nio">ByteBuffer</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/openhft/hashing/Access.html#toByteBuffer--">toByteBuffer</a></span>()</code>
-<div class="block">Returns the <code>Access</code> to any <code>ByteBuffer</code>.</div>
+<div class="block">Returns the <code>Access</code> to any <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/ByteBuffer.html?is-external=true" title="class or interface in java.nio"><code>ByteBuffer</code></a>.</div>
 </td>
 </tr>
 <tr id="i9" class="rowColor">
-<td class="colFirst"><code>static &lt;T extends java.lang.CharSequence&gt;<br><a href="../../../net/openhft/hashing/Access.html" title="class in net.openhft.hashing">Access</a>&lt;T&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/openhft/hashing/Access.html#toCharSequence-java.nio.ByteOrder-">toCharSequence</a></span>(java.nio.ByteOrder&nbsp;backingOrder)</code>
-<div class="block">Returns the <code>Access</code> to <code>CharSequence</code>s backed by <code>char</code> reads made in
+<td class="colFirst"><code>static &lt;T extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang">CharSequence</a>&gt;<br><a href="../../../net/openhft/hashing/Access.html" title="class in net.openhft.hashing">Access</a>&lt;T&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../net/openhft/hashing/Access.html#toCharSequence-java.nio.ByteOrder-">toCharSequence</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/nio/ByteOrder.html?is-external=true" title="class or interface in java.nio">ByteOrder</a>&nbsp;backingOrder)</code>
+<div class="block">Returns the <code>Access</code> to <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang"><code>CharSequence</code></a>s backed by <code>char</code> reads made in
  the specified byte order.</div>
 </td>
 </tr>
 <tr id="i10" class="altColor">
-<td class="colFirst"><code>static &lt;T extends java.lang.CharSequence&gt;<br><a href="../../../net/openhft/hashing/Access.html" title="class in net.openhft.hashing">Access</a>&lt;T&gt;</code></td>
+<td class="colFirst"><code>static &lt;T extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang">CharSequence</a>&gt;<br><a href="../../../net/openhft/hashing/Access.html" title="class in net.openhft.hashing">Access</a>&lt;T&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../net/openhft/hashing/Access.html#toNativeCharSequence--">toNativeCharSequence</a></span>()</code>
-<div class="block">Returns the <code>Access</code> to <code>CharSequence</code>s backed by native <code>char</code> reads, typically from <code>char[]</code> array.</div>
+<div class="block">Returns the <code>Access</code> to <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang"><code>CharSequence</code></a>s backed by <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/ByteOrder.html?is-external=true#nativeOrder--" title="class or interface in java.nio">native</a> <code>char</code> reads, typically from <code>char[]</code> array.</div>
 </td>
 </tr>
 <tr id="i11" class="rowColor">
@@ -274,8 +274,8 @@ extends java.lang.Object</pre>
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;java.lang.Object</h3>
-<code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
 </ul>
 </li>
 </ul>
@@ -347,14 +347,14 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>toByteBuffer</h4>
-<pre>public static&nbsp;<a href="../../../net/openhft/hashing/Access.html" title="class in net.openhft.hashing">Access</a>&lt;java.nio.ByteBuffer&gt;&nbsp;toByteBuffer()</pre>
-<div class="block">Returns the <code>Access</code> to any <code>ByteBuffer</code>. This <code>Access</code> isn't useful in
+<pre>public static&nbsp;<a href="../../../net/openhft/hashing/Access.html" title="class in net.openhft.hashing">Access</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/nio/ByteBuffer.html?is-external=true" title="class or interface in java.nio">ByteBuffer</a>&gt;&nbsp;toByteBuffer()</pre>
+<div class="block">Returns the <code>Access</code> to any <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/ByteBuffer.html?is-external=true" title="class or interface in java.nio"><code>ByteBuffer</code></a>. This <code>Access</code> isn't useful in
  the user code, because methods <a href="../../../net/openhft/hashing/LongHashFunction.html#hashBytes-java.nio.ByteBuffer-"><code>LongHashFunction.hashBytes(ByteBuffer)</code></a> and
  <a href="../../../net/openhft/hashing/LongHashFunction.html#hashBytes-java.nio.ByteBuffer-int-int-"><code>LongHashFunction.hashBytes(ByteBuffer, int, int)</code></a> exist. This <code>Access</code> could be
  used in new <a href="../../../net/openhft/hashing/LongHashFunction.html" title="class in net.openhft.hashing"><code>LongHashFunction</code></a> implementations.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the <code>Access</code> to <code>ByteBuffer</code>s</dd>
+<dd>the <code>Access</code> to <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/ByteBuffer.html?is-external=true" title="class or interface in java.nio"><code>ByteBuffer</code></a>s</dd>
 </dl>
 </li>
 </ul>
@@ -364,8 +364,8 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>toNativeCharSequence</h4>
-<pre>public static&nbsp;&lt;T extends java.lang.CharSequence&gt;&nbsp;<a href="../../../net/openhft/hashing/Access.html" title="class in net.openhft.hashing">Access</a>&lt;T&gt;&nbsp;toNativeCharSequence()</pre>
-<div class="block">Returns the <code>Access</code> to <code>CharSequence</code>s backed by native <code>char</code> reads, typically from <code>char[]</code> array.
+<pre>public static&nbsp;&lt;T extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang">CharSequence</a>&gt;&nbsp;<a href="../../../net/openhft/hashing/Access.html" title="class in net.openhft.hashing">Access</a>&lt;T&gt;&nbsp;toNativeCharSequence()</pre>
+<div class="block">Returns the <code>Access</code> to <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang"><code>CharSequence</code></a>s backed by <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/ByteOrder.html?is-external=true#nativeOrder--" title="class or interface in java.nio">native</a> <code>char</code> reads, typically from <code>char[]</code> array.
 
  <p>Usage example:<pre><code>
  static long hashStringBuffer(StringBuffer buffer, LongHashFunction hashFunction) {
@@ -379,7 +379,7 @@ extends java.lang.Object</pre>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
 <dd><code>T</code> - the <code>CharSequence</code> subtype (backed by native <code>char reads</code>) to access</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the <code>Access</code> to <code>CharSequence</code>s backed by native <code>char</code> reads</dd>
+<dd>the <code>Access</code> to <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang"><code>CharSequence</code></a>s backed by native <code>char</code> reads</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../net/openhft/hashing/Access.html#toCharSequence-java.nio.ByteOrder-"><code>toCharSequence(ByteOrder)</code></a></dd>
 </dl>
@@ -391,8 +391,8 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>toCharSequence</h4>
-<pre>public static&nbsp;&lt;T extends java.lang.CharSequence&gt;&nbsp;<a href="../../../net/openhft/hashing/Access.html" title="class in net.openhft.hashing">Access</a>&lt;T&gt;&nbsp;toCharSequence(java.nio.ByteOrder&nbsp;backingOrder)</pre>
-<div class="block">Returns the <code>Access</code> to <code>CharSequence</code>s backed by <code>char</code> reads made in
+<pre>public static&nbsp;&lt;T extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang">CharSequence</a>&gt;&nbsp;<a href="../../../net/openhft/hashing/Access.html" title="class in net.openhft.hashing">Access</a>&lt;T&gt;&nbsp;toCharSequence(<a href="https://docs.oracle.com/javase/8/docs/api/java/nio/ByteOrder.html?is-external=true" title="class or interface in java.nio">ByteOrder</a>&nbsp;backingOrder)</pre>
+<div class="block">Returns the <code>Access</code> to <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang"><code>CharSequence</code></a>s backed by <code>char</code> reads made in
  the specified byte order.
 
  <p>Usage example:<pre><code>
@@ -408,7 +408,7 @@ extends java.lang.Object</pre>
 <dd><code>backingOrder</code> - the byte order of <code>char</code> reads backing
  <code>CharSequences</code> to access</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the <code>Access</code> to <code>CharSequence</code>s backed by <code>char</code> reads made in
+<dd>the <code>Access</code> to <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html?is-external=true" title="class or interface in java.lang"><code>CharSequence</code></a>s backed by <code>char</code> reads made in
  the specified byte order</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../net/openhft/hashing/Access.html#toNativeCharSequence--"><code>toNativeCharSequence()</code></a></dd>
@@ -581,7 +581,7 @@ extends java.lang.Object</pre>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>byteOrder</h4>
-<pre>public abstract&nbsp;java.nio.ByteOrder&nbsp;byteOrder(<a href="../../../net/openhft/hashing/Access.html" title="type parameter in Access">T</a>&nbsp;input)</pre>
+<pre>public abstract&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/nio/ByteOrder.html?is-external=true" title="class or interface in java.nio">ByteOrder</a>&nbsp;byteOrder(<a href="../../../net/openhft/hashing/Access.html" title="type parameter in Access">T</a>&nbsp;input)</pre>
 <div class="block">The byte order in which all multi-byte <code>getXXX()</code> reads from the given <code>input</code>
  are performed.</div>
 <dl>

@@ -93,9 +93,9 @@
 <li class="blockList">
 <hr>
 <br>
-<pre>@Documented
- @Retention(value=CLASS)
- @Target(value={METHOD,FIELD,PARAMETER,LOCAL_VARIABLE,TYPE_USE})
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Documented.html?is-external=true" title="class or interface in java.lang.annotation">@Documented</a>
+ <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Retention.html?is-external=true" title="class or interface in java.lang.annotation">@Retention</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Retention.html?is-external=true#value--" title="class or interface in java.lang.annotation">value</a>=<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/RetentionPolicy.html?is-external=true#CLASS" title="class or interface in java.lang.annotation">CLASS</a>)
+ <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Target.html?is-external=true" title="class or interface in java.lang.annotation">@Target</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Target.html?is-external=true#value--" title="class or interface in java.lang.annotation">value</a>={<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/ElementType.html?is-external=true#METHOD" title="class or interface in java.lang.annotation">METHOD</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/ElementType.html?is-external=true#FIELD" title="class or interface in java.lang.annotation">FIELD</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/ElementType.html?is-external=true#PARAMETER" title="class or interface in java.lang.annotation">PARAMETER</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/ElementType.html?is-external=true#LOCAL_VARIABLE" title="class or interface in java.lang.annotation">LOCAL_VARIABLE</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/ElementType.html?is-external=true#TYPE_USE" title="class or interface in java.lang.annotation">TYPE_USE</a>})
 public @interface <span class="memberNameLabel">Nullable</span></pre>
 <div class="block">An element annotated with <a href="../../../org/jetbrains/annotations/Nullable.html" title="annotation in org.jetbrains.annotations"><code>Nullable</code></a> claims <code>null</code> value is perfectly <em>valid</em>
  to return (for methods), pass to (parameters) or hold in (local variables and fields).
@@ -106,10 +106,10 @@ public @interface <span class="memberNameLabel">Nullable</span></pre>
  because the developer could do nothing to prevent null from happening.
  Otherwise, too eager <a href="../../../org/jetbrains/annotations/Nullable.html" title="annotation in org.jetbrains.annotations"><code>Nullable</code></a> usage could lead to too many false positives from static analysis tools.
  <br>
- For example, <code>Map.get(Object key)</code> should <em>not</em> be annotated <a href="../../../org/jetbrains/annotations/Nullable.html" title="annotation in org.jetbrains.annotations"><code>Nullable</code></a> because
+ For example, <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true#get-java.lang.Object-" title="class or interface in java.util"><code>Map.get(Object key)</code></a> should <em>not</em> be annotated <a href="../../../org/jetbrains/annotations/Nullable.html" title="annotation in org.jetbrains.annotations"><code>Nullable</code></a> because
  someone may have put not-null value in the map by this key and is expecting to find this value there ever since.
  <br>
- On the other hand, the <code>Reference.get()</code> should be annotated <a href="../../../org/jetbrains/annotations/Nullable.html" title="annotation in org.jetbrains.annotations"><code>Nullable</code></a> because
+ On the other hand, the <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/ref/Reference.html?is-external=true#get--" title="class or interface in java.lang.ref"><code>Reference.get()</code></a> should be annotated <a href="../../../org/jetbrains/annotations/Nullable.html" title="annotation in org.jetbrains.annotations"><code>Nullable</code></a> because
  it returns <code>null</code> if object got collected which can happen at any time completely unexpectedly.</div>
 </li>
 </ul>
@@ -130,7 +130,7 @@ public @interface <span class="memberNameLabel">Nullable</span></pre>
 <th class="colLast" scope="col">Optional Element and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>java.lang.String</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/jetbrains/annotations/Nullable.html#value--">value</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -154,7 +154,7 @@ public @interface <span class="memberNameLabel">Nullable</span></pre>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>value</h4>
-<pre>public abstract&nbsp;java.lang.String&nbsp;value</pre>
+<pre>public abstract&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;value</pre>
 <dl>
 <dt>Default:</dt>
 <dd>""</dd>

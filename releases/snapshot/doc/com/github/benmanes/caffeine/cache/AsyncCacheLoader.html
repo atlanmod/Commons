@@ -109,8 +109,8 @@ var activeTableTab = "activeTableTab";
 </dl>
 <hr>
 <br>
-<pre>@ThreadSafe
- @FunctionalInterface
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/concurrent.ThreadSafe.html?is-external=true" title="class or interface in javax.annotation">@ThreadSafe</a>
+ <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/FunctionalInterface.html?is-external=true" title="class or interface in java.lang">@FunctionalInterface</a>
 public interface <span class="typeNameLabel">AsyncCacheLoader&lt;K,V&gt;</span></pre>
 <div class="block">Computes or retrieves values asynchronously, based on a key, for use in populating a
  <a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html" title="interface in com.github.benmanes.caffeine.cache"><code>AsyncLoadingCache</code></a>.
@@ -143,24 +143,24 @@ public interface <span class="typeNameLabel">AsyncCacheLoader&lt;K,V&gt;</span><
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>java.util.concurrent.CompletableFuture&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/AsyncCacheLoader.html" title="type parameter in AsyncCacheLoader">V</a>&gt;</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent">CompletableFuture</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/AsyncCacheLoader.html" title="type parameter in AsyncCacheLoader">V</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/AsyncCacheLoader.html#asyncLoad-K-java.util.concurrent.Executor-">asyncLoad</a></span>(<a href="../../../../../com/github/benmanes/caffeine/cache/AsyncCacheLoader.html" title="type parameter in AsyncCacheLoader">K</a>&nbsp;key,
-         java.util.concurrent.Executor&nbsp;executor)</code>
+         <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Executor.html?is-external=true" title="class or interface in java.util.concurrent">Executor</a>&nbsp;executor)</code>
 <div class="block">Asynchronously computes or retrieves the value corresponding to <code>key</code>.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>default java.util.concurrent.CompletableFuture&lt;java.util.Map&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/AsyncCacheLoader.html" title="type parameter in AsyncCacheLoader">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/AsyncCacheLoader.html" title="type parameter in AsyncCacheLoader">V</a>&gt;&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/AsyncCacheLoader.html#asyncLoadAll-java.lang.Iterable-java.util.concurrent.Executor-">asyncLoadAll</a></span>(java.lang.Iterable&lt;? extends <a href="../../../../../com/github/benmanes/caffeine/cache/AsyncCacheLoader.html" title="type parameter in AsyncCacheLoader">K</a>&gt;&nbsp;keys,
-            java.util.concurrent.Executor&nbsp;executor)</code>
+<td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/AsyncCacheLoader.html" title="type parameter in AsyncCacheLoader">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/AsyncCacheLoader.html" title="type parameter in AsyncCacheLoader">V</a>&gt;&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/AsyncCacheLoader.html#asyncLoadAll-java.lang.Iterable-java.util.concurrent.Executor-">asyncLoadAll</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;? extends <a href="../../../../../com/github/benmanes/caffeine/cache/AsyncCacheLoader.html" title="type parameter in AsyncCacheLoader">K</a>&gt;&nbsp;keys,
+            <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Executor.html?is-external=true" title="class or interface in java.util.concurrent">Executor</a>&nbsp;executor)</code>
 <div class="block">Asynchronously computes or retrieves the values corresponding to <code>keys</code>.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>default java.util.concurrent.CompletableFuture&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/AsyncCacheLoader.html" title="type parameter in AsyncCacheLoader">V</a>&gt;</code></td>
+<td class="colFirst"><code>default <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent">CompletableFuture</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/AsyncCacheLoader.html" title="type parameter in AsyncCacheLoader">V</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/AsyncCacheLoader.html#asyncReload-K-V-java.util.concurrent.Executor-">asyncReload</a></span>(<a href="../../../../../com/github/benmanes/caffeine/cache/AsyncCacheLoader.html" title="type parameter in AsyncCacheLoader">K</a>&nbsp;key,
            <a href="../../../../../com/github/benmanes/caffeine/cache/AsyncCacheLoader.html" title="type parameter in AsyncCacheLoader">V</a>&nbsp;oldValue,
-           java.util.concurrent.Executor&nbsp;executor)</code>
+           <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Executor.html?is-external=true" title="class or interface in java.util.concurrent">Executor</a>&nbsp;executor)</code>
 <div class="block">Asynchronously computes or retrieves a replacement value corresponding to an already-cached
  <code>key</code>.</div>
 </td>
@@ -188,11 +188,11 @@ public interface <span class="typeNameLabel">AsyncCacheLoader&lt;K,V&gt;</span><
 <ul class="blockList">
 <li class="blockList">
 <h4>asyncLoad</h4>
-<pre>@Nonnull
-java.util.concurrent.CompletableFuture&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/AsyncCacheLoader.html" title="type parameter in AsyncCacheLoader">V</a>&gt;&nbsp;asyncLoad(@Nonnull
-                                                             <a href="../../../../../com/github/benmanes/caffeine/cache/AsyncCacheLoader.html" title="type parameter in AsyncCacheLoader">K</a>&nbsp;key,
-                                                             @Nonnull
-                                                             java.util.concurrent.Executor&nbsp;executor)</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+<a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent">CompletableFuture</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/AsyncCacheLoader.html" title="type parameter in AsyncCacheLoader">V</a>&gt;&nbsp;asyncLoad(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                                        <a href="../../../../../com/github/benmanes/caffeine/cache/AsyncCacheLoader.html" title="type parameter in AsyncCacheLoader">K</a>&nbsp;key,
+                                        <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                                        <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Executor.html?is-external=true" title="class or interface in java.util.concurrent">Executor</a>&nbsp;executor)</pre>
 <div class="block">Asynchronously computes or retrieves the value corresponding to <code>key</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -209,11 +209,11 @@ java.util.concurrent.CompletableFuture&lt;<a href="../../../../../com/github/ben
 <ul class="blockList">
 <li class="blockList">
 <h4>asyncLoadAll</h4>
-<pre>@Nonnull
-default&nbsp;java.util.concurrent.CompletableFuture&lt;java.util.Map&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/AsyncCacheLoader.html" title="type parameter in AsyncCacheLoader">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/AsyncCacheLoader.html" title="type parameter in AsyncCacheLoader">V</a>&gt;&gt;&nbsp;asyncLoadAll(@Nonnull
-                                                                                         java.lang.Iterable&lt;? extends <a href="../../../../../com/github/benmanes/caffeine/cache/AsyncCacheLoader.html" title="type parameter in AsyncCacheLoader">K</a>&gt;&nbsp;keys,
-                                                                                         @Nonnull
-                                                                                         java.util.concurrent.Executor&nbsp;executor)</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+default&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent">CompletableFuture</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/AsyncCacheLoader.html" title="type parameter in AsyncCacheLoader">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/AsyncCacheLoader.html" title="type parameter in AsyncCacheLoader">V</a>&gt;&gt;&nbsp;asyncLoadAll(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                                                          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;? extends <a href="../../../../../com/github/benmanes/caffeine/cache/AsyncCacheLoader.html" title="type parameter in AsyncCacheLoader">K</a>&gt;&nbsp;keys,
+                                                          <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                                                          <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Executor.html?is-external=true" title="class or interface in java.util.concurrent">Executor</a>&nbsp;executor)</pre>
 <div class="block">Asynchronously computes or retrieves the values corresponding to <code>keys</code>. This method is
  called by <a href="../../../../../com/github/benmanes/caffeine/cache/AsyncLoadingCache.html#getAll-java.lang.Iterable-"><code>AsyncLoadingCache.getAll(java.lang.Iterable&lt;? extends K&gt;)</code></a>.
  <p>
@@ -243,13 +243,13 @@ default&nbsp;java.util.concurrent.CompletableFuture&lt;java.util.Map&lt;<a href=
 <ul class="blockListLast">
 <li class="blockList">
 <h4>asyncReload</h4>
-<pre>@Nonnull
-default&nbsp;java.util.concurrent.CompletableFuture&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/AsyncCacheLoader.html" title="type parameter in AsyncCacheLoader">V</a>&gt;&nbsp;asyncReload(@Nonnull
-                                                                       <a href="../../../../../com/github/benmanes/caffeine/cache/AsyncCacheLoader.html" title="type parameter in AsyncCacheLoader">K</a>&nbsp;key,
-                                                                       @Nonnull
-                                                                       <a href="../../../../../com/github/benmanes/caffeine/cache/AsyncCacheLoader.html" title="type parameter in AsyncCacheLoader">V</a>&nbsp;oldValue,
-                                                                       @Nonnull
-                                                                       java.util.concurrent.Executor&nbsp;executor)</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+default&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html?is-external=true" title="class or interface in java.util.concurrent">CompletableFuture</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/AsyncCacheLoader.html" title="type parameter in AsyncCacheLoader">V</a>&gt;&nbsp;asyncReload(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                                                  <a href="../../../../../com/github/benmanes/caffeine/cache/AsyncCacheLoader.html" title="type parameter in AsyncCacheLoader">K</a>&nbsp;key,
+                                                  <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                                                  <a href="../../../../../com/github/benmanes/caffeine/cache/AsyncCacheLoader.html" title="type parameter in AsyncCacheLoader">V</a>&nbsp;oldValue,
+                                                  <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                                                  <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Executor.html?is-external=true" title="class or interface in java.util.concurrent">Executor</a>&nbsp;executor)</pre>
 <div class="block">Asynchronously computes or retrieves a replacement value corresponding to an already-cached
  <code>key</code>. If the replacement value is not found then the mapping will be removed if
  <code>null</code> is computed. This method is called when an existing cache entry is refreshed by

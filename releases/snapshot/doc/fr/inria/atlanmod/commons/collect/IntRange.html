@@ -101,8 +101,8 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <hr>
 <br>
-<pre>@Immutable
- @ParametersAreNonnullByDefault
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/concurrent.Immutable.html?is-external=true" title="class or interface in javax.annotation">@Immutable</a>
+ <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/ParametersAreNonnullByDefault.html?is-external=true" title="class or interface in javax.annotation">@ParametersAreNonnullByDefault</a>
 public interface <span class="typeNameLabel">IntRange</span></pre>
 <div class="block">A range (or "interval") defines the boundaries around a contiguous span of values of integer.</div>
 </li>
@@ -170,7 +170,7 @@ public interface <span class="typeNameLabel">IntRange</span></pre>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>default boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/collect/IntRange.html#containsAll-java.lang.Iterable-">containsAll</a></span>(java.lang.Iterable&lt;java.lang.Integer&gt;&nbsp;values)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../fr/inria/atlanmod/commons/collect/IntRange.html#containsAll-java.lang.Iterable-">containsAll</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&gt;&nbsp;values)</code>
 <div class="block">Returns <code>true</code> if every element in values is contained in this range.</div>
 </td>
 </tr>
@@ -247,7 +247,7 @@ public interface <span class="typeNameLabel">IntRange</span></pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>open</h4>
-<pre>@Nonnull
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
 static&nbsp;<a href="../../../../../fr/inria/atlanmod/commons/collect/IntRange.html" title="interface in fr.inria.atlanmod.commons.collect">IntRange</a>&nbsp;open(int&nbsp;lower,
                               int&nbsp;upper)</pre>
 <div class="block">Creates a range that contains all values strictly greater than <code>lower</code> and strictly less than <code>upper</code>.</div>
@@ -258,7 +258,7 @@ static&nbsp;<a href="../../../../../fr/inria/atlanmod/commons/collect/IntRange.h
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>a new range</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalArgumentException</code> - if <code>lower</code> is greater than <code>upper</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if <code>lower</code> is greater than <code>upper</code></dd>
 </dl>
 </li>
 </ul>
@@ -268,7 +268,7 @@ static&nbsp;<a href="../../../../../fr/inria/atlanmod/commons/collect/IntRange.h
 <ul class="blockList">
 <li class="blockList">
 <h4>closed</h4>
-<pre>@Nonnull
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
 static&nbsp;<a href="../../../../../fr/inria/atlanmod/commons/collect/IntRange.html" title="interface in fr.inria.atlanmod.commons.collect">IntRange</a>&nbsp;closed(int&nbsp;lower,
                                 int&nbsp;upper)</pre>
 <div class="block">Creates a range that contains all values greater than or equal to <code>lower</code> and less than or equal to <code>upper</code>.</div>
@@ -279,7 +279,7 @@ static&nbsp;<a href="../../../../../fr/inria/atlanmod/commons/collect/IntRange.h
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>a new range</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalArgumentException</code> - if <code>lower</code> is greater than <code>upper</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if <code>lower</code> is greater than <code>upper</code></dd>
 </dl>
 </li>
 </ul>
@@ -289,7 +289,7 @@ static&nbsp;<a href="../../../../../fr/inria/atlanmod/commons/collect/IntRange.h
 <ul class="blockList">
 <li class="blockList">
 <h4>openClosed</h4>
-<pre>@Nonnull
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
 static&nbsp;<a href="../../../../../fr/inria/atlanmod/commons/collect/IntRange.html" title="interface in fr.inria.atlanmod.commons.collect">IntRange</a>&nbsp;openClosed(int&nbsp;lower,
                                     int&nbsp;upper)</pre>
 <div class="block">Creates a range that contains all values strictly greater than <code>lower</code> and less than or equal to <code>upper</code>.</div>
@@ -300,7 +300,7 @@ static&nbsp;<a href="../../../../../fr/inria/atlanmod/commons/collect/IntRange.h
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>a new range</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalArgumentException</code> - if <code>lower</code> is greater than <code>upper</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if <code>lower</code> is greater than <code>upper</code></dd>
 </dl>
 </li>
 </ul>
@@ -310,7 +310,7 @@ static&nbsp;<a href="../../../../../fr/inria/atlanmod/commons/collect/IntRange.h
 <ul class="blockList">
 <li class="blockList">
 <h4>closedOpen</h4>
-<pre>@Nonnull
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
 static&nbsp;<a href="../../../../../fr/inria/atlanmod/commons/collect/IntRange.html" title="interface in fr.inria.atlanmod.commons.collect">IntRange</a>&nbsp;closedOpen(int&nbsp;lower,
                                     int&nbsp;upper)</pre>
 <div class="block">Creates a range that contains all values greater than or equal to <code>lower</code> and strictly less than <code>upper</code>.</div>
@@ -321,7 +321,7 @@ static&nbsp;<a href="../../../../../fr/inria/atlanmod/commons/collect/IntRange.h
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>a new instance of range</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalArgumentException</code> - if <code>lower</code> is greater than <code>upper</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if <code>lower</code> is greater than <code>upper</code></dd>
 </dl>
 </li>
 </ul>
@@ -331,7 +331,7 @@ static&nbsp;<a href="../../../../../fr/inria/atlanmod/commons/collect/IntRange.h
 <ul class="blockList">
 <li class="blockList">
 <h4>singleton</h4>
-<pre>@Nonnull
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
 static&nbsp;<a href="../../../../../fr/inria/atlanmod/commons/collect/IntRange.html" title="interface in fr.inria.atlanmod.commons.collect">IntRange</a>&nbsp;singleton(int&nbsp;value)</pre>
 <div class="block">Creates a range that contains only the given <code>value</code>. The returned range is closed on both ends.</div>
 <dl>
@@ -350,7 +350,7 @@ static&nbsp;<a href="../../../../../fr/inria/atlanmod/commons/collect/IntRange.h
 <ul class="blockList">
 <li class="blockList">
 <h4>atLeast</h4>
-<pre>@Nonnull
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
 static&nbsp;<a href="../../../../../fr/inria/atlanmod/commons/collect/IntRange.html" title="interface in fr.inria.atlanmod.commons.collect">IntRange</a>&nbsp;atLeast(int&nbsp;lower)</pre>
 <div class="block">Creates a range that contains all values greater than or equal to <code>lower</code>.</div>
 <dl>
@@ -367,7 +367,7 @@ static&nbsp;<a href="../../../../../fr/inria/atlanmod/commons/collect/IntRange.h
 <ul class="blockList">
 <li class="blockList">
 <h4>atMost</h4>
-<pre>@Nonnull
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
 static&nbsp;<a href="../../../../../fr/inria/atlanmod/commons/collect/IntRange.html" title="interface in fr.inria.atlanmod.commons.collect">IntRange</a>&nbsp;atMost(int&nbsp;upper)</pre>
 <div class="block">Creates a range that contains all values less than or equal to <code>upper</code>.</div>
 <dl>
@@ -384,7 +384,7 @@ static&nbsp;<a href="../../../../../fr/inria/atlanmod/commons/collect/IntRange.h
 <ul class="blockList">
 <li class="blockList">
 <h4>greaterThan</h4>
-<pre>@Nonnull
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
 static&nbsp;<a href="../../../../../fr/inria/atlanmod/commons/collect/IntRange.html" title="interface in fr.inria.atlanmod.commons.collect">IntRange</a>&nbsp;greaterThan(int&nbsp;lower)</pre>
 <div class="block">Creates a range that contains all values strictly greater than <code>lower</code>.</div>
 <dl>
@@ -401,7 +401,7 @@ static&nbsp;<a href="../../../../../fr/inria/atlanmod/commons/collect/IntRange.h
 <ul class="blockList">
 <li class="blockList">
 <h4>lessThan</h4>
-<pre>@Nonnull
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
 static&nbsp;<a href="../../../../../fr/inria/atlanmod/commons/collect/IntRange.html" title="interface in fr.inria.atlanmod.commons.collect">IntRange</a>&nbsp;lessThan(int&nbsp;upper)</pre>
 <div class="block">Creates a range that contains all values strictly less than <code>upper</code>.</div>
 <dl>
@@ -418,7 +418,7 @@ static&nbsp;<a href="../../../../../fr/inria/atlanmod/commons/collect/IntRange.h
 <ul class="blockList">
 <li class="blockList">
 <h4>all</h4>
-<pre>@Nonnull
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
 static&nbsp;<a href="../../../../../fr/inria/atlanmod/commons/collect/IntRange.html" title="interface in fr.inria.atlanmod.commons.collect">IntRange</a>&nbsp;all()</pre>
 <div class="block">Creates a range that contains every value of type <code>C</code>.</div>
 <dl>
@@ -433,7 +433,7 @@ static&nbsp;<a href="../../../../../fr/inria/atlanmod/commons/collect/IntRange.h
 <ul class="blockList">
 <li class="blockList">
 <h4>empty</h4>
-<pre>@Nonnull
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
 static&nbsp;<a href="../../../../../fr/inria/atlanmod/commons/collect/IntRange.html" title="interface in fr.inria.atlanmod.commons.collect">IntRange</a>&nbsp;empty()</pre>
 <div class="block">Creates a range that does not contain any value.</div>
 <dl>
@@ -448,7 +448,7 @@ static&nbsp;<a href="../../../../../fr/inria/atlanmod/commons/collect/IntRange.h
 <ul class="blockList">
 <li class="blockList">
 <h4>and</h4>
-<pre>@Nonnull
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
 static&nbsp;<a href="../../../../../fr/inria/atlanmod/commons/collect/IntRange.html" title="interface in fr.inria.atlanmod.commons.collect">IntRange</a>&nbsp;and(<a href="../../../../../fr/inria/atlanmod/commons/collect/IntRange.html" title="interface in fr.inria.atlanmod.commons.collect">IntRange</a>&nbsp;r1,
                              <a href="../../../../../fr/inria/atlanmod/commons/collect/IntRange.html" title="interface in fr.inria.atlanmod.commons.collect">IntRange</a>&nbsp;r2)</pre>
 <div class="block">Creates a range that contains all values enclosed by both ranges.
@@ -461,9 +461,9 @@ static&nbsp;<a href="../../../../../fr/inria/atlanmod/commons/collect/IntRange.h
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>a new range</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.NullPointerException</code> - if any argument is <code>null</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if any argument is <code>null</code></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><code>Boolean.logicalAnd(boolean, boolean)</code></dd>
+<dd><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true#logicalAnd-boolean-boolean-" title="class or interface in java.lang"><code>Boolean.logicalAnd(boolean, boolean)</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -473,7 +473,7 @@ static&nbsp;<a href="../../../../../fr/inria/atlanmod/commons/collect/IntRange.h
 <ul class="blockList">
 <li class="blockList">
 <h4>or</h4>
-<pre>@Nonnull
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
 static&nbsp;<a href="../../../../../fr/inria/atlanmod/commons/collect/IntRange.html" title="interface in fr.inria.atlanmod.commons.collect">IntRange</a>&nbsp;or(<a href="../../../../../fr/inria/atlanmod/commons/collect/IntRange.html" title="interface in fr.inria.atlanmod.commons.collect">IntRange</a>&nbsp;r1,
                             <a href="../../../../../fr/inria/atlanmod/commons/collect/IntRange.html" title="interface in fr.inria.atlanmod.commons.collect">IntRange</a>&nbsp;r2)</pre>
 <div class="block">Creates a range that contains all values enclosed by at least one range.</div>
@@ -484,9 +484,9 @@ static&nbsp;<a href="../../../../../fr/inria/atlanmod/commons/collect/IntRange.h
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>a new range</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.NullPointerException</code> - if any argument is <code>null</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if any argument is <code>null</code></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><code>Boolean.logicalOr(boolean, boolean)</code></dd>
+<dd><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true#logicalOr-boolean-boolean-" title="class or interface in java.lang"><code>Boolean.logicalOr(boolean, boolean)</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -496,7 +496,7 @@ static&nbsp;<a href="../../../../../fr/inria/atlanmod/commons/collect/IntRange.h
 <ul class="blockList">
 <li class="blockList">
 <h4>xor</h4>
-<pre>@Nonnull
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
 static&nbsp;<a href="../../../../../fr/inria/atlanmod/commons/collect/IntRange.html" title="interface in fr.inria.atlanmod.commons.collect">IntRange</a>&nbsp;xor(<a href="../../../../../fr/inria/atlanmod/commons/collect/IntRange.html" title="interface in fr.inria.atlanmod.commons.collect">IntRange</a>&nbsp;r1,
                              <a href="../../../../../fr/inria/atlanmod/commons/collect/IntRange.html" title="interface in fr.inria.atlanmod.commons.collect">IntRange</a>&nbsp;r2)</pre>
 <div class="block">Creates a range that contains all values enclosed by one range, but not another.</div>
@@ -507,9 +507,9 @@ static&nbsp;<a href="../../../../../fr/inria/atlanmod/commons/collect/IntRange.h
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>a new range</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.NullPointerException</code> - if any argument is <code>null</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if any argument is <code>null</code></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><code>Boolean.logicalXor(boolean, boolean)</code></dd>
+<dd><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html?is-external=true#logicalXor-boolean-boolean-" title="class or interface in java.lang"><code>Boolean.logicalXor(boolean, boolean)</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -535,7 +535,7 @@ static&nbsp;<a href="../../../../../fr/inria/atlanmod/commons/collect/IntRange.h
 <ul class="blockListLast">
 <li class="blockList">
 <h4>containsAll</h4>
-<pre>default&nbsp;boolean&nbsp;containsAll(java.lang.Iterable&lt;java.lang.Integer&gt;&nbsp;values)</pre>
+<pre>default&nbsp;boolean&nbsp;containsAll(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&gt;&nbsp;values)</pre>
 <div class="block">Returns <code>true</code> if every element in values is contained in this range.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -543,7 +543,7 @@ static&nbsp;<a href="../../../../../fr/inria/atlanmod/commons/collect/IntRange.h
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd><code>true</code> if every element in values is contained in this range</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.NullPointerException</code> - if any argument is <code>null</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if any argument is <code>null</code></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../../../fr/inria/atlanmod/commons/collect/IntRange.html#contains-int-"><code>contains(int)</code></a></dd>
 </dl>

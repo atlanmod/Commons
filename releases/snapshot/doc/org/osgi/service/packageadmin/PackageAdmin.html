@@ -160,15 +160,15 @@ var activeTableTab = "activeTableTab";
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="../../../../org/osgi/framework/Bundle.html" title="interface in org.osgi.framework">Bundle</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/osgi/service/packageadmin/PackageAdmin.html#getBundle-java.lang.Class-">getBundle</a></span>(java.lang.Class&nbsp;clazz)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/osgi/service/packageadmin/PackageAdmin.html#getBundle-java.lang.Class-">getBundle</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&nbsp;clazz)</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 <div class="block">Returns the bundle from which the specified class is loaded.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/osgi/framework/Bundle.html" title="interface in org.osgi.framework">Bundle</a>[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/osgi/service/packageadmin/PackageAdmin.html#getBundles-java.lang.String-java.lang.String-">getBundles</a></span>(java.lang.String&nbsp;symbolicName,
-          java.lang.String&nbsp;versionRange)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/osgi/service/packageadmin/PackageAdmin.html#getBundles-java.lang.String-java.lang.String-">getBundles</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;symbolicName,
+          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;versionRange)</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 <div class="block">Returns the bundles with the specified symbolic name whose bundle version
  is within the specified version range.</div>
@@ -183,7 +183,7 @@ var activeTableTab = "activeTableTab";
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/osgi/service/packageadmin/ExportedPackage.html" title="interface in org.osgi.service.packageadmin">ExportedPackage</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/osgi/service/packageadmin/PackageAdmin.html#getExportedPackage-java.lang.String-">getExportedPackage</a></span>(java.lang.String&nbsp;name)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/osgi/service/packageadmin/PackageAdmin.html#getExportedPackage-java.lang.String-">getExportedPackage</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 <div class="block">Gets the exported package for the specified package name.</div>
 </td>
@@ -197,7 +197,7 @@ var activeTableTab = "activeTableTab";
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/osgi/service/packageadmin/ExportedPackage.html" title="interface in org.osgi.service.packageadmin">ExportedPackage</a>[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/osgi/service/packageadmin/PackageAdmin.html#getExportedPackages-java.lang.String-">getExportedPackages</a></span>(java.lang.String&nbsp;name)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/osgi/service/packageadmin/PackageAdmin.html#getExportedPackages-java.lang.String-">getExportedPackages</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 <div class="block">Gets the exported packages for the specified package name.</div>
 </td>
@@ -219,7 +219,7 @@ var activeTableTab = "activeTableTab";
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../../org/osgi/service/packageadmin/RequiredBundle.html" title="interface in org.osgi.service.packageadmin">RequiredBundle</a>[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/osgi/service/packageadmin/PackageAdmin.html#getRequiredBundles-java.lang.String-">getRequiredBundles</a></span>(java.lang.String&nbsp;symbolicName)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/osgi/service/packageadmin/PackageAdmin.html#getRequiredBundles-java.lang.String-">getRequiredBundles</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;symbolicName)</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 <div class="block">Returns an array of required bundles having the specified symbolic name.</div>
 </td>
@@ -303,7 +303,7 @@ var activeTableTab = "activeTableTab";
 <dd>An array of exported packages, or <code>null</code> if the
          specified bundle has no exported packages.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalArgumentException</code> - If the specified <code>Bundle</code> was
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - If the specified <code>Bundle</code> was
          not created by the same framework instance that registered this
          <code>PackageAdmin</code> service.</dd>
 </dl>
@@ -315,7 +315,7 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>getExportedPackages</h4>
-<pre><a href="../../../../org/osgi/service/packageadmin/ExportedPackage.html" title="interface in org.osgi.service.packageadmin">ExportedPackage</a>[]&nbsp;getExportedPackages(java.lang.String&nbsp;name)</pre>
+<pre><a href="../../../../org/osgi/service/packageadmin/ExportedPackage.html" title="interface in org.osgi.service.packageadmin">ExportedPackage</a>[]&nbsp;getExportedPackages(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</pre>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 <div class="block">Gets the exported packages for the specified package name.</div>
 <dl>
@@ -333,7 +333,7 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>getExportedPackage</h4>
-<pre><a href="../../../../org/osgi/service/packageadmin/ExportedPackage.html" title="interface in org.osgi.service.packageadmin">ExportedPackage</a>&nbsp;getExportedPackage(java.lang.String&nbsp;name)</pre>
+<pre><a href="../../../../org/osgi/service/packageadmin/ExportedPackage.html" title="interface in org.osgi.service.packageadmin">ExportedPackage</a>&nbsp;getExportedPackage(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</pre>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 <div class="block">Gets the exported package for the specified package name.
  
@@ -417,10 +417,10 @@ var activeTableTab = "activeTableTab";
         removed, or <code>null</code> for all bundles updated or
         uninstalled since the last call to this method.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.SecurityException</code> - If the caller does not have
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang">SecurityException</a></code> - If the caller does not have
          <code>AdminPermission[System Bundle,RESOLVE]</code> and the Java
          runtime environment supports permissions.</dd>
-<dd><code>java.lang.IllegalArgumentException</code> - If the specified <code>Bundle</code>s
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - If the specified <code>Bundle</code>s
          were not created by the same framework instance that registered
          this <code>PackageAdmin</code> service.</dd>
 </dl>
@@ -452,10 +452,10 @@ var activeTableTab = "activeTableTab";
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd><code>true</code> if all specified bundles are resolved;</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.SecurityException</code> - If the caller does not have
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang">SecurityException</a></code> - If the caller does not have
          <code>AdminPermission[System Bundle,RESOLVE]</code> and the Java
          runtime environment supports permissions.</dd>
-<dd><code>java.lang.IllegalArgumentException</code> - If the specified <code>Bundle</code>s
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - If the specified <code>Bundle</code>s
          were not created by the same framework instance that registered
          this <code>PackageAdmin</code> service.</dd>
 </dl>
@@ -467,7 +467,7 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>getRequiredBundles</h4>
-<pre><a href="../../../../org/osgi/service/packageadmin/RequiredBundle.html" title="interface in org.osgi.service.packageadmin">RequiredBundle</a>[]&nbsp;getRequiredBundles(java.lang.String&nbsp;symbolicName)</pre>
+<pre><a href="../../../../org/osgi/service/packageadmin/RequiredBundle.html" title="interface in org.osgi.service.packageadmin">RequiredBundle</a>[]&nbsp;getRequiredBundles(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;symbolicName)</pre>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 <div class="block">Returns an array of required bundles having the specified symbolic name.
  
@@ -490,8 +490,8 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>getBundles</h4>
-<pre><a href="../../../../org/osgi/framework/Bundle.html" title="interface in org.osgi.framework">Bundle</a>[]&nbsp;getBundles(java.lang.String&nbsp;symbolicName,
-                    java.lang.String&nbsp;versionRange)</pre>
+<pre><a href="../../../../org/osgi/framework/Bundle.html" title="interface in org.osgi.framework">Bundle</a>[]&nbsp;getBundles(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;symbolicName,
+                    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;versionRange)</pre>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 <div class="block">Returns the bundles with the specified symbolic name whose bundle version
  is within the specified version range. If no bundles are installed that
@@ -539,7 +539,7 @@ var activeTableTab = "activeTableTab";
          does not have any attached fragment bundles or the bundle is not
          resolved.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalArgumentException</code> - If the specified <code>Bundle</code> was
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - If the specified <code>Bundle</code> was
          not created by the same framework instance that registered this
          <code>PackageAdmin</code> service.</dd>
 </dl>
@@ -563,7 +563,7 @@ var activeTableTab = "activeTableTab";
          fragment is attached or <code>null</code> if the specified bundle
          is not a fragment or is not attached to any host bundles.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalArgumentException</code> - If the specified <code>Bundle</code> was
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - If the specified <code>Bundle</code> was
          not created by the same framework instance that registered this
          <code>PackageAdmin</code> service.</dd>
 </dl>
@@ -575,7 +575,7 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>getBundle</h4>
-<pre><a href="../../../../org/osgi/framework/Bundle.html" title="interface in org.osgi.framework">Bundle</a>&nbsp;getBundle(java.lang.Class&nbsp;clazz)</pre>
+<pre><a href="../../../../org/osgi/framework/Bundle.html" title="interface in org.osgi.framework">Bundle</a>&nbsp;getBundle(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&nbsp;clazz)</pre>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 <div class="block">Returns the bundle from which the specified class is loaded. The class
  loader of the returned bundle must have been used to load the specified
@@ -618,7 +618,7 @@ var activeTableTab = "activeTableTab";
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The special type of the bundle.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalArgumentException</code> - If the specified <code>Bundle</code> was
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - If the specified <code>Bundle</code> was
          not created by the same framework instance that registered this
          <code>PackageAdmin</code> service.</dd>
 </dl>

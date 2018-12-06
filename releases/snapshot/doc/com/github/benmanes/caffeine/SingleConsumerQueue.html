@@ -97,13 +97,13 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="contentContainer">
 <ul class="inheritance">
-<li>java.lang.Object</li>
+<li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li>java.util.AbstractCollection&lt;E&gt;</li>
+<li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/AbstractCollection.html?is-external=true" title="class or interface in java.util">java.util.AbstractCollection</a>&lt;E&gt;</li>
 <li>
 <ul class="inheritance">
-<li>java.util.AbstractQueue&lt;E&gt;</li>
+<li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/AbstractQueue.html?is-external=true" title="class or interface in java.util">java.util.AbstractQueue</a>&lt;E&gt;</li>
 <li>
 <ul class="inheritance">
 <li>com.github.benmanes.caffeine.SingleConsumerQueue&lt;E&gt;</li>
@@ -123,13 +123,13 @@ var activeTableTab = "activeTableTab";
 </dl>
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd>java.io.Serializable, java.lang.Iterable&lt;E&gt;, java.util.Collection&lt;E&gt;, java.util.Queue&lt;E&gt;</dd>
+<dd><a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;E&gt;, <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;E&gt;, <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Queue.html?is-external=true" title="class or interface in java.util">Queue</a>&lt;E&gt;</dd>
 </dl>
 <hr>
 <br>
 <pre>public final class <span class="typeNameLabel">SingleConsumerQueue&lt;E&gt;</span>
-extends java.util.AbstractQueue&lt;E&gt;
-implements java.util.Queue&lt;E&gt;, java.io.Serializable</pre>
+extends <a href="https://docs.oracle.com/javase/8/docs/api/java/util/AbstractQueue.html?is-external=true" title="class or interface in java.util">AbstractQueue</a>&lt;E&gt;
+implements <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Queue.html?is-external=true" title="class or interface in java.util">Queue</a>&lt;E&gt;, <a href="https://docs.oracle.com/javase/8/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</a></pre>
 <div class="block">A lock-free unbounded queue based on linked nodes that supports concurrent producers and is
  restricted to a single consumer. This queue orders elements FIFO (first-in-first-out). The
  <em>head</em> of the queue is that element that has been on the queue the longest time. The
@@ -150,7 +150,7 @@ implements java.util.Queue&lt;E&gt;, java.io.Serializable</pre>
  determined by constructing either a <em>linearizable</em> or <em>optimistic</em> queue.
  <p>
  Iterators are <i>weakly consistent</i>, returning elements reflecting the state of the queue at
- some point at or since the creation of the iterator. They do <em>not</em> throw <code>ConcurrentModificationException</code>, and may proceed concurrently with other operations.
+ some point at or since the creation of the iterator. They do <em>not</em> throw <a href="https://docs.oracle.com/javase/8/docs/api/java/util/ConcurrentModificationException.html?is-external=true" title="class or interface in java.util"><code>ConcurrentModificationException</code></a>, and may proceed concurrently with other operations.
  Elements contained in the queue since the creation of the iterator will be returned exactly once.
  <p>
  Beware that it is the responsibility of the caller to ensure that a consumer has exclusive read
@@ -191,18 +191,18 @@ implements java.util.Queue&lt;E&gt;, java.io.Serializable</pre>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/github/benmanes/caffeine/SingleConsumerQueue.html#addAll-java.util.Collection-">addAll</a></span>(java.util.Collection&lt;? extends <a href="../../../../com/github/benmanes/caffeine/SingleConsumerQueue.html" title="type parameter in SingleConsumerQueue">E</a>&gt;&nbsp;c)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/github/benmanes/caffeine/SingleConsumerQueue.html#addAll-java.util.Collection-">addAll</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;? extends <a href="../../../../com/github/benmanes/caffeine/SingleConsumerQueue.html" title="type parameter in SingleConsumerQueue">E</a>&gt;&nbsp;c)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/github/benmanes/caffeine/SingleConsumerQueue.html#contains-java.lang.Object-">contains</a></span>(java.lang.Object&nbsp;o)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/github/benmanes/caffeine/SingleConsumerQueue.html#contains-java.lang.Object-">contains</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;o)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/github/benmanes/caffeine/SingleConsumerQueue.html#isEmpty--">isEmpty</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>java.util.Iterator&lt;<a href="../../../../com/github/benmanes/caffeine/SingleConsumerQueue.html" title="type parameter in SingleConsumerQueue">E</a>&gt;</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util">Iterator</a>&lt;<a href="../../../../com/github/benmanes/caffeine/SingleConsumerQueue.html" title="type parameter in SingleConsumerQueue">E</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/github/benmanes/caffeine/SingleConsumerQueue.html#iterator--">iterator</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
@@ -238,43 +238,43 @@ implements java.util.Queue&lt;E&gt;, java.io.Serializable</pre>
 <li class="blockList"><a name="methods.inherited.from.class.java.util.AbstractQueue">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;java.util.AbstractQueue</h3>
-<code>clear, element, remove</code></li>
+<h3>Methods inherited from class&nbsp;java.util.<a href="https://docs.oracle.com/javase/8/docs/api/java/util/AbstractQueue.html?is-external=true" title="class or interface in java.util">AbstractQueue</a></h3>
+<code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/AbstractQueue.html?is-external=true#clear--" title="class or interface in java.util">clear</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/util/AbstractQueue.html?is-external=true#element--" title="class or interface in java.util">element</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/util/AbstractQueue.html?is-external=true#remove--" title="class or interface in java.util">remove</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.util.AbstractCollection">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;java.util.AbstractCollection</h3>
-<code>containsAll, remove, removeAll, retainAll, toArray, toArray, toString</code></li>
+<h3>Methods inherited from class&nbsp;java.util.<a href="https://docs.oracle.com/javase/8/docs/api/java/util/AbstractCollection.html?is-external=true" title="class or interface in java.util">AbstractCollection</a></h3>
+<code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/AbstractCollection.html?is-external=true#containsAll-java.util.Collection-" title="class or interface in java.util">containsAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/util/AbstractCollection.html?is-external=true#remove-java.lang.Object-" title="class or interface in java.util">remove</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/util/AbstractCollection.html?is-external=true#removeAll-java.util.Collection-" title="class or interface in java.util">removeAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/util/AbstractCollection.html?is-external=true#retainAll-java.util.Collection-" title="class or interface in java.util">retainAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/util/AbstractCollection.html?is-external=true#toArray--" title="class or interface in java.util">toArray</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/util/AbstractCollection.html?is-external=true#toArray-T:A-" title="class or interface in java.util">toArray</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/util/AbstractCollection.html?is-external=true#toString--" title="class or interface in java.util">toString</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;java.lang.Object</h3>
-<code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait</code></li>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.util.Queue">
 <!--   -->
 </a>
-<h3>Methods inherited from interface&nbsp;java.util.Queue</h3>
-<code>element, remove</code></li>
+<h3>Methods inherited from interface&nbsp;java.util.<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Queue.html?is-external=true" title="class or interface in java.util">Queue</a></h3>
+<code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Queue.html?is-external=true#element--" title="class or interface in java.util">element</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Queue.html?is-external=true#remove--" title="class or interface in java.util">remove</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.util.Collection">
 <!--   -->
 </a>
-<h3>Methods inherited from interface&nbsp;java.util.Collection</h3>
-<code>clear, containsAll, equals, hashCode, parallelStream, remove, removeAll, removeIf, retainAll, spliterator, stream, toArray, toArray</code></li>
+<h3>Methods inherited from interface&nbsp;java.util.<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a></h3>
+<code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true#clear--" title="class or interface in java.util">clear</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true#containsAll-java.util.Collection-" title="class or interface in java.util">containsAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.util">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true#hashCode--" title="class or interface in java.util">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true#parallelStream--" title="class or interface in java.util">parallelStream</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true#remove-java.lang.Object-" title="class or interface in java.util">remove</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true#removeAll-java.util.Collection-" title="class or interface in java.util">removeAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true#removeIf-java.util.function.Predicate-" title="class or interface in java.util">removeIf</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true#retainAll-java.util.Collection-" title="class or interface in java.util">retainAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true#spliterator--" title="class or interface in java.util">spliterator</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true#stream--" title="class or interface in java.util">stream</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true#toArray--" title="class or interface in java.util">toArray</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true#toArray-T:A-" title="class or interface in java.util">toArray</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Iterable">
 <!--   -->
 </a>
-<h3>Methods inherited from interface&nbsp;java.lang.Iterable</h3>
-<code>forEach</code></li>
+<h3>Methods inherited from interface&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a></h3>
+<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true#forEach-java.util.function.Consumer-" title="class or interface in java.lang">forEach</a></code></li>
 </ul>
 </li>
 </ul>
@@ -338,9 +338,9 @@ implements java.util.Queue&lt;E&gt;, java.io.Serializable</pre>
 <pre>public&nbsp;boolean&nbsp;isEmpty()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code>isEmpty</code>&nbsp;in interface&nbsp;<code>java.util.Collection&lt;<a href="../../../../com/github/benmanes/caffeine/SingleConsumerQueue.html" title="type parameter in SingleConsumerQueue">E</a>&gt;</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true#isEmpty--" title="class or interface in java.util">isEmpty</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../../com/github/benmanes/caffeine/SingleConsumerQueue.html" title="type parameter in SingleConsumerQueue">E</a>&gt;</code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code>isEmpty</code>&nbsp;in class&nbsp;<code>java.util.AbstractCollection&lt;<a href="../../../../com/github/benmanes/caffeine/SingleConsumerQueue.html" title="type parameter in SingleConsumerQueue">E</a>&gt;</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/AbstractCollection.html?is-external=true#isEmpty--" title="class or interface in java.util">isEmpty</a></code>&nbsp;in class&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/AbstractCollection.html?is-external=true" title="class or interface in java.util">AbstractCollection</a>&lt;<a href="../../../../com/github/benmanes/caffeine/SingleConsumerQueue.html" title="type parameter in SingleConsumerQueue">E</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>
@@ -353,9 +353,9 @@ implements java.util.Queue&lt;E&gt;, java.io.Serializable</pre>
 <pre>public&nbsp;int&nbsp;size()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code>size</code>&nbsp;in interface&nbsp;<code>java.util.Collection&lt;<a href="../../../../com/github/benmanes/caffeine/SingleConsumerQueue.html" title="type parameter in SingleConsumerQueue">E</a>&gt;</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true#size--" title="class or interface in java.util">size</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../../com/github/benmanes/caffeine/SingleConsumerQueue.html" title="type parameter in SingleConsumerQueue">E</a>&gt;</code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code>size</code>&nbsp;in class&nbsp;<code>java.util.AbstractCollection&lt;<a href="../../../../com/github/benmanes/caffeine/SingleConsumerQueue.html" title="type parameter in SingleConsumerQueue">E</a>&gt;</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/AbstractCollection.html?is-external=true#size--" title="class or interface in java.util">size</a></code>&nbsp;in class&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/AbstractCollection.html?is-external=true" title="class or interface in java.util">AbstractCollection</a>&lt;<a href="../../../../com/github/benmanes/caffeine/SingleConsumerQueue.html" title="type parameter in SingleConsumerQueue">E</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>
@@ -365,12 +365,12 @@ implements java.util.Queue&lt;E&gt;, java.io.Serializable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>contains</h4>
-<pre>public&nbsp;boolean&nbsp;contains(java.lang.Object&nbsp;o)</pre>
+<pre>public&nbsp;boolean&nbsp;contains(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;o)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code>contains</code>&nbsp;in interface&nbsp;<code>java.util.Collection&lt;<a href="../../../../com/github/benmanes/caffeine/SingleConsumerQueue.html" title="type parameter in SingleConsumerQueue">E</a>&gt;</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true#contains-java.lang.Object-" title="class or interface in java.util">contains</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../../com/github/benmanes/caffeine/SingleConsumerQueue.html" title="type parameter in SingleConsumerQueue">E</a>&gt;</code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code>contains</code>&nbsp;in class&nbsp;<code>java.util.AbstractCollection&lt;<a href="../../../../com/github/benmanes/caffeine/SingleConsumerQueue.html" title="type parameter in SingleConsumerQueue">E</a>&gt;</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/AbstractCollection.html?is-external=true#contains-java.lang.Object-" title="class or interface in java.util">contains</a></code>&nbsp;in class&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/AbstractCollection.html?is-external=true" title="class or interface in java.util">AbstractCollection</a>&lt;<a href="../../../../com/github/benmanes/caffeine/SingleConsumerQueue.html" title="type parameter in SingleConsumerQueue">E</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>
@@ -383,7 +383,7 @@ implements java.util.Queue&lt;E&gt;, java.io.Serializable</pre>
 <pre>public&nbsp;<a href="../../../../com/github/benmanes/caffeine/SingleConsumerQueue.html" title="type parameter in SingleConsumerQueue">E</a>&nbsp;peek()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code>peek</code>&nbsp;in interface&nbsp;<code>java.util.Queue&lt;<a href="../../../../com/github/benmanes/caffeine/SingleConsumerQueue.html" title="type parameter in SingleConsumerQueue">E</a>&gt;</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Queue.html?is-external=true#peek--" title="class or interface in java.util">peek</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Queue.html?is-external=true" title="class or interface in java.util">Queue</a>&lt;<a href="../../../../com/github/benmanes/caffeine/SingleConsumerQueue.html" title="type parameter in SingleConsumerQueue">E</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>
@@ -398,7 +398,7 @@ implements java.util.Queue&lt;E&gt;, java.io.Serializable</pre>
 <pre>public&nbsp;boolean&nbsp;offer(<a href="../../../../com/github/benmanes/caffeine/SingleConsumerQueue.html" title="type parameter in SingleConsumerQueue">E</a>&nbsp;e)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code>offer</code>&nbsp;in interface&nbsp;<code>java.util.Queue&lt;<a href="../../../../com/github/benmanes/caffeine/SingleConsumerQueue.html" title="type parameter in SingleConsumerQueue">E</a>&gt;</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Queue.html?is-external=true#offer-E-" title="class or interface in java.util">offer</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Queue.html?is-external=true" title="class or interface in java.util">Queue</a>&lt;<a href="../../../../com/github/benmanes/caffeine/SingleConsumerQueue.html" title="type parameter in SingleConsumerQueue">E</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>
@@ -411,7 +411,7 @@ implements java.util.Queue&lt;E&gt;, java.io.Serializable</pre>
 <pre>public&nbsp;<a href="../../../../com/github/benmanes/caffeine/SingleConsumerQueue.html" title="type parameter in SingleConsumerQueue">E</a>&nbsp;poll()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code>poll</code>&nbsp;in interface&nbsp;<code>java.util.Queue&lt;<a href="../../../../com/github/benmanes/caffeine/SingleConsumerQueue.html" title="type parameter in SingleConsumerQueue">E</a>&gt;</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Queue.html?is-external=true#poll--" title="class or interface in java.util">poll</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Queue.html?is-external=true" title="class or interface in java.util">Queue</a>&lt;<a href="../../../../com/github/benmanes/caffeine/SingleConsumerQueue.html" title="type parameter in SingleConsumerQueue">E</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>
@@ -426,11 +426,11 @@ implements java.util.Queue&lt;E&gt;, java.io.Serializable</pre>
 <pre>public&nbsp;boolean&nbsp;add(<a href="../../../../com/github/benmanes/caffeine/SingleConsumerQueue.html" title="type parameter in SingleConsumerQueue">E</a>&nbsp;e)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code>add</code>&nbsp;in interface&nbsp;<code>java.util.Collection&lt;<a href="../../../../com/github/benmanes/caffeine/SingleConsumerQueue.html" title="type parameter in SingleConsumerQueue">E</a>&gt;</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true#add-E-" title="class or interface in java.util">add</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../../com/github/benmanes/caffeine/SingleConsumerQueue.html" title="type parameter in SingleConsumerQueue">E</a>&gt;</code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code>add</code>&nbsp;in interface&nbsp;<code>java.util.Queue&lt;<a href="../../../../com/github/benmanes/caffeine/SingleConsumerQueue.html" title="type parameter in SingleConsumerQueue">E</a>&gt;</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Queue.html?is-external=true#add-E-" title="class or interface in java.util">add</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Queue.html?is-external=true" title="class or interface in java.util">Queue</a>&lt;<a href="../../../../com/github/benmanes/caffeine/SingleConsumerQueue.html" title="type parameter in SingleConsumerQueue">E</a>&gt;</code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code>add</code>&nbsp;in class&nbsp;<code>java.util.AbstractQueue&lt;<a href="../../../../com/github/benmanes/caffeine/SingleConsumerQueue.html" title="type parameter in SingleConsumerQueue">E</a>&gt;</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/AbstractQueue.html?is-external=true#add-E-" title="class or interface in java.util">add</a></code>&nbsp;in class&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/AbstractQueue.html?is-external=true" title="class or interface in java.util">AbstractQueue</a>&lt;<a href="../../../../com/github/benmanes/caffeine/SingleConsumerQueue.html" title="type parameter in SingleConsumerQueue">E</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>
@@ -440,12 +440,12 @@ implements java.util.Queue&lt;E&gt;, java.io.Serializable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>addAll</h4>
-<pre>public&nbsp;boolean&nbsp;addAll(java.util.Collection&lt;? extends <a href="../../../../com/github/benmanes/caffeine/SingleConsumerQueue.html" title="type parameter in SingleConsumerQueue">E</a>&gt;&nbsp;c)</pre>
+<pre>public&nbsp;boolean&nbsp;addAll(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;? extends <a href="../../../../com/github/benmanes/caffeine/SingleConsumerQueue.html" title="type parameter in SingleConsumerQueue">E</a>&gt;&nbsp;c)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code>addAll</code>&nbsp;in interface&nbsp;<code>java.util.Collection&lt;<a href="../../../../com/github/benmanes/caffeine/SingleConsumerQueue.html" title="type parameter in SingleConsumerQueue">E</a>&gt;</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true#addAll-java.util.Collection-" title="class or interface in java.util">addAll</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../../com/github/benmanes/caffeine/SingleConsumerQueue.html" title="type parameter in SingleConsumerQueue">E</a>&gt;</code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code>addAll</code>&nbsp;in class&nbsp;<code>java.util.AbstractQueue&lt;<a href="../../../../com/github/benmanes/caffeine/SingleConsumerQueue.html" title="type parameter in SingleConsumerQueue">E</a>&gt;</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/AbstractQueue.html?is-external=true#addAll-java.util.Collection-" title="class or interface in java.util">addAll</a></code>&nbsp;in class&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/AbstractQueue.html?is-external=true" title="class or interface in java.util">AbstractQueue</a>&lt;<a href="../../../../com/github/benmanes/caffeine/SingleConsumerQueue.html" title="type parameter in SingleConsumerQueue">E</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>
@@ -455,14 +455,14 @@ implements java.util.Queue&lt;E&gt;, java.io.Serializable</pre>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>iterator</h4>
-<pre>public&nbsp;java.util.Iterator&lt;<a href="../../../../com/github/benmanes/caffeine/SingleConsumerQueue.html" title="type parameter in SingleConsumerQueue">E</a>&gt;&nbsp;iterator()</pre>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util">Iterator</a>&lt;<a href="../../../../com/github/benmanes/caffeine/SingleConsumerQueue.html" title="type parameter in SingleConsumerQueue">E</a>&gt;&nbsp;iterator()</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code>iterator</code>&nbsp;in interface&nbsp;<code>java.lang.Iterable&lt;<a href="../../../../com/github/benmanes/caffeine/SingleConsumerQueue.html" title="type parameter in SingleConsumerQueue">E</a>&gt;</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true#iterator--" title="class or interface in java.lang">iterator</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;<a href="../../../../com/github/benmanes/caffeine/SingleConsumerQueue.html" title="type parameter in SingleConsumerQueue">E</a>&gt;</code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code>iterator</code>&nbsp;in interface&nbsp;<code>java.util.Collection&lt;<a href="../../../../com/github/benmanes/caffeine/SingleConsumerQueue.html" title="type parameter in SingleConsumerQueue">E</a>&gt;</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true#iterator--" title="class or interface in java.util">iterator</a></code>&nbsp;in interface&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;<a href="../../../../com/github/benmanes/caffeine/SingleConsumerQueue.html" title="type parameter in SingleConsumerQueue">E</a>&gt;</code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code>iterator</code>&nbsp;in class&nbsp;<code>java.util.AbstractCollection&lt;<a href="../../../../com/github/benmanes/caffeine/SingleConsumerQueue.html" title="type parameter in SingleConsumerQueue">E</a>&gt;</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/AbstractCollection.html?is-external=true#iterator--" title="class or interface in java.util">iterator</a></code>&nbsp;in class&nbsp;<code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/AbstractCollection.html?is-external=true" title="class or interface in java.util">AbstractCollection</a>&lt;<a href="../../../../com/github/benmanes/caffeine/SingleConsumerQueue.html" title="type parameter in SingleConsumerQueue">E</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>

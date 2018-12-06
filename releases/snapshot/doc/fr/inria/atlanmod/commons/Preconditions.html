@@ -97,7 +97,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="contentContainer">
 <ul class="inheritance">
-<li>java.lang.Object</li>
+<li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
 <li>fr.inria.atlanmod.commons.Preconditions</li>
@@ -109,9 +109,9 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <hr>
 <br>
-<pre>@ParametersAreNonnullByDefault
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/ParametersAreNonnullByDefault.html?is-external=true" title="class or interface in javax.annotation">@ParametersAreNonnullByDefault</a>
 public final class <span class="typeNameLabel">Preconditions</span>
-extends java.lang.Object</pre>
+extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
 <div class="block">Static convenience methods that help a method or constructor check whether it was invoked correctly (whether its
  <i>preconditions</i> have been met). These methods generally accept a <code>boolean</code> expression which is expected to
  be <code>true</code> (or in the case of <code>checkNotNull</code>, an object reference which is expected to be non-null). When
@@ -150,15 +150,15 @@ extends java.lang.Object</pre>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Preconditions.html#checkArgument-boolean-java.lang.String-">checkArgument</a></span>(boolean&nbsp;expression,
-             java.lang.String&nbsp;message)</code>
+             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message)</code>
 <div class="block">Ensures the truth of an expression involving one or more parameters to the calling method.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Preconditions.html#checkArgument-boolean-java.lang.String-java.lang.Object...-">checkArgument</a></span>(boolean&nbsp;expression,
-             java.lang.String&nbsp;pattern,
-             java.lang.Object...&nbsp;args)</code>
+             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern,
+             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>...&nbsp;args)</code>
 <div class="block">Ensures the truth of an expression involving one or more parameters to the calling method.</div>
 </td>
 </tr>
@@ -180,7 +180,7 @@ extends java.lang.Object</pre>
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;T</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Preconditions.html#checkEqualTo-T-T-java.lang.String-">checkEqualTo</a></span>(T&nbsp;value,
             T&nbsp;other,
-            java.lang.String&nbsp;message)</code>
+            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message)</code>
 <div class="block">Ensures that a <code>value</code> passed as a parameter to the calling method is equal to <code>other</code>.</div>
 </td>
 </tr>
@@ -188,151 +188,151 @@ extends java.lang.Object</pre>
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;T</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Preconditions.html#checkEqualTo-T-T-java.lang.String-java.lang.Object...-">checkEqualTo</a></span>(T&nbsp;value,
             T&nbsp;other,
-            java.lang.String&nbsp;pattern,
-            java.lang.Object...&nbsp;args)</code>
+            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern,
+            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>...&nbsp;args)</code>
 <div class="block">Ensures that a <code>value</code> passed as a parameter to the calling method is equal to <code>other</code>.</div>
 </td>
 </tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code>static &lt;C extends java.lang.Comparable&lt;C&gt;&gt;<br>C</code></td>
+<td class="colFirst"><code>static &lt;C extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;C&gt;&gt;<br>C</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Preconditions.html#checkGreaterThan-C-C-">checkGreaterThan</a></span>(C&nbsp;value,
                 C&nbsp;lowerBoundExclusive)</code>
 <div class="block">Ensures that a <code>value</code> passed as a parameter to the calling method is strictly greater than <code>lowerBoundExclusive</code>.</div>
 </td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code>static &lt;C extends java.lang.Comparable&lt;C&gt;&gt;<br>C</code></td>
+<td class="colFirst"><code>static &lt;C extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;C&gt;&gt;<br>C</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Preconditions.html#checkGreaterThan-C-C-java.lang.String-">checkGreaterThan</a></span>(C&nbsp;value,
                 C&nbsp;lowerBoundExclusive,
-                java.lang.String&nbsp;message)</code>
+                <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message)</code>
 <div class="block">Ensures that a <code>value</code> passed as a parameter to the calling method is strictly greater than <code>lowerBoundExclusive</code>.</div>
 </td>
 </tr>
 <tr id="i9" class="rowColor">
-<td class="colFirst"><code>static &lt;C extends java.lang.Comparable&lt;C&gt;&gt;<br>C</code></td>
+<td class="colFirst"><code>static &lt;C extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;C&gt;&gt;<br>C</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Preconditions.html#checkGreaterThan-C-C-java.lang.String-java.lang.Object...-">checkGreaterThan</a></span>(C&nbsp;value,
                 C&nbsp;lowerBoundExclusive,
-                java.lang.String&nbsp;pattern,
-                java.lang.Object...&nbsp;args)</code>
+                <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern,
+                <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>...&nbsp;args)</code>
 <div class="block">Ensures that a <code>value</code> passed as a parameter to the calling method is strictly greater than <code>lowerBoundExclusive</code>.</div>
 </td>
 </tr>
 <tr id="i10" class="altColor">
-<td class="colFirst"><code>static &lt;C extends java.lang.Comparable&lt;C&gt;&gt;<br>C</code></td>
+<td class="colFirst"><code>static &lt;C extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;C&gt;&gt;<br>C</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Preconditions.html#checkGreaterThanOrEqualTo-C-C-">checkGreaterThanOrEqualTo</a></span>(C&nbsp;value,
                          C&nbsp;lowerBoundInclusive)</code>
 <div class="block">Ensures that a <code>value</code> passed as a parameter to the calling method is greater than or equal to <code>lowerBoundInclusive</code>.</div>
 </td>
 </tr>
 <tr id="i11" class="rowColor">
-<td class="colFirst"><code>static &lt;C extends java.lang.Comparable&lt;C&gt;&gt;<br>C</code></td>
+<td class="colFirst"><code>static &lt;C extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;C&gt;&gt;<br>C</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Preconditions.html#checkGreaterThanOrEqualTo-C-C-java.lang.String-">checkGreaterThanOrEqualTo</a></span>(C&nbsp;value,
                          C&nbsp;lowerBoundInclusive,
-                         java.lang.String&nbsp;message)</code>
+                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message)</code>
 <div class="block">Ensures that a <code>value</code> passed as a parameter to the calling method is greater than or equal to <code>lowerBoundInclusive</code>.</div>
 </td>
 </tr>
 <tr id="i12" class="altColor">
-<td class="colFirst"><code>static &lt;C extends java.lang.Comparable&lt;C&gt;&gt;<br>C</code></td>
+<td class="colFirst"><code>static &lt;C extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;C&gt;&gt;<br>C</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Preconditions.html#checkGreaterThanOrEqualTo-C-C-java.lang.String-java.lang.Object...-">checkGreaterThanOrEqualTo</a></span>(C&nbsp;value,
                          C&nbsp;lowerBoundInclusive,
-                         java.lang.String&nbsp;pattern,
-                         java.lang.Object...&nbsp;args)</code>
+                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern,
+                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>...&nbsp;args)</code>
 <div class="block">Ensures that a <code>value</code> passed as a parameter to the calling method is greater than or equal to <code>lowerBoundInclusive</code>.</div>
 </td>
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;T</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Preconditions.html#checkInstanceOf-T-java.lang.Class-">checkInstanceOf</a></span>(T&nbsp;reference,
-               java.lang.Class&lt;?&gt;&nbsp;type)</code>
+               <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;&nbsp;type)</code>
 <div class="block">Ensures that an object <code>reference</code> passed as a parameter to the calling method is instance of <code>type</code>.</div>
 </td>
 </tr>
 <tr id="i14" class="altColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;T</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Preconditions.html#checkInstanceOf-T-java.lang.Class-java.lang.String-">checkInstanceOf</a></span>(T&nbsp;reference,
-               java.lang.Class&lt;?&gt;&nbsp;type,
-               java.lang.String&nbsp;message)</code>
+               <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;&nbsp;type,
+               <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message)</code>
 <div class="block">Ensures that an object <code>reference</code> passed as a parameter to the calling method is instance of <code>type</code>.</div>
 </td>
 </tr>
 <tr id="i15" class="rowColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;T</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Preconditions.html#checkInstanceOf-T-java.lang.Class-java.lang.String-java.lang.Object...-">checkInstanceOf</a></span>(T&nbsp;reference,
-               java.lang.Class&lt;?&gt;&nbsp;type,
-               java.lang.String&nbsp;pattern,
-               java.lang.Object...&nbsp;args)</code>
+               <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;&nbsp;type,
+               <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern,
+               <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>...&nbsp;args)</code>
 <div class="block">Ensures that an object <code>reference</code> passed as a parameter to the calling method is instance of <code>type</code>.</div>
 </td>
 </tr>
 <tr id="i16" class="altColor">
-<td class="colFirst"><code>static &lt;C extends java.lang.Comparable&lt;C&gt;&gt;<br>C</code></td>
+<td class="colFirst"><code>static &lt;C extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;C&gt;&gt;<br>C</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Preconditions.html#checkLessThan-C-C-">checkLessThan</a></span>(C&nbsp;value,
              C&nbsp;upperBoundExclusive)</code>
 <div class="block">Ensures that a <code>value</code> passed as a parameter to the calling method is strictly less than <code>upperBoundExclusive</code>.</div>
 </td>
 </tr>
 <tr id="i17" class="rowColor">
-<td class="colFirst"><code>static &lt;C extends java.lang.Comparable&lt;C&gt;&gt;<br>C</code></td>
+<td class="colFirst"><code>static &lt;C extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;C&gt;&gt;<br>C</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Preconditions.html#checkLessThan-C-C-java.lang.String-">checkLessThan</a></span>(C&nbsp;value,
              C&nbsp;upperBoundExclusive,
-             java.lang.String&nbsp;message)</code>
+             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message)</code>
 <div class="block">Ensures that a <code>value</code> passed as a parameter to the calling method is strictly less than <code>upperBoundExclusive</code>.</div>
 </td>
 </tr>
 <tr id="i18" class="altColor">
-<td class="colFirst"><code>static &lt;C extends java.lang.Comparable&lt;C&gt;&gt;<br>C</code></td>
+<td class="colFirst"><code>static &lt;C extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;C&gt;&gt;<br>C</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Preconditions.html#checkLessThan-C-C-java.lang.String-java.lang.Object...-">checkLessThan</a></span>(C&nbsp;value,
              C&nbsp;upperBoundExclusive,
-             java.lang.String&nbsp;pattern,
-             java.lang.Object...&nbsp;args)</code>
+             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern,
+             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>...&nbsp;args)</code>
 <div class="block">Ensures that a <code>value</code> passed as a parameter to the calling method is strictly less than <code>upperBoundExclusive</code>.</div>
 </td>
 </tr>
 <tr id="i19" class="rowColor">
-<td class="colFirst"><code>static &lt;C extends java.lang.Comparable&lt;C&gt;&gt;<br>C</code></td>
+<td class="colFirst"><code>static &lt;C extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;C&gt;&gt;<br>C</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Preconditions.html#checkLessThanOrEqualTo-C-C-">checkLessThanOrEqualTo</a></span>(C&nbsp;value,
                       C&nbsp;upperBoundInclusive)</code>
 <div class="block">Ensures that a <code>value</code> passed as a parameter to the calling method is less than or equal to <code>upperBoundInclusive</code>.</div>
 </td>
 </tr>
 <tr id="i20" class="altColor">
-<td class="colFirst"><code>static &lt;C extends java.lang.Comparable&lt;C&gt;&gt;<br>C</code></td>
+<td class="colFirst"><code>static &lt;C extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;C&gt;&gt;<br>C</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Preconditions.html#checkLessThanOrEqualTo-C-C-java.lang.String-">checkLessThanOrEqualTo</a></span>(C&nbsp;value,
                       C&nbsp;upperBoundInclusive,
-                      java.lang.String&nbsp;message)</code>
+                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message)</code>
 <div class="block">Ensures that a <code>value</code> passed as a parameter to the calling method is less than or equal to <code>upperBoundInclusive</code>.</div>
 </td>
 </tr>
 <tr id="i21" class="rowColor">
-<td class="colFirst"><code>static &lt;C extends java.lang.Comparable&lt;C&gt;&gt;<br>C</code></td>
+<td class="colFirst"><code>static &lt;C extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;C&gt;&gt;<br>C</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Preconditions.html#checkLessThanOrEqualTo-C-C-java.lang.String-java.lang.Object...-">checkLessThanOrEqualTo</a></span>(C&nbsp;value,
                       C&nbsp;upperBoundInclusive,
-                      java.lang.String&nbsp;pattern,
-                      java.lang.Object...&nbsp;args)</code>
+                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern,
+                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>...&nbsp;args)</code>
 <div class="block">Ensures that a <code>value</code> passed as a parameter to the calling method is less than or equal to <code>upperBoundInclusive</code>.</div>
 </td>
 </tr>
 <tr id="i22" class="altColor">
-<td class="colFirst"><code>static &lt;C extends java.util.Collection&lt;? extends T&gt;,T&gt;<br>C</code></td>
+<td class="colFirst"><code>static &lt;C extends <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;? extends T&gt;,T&gt;<br>C</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Preconditions.html#checkNotContainsNull-C-">checkNotContainsNull</a></span>(C&nbsp;collection)</code>
 <div class="block">Ensures that a <code>collection</code> passed as a parameter to the calling method is not <code>null</code> and does not
  contains any <code>null</code> element.</div>
 </td>
 </tr>
 <tr id="i23" class="rowColor">
-<td class="colFirst"><code>static &lt;C extends java.util.Collection&lt;? extends T&gt;,T&gt;<br>C</code></td>
+<td class="colFirst"><code>static &lt;C extends <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;? extends T&gt;,T&gt;<br>C</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Preconditions.html#checkNotContainsNull-C-java.lang.String-">checkNotContainsNull</a></span>(C&nbsp;collection,
-                    java.lang.String&nbsp;message)</code>
+                    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message)</code>
 <div class="block">Ensures that a <code>collection</code> passed as a parameter to the calling method is not <code>null</code> and does not
  contains any <code>null</code> element.</div>
 </td>
 </tr>
 <tr id="i24" class="altColor">
-<td class="colFirst"><code>static &lt;C extends java.util.Collection&lt;? extends T&gt;,T&gt;<br>C</code></td>
+<td class="colFirst"><code>static &lt;C extends <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;? extends T&gt;,T&gt;<br>C</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Preconditions.html#checkNotContainsNull-C-java.lang.String-java.lang.Object...-">checkNotContainsNull</a></span>(C&nbsp;collection,
-                    java.lang.String&nbsp;pattern,
-                    java.lang.Object...&nbsp;args)</code>
+                    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern,
+                    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>...&nbsp;args)</code>
 <div class="block">Ensures that a <code>collection</code> passed as a parameter to the calling method is not <code>null</code> and does not
  contains any <code>null</code> element.</div>
 </td>
@@ -346,15 +346,15 @@ extends java.lang.Object</pre>
 <tr id="i26" class="altColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;T</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Preconditions.html#checkNotNull-T-java.lang.String-">checkNotNull</a></span>(T&nbsp;reference,
-            java.lang.String&nbsp;message)</code>
+            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message)</code>
 <div class="block">Ensures that an object <code>reference</code> passed as a parameter to the calling method is not <code>null</code>.</div>
 </td>
 </tr>
 <tr id="i27" class="rowColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;T</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Preconditions.html#checkNotNull-T-java.lang.String-java.lang.Object...-">checkNotNull</a></span>(T&nbsp;reference,
-            java.lang.String&nbsp;pattern,
-            java.lang.Object...&nbsp;args)</code>
+            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern,
+            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>...&nbsp;args)</code>
 <div class="block">Ensures that an object <code>reference</code> passed as a parameter to the calling method is not <code>null</code>.</div>
 </td>
 </tr>
@@ -375,7 +375,7 @@ extends java.lang.Object</pre>
 <tr id="i30" class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Preconditions.html#checkState-boolean-java.lang.String-">checkState</a></span>(boolean&nbsp;expression,
-          java.lang.String&nbsp;message)</code>
+          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message)</code>
 <div class="block">Ensures the truth of an expression involving the state of the calling instance, but not involving any parameters
  to the calling method.</div>
 </td>
@@ -383,8 +383,8 @@ extends java.lang.Object</pre>
 <tr id="i31" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../fr/inria/atlanmod/commons/Preconditions.html#checkState-boolean-java.lang.String-java.lang.Object...-">checkState</a></span>(boolean&nbsp;expression,
-          java.lang.String&nbsp;pattern,
-          java.lang.Object...&nbsp;args)</code>
+          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern,
+          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>...&nbsp;args)</code>
 <div class="block">Ensures the truth of an expression involving the state of the calling instance, but not involving any parameters
  to the calling method.</div>
 </td>
@@ -394,8 +394,8 @@ extends java.lang.Object</pre>
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;java.lang.Object</h3>
-<code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
 </ul>
 </li>
 </ul>
@@ -425,7 +425,7 @@ public static&nbsp;void&nbsp;checkArgument(boolean&nbsp;expression)</pre>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>expression</code> - a boolean expression</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalArgumentException</code> - if <code>expression</code> is false</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if <code>expression</code> is false</dd>
 </dl>
 </li>
 </ul>
@@ -438,14 +438,14 @@ public static&nbsp;void&nbsp;checkArgument(boolean&nbsp;expression)</pre>
 <pre>@Contract(value="false, _ -&gt; fail",
           pure=true)
 public static&nbsp;void&nbsp;checkArgument(boolean&nbsp;expression,
-                                                                                          java.lang.String&nbsp;message)</pre>
+                                                                                          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message)</pre>
 <div class="block">Ensures the truth of an expression involving one or more parameters to the calling method.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>expression</code> - a boolean expression</dd>
 <dd><code>message</code> - the exception message to use if the check fails</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalArgumentException</code> - if <code>expression</code> is false</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if <code>expression</code> is false</dd>
 </dl>
 </li>
 </ul>
@@ -458,8 +458,8 @@ public static&nbsp;void&nbsp;checkArgument(boolean&nbsp;expression,
 <pre>@Contract(value="false, _, _ -&gt; fail",
           pure=true)
 public static&nbsp;void&nbsp;checkArgument(boolean&nbsp;expression,
-                                                                                             java.lang.String&nbsp;pattern,
-                                                                                             java.lang.Object...&nbsp;args)</pre>
+                                                                                             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern,
+                                                                                             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>...&nbsp;args)</pre>
 <div class="block">Ensures the truth of an expression involving one or more parameters to the calling method.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -467,8 +467,8 @@ public static&nbsp;void&nbsp;checkArgument(boolean&nbsp;expression,
 <dd><code>pattern</code> - a template for the exception message should the check fail</dd>
 <dd><code>args</code> - the arguments to be substituted into the message template</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalArgumentException</code> - if <code>expression</code> is false</dd>
-<dd><code>java.lang.NullPointerException</code> - if the check fails and either <code>pattern</code> or <code>args</code> is null</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if <code>expression</code> is false</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the check fails and either <code>pattern</code> or <code>args</code> is null</dd>
 </dl>
 </li>
 </ul>
@@ -487,7 +487,7 @@ public static&nbsp;void&nbsp;checkState(boolean&nbsp;expression)</pre>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>expression</code> - a boolean expression</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalStateException</code> - if <code>expression</code> is false</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang">IllegalStateException</a></code> - if <code>expression</code> is false</dd>
 </dl>
 </li>
 </ul>
@@ -500,7 +500,7 @@ public static&nbsp;void&nbsp;checkState(boolean&nbsp;expression)</pre>
 <pre>@Contract(value="false, _ -&gt; fail",
           pure=true)
 public static&nbsp;void&nbsp;checkState(boolean&nbsp;expression,
-                                                                                       java.lang.String&nbsp;message)</pre>
+                                                                                       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message)</pre>
 <div class="block">Ensures the truth of an expression involving the state of the calling instance, but not involving any parameters
  to the calling method.</div>
 <dl>
@@ -508,7 +508,7 @@ public static&nbsp;void&nbsp;checkState(boolean&nbsp;expression,
 <dd><code>expression</code> - a boolean expression</dd>
 <dd><code>message</code> - the exception message to use if the check fails</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalStateException</code> - if <code>expression</code> is false</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang">IllegalStateException</a></code> - if <code>expression</code> is false</dd>
 </dl>
 </li>
 </ul>
@@ -521,8 +521,8 @@ public static&nbsp;void&nbsp;checkState(boolean&nbsp;expression,
 <pre>@Contract(value="false, _, _ -&gt; fail",
           pure=true)
 public static&nbsp;void&nbsp;checkState(boolean&nbsp;expression,
-                                                                                          java.lang.String&nbsp;pattern,
-                                                                                          java.lang.Object...&nbsp;args)</pre>
+                                                                                          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern,
+                                                                                          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>...&nbsp;args)</pre>
 <div class="block">Ensures the truth of an expression involving the state of the calling instance, but not involving any parameters
  to the calling method.</div>
 <dl>
@@ -531,8 +531,8 @@ public static&nbsp;void&nbsp;checkState(boolean&nbsp;expression,
 <dd><code>pattern</code> - a template for the exception message should the check fail</dd>
 <dd><code>args</code> - the arguments to be substituted into the message template</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalStateException</code> - if <code>expression</code> is false</dd>
-<dd><code>java.lang.NullPointerException</code> - if the check fails and either <code>pattern</code> or <code>args</code> is null</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang">IllegalStateException</a></code> - if <code>expression</code> is false</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the check fails and either <code>pattern</code> or <code>args</code> is null</dd>
 </dl>
 </li>
 </ul>
@@ -544,10 +544,10 @@ public static&nbsp;void&nbsp;checkState(boolean&nbsp;expression,
 <ul class="blockList">
 <li class="blockList">
 <h4>checkNotNull</h4>
-<pre>@Nonnull
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
  @Contract(value="null -&gt; fail",
           pure=true)
-public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;checkNotNull(@Nullable
+public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;checkNotNull(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
                                                                                                 T&nbsp;reference)</pre>
 <div class="block">Ensures that an object <code>reference</code> passed as a parameter to the calling method is not <code>null</code>.</div>
 <dl>
@@ -556,7 +556,7 @@ public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;checkNotNull(@Nullable
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the non-null reference that was validated</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.NullPointerException</code> - if <code>reference</code> is null</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if <code>reference</code> is null</dd>
 </dl>
 </li>
 </ul>
@@ -568,12 +568,12 @@ public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;checkNotNull(@Nullable
 <ul class="blockList">
 <li class="blockList">
 <h4>checkNotNull</h4>
-<pre>@Nonnull
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
  @Contract(value="null, _ -&gt; fail",
           pure=true)
-public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;checkNotNull(@Nullable
+public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;checkNotNull(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
                                                                                                    T&nbsp;reference,
-                                                                                                   java.lang.String&nbsp;message)</pre>
+                                                                                                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message)</pre>
 <div class="block">Ensures that an object <code>reference</code> passed as a parameter to the calling method is not <code>null</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -582,7 +582,7 @@ public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;checkNotNull(@Nullable
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the non-null reference that was validated</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.NullPointerException</code> - if <code>reference</code> is null</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if <code>reference</code> is null</dd>
 </dl>
 </li>
 </ul>
@@ -594,24 +594,24 @@ public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;checkNotNull(@Nullable
 <ul class="blockList">
 <li class="blockList">
 <h4>checkNotNull</h4>
-<pre>@Nonnull
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
  @Contract(value="null, _, _ -&gt; fail",
           pure=true)
-public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;checkNotNull(@Nullable
+public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;checkNotNull(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
                                                                                                       T&nbsp;reference,
-                                                                                                      java.lang.String&nbsp;pattern,
-                                                                                                      java.lang.Object...&nbsp;args)</pre>
+                                                                                                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern,
+                                                                                                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>...&nbsp;args)</pre>
 <div class="block">Ensures that an object <code>reference</code> passed as a parameter to the calling method is not <code>null</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>reference</code> - an object reference</dd>
 <dd><code>pattern</code> - a template for the exception message should the check fail</dd>
 <dd><code>args</code> - the arguments to be substituted into the message template. Arguments are converted to strings
-                  using <code>String.valueOf(Object)</code>.</dd>
+                  using <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true#valueOf-java.lang.Object-" title="class or interface in java.lang"><code>String.valueOf(Object)</code></a>.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the non-null reference that was validated</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.NullPointerException</code> - if <code>reference</code> is null</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if <code>reference</code> is null</dd>
 </dl>
 </li>
 </ul>
@@ -623,8 +623,8 @@ public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;checkNotNull(@Nullable
 <ul class="blockList">
 <li class="blockList">
 <h4>checkNotContainsNull</h4>
-<pre>@Nonnull
-public static&nbsp;&lt;C extends java.util.Collection&lt;? extends T&gt;,T&gt;&nbsp;C&nbsp;checkNotContainsNull(C&nbsp;collection)</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public static&nbsp;&lt;C extends <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;? extends T&gt;,T&gt;&nbsp;C&nbsp;checkNotContainsNull(C&nbsp;collection)</pre>
 <div class="block">Ensures that a <code>collection</code> passed as a parameter to the calling method is not <code>null</code> and does not
  contains any <code>null</code> element.</div>
 <dl>
@@ -633,7 +633,7 @@ public static&nbsp;&lt;C extends java.util.Collection&lt;? extends T&gt;,T&gt;&n
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the non-null collection that was validated</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.NullPointerException</code> - if <code>collection</code> is null or contains at least one <code>null</code> element</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if <code>collection</code> is null or contains at least one <code>null</code> element</dd>
 </dl>
 </li>
 </ul>
@@ -645,9 +645,9 @@ public static&nbsp;&lt;C extends java.util.Collection&lt;? extends T&gt;,T&gt;&n
 <ul class="blockList">
 <li class="blockList">
 <h4>checkNotContainsNull</h4>
-<pre>@Nonnull
-public static&nbsp;&lt;C extends java.util.Collection&lt;? extends T&gt;,T&gt;&nbsp;C&nbsp;checkNotContainsNull(C&nbsp;collection,
-                                                                                              java.lang.String&nbsp;message)</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public static&nbsp;&lt;C extends <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;? extends T&gt;,T&gt;&nbsp;C&nbsp;checkNotContainsNull(C&nbsp;collection,
+                                                                                    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message)</pre>
 <div class="block">Ensures that a <code>collection</code> passed as a parameter to the calling method is not <code>null</code> and does not
  contains any <code>null</code> element.</div>
 <dl>
@@ -657,7 +657,7 @@ public static&nbsp;&lt;C extends java.util.Collection&lt;? extends T&gt;,T&gt;&n
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the non-null collection that was validated</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.NullPointerException</code> - if <code>collection</code> is null or contains at least one <code>null</code> element</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if <code>collection</code> is null or contains at least one <code>null</code> element</dd>
 </dl>
 </li>
 </ul>
@@ -669,10 +669,10 @@ public static&nbsp;&lt;C extends java.util.Collection&lt;? extends T&gt;,T&gt;&n
 <ul class="blockList">
 <li class="blockList">
 <h4>checkNotContainsNull</h4>
-<pre>@Nonnull
-public static&nbsp;&lt;C extends java.util.Collection&lt;? extends T&gt;,T&gt;&nbsp;C&nbsp;checkNotContainsNull(C&nbsp;collection,
-                                                                                              java.lang.String&nbsp;pattern,
-                                                                                              java.lang.Object...&nbsp;args)</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public static&nbsp;&lt;C extends <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</a>&lt;? extends T&gt;,T&gt;&nbsp;C&nbsp;checkNotContainsNull(C&nbsp;collection,
+                                                                                    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern,
+                                                                                    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>...&nbsp;args)</pre>
 <div class="block">Ensures that a <code>collection</code> passed as a parameter to the calling method is not <code>null</code> and does not
  contains any <code>null</code> element.</div>
 <dl>
@@ -680,11 +680,11 @@ public static&nbsp;&lt;C extends java.util.Collection&lt;? extends T&gt;,T&gt;&n
 <dd><code>collection</code> - a collection</dd>
 <dd><code>pattern</code> - a template for the exception message should the check fail</dd>
 <dd><code>args</code> - the arguments to be substituted into the message template. Arguments are converted to strings
-                   using <code>String.valueOf(Object)</code>.</dd>
+                   using <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true#valueOf-java.lang.Object-" title="class or interface in java.lang"><code>String.valueOf(Object)</code></a>.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the non-null collection that was validated</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.NullPointerException</code> - if <code>collection</code> is null or contains at least one <code>null</code> element</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if <code>collection</code> is null or contains at least one <code>null</code> element</dd>
 </dl>
 </li>
 </ul>
@@ -696,9 +696,9 @@ public static&nbsp;&lt;C extends java.util.Collection&lt;? extends T&gt;,T&gt;&n
 <ul class="blockList">
 <li class="blockList">
 <h4>checkInstanceOf</h4>
-<pre>@Nonnull
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
 public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;checkInstanceOf(T&nbsp;reference,
-                                             java.lang.Class&lt;?&gt;&nbsp;type)</pre>
+                                             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;&nbsp;type)</pre>
 <div class="block">Ensures that an object <code>reference</code> passed as a parameter to the calling method is instance of <code>type</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -707,7 +707,7 @@ public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;checkInstanceOf(T&nbsp;reference,
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the reference that was validated</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalArgumentException</code> - if <code>reference</code> is not instance of <code>type</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if <code>reference</code> is not instance of <code>type</code></dd>
 </dl>
 </li>
 </ul>
@@ -719,10 +719,10 @@ public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;checkInstanceOf(T&nbsp;reference,
 <ul class="blockList">
 <li class="blockList">
 <h4>checkInstanceOf</h4>
-<pre>@Nonnull
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
 public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;checkInstanceOf(T&nbsp;reference,
-                                             java.lang.Class&lt;?&gt;&nbsp;type,
-                                             java.lang.String&nbsp;message)</pre>
+                                             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;&nbsp;type,
+                                             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message)</pre>
 <div class="block">Ensures that an object <code>reference</code> passed as a parameter to the calling method is instance of <code>type</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -732,7 +732,7 @@ public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;checkInstanceOf(T&nbsp;reference,
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the reference that was validated</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalArgumentException</code> - if <code>reference</code> is not instance of <code>type</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if <code>reference</code> is not instance of <code>type</code></dd>
 </dl>
 </li>
 </ul>
@@ -744,11 +744,11 @@ public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;checkInstanceOf(T&nbsp;reference,
 <ul class="blockList">
 <li class="blockList">
 <h4>checkInstanceOf</h4>
-<pre>@Nonnull
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
 public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;checkInstanceOf(T&nbsp;reference,
-                                             java.lang.Class&lt;?&gt;&nbsp;type,
-                                             java.lang.String&nbsp;pattern,
-                                             java.lang.Object...&nbsp;args)</pre>
+                                             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;&nbsp;type,
+                                             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern,
+                                             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>...&nbsp;args)</pre>
 <div class="block">Ensures that an object <code>reference</code> passed as a parameter to the calling method is instance of <code>type</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -756,11 +756,11 @@ public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;checkInstanceOf(T&nbsp;reference,
 <dd><code>type</code> - the expected type of <code>reference</code></dd>
 <dd><code>pattern</code> - a template for the exception message should the check fail</dd>
 <dd><code>args</code> - the arguments to be substituted into the message template. Arguments are converted to strings
-                  using <code>String.valueOf(Object)</code>.</dd>
+                  using <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true#valueOf-java.lang.Object-" title="class or interface in java.lang"><code>String.valueOf(Object)</code></a>.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the reference that was validated</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalArgumentException</code> - if <code>reference</code> is not instance of <code>type</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if <code>reference</code> is not instance of <code>type</code></dd>
 </dl>
 </li>
 </ul>
@@ -772,9 +772,9 @@ public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;checkInstanceOf(T&nbsp;reference,
 <ul class="blockList">
 <li class="blockList">
 <h4>checkEqualTo</h4>
-<pre>public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;checkEqualTo(@Nullable
+<pre>public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;checkEqualTo(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
                                  T&nbsp;value,
-                                 @Nullable
+                                 <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
                                  T&nbsp;other)</pre>
 <div class="block">Ensures that a <code>value</code> passed as a parameter to the calling method is equal to <code>other</code>.</div>
 <dl>
@@ -784,7 +784,7 @@ public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;checkInstanceOf(T&nbsp;reference,
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value that was validated</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalArgumentException</code> - if <code>value</code> is not equal to <code>other</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if <code>value</code> is not equal to <code>other</code></dd>
 </dl>
 </li>
 </ul>
@@ -796,11 +796,11 @@ public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;checkInstanceOf(T&nbsp;reference,
 <ul class="blockList">
 <li class="blockList">
 <h4>checkEqualTo</h4>
-<pre>public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;checkEqualTo(@Nullable
+<pre>public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;checkEqualTo(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
                                  T&nbsp;value,
-                                 @Nullable
+                                 <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
                                  T&nbsp;other,
-                                 java.lang.String&nbsp;message)</pre>
+                                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message)</pre>
 <div class="block">Ensures that a <code>value</code> passed as a parameter to the calling method is equal to <code>other</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -810,7 +810,7 @@ public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;checkInstanceOf(T&nbsp;reference,
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value that was validated</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalArgumentException</code> - if <code>value</code> is not equal to <code>other</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if <code>value</code> is not equal to <code>other</code></dd>
 </dl>
 </li>
 </ul>
@@ -822,12 +822,12 @@ public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;checkInstanceOf(T&nbsp;reference,
 <ul class="blockList">
 <li class="blockList">
 <h4>checkEqualTo</h4>
-<pre>public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;checkEqualTo(@Nullable
+<pre>public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;checkEqualTo(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
                                  T&nbsp;value,
-                                 @Nullable
+                                 <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
                                  T&nbsp;other,
-                                 java.lang.String&nbsp;pattern,
-                                 java.lang.Object...&nbsp;args)</pre>
+                                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern,
+                                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>...&nbsp;args)</pre>
 <div class="block">Ensures that a <code>value</code> passed as a parameter to the calling method is equal to <code>other</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -835,11 +835,11 @@ public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;checkInstanceOf(T&nbsp;reference,
 <dd><code>other</code> - another object reference</dd>
 <dd><code>pattern</code> - a template for the exception message should the check fail</dd>
 <dd><code>args</code> - the arguments to be substituted into the message template. Arguments are converted to strings
-                using <code>String.valueOf(Object)</code>.</dd>
+                using <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true#valueOf-java.lang.Object-" title="class or interface in java.lang"><code>String.valueOf(Object)</code></a>.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value that was validated</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalArgumentException</code> - if <code>value</code> is not equal to <code>other</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if <code>value</code> is not equal to <code>other</code></dd>
 </dl>
 </li>
 </ul>
@@ -851,9 +851,9 @@ public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;checkInstanceOf(T&nbsp;reference,
 <ul class="blockList">
 <li class="blockList">
 <h4>checkGreaterThan</h4>
-<pre>@Nonnull
-public static&nbsp;&lt;C extends java.lang.Comparable&lt;C&gt;&gt;&nbsp;C&nbsp;checkGreaterThan(C&nbsp;value,
-                                                                              C&nbsp;lowerBoundExclusive)</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public static&nbsp;&lt;C extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;C&gt;&gt;&nbsp;C&nbsp;checkGreaterThan(C&nbsp;value,
+                                                                    C&nbsp;lowerBoundExclusive)</pre>
 <div class="block">Ensures that a <code>value</code> passed as a parameter to the calling method is strictly greater than <code>lowerBoundExclusive</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -862,7 +862,7 @@ public static&nbsp;&lt;C extends java.lang.Comparable&lt;C&gt;&gt;&nbsp;C&nbsp;c
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value that was validated</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalArgumentException</code> - if <code>value</code> is less than or equal to <code>lowerBoundExclusive</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if <code>value</code> is less than or equal to <code>lowerBoundExclusive</code></dd>
 </dl>
 </li>
 </ul>
@@ -874,10 +874,10 @@ public static&nbsp;&lt;C extends java.lang.Comparable&lt;C&gt;&gt;&nbsp;C&nbsp;c
 <ul class="blockList">
 <li class="blockList">
 <h4>checkGreaterThan</h4>
-<pre>@Nonnull
-public static&nbsp;&lt;C extends java.lang.Comparable&lt;C&gt;&gt;&nbsp;C&nbsp;checkGreaterThan(C&nbsp;value,
-                                                                              C&nbsp;lowerBoundExclusive,
-                                                                              java.lang.String&nbsp;message)</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public static&nbsp;&lt;C extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;C&gt;&gt;&nbsp;C&nbsp;checkGreaterThan(C&nbsp;value,
+                                                                    C&nbsp;lowerBoundExclusive,
+                                                                    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message)</pre>
 <div class="block">Ensures that a <code>value</code> passed as a parameter to the calling method is strictly greater than <code>lowerBoundExclusive</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -887,7 +887,7 @@ public static&nbsp;&lt;C extends java.lang.Comparable&lt;C&gt;&gt;&nbsp;C&nbsp;c
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value that was validated</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalArgumentException</code> - if <code>value</code> is less than or equal to <code>lowerBoundExclusive</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if <code>value</code> is less than or equal to <code>lowerBoundExclusive</code></dd>
 </dl>
 </li>
 </ul>
@@ -899,11 +899,11 @@ public static&nbsp;&lt;C extends java.lang.Comparable&lt;C&gt;&gt;&nbsp;C&nbsp;c
 <ul class="blockList">
 <li class="blockList">
 <h4>checkGreaterThan</h4>
-<pre>@Nonnull
-public static&nbsp;&lt;C extends java.lang.Comparable&lt;C&gt;&gt;&nbsp;C&nbsp;checkGreaterThan(C&nbsp;value,
-                                                                              C&nbsp;lowerBoundExclusive,
-                                                                              java.lang.String&nbsp;pattern,
-                                                                              java.lang.Object...&nbsp;args)</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public static&nbsp;&lt;C extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;C&gt;&gt;&nbsp;C&nbsp;checkGreaterThan(C&nbsp;value,
+                                                                    C&nbsp;lowerBoundExclusive,
+                                                                    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern,
+                                                                    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>...&nbsp;args)</pre>
 <div class="block">Ensures that a <code>value</code> passed as a parameter to the calling method is strictly greater than <code>lowerBoundExclusive</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -911,11 +911,11 @@ public static&nbsp;&lt;C extends java.lang.Comparable&lt;C&gt;&gt;&nbsp;C&nbsp;c
 <dd><code>lowerBoundExclusive</code> - the lower bound (exclusive)</dd>
 <dd><code>pattern</code> - a template for the exception message should the check fail</dd>
 <dd><code>args</code> - the arguments to be substituted into the message template. Arguments are converted to
-                            strings using <code>String.valueOf(Object)</code>.</dd>
+                            strings using <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true#valueOf-java.lang.Object-" title="class or interface in java.lang"><code>String.valueOf(Object)</code></a>.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value that was validated</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalArgumentException</code> - if <code>value</code> is less than or equal to <code>lowerBoundExclusive</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if <code>value</code> is less than or equal to <code>lowerBoundExclusive</code></dd>
 </dl>
 </li>
 </ul>
@@ -927,9 +927,9 @@ public static&nbsp;&lt;C extends java.lang.Comparable&lt;C&gt;&gt;&nbsp;C&nbsp;c
 <ul class="blockList">
 <li class="blockList">
 <h4>checkGreaterThanOrEqualTo</h4>
-<pre>@Nonnull
-public static&nbsp;&lt;C extends java.lang.Comparable&lt;C&gt;&gt;&nbsp;C&nbsp;checkGreaterThanOrEqualTo(C&nbsp;value,
-                                                                                       C&nbsp;lowerBoundInclusive)</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public static&nbsp;&lt;C extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;C&gt;&gt;&nbsp;C&nbsp;checkGreaterThanOrEqualTo(C&nbsp;value,
+                                                                             C&nbsp;lowerBoundInclusive)</pre>
 <div class="block">Ensures that a <code>value</code> passed as a parameter to the calling method is greater than or equal to <code>lowerBoundInclusive</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -938,7 +938,7 @@ public static&nbsp;&lt;C extends java.lang.Comparable&lt;C&gt;&gt;&nbsp;C&nbsp;c
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value that was validated</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalArgumentException</code> - if <code>value</code> is less than <code>lowerBoundInclusive</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if <code>value</code> is less than <code>lowerBoundInclusive</code></dd>
 </dl>
 </li>
 </ul>
@@ -950,10 +950,10 @@ public static&nbsp;&lt;C extends java.lang.Comparable&lt;C&gt;&gt;&nbsp;C&nbsp;c
 <ul class="blockList">
 <li class="blockList">
 <h4>checkGreaterThanOrEqualTo</h4>
-<pre>@Nonnull
-public static&nbsp;&lt;C extends java.lang.Comparable&lt;C&gt;&gt;&nbsp;C&nbsp;checkGreaterThanOrEqualTo(C&nbsp;value,
-                                                                                       C&nbsp;lowerBoundInclusive,
-                                                                                       java.lang.String&nbsp;message)</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public static&nbsp;&lt;C extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;C&gt;&gt;&nbsp;C&nbsp;checkGreaterThanOrEqualTo(C&nbsp;value,
+                                                                             C&nbsp;lowerBoundInclusive,
+                                                                             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message)</pre>
 <div class="block">Ensures that a <code>value</code> passed as a parameter to the calling method is greater than or equal to <code>lowerBoundInclusive</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -963,7 +963,7 @@ public static&nbsp;&lt;C extends java.lang.Comparable&lt;C&gt;&gt;&nbsp;C&nbsp;c
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value that was validated</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalArgumentException</code> - if <code>value</code> is less than <code>lowerBoundInclusive</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if <code>value</code> is less than <code>lowerBoundInclusive</code></dd>
 </dl>
 </li>
 </ul>
@@ -975,11 +975,11 @@ public static&nbsp;&lt;C extends java.lang.Comparable&lt;C&gt;&gt;&nbsp;C&nbsp;c
 <ul class="blockList">
 <li class="blockList">
 <h4>checkGreaterThanOrEqualTo</h4>
-<pre>@Nonnull
-public static&nbsp;&lt;C extends java.lang.Comparable&lt;C&gt;&gt;&nbsp;C&nbsp;checkGreaterThanOrEqualTo(C&nbsp;value,
-                                                                                       C&nbsp;lowerBoundInclusive,
-                                                                                       java.lang.String&nbsp;pattern,
-                                                                                       java.lang.Object...&nbsp;args)</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public static&nbsp;&lt;C extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;C&gt;&gt;&nbsp;C&nbsp;checkGreaterThanOrEqualTo(C&nbsp;value,
+                                                                             C&nbsp;lowerBoundInclusive,
+                                                                             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern,
+                                                                             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>...&nbsp;args)</pre>
 <div class="block">Ensures that a <code>value</code> passed as a parameter to the calling method is greater than or equal to <code>lowerBoundInclusive</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -987,11 +987,11 @@ public static&nbsp;&lt;C extends java.lang.Comparable&lt;C&gt;&gt;&nbsp;C&nbsp;c
 <dd><code>lowerBoundInclusive</code> - the lower bound (inclusive)</dd>
 <dd><code>pattern</code> - a template for the exception message should the check fail</dd>
 <dd><code>args</code> - the arguments to be substituted into the message template. Arguments are converted to
-                            strings using <code>String.valueOf(Object)</code>.</dd>
+                            strings using <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true#valueOf-java.lang.Object-" title="class or interface in java.lang"><code>String.valueOf(Object)</code></a>.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value that was validated</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalArgumentException</code> - if <code>value</code> is less than <code>lowerBoundInclusive</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if <code>value</code> is less than <code>lowerBoundInclusive</code></dd>
 </dl>
 </li>
 </ul>
@@ -1003,9 +1003,9 @@ public static&nbsp;&lt;C extends java.lang.Comparable&lt;C&gt;&gt;&nbsp;C&nbsp;c
 <ul class="blockList">
 <li class="blockList">
 <h4>checkLessThan</h4>
-<pre>@Nonnull
-public static&nbsp;&lt;C extends java.lang.Comparable&lt;C&gt;&gt;&nbsp;C&nbsp;checkLessThan(C&nbsp;value,
-                                                                           C&nbsp;upperBoundExclusive)</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public static&nbsp;&lt;C extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;C&gt;&gt;&nbsp;C&nbsp;checkLessThan(C&nbsp;value,
+                                                                 C&nbsp;upperBoundExclusive)</pre>
 <div class="block">Ensures that a <code>value</code> passed as a parameter to the calling method is strictly less than <code>upperBoundExclusive</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -1014,7 +1014,7 @@ public static&nbsp;&lt;C extends java.lang.Comparable&lt;C&gt;&gt;&nbsp;C&nbsp;c
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value that was validated</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalArgumentException</code> - if <code>value</code> is greater than or equal to <code>upperBoundExclusive</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if <code>value</code> is greater than or equal to <code>upperBoundExclusive</code></dd>
 </dl>
 </li>
 </ul>
@@ -1026,10 +1026,10 @@ public static&nbsp;&lt;C extends java.lang.Comparable&lt;C&gt;&gt;&nbsp;C&nbsp;c
 <ul class="blockList">
 <li class="blockList">
 <h4>checkLessThan</h4>
-<pre>@Nonnull
-public static&nbsp;&lt;C extends java.lang.Comparable&lt;C&gt;&gt;&nbsp;C&nbsp;checkLessThan(C&nbsp;value,
-                                                                           C&nbsp;upperBoundExclusive,
-                                                                           java.lang.String&nbsp;message)</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public static&nbsp;&lt;C extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;C&gt;&gt;&nbsp;C&nbsp;checkLessThan(C&nbsp;value,
+                                                                 C&nbsp;upperBoundExclusive,
+                                                                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message)</pre>
 <div class="block">Ensures that a <code>value</code> passed as a parameter to the calling method is strictly less than <code>upperBoundExclusive</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -1039,7 +1039,7 @@ public static&nbsp;&lt;C extends java.lang.Comparable&lt;C&gt;&gt;&nbsp;C&nbsp;c
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value that was validated</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalArgumentException</code> - if <code>value</code> is greater than or equal to <code>upperBoundExclusive</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if <code>value</code> is greater than or equal to <code>upperBoundExclusive</code></dd>
 </dl>
 </li>
 </ul>
@@ -1051,11 +1051,11 @@ public static&nbsp;&lt;C extends java.lang.Comparable&lt;C&gt;&gt;&nbsp;C&nbsp;c
 <ul class="blockList">
 <li class="blockList">
 <h4>checkLessThan</h4>
-<pre>@Nonnull
-public static&nbsp;&lt;C extends java.lang.Comparable&lt;C&gt;&gt;&nbsp;C&nbsp;checkLessThan(C&nbsp;value,
-                                                                           C&nbsp;upperBoundExclusive,
-                                                                           java.lang.String&nbsp;pattern,
-                                                                           java.lang.Object...&nbsp;args)</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public static&nbsp;&lt;C extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;C&gt;&gt;&nbsp;C&nbsp;checkLessThan(C&nbsp;value,
+                                                                 C&nbsp;upperBoundExclusive,
+                                                                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern,
+                                                                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>...&nbsp;args)</pre>
 <div class="block">Ensures that a <code>value</code> passed as a parameter to the calling method is strictly less than <code>upperBoundExclusive</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -1063,11 +1063,11 @@ public static&nbsp;&lt;C extends java.lang.Comparable&lt;C&gt;&gt;&nbsp;C&nbsp;c
 <dd><code>upperBoundExclusive</code> - the upper bound (exclusive)</dd>
 <dd><code>pattern</code> - a template for the exception message should the check fail</dd>
 <dd><code>args</code> - the arguments to be substituted into the message template. Arguments are converted to
-                            strings using <code>String.valueOf(Object)</code>.</dd>
+                            strings using <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true#valueOf-java.lang.Object-" title="class or interface in java.lang"><code>String.valueOf(Object)</code></a>.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value that was validated</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalArgumentException</code> - if <code>value</code> is greater than or equal to <code>upperBoundExclusive</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if <code>value</code> is greater than or equal to <code>upperBoundExclusive</code></dd>
 </dl>
 </li>
 </ul>
@@ -1079,9 +1079,9 @@ public static&nbsp;&lt;C extends java.lang.Comparable&lt;C&gt;&gt;&nbsp;C&nbsp;c
 <ul class="blockList">
 <li class="blockList">
 <h4>checkLessThanOrEqualTo</h4>
-<pre>@Nonnull
-public static&nbsp;&lt;C extends java.lang.Comparable&lt;C&gt;&gt;&nbsp;C&nbsp;checkLessThanOrEqualTo(C&nbsp;value,
-                                                                                    C&nbsp;upperBoundInclusive)</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public static&nbsp;&lt;C extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;C&gt;&gt;&nbsp;C&nbsp;checkLessThanOrEqualTo(C&nbsp;value,
+                                                                          C&nbsp;upperBoundInclusive)</pre>
 <div class="block">Ensures that a <code>value</code> passed as a parameter to the calling method is less than or equal to <code>upperBoundInclusive</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -1090,7 +1090,7 @@ public static&nbsp;&lt;C extends java.lang.Comparable&lt;C&gt;&gt;&nbsp;C&nbsp;c
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value that was validated</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalArgumentException</code> - if <code>value</code> is greater than <code>upperBoundInclusive</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if <code>value</code> is greater than <code>upperBoundInclusive</code></dd>
 </dl>
 </li>
 </ul>
@@ -1102,10 +1102,10 @@ public static&nbsp;&lt;C extends java.lang.Comparable&lt;C&gt;&gt;&nbsp;C&nbsp;c
 <ul class="blockList">
 <li class="blockList">
 <h4>checkLessThanOrEqualTo</h4>
-<pre>@Nonnull
-public static&nbsp;&lt;C extends java.lang.Comparable&lt;C&gt;&gt;&nbsp;C&nbsp;checkLessThanOrEqualTo(C&nbsp;value,
-                                                                                    C&nbsp;upperBoundInclusive,
-                                                                                    java.lang.String&nbsp;message)</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public static&nbsp;&lt;C extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;C&gt;&gt;&nbsp;C&nbsp;checkLessThanOrEqualTo(C&nbsp;value,
+                                                                          C&nbsp;upperBoundInclusive,
+                                                                          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message)</pre>
 <div class="block">Ensures that a <code>value</code> passed as a parameter to the calling method is less than or equal to <code>upperBoundInclusive</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -1115,7 +1115,7 @@ public static&nbsp;&lt;C extends java.lang.Comparable&lt;C&gt;&gt;&nbsp;C&nbsp;c
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value that was validated</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalArgumentException</code> - if <code>value</code> is greater than <code>upperBoundInclusive</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if <code>value</code> is greater than <code>upperBoundInclusive</code></dd>
 </dl>
 </li>
 </ul>
@@ -1127,11 +1127,11 @@ public static&nbsp;&lt;C extends java.lang.Comparable&lt;C&gt;&gt;&nbsp;C&nbsp;c
 <ul class="blockList">
 <li class="blockList">
 <h4>checkLessThanOrEqualTo</h4>
-<pre>@Nonnull
-public static&nbsp;&lt;C extends java.lang.Comparable&lt;C&gt;&gt;&nbsp;C&nbsp;checkLessThanOrEqualTo(C&nbsp;value,
-                                                                                    C&nbsp;upperBoundInclusive,
-                                                                                    java.lang.String&nbsp;pattern,
-                                                                                    java.lang.Object...&nbsp;args)</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+public static&nbsp;&lt;C extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang">Comparable</a>&lt;C&gt;&gt;&nbsp;C&nbsp;checkLessThanOrEqualTo(C&nbsp;value,
+                                                                          C&nbsp;upperBoundInclusive,
+                                                                          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;pattern,
+                                                                          <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>...&nbsp;args)</pre>
 <div class="block">Ensures that a <code>value</code> passed as a parameter to the calling method is less than or equal to <code>upperBoundInclusive</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -1139,11 +1139,11 @@ public static&nbsp;&lt;C extends java.lang.Comparable&lt;C&gt;&gt;&nbsp;C&nbsp;c
 <dd><code>upperBoundInclusive</code> - the upper bound (inclusive)</dd>
 <dd><code>pattern</code> - a template for the exception message should the check fail</dd>
 <dd><code>args</code> - the arguments to be substituted into the message template. Arguments are converted to
-                            strings using <code>String.valueOf(Object)</code>.</dd>
+                            strings using <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true#valueOf-java.lang.Object-" title="class or interface in java.lang"><code>String.valueOf(Object)</code></a>.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value that was validated</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalArgumentException</code> - if <code>value</code> is greater than <code>upperBoundInclusive</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if <code>value</code> is greater than <code>upperBoundInclusive</code></dd>
 </dl>
 </li>
 </ul>
@@ -1153,10 +1153,10 @@ public static&nbsp;&lt;C extends java.lang.Comparable&lt;C&gt;&gt;&nbsp;C&nbsp;c
 <ul class="blockList">
 <li class="blockList">
 <h4>checkElementIndex</h4>
-<pre>@Nonnegative
-public static&nbsp;int&nbsp;checkElementIndex(@Nonnegative
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnegative.html?is-external=true" title="class or interface in javax.annotation">@Nonnegative</a>
+public static&nbsp;int&nbsp;checkElementIndex(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnegative.html?is-external=true" title="class or interface in javax.annotation">@Nonnegative</a>
                                                  int&nbsp;index,
-                                                 @Nonnegative
+                                                 <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnegative.html?is-external=true" title="class or interface in javax.annotation">@Nonnegative</a>
                                                  int&nbsp;size)</pre>
 <div class="block">Ensures that <code>index</code> specifies a valid <i>element</i> in an array, list or string of <code>size</code>. An
  element index may range from zero, inclusive, to <code>size</code>, exclusive.</div>
@@ -1167,8 +1167,8 @@ public static&nbsp;int&nbsp;checkElementIndex(@Nonnegative
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the index that was validated</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IndexOutOfBoundsException</code> - if <code>index</code> is negative or is not less than <code>size</code></dd>
-<dd><code>java.lang.IllegalArgumentException</code> - if <code>size</code> is negative</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IndexOutOfBoundsException.html?is-external=true" title="class or interface in java.lang">IndexOutOfBoundsException</a></code> - if <code>index</code> is negative or is not less than <code>size</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if <code>size</code> is negative</dd>
 </dl>
 </li>
 </ul>
@@ -1178,10 +1178,10 @@ public static&nbsp;int&nbsp;checkElementIndex(@Nonnegative
 <ul class="blockListLast">
 <li class="blockList">
 <h4>checkPositionIndex</h4>
-<pre>@Nonnegative
-public static&nbsp;int&nbsp;checkPositionIndex(@Nonnegative
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnegative.html?is-external=true" title="class or interface in javax.annotation">@Nonnegative</a>
+public static&nbsp;int&nbsp;checkPositionIndex(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnegative.html?is-external=true" title="class or interface in javax.annotation">@Nonnegative</a>
                                                   int&nbsp;index,
-                                                  @Nonnegative
+                                                  <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnegative.html?is-external=true" title="class or interface in javax.annotation">@Nonnegative</a>
                                                   int&nbsp;size)</pre>
 <div class="block">Ensures that <code>index</code> specifies a valid <i>position</i> in an array, list or string of <code>size</code>. A
  position index may range from zero to <code>size</code>, inclusive.</div>
@@ -1192,8 +1192,8 @@ public static&nbsp;int&nbsp;checkPositionIndex(@Nonnegative
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the index that was validated</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IndexOutOfBoundsException</code> - if <code>index</code> is negative or is greater than <code>size</code></dd>
-<dd><code>java.lang.IllegalArgumentException</code> - if <code>size</code> is negative</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IndexOutOfBoundsException.html?is-external=true" title="class or interface in java.lang">IndexOutOfBoundsException</a></code> - if <code>index</code> is negative or is greater than <code>size</code></dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if <code>size</code> is negative</dd>
 </dl>
 </li>
 </ul>

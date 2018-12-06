@@ -110,7 +110,7 @@ var activeTableTab = "activeTableTab";
 </dl>
 <hr>
 <br>
-<pre>@ThreadSafe
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/concurrent.ThreadSafe.html?is-external=true" title="class or interface in javax.annotation">@ThreadSafe</a>
 public interface <span class="typeNameLabel">Cache&lt;K,V&gt;</span></pre>
 <div class="block">A semi-persistent mapping from keys to values. Cache entries are manually added using
  <a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html#get-K-java.util.function.Function-"><code>get(Object, Function)</code></a> or <a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html#put-K-V-"><code>put(Object, Object)</code></a>, and are stored in the cache until
@@ -137,7 +137,7 @@ public interface <span class="typeNameLabel">Cache&lt;K,V&gt;</span></pre>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>java.util.concurrent.ConcurrentMap&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html" title="type parameter in Cache">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html" title="type parameter in Cache">V</a>&gt;</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentMap.html?is-external=true" title="class or interface in java.util.concurrent">ConcurrentMap</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html" title="type parameter in Cache">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html" title="type parameter in Cache">V</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html#asMap--">asMap</a></span>()</code>
 <div class="block">Returns a view of the entries stored in this cache as a thread-safe map.</div>
 </td>
@@ -157,27 +157,27 @@ public interface <span class="typeNameLabel">Cache&lt;K,V&gt;</span></pre>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html" title="type parameter in Cache">V</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html#get-K-java.util.function.Function-">get</a></span>(<a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html" title="type parameter in Cache">K</a>&nbsp;key,
-   java.util.function.Function&lt;? super <a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html" title="type parameter in Cache">K</a>,? extends <a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html" title="type parameter in Cache">V</a>&gt;&nbsp;mappingFunction)</code>
+   <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function">Function</a>&lt;? super <a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html" title="type parameter in Cache">K</a>,? extends <a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html" title="type parameter in Cache">V</a>&gt;&nbsp;mappingFunction)</code>
 <div class="block">Returns the value associated with the <code>key</code> in this cache, obtaining that value from the
  <code>mappingFunction</code> if necessary.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>java.util.Map&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html" title="type parameter in Cache">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html" title="type parameter in Cache">V</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html#getAllPresent-java.lang.Iterable-">getAllPresent</a></span>(java.lang.Iterable&lt;?&gt;&nbsp;keys)</code>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html" title="type parameter in Cache">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html" title="type parameter in Cache">V</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html#getAllPresent-java.lang.Iterable-">getAllPresent</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;?&gt;&nbsp;keys)</code>
 <div class="block">Returns a map of the values associated with the <code>keys</code> in this cache.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html" title="type parameter in Cache">V</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html#getIfPresent-java.lang.Object-">getIfPresent</a></span>(java.lang.Object&nbsp;key)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html#getIfPresent-java.lang.Object-">getIfPresent</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;key)</code>
 <div class="block">Returns the value associated with the <code>key</code> in this cache, or <code>null</code> if there is no
  cached value for the <code>key</code>.</div>
 </td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html#invalidate-java.lang.Object-">invalidate</a></span>(java.lang.Object&nbsp;key)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html#invalidate-java.lang.Object-">invalidate</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;key)</code>
 <div class="block">Discards any cached value for the <code>key</code>.</div>
 </td>
 </tr>
@@ -189,7 +189,7 @@ public interface <span class="typeNameLabel">Cache&lt;K,V&gt;</span></pre>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html#invalidateAll-java.lang.Iterable-">invalidateAll</a></span>(java.lang.Iterable&lt;?&gt;&nbsp;keys)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html#invalidateAll-java.lang.Iterable-">invalidateAll</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;?&gt;&nbsp;keys)</code>
 <div class="block">Discards any cached values for the <code>keys</code>.</div>
 </td>
 </tr>
@@ -209,7 +209,7 @@ public interface <span class="typeNameLabel">Cache&lt;K,V&gt;</span></pre>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html#putAll-java.util.Map-">putAll</a></span>(java.util.Map&lt;? extends <a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html" title="type parameter in Cache">K</a>,? extends <a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html" title="type parameter in Cache">V</a>&gt;&nbsp;map)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html#putAll-java.util.Map-">putAll</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;? extends <a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html" title="type parameter in Cache">K</a>,? extends <a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html" title="type parameter in Cache">V</a>&gt;&nbsp;map)</code>
 <div class="block">Copies all of the mappings from the specified map to the cache.</div>
 </td>
 </tr>
@@ -240,9 +240,9 @@ public interface <span class="typeNameLabel">Cache&lt;K,V&gt;</span></pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getIfPresent</h4>
-<pre>@Nullable
-<a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html" title="type parameter in Cache">V</a>&nbsp;getIfPresent(@Nonnull
-                         java.lang.Object&nbsp;key)</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+<a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html" title="type parameter in Cache">V</a>&nbsp;getIfPresent(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;key)</pre>
 <div class="block">Returns the value associated with the <code>key</code> in this cache, or <code>null</code> if there is no
  cached value for the <code>key</code>.</div>
 <dl>
@@ -252,7 +252,7 @@ public interface <span class="typeNameLabel">Cache&lt;K,V&gt;</span></pre>
 <dd>the value to which the specified key is mapped, or <code>null</code> if this map contains no
          mapping for the key</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.NullPointerException</code> - if the specified key is null</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the specified key is null</dd>
 </dl>
 </li>
 </ul>
@@ -264,11 +264,11 @@ public interface <span class="typeNameLabel">Cache&lt;K,V&gt;</span></pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>get</h4>
-<pre>@Nullable
-<a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html" title="type parameter in Cache">V</a>&nbsp;get(@Nonnull
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+<a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html" title="type parameter in Cache">V</a>&nbsp;get(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
                 <a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html" title="type parameter in Cache">K</a>&nbsp;key,
-                @Nonnull
-                java.util.function.Function&lt;? super <a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html" title="type parameter in Cache">K</a>,? extends <a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html" title="type parameter in Cache">V</a>&gt;&nbsp;mappingFunction)</pre>
+                <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function">Function</a>&lt;? super <a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html" title="type parameter in Cache">K</a>,? extends <a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html" title="type parameter in Cache">V</a>&gt;&nbsp;mappingFunction)</pre>
 <div class="block">Returns the value associated with the <code>key</code> in this cache, obtaining that value from the
  <code>mappingFunction</code> if necessary. This method provides a simple substitute for the
  conventional "if cached, return; otherwise create, cache and return" pattern.
@@ -290,10 +290,10 @@ public interface <span class="typeNameLabel">Cache&lt;K,V&gt;</span></pre>
 <dd>the current (existing or computed) value associated with the specified key, or null if
          the computed value is null</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.NullPointerException</code> - if the specified key or mappingFunction is null</dd>
-<dd><code>java.lang.IllegalStateException</code> - if the computation detectably attempts a recursive update to this
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the specified key or mappingFunction is null</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang">IllegalStateException</a></code> - if the computation detectably attempts a recursive update to this
          cache that would otherwise never complete</dd>
-<dd><code>java.lang.RuntimeException</code> - or Error if the mappingFunction does so, in which case the mapping is
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/RuntimeException.html?is-external=true" title="class or interface in java.lang">RuntimeException</a></code> - or Error if the mappingFunction does so, in which case the mapping is
          left unestablished</dd>
 </dl>
 </li>
@@ -304,13 +304,13 @@ public interface <span class="typeNameLabel">Cache&lt;K,V&gt;</span></pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getAllPresent</h4>
-<pre>@Nonnull
-java.util.Map&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html" title="type parameter in Cache">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html" title="type parameter in Cache">V</a>&gt;&nbsp;getAllPresent(@Nonnull
-                                          java.lang.Iterable&lt;?&gt;&nbsp;keys)</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html" title="type parameter in Cache">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html" title="type parameter in Cache">V</a>&gt;&nbsp;getAllPresent(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                                <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;?&gt;&nbsp;keys)</pre>
 <div class="block">Returns a map of the values associated with the <code>keys</code> in this cache. The returned map
  will only contain entries which are already present in the cache.
  <p>
- Note that duplicate elements in <code>keys</code>, as determined by <code>Object.equals(java.lang.Object)</code>, will be
+ Note that duplicate elements in <code>keys</code>, as determined by <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang"><code>Object.equals(java.lang.Object)</code></a>, will be
  ignored.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -318,7 +318,7 @@ java.util.Map&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Cach
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the unmodifiable mapping of keys to values for the specified keys found in this cache</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.NullPointerException</code> - if the specified collection is null or contains a null element</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the specified collection is null or contains a null element</dd>
 </dl>
 </li>
 </ul>
@@ -330,9 +330,9 @@ java.util.Map&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Cach
 <ul class="blockList">
 <li class="blockList">
 <h4>put</h4>
-<pre>void&nbsp;put(@Nonnull
+<pre>void&nbsp;put(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
          <a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html" title="type parameter in Cache">K</a>&nbsp;key,
-         @Nonnull
+         <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
          <a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html" title="type parameter in Cache">V</a>&nbsp;value)</pre>
 <div class="block">Associates the <code>value</code> with the <code>key</code> in this cache. If the cache previously
  contained a value associated with the <code>key</code>, the old value is replaced by the new
@@ -345,7 +345,7 @@ java.util.Map&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Cach
 <dd><code>key</code> - the key with which the specified value is to be associated</dd>
 <dd><code>value</code> - value to be associated with the specified key</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.NullPointerException</code> - if the specified key or value is null</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the specified key or value is null</dd>
 </dl>
 </li>
 </ul>
@@ -355,8 +355,8 @@ java.util.Map&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Cach
 <ul class="blockList">
 <li class="blockList">
 <h4>putAll</h4>
-<pre>void&nbsp;putAll(@Nonnull
-            java.util.Map&lt;? extends <a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html" title="type parameter in Cache">K</a>,? extends <a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html" title="type parameter in Cache">V</a>&gt;&nbsp;map)</pre>
+<pre>void&nbsp;putAll(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+            <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;? extends <a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html" title="type parameter in Cache">K</a>,? extends <a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html" title="type parameter in Cache">V</a>&gt;&nbsp;map)</pre>
 <div class="block">Copies all of the mappings from the specified map to the cache. The effect of this call is
  equivalent to that of calling <code>put(k, v)</code> on this map once for each mapping from key
  <code>k</code> to value <code>v</code> in the specified map. The behavior of this operation is undefined
@@ -365,7 +365,7 @@ java.util.Map&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Cach
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>map</code> - the mappings to be stored in this cache</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.NullPointerException</code> - if the specified map is null or the specified map contains null
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the specified map is null or the specified map contains null
          keys or values</dd>
 </dl>
 </li>
@@ -376,15 +376,15 @@ java.util.Map&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Cach
 <ul class="blockList">
 <li class="blockList">
 <h4>invalidate</h4>
-<pre>void&nbsp;invalidate(@Nonnull
-                java.lang.Object&nbsp;key)</pre>
+<pre>void&nbsp;invalidate(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;key)</pre>
 <div class="block">Discards any cached value for the <code>key</code>. The behavior of this operation is undefined for
  an entry that is being loaded and is otherwise not present.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>key</code> - the key whose mapping is to be removed from the cache</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.NullPointerException</code> - if the specified key is null</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the specified key is null</dd>
 </dl>
 </li>
 </ul>
@@ -394,15 +394,15 @@ java.util.Map&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Cach
 <ul class="blockList">
 <li class="blockList">
 <h4>invalidateAll</h4>
-<pre>void&nbsp;invalidateAll(@Nonnull
-                   java.lang.Iterable&lt;?&gt;&nbsp;keys)</pre>
+<pre>void&nbsp;invalidateAll(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+                   <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Iterable.html?is-external=true" title="class or interface in java.lang">Iterable</a>&lt;?&gt;&nbsp;keys)</pre>
 <div class="block">Discards any cached values for the <code>keys</code>. The behavior of this operation is undefined
  for an entry that is being loaded and is otherwise not present.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>keys</code> - the keys whose associated values are to be removed</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.NullPointerException</code> - if the specified collection is null or contains a null element</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if the specified collection is null or contains a null element</dd>
 </dl>
 </li>
 </ul>
@@ -423,7 +423,7 @@ java.util.Map&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Cach
 <ul class="blockList">
 <li class="blockList">
 <h4>estimatedSize</h4>
-<pre>@Nonnegative
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnegative.html?is-external=true" title="class or interface in javax.annotation">@Nonnegative</a>
 long&nbsp;estimatedSize()</pre>
 <div class="block">Returns the approximate number of entries in this cache. The value returned is an estimate; the
  actual count may differ if there are concurrent insertions or removals, or if some entries are
@@ -441,7 +441,7 @@ long&nbsp;estimatedSize()</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>stats</h4>
-<pre>@Nonnull
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
 <a href="../../../../../com/github/benmanes/caffeine/cache/stats/CacheStats.html" title="class in com.github.benmanes.caffeine.cache.stats">CacheStats</a>&nbsp;stats()</pre>
 <div class="block">Returns a current snapshot of this cache's cumulative statistics. All statistics are
  initialized to zero, and are monotonically increasing over the lifetime of the cache.
@@ -460,8 +460,8 @@ long&nbsp;estimatedSize()</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>asMap</h4>
-<pre>@Nonnull
-java.util.concurrent.ConcurrentMap&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html" title="type parameter in Cache">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html" title="type parameter in Cache">V</a>&gt;&nbsp;asMap()</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+<a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentMap.html?is-external=true" title="class or interface in java.util.concurrent">ConcurrentMap</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html" title="type parameter in Cache">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html" title="type parameter in Cache">V</a>&gt;&nbsp;asMap()</pre>
 <div class="block">Returns a view of the entries stored in this cache as a thread-safe map. Modifications made to
  the map directly affect the cache.
  <p>
@@ -470,7 +470,7 @@ java.util.concurrent.ConcurrentMap&lt;<a href="../../../../../com/github/benmane
  created, it is undefined which of the changes (if any) will be reflected in that iterator.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>a thread-safe view of this cache supporting all of the optional <code>Map</code> operations</dd>
+<dd>a thread-safe view of this cache supporting all of the optional <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util"><code>Map</code></a> operations</dd>
 </dl>
 </li>
 </ul>
@@ -491,7 +491,7 @@ java.util.concurrent.ConcurrentMap&lt;<a href="../../../../../com/github/benmane
 <ul class="blockListLast">
 <li class="blockList">
 <h4>policy</h4>
-<pre>@Nonnull
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
 <a href="../../../../../com/github/benmanes/caffeine/cache/Policy.html" title="interface in com.github.benmanes.caffeine.cache">Policy</a>&lt;<a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html" title="type parameter in Cache">K</a>,<a href="../../../../../com/github/benmanes/caffeine/cache/Cache.html" title="type parameter in Cache">V</a>&gt;&nbsp;policy()</pre>
 <div class="block">Returns access to inspect and perform low-level operations on this cache based on its runtime
  characteristics. These operations are optional and dependent on how the cache was constructed

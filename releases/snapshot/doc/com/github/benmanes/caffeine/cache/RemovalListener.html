@@ -112,8 +112,8 @@ var activeTableTab = "activeTableTab";
 </dl>
 <hr>
 <br>
-<pre>@ThreadSafe
- @FunctionalInterface
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/concurrent.ThreadSafe.html?is-external=true" title="class or interface in javax.annotation">@ThreadSafe</a>
+ <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/FunctionalInterface.html?is-external=true" title="class or interface in java.lang">@FunctionalInterface</a>
 public interface <span class="typeNameLabel">RemovalListener&lt;K,V&gt;</span></pre>
 <div class="block">An object that can receive a notification when an entry is removed from a cache. The removal
  resulting in notification could have occurred to an entry being manually removed or replaced, or
@@ -171,11 +171,11 @@ public interface <span class="typeNameLabel">RemovalListener&lt;K,V&gt;</span></
 <ul class="blockListLast">
 <li class="blockList">
 <h4>onRemoval</h4>
-<pre>void&nbsp;onRemoval(@Nullable
+<pre>void&nbsp;onRemoval(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
                <a href="../../../../../com/github/benmanes/caffeine/cache/RemovalListener.html" title="type parameter in RemovalListener">K</a>&nbsp;key,
-               @Nullable
+               <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
                <a href="../../../../../com/github/benmanes/caffeine/cache/RemovalListener.html" title="type parameter in RemovalListener">V</a>&nbsp;value,
-               @Nonnull
+               <a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
                <a href="../../../../../com/github/benmanes/caffeine/cache/RemovalCause.html" title="enum in com.github.benmanes.caffeine.cache">RemovalCause</a>&nbsp;cause)</pre>
 <div class="block">Notifies the listener that a removal occurred at some point in the past.
  <p>

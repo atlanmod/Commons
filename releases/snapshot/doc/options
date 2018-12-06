@@ -16,6 +16,8 @@
 'UTF-8'
 -doctitle
 'Commons 1.0.2-SNAPSHOT API'
+-linkoffline
+'https://docs.oracle.com/javase/8/docs/api' '/home/travis/build/atlanmod/Commons/target/javadoc-bundle-options'
 -nosince
 -notimestamp
 -use

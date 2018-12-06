@@ -93,12 +93,12 @@
 <li class="blockList">
 <hr>
 <br>
-<pre>@Retention(value=SOURCE)
- @Target(value={FIELD,PARAMETER,LOCAL_VARIABLE,ANNOTATION_TYPE,METHOD})
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Retention.html?is-external=true" title="class or interface in java.lang.annotation">@Retention</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Retention.html?is-external=true#value--" title="class or interface in java.lang.annotation">value</a>=<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/RetentionPolicy.html?is-external=true#SOURCE" title="class or interface in java.lang.annotation">SOURCE</a>)
+ <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Target.html?is-external=true" title="class or interface in java.lang.annotation">@Target</a>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/Target.html?is-external=true#value--" title="class or interface in java.lang.annotation">value</a>={<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/ElementType.html?is-external=true#FIELD" title="class or interface in java.lang.annotation">FIELD</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/ElementType.html?is-external=true#PARAMETER" title="class or interface in java.lang.annotation">PARAMETER</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/ElementType.html?is-external=true#LOCAL_VARIABLE" title="class or interface in java.lang.annotation">LOCAL_VARIABLE</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/ElementType.html?is-external=true#ANNOTATION_TYPE" title="class or interface in java.lang.annotation">ANNOTATION_TYPE</a>,<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/annotation/ElementType.html?is-external=true#METHOD" title="class or interface in java.lang.annotation">METHOD</a>})
 public @interface <span class="memberNameLabel">MagicConstant</span></pre>
 <div class="block"><p>This annotation intended to help IDEA to detect and auto-complete int and String constants used as an enumeration.
- For example, in the <code>Label.Label(String, int)</code> constructor the <tt><b>alignment</b></tt> parameter can be one of the following
- int constants: <code>Label.LEFT</code>, <code>Label.CENTER</code> or <code>Label.RIGHT</code>
+ For example, in the <a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Label.html?is-external=true#Label-java.lang.String-int-" title="class or interface in java.awt"><code>Label.Label(String, int)</code></a> constructor the <tt><b>alignment</b></tt> parameter can be one of the following
+ int constants: <a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Label.html?is-external=true#LEFT" title="class or interface in java.awt"><code>Label.LEFT</code></a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Label.html?is-external=true#CENTER" title="class or interface in java.awt"><code>Label.CENTER</code></a> or <a href="https://docs.oracle.com/javase/8/docs/api/java/awt/Label.html?is-external=true#RIGHT" title="class or interface in java.awt"><code>Label.RIGHT</code></a>
 
  <p>So, if <tt>@MagicConstant</tt> annotation applied to this constructor, IDEA will check the constructor usages for the allowed values.
  <p>E.g.<br>
@@ -173,7 +173,7 @@ public @interface <span class="memberNameLabel">MagicConstant</span></pre>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/intellij/lang/annotations/MagicConstant.html#flags--">flags</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>java.lang.Class</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/intellij/lang/annotations/MagicConstant.html#flagsFromClass--">flagsFromClass</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -181,11 +181,11 @@ public @interface <span class="memberNameLabel">MagicConstant</span></pre>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/intellij/lang/annotations/MagicConstant.html#intValues--">intValues</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>java.lang.String[]</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/intellij/lang/annotations/MagicConstant.html#stringValues--">stringValues</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>java.lang.Class</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/intellij/lang/annotations/MagicConstant.html#valuesFromClass--">valuesFromClass</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -235,7 +235,7 @@ public @interface <span class="memberNameLabel">MagicConstant</span></pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>stringValues</h4>
-<pre>public abstract&nbsp;java.lang.String[]&nbsp;stringValues</pre>
+<pre>public abstract&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]&nbsp;stringValues</pre>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>String values (typically named constants) which are allowed here.</dd>
@@ -286,7 +286,7 @@ public @interface <span class="memberNameLabel">MagicConstant</span></pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>valuesFromClass</h4>
-<pre>public abstract&nbsp;java.lang.Class&nbsp;valuesFromClass</pre>
+<pre>public abstract&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&nbsp;valuesFromClass</pre>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>allowed values which are defined in the specified class public static final constants.
@@ -315,7 +315,7 @@ public @interface <span class="memberNameLabel">MagicConstant</span></pre>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>flagsFromClass</h4>
-<pre>public abstract&nbsp;java.lang.Class&nbsp;flagsFromClass</pre>
+<pre>public abstract&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&nbsp;flagsFromClass</pre>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>allowed int flags which are defined in the specified class public static final constants.

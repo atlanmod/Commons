@@ -106,7 +106,7 @@ var activeTableTab = "activeTableTab";
 </dl>
 <dl>
 <dt>All Superinterfaces:</dt>
-<dd><a href="../../../../../../fr/inria/atlanmod/commons/function/Converter.html" title="interface in fr.inria.atlanmod.commons.function">Converter</a>&lt;T,U&gt;, java.util.function.Function&lt;T,U&gt;</dd>
+<dd><a href="../../../../../../fr/inria/atlanmod/commons/function/Converter.html" title="interface in fr.inria.atlanmod.commons.function">Converter</a>&lt;T,U&gt;, <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function">Function</a>&lt;T,U&gt;</dd>
 </dl>
 <dl>
 <dt>All Known Subinterfaces:</dt>
@@ -118,10 +118,10 @@ var activeTableTab = "activeTableTab";
 </dl>
 <hr>
 <br>
-<pre>@ParametersAreNonnullByDefault
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/ParametersAreNonnullByDefault.html?is-external=true" title="class or interface in javax.annotation">@ParametersAreNonnullByDefault</a>
 public interface <span class="typeNameLabel">Serializer&lt;T,U&gt;</span>
 extends <a href="../../../../../../fr/inria/atlanmod/commons/function/Converter.html" title="interface in fr.inria.atlanmod.commons.function">Converter</a>&lt;T,U&gt;</pre>
-<div class="block">An object that is responsible for encoding and decoding the basic representation of <code>Object</code>s.</div>
+<div class="block">An object that is responsible for encoding and decoding the basic representation of <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang"><code>Object</code></a>s.</div>
 </li>
 </ul>
 </div>
@@ -176,8 +176,8 @@ extends <a href="../../../../../../fr/inria/atlanmod/commons/function/Converter.
 <li class="blockList"><a name="methods.inherited.from.class.java.util.function.Function">
 <!--   -->
 </a>
-<h3>Methods inherited from interface&nbsp;java.util.function.Function</h3>
-<code>andThen, compose</code></li>
+<h3>Methods inherited from interface&nbsp;java.util.function.<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function">Function</a></h3>
+<code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true#andThen-java.util.function.Function-" title="class or interface in java.util.function">andThen</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true#compose-java.util.function.Function-" title="class or interface in java.util.function">compose</a></code></li>
 </ul>
 </li>
 </ul>
@@ -201,7 +201,7 @@ extends <a href="../../../../../../fr/inria/atlanmod/commons/function/Converter.
 <ul class="blockList">
 <li class="blockList">
 <h4>convert</h4>
-<pre>@Nonnull
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
 default&nbsp;<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html" title="type parameter in Serializer">U</a>&nbsp;convert(<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html" title="type parameter in Serializer">T</a>&nbsp;t)</pre>
 <div class="block">Returns a representation of <code>t</code> as an instance of type <code>R</code>.</div>
 <dl>
@@ -224,7 +224,7 @@ default&nbsp;<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/
 <ul class="blockList">
 <li class="blockList">
 <h4>revert</h4>
-<pre>@Nonnull
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
 default&nbsp;<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html" title="type parameter in Serializer">T</a>&nbsp;revert(<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html" title="type parameter in Serializer">U</a>&nbsp;data)</pre>
 <div class="block">Returns a representation of <code>r</code> as an instance of type <code>T</code>.</div>
 <dl>
@@ -247,9 +247,9 @@ default&nbsp;<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/
 <ul class="blockList">
 <li class="blockList">
 <h4>serialize</h4>
-<pre>@Nonnull
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
 <a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html" title="type parameter in Serializer">U</a>&nbsp;serialize(<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html" title="type parameter in Serializer">T</a>&nbsp;t)
-              throws java.io.IOException</pre>
+              throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
 <div class="block">Write an object of type <code>T</code> into its basic representation.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -257,7 +257,7 @@ default&nbsp;<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the serialized object</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.io.IOException</code> - if an I/O error occurs during the serialization</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code> - if an I/O error occurs during the serialization</dd>
 </dl>
 </li>
 </ul>
@@ -269,9 +269,9 @@ default&nbsp;<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/
 <ul class="blockListLast">
 <li class="blockList">
 <h4>deserialize</h4>
-<pre>@Nonnull
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
 <a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html" title="type parameter in Serializer">T</a>&nbsp;deserialize(<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/Serializer.html" title="type parameter in Serializer">U</a>&nbsp;data)
-                throws java.io.IOException</pre>
+                throws <a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
 <div class="block">Reads and assembles an object of type <code>T</code> from the given <code>data</code>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -279,7 +279,7 @@ default&nbsp;<a href="../../../../../../fr/inria/atlanmod/commons/io/serializer/
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the deserialized object</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.io.IOException</code> - if an I/O error occurs during the deserialization</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code> - if an I/O error occurs during the deserialization</dd>
 </dl>
 </li>
 </ul>

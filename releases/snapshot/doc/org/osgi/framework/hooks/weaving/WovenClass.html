@@ -189,26 +189,26 @@ var activeTableTab = "activeTableTab";
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>java.lang.String</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/osgi/framework/hooks/weaving/WovenClass.html#getClassName--">getClassName</a></span>()</code>
 <div class="block">Returns the fully qualified name of the class being woven.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code>java.lang.Class&lt;?&gt;</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/osgi/framework/hooks/weaving/WovenClass.html#getDefinedClass--">getDefinedClass</a></span>()</code>
 <div class="block">Returns the class defined by this woven class.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code>java.util.List&lt;java.lang.String&gt;</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/osgi/framework/hooks/weaving/WovenClass.html#getDynamicImports--">getDynamicImports</a></span>()</code>
 <div class="block">Returns the list of dynamic import package descriptions to add to the
  <a href="../../../../../org/osgi/framework/hooks/weaving/WovenClass.html#getBundleWiring--"><code>bundle wiring</code></a> for this woven class.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code>java.security.ProtectionDomain</code></td>
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/security/ProtectionDomain.html?is-external=true" title="class or interface in java.security">ProtectionDomain</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../org/osgi/framework/hooks/weaving/WovenClass.html#getProtectionDomain--">getProtectionDomain</a></span>()</code>
 <div class="block">Returns the protection domain to which the woven class will be assigned
  when it is defined.</div>
@@ -379,7 +379,7 @@ var activeTableTab = "activeTableTab";
 <dd>The bytes to be used to define the
          <a href="../../../../../org/osgi/framework/hooks/weaving/WovenClass.html#getClassName--"><code>named</code></a> class.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.SecurityException</code> - If the caller does not have
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang">SecurityException</a></code> - If the caller does not have
          <code>AdminPermission[bundle,WEAVE]</code> and the Java runtime
          environment supports permissions.</dd>
 </dl>
@@ -401,7 +401,7 @@ var activeTableTab = "activeTableTab";
  reference to the array contained in this object with the specified array.
  After leaving the <a href="../../../../../org/osgi/framework/hooks/weaving/WovenClass.html#TRANSFORMING"><code>TRANSFORMING</code></a> state, this woven class can no
  longer be transformed and this method will throw an
- <code>IllegalStateException</code>.</div>
+ <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang"><code>IllegalStateException</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>newBytes</code> - The new classfile that will be used to define the
@@ -409,11 +409,11 @@ var activeTableTab = "activeTableTab";
         is retained by this object and the caller must not modify the
         specified array.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.NullPointerException</code> - If newBytes is <code>null</code>.</dd>
-<dd><code>java.lang.IllegalStateException</code> - If state is <a href="../../../../../org/osgi/framework/hooks/weaving/WovenClass.html#TRANSFORMED"><code>TRANSFORMED</code></a>,
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - If newBytes is <code>null</code>.</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang">IllegalStateException</a></code> - If state is <a href="../../../../../org/osgi/framework/hooks/weaving/WovenClass.html#TRANSFORMED"><code>TRANSFORMED</code></a>,
          <a href="../../../../../org/osgi/framework/hooks/weaving/WovenClass.html#DEFINED"><code>DEFINED</code></a>, <a href="../../../../../org/osgi/framework/hooks/weaving/WovenClass.html#TRANSFORMING_FAILED"><code>TRANSFORMING_FAILED</code></a> or
          <a href="../../../../../org/osgi/framework/hooks/weaving/WovenClass.html#DEFINE_FAILED"><code>DEFINE_FAILED</code></a>.</dd>
-<dd><code>java.lang.SecurityException</code> - If the caller does not have
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/SecurityException.html?is-external=true" title="class or interface in java.lang">SecurityException</a></code> - If the caller does not have
          <code>AdminPermission[bundle,WEAVE]</code> and the Java runtime
          environment supports permissions.</dd>
 </dl>
@@ -425,7 +425,7 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>getDynamicImports</h4>
-<pre>java.util.List&lt;java.lang.String&gt;&nbsp;getDynamicImports()</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getDynamicImports()</pre>
 <div class="block">Returns the list of dynamic import package descriptions to add to the
  <a href="../../../../../org/osgi/framework/hooks/weaving/WovenClass.html#getBundleWiring--"><code>bundle wiring</code></a> for this woven class. Changes
  made to the returned list will be visible to later <a href="../../../../../org/osgi/framework/hooks/weaving/WeavingHook.html" title="interface in org.osgi.framework.hooks.weaving"><code>weaving hooks</code></a> called with this object. The returned list must not be
@@ -474,7 +474,7 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>getClassName</h4>
-<pre>java.lang.String&nbsp;getClassName()</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getClassName()</pre>
 <div class="block">Returns the fully qualified name of the class being woven.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -488,7 +488,7 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>getProtectionDomain</h4>
-<pre>java.security.ProtectionDomain&nbsp;getProtectionDomain()</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/security/ProtectionDomain.html?is-external=true" title="class or interface in java.security">ProtectionDomain</a>&nbsp;getProtectionDomain()</pre>
 <div class="block">Returns the protection domain to which the woven class will be assigned
  when it is defined.</div>
 <dl>
@@ -505,7 +505,7 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>getDefinedClass</h4>
-<pre>java.lang.Class&lt;?&gt;&nbsp;getDefinedClass()</pre>
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;&nbsp;getDefinedClass()</pre>
 <div class="block">Returns the class defined by this woven class. During weaving, this
  method will return <code>null</code>. Once weaving is
  <a href="../../../../../org/osgi/framework/hooks/weaving/WovenClass.html#isWeavingComplete--"><code>complete</code></a>, this method will return the class

@@ -111,16 +111,16 @@ var activeTableTab = "activeTableTab";
 </dl>
 <hr>
 <br>
-<pre>@ParametersAreNullableByDefault
- @FunctionalInterface
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/ParametersAreNullableByDefault.html?is-external=true" title="class or interface in javax.annotation">@ParametersAreNullableByDefault</a>
+ <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/FunctionalInterface.html?is-external=true" title="class or interface in java.lang">@FunctionalInterface</a>
 public interface <span class="typeNameLabel">TriConsumer&lt;T,U,V&gt;</span></pre>
 <div class="block">Represents an operation that accepts three input arguments and returns no result. This is the three-arity
- specialization of <code>Consumer</code>. Unlike most other functional interfaces, <code>TriConsumer</code>
+ specialization of <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html?is-external=true" title="class or interface in java.util.function"><code>Consumer</code></a>. Unlike most other functional interfaces, <code>TriConsumer</code>
  is expected to operate via side-effects.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><code>Consumer</code>, 
-<code>BiConsumer</code></dd>
+<dd><a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html?is-external=true" title="class or interface in java.util.function"><code>Consumer</code></a>, 
+<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/BiConsumer.html?is-external=true" title="class or interface in java.util.function"><code>BiConsumer</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -196,8 +196,8 @@ public interface <span class="typeNameLabel">TriConsumer&lt;T,U,V&gt;</span></pr
 <ul class="blockListLast">
 <li class="blockList">
 <h4>andThen</h4>
-<pre>@Nonnull
-default&nbsp;<a href="../../../../../fr/inria/atlanmod/commons/function/TriConsumer.html" title="interface in fr.inria.atlanmod.commons.function">TriConsumer</a>&lt;<a href="../../../../../fr/inria/atlanmod/commons/function/TriConsumer.html" title="type parameter in TriConsumer">T</a>,<a href="../../../../../fr/inria/atlanmod/commons/function/TriConsumer.html" title="type parameter in TriConsumer">U</a>,<a href="../../../../../fr/inria/atlanmod/commons/function/TriConsumer.html" title="type parameter in TriConsumer">V</a>&gt;&nbsp;andThen(@Nonnull
+<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
+default&nbsp;<a href="../../../../../fr/inria/atlanmod/commons/function/TriConsumer.html" title="interface in fr.inria.atlanmod.commons.function">TriConsumer</a>&lt;<a href="../../../../../fr/inria/atlanmod/commons/function/TriConsumer.html" title="type parameter in TriConsumer">T</a>,<a href="../../../../../fr/inria/atlanmod/commons/function/TriConsumer.html" title="type parameter in TriConsumer">U</a>,<a href="../../../../../fr/inria/atlanmod/commons/function/TriConsumer.html" title="type parameter in TriConsumer">V</a>&gt;&nbsp;andThen(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
                                             <a href="../../../../../fr/inria/atlanmod/commons/function/TriConsumer.html" title="interface in fr.inria.atlanmod.commons.function">TriConsumer</a>&lt;? super <a href="../../../../../fr/inria/atlanmod/commons/function/TriConsumer.html" title="type parameter in TriConsumer">T</a>,? super <a href="../../../../../fr/inria/atlanmod/commons/function/TriConsumer.html" title="type parameter in TriConsumer">U</a>,? super <a href="../../../../../fr/inria/atlanmod/commons/function/TriConsumer.html" title="type parameter in TriConsumer">V</a>&gt;&nbsp;after)</pre>
 <div class="block">Returns a composed <code>TriConsumer</code> that performs, in sequence, this operation followed by the <code>after</code>
  operation. If performing either operation throws an exception, it is relayed to the caller of the composed
@@ -209,7 +209,7 @@ default&nbsp;<a href="../../../../../fr/inria/atlanmod/commons/function/TriConsu
 <dd>a composed <code>TriConsumer</code> that performs in sequence this operation followed by the <code>after</code>
  operation</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.NullPointerException</code> - if <code>after</code> is null</dd>
+<dd><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/NullPointerException.html?is-external=true" title="class or interface in java.lang">NullPointerException</a></code> - if <code>after</code> is null</dd>
 </dl>
 </li>
 </ul>
