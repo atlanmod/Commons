@@ -7,7 +7,7 @@
 -sourcepath
 '/home/travis/build/atlanmod/Commons/target/distro-javadoc-sources/jsr305-3.0.2-sources:/home/travis/build/atlanmod/Commons/commons-core/src/main/java:/home/travis/build/atlanmod/Commons/commons-core/target/generated-sources/annotations:/home/travis/build/atlanmod/Commons/commons-core/src/main/javadoc'
 -bottom
-'Copyright &#169; 2017&#x2013;2018 <a href="http://www.atlanmod.org">Atlanmod, Inria, LS2N, and IMT Nantes</a>. All rights reserved.'
+'Copyright &#169; 2017&#x2013;2019 <a href="http://www.atlanmod.org">Atlanmod, Inria, LS2N, and IMT Nantes</a>. All rights reserved.'
 -charset
 'UTF-8'
 -d
