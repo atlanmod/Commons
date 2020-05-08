@@ -12,3 +12,4 @@ org.atlanmod.commons.primitive
 org.atlanmod.commons.reflect
 org.atlanmod.commons.service
 org.atlanmod.commons.time
+org.atlanmod.testing
