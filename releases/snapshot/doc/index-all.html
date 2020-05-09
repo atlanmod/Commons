@@ -731,6 +731,16 @@
 <dd>
 <div class="block">Returns the file extension for the given file name, or the empty string if the fullName has no extension.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="org/atlanmod/commons/reflect/MoreReflection.html#findConstructor-java.lang.Class-java.lang.Class:A-">findConstructor(Class, Class[])</a></span> - Static method in class org.atlanmod.commons.reflect.<a href="org/atlanmod/commons/reflect/MoreReflection.html" title="class in org.atlanmod.commons.reflect">MoreReflection</a></dt>
+<dd>
+<div class="block">Returns the constructor for creating a new instance of <code>type</code>, whose parameters are assignable
+ with the <code>argumentTypes</code>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/atlanmod/commons/reflect/MoreReflection.html#findFactoryMethod-java.lang.Class-java.lang.Class:A-">findFactoryMethod(Class, Class[])</a></span> - Static method in class org.atlanmod.commons.reflect.<a href="org/atlanmod/commons/reflect/MoreReflection.html" title="class in org.atlanmod.commons.reflect">MoreReflection</a></dt>
+<dd>
+<div class="block">Returns the static factory method for creating instances of <code>type</code>, whose parameters are
+ assignable with the <code>argumentTypes</code>.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/atlanmod/commons/collect/MoreIterables.html#firstElement-java.lang.Iterable-">firstElement(Iterable&lt;E&gt;)</a></span> - Static method in class org.atlanmod.commons.collect.<a href="org/atlanmod/commons/collect/MoreIterables.html" title="class in org.atlanmod.commons.collect">MoreIterables</a></dt>
 <dd>
 <div class="block">Returns the first element contained in <code>iterable</code>.</div>
@@ -821,6 +831,11 @@
 <dt><span class="memberNameLink"><a href="org/atlanmod/commons/service/ServiceProvider.html#getInstance--">getInstance()</a></span> - Static method in class org.atlanmod.commons.service.<a href="org/atlanmod/commons/service/ServiceProvider.html" title="class in org.atlanmod.commons.service">ServiceProvider</a></dt>
 <dd>
 <div class="block">Returns the instance of this class.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="org/atlanmod/commons/reflect/MoreReflection.html#getInstantiator-java.lang.Class-java.lang.Class:A-">getInstantiator(Class&lt;T&gt;, Class[])</a></span> - Static method in class org.atlanmod.commons.reflect.<a href="org/atlanmod/commons/reflect/MoreReflection.html" title="class in org.atlanmod.commons.reflect">MoreReflection</a></dt>
+<dd>
+<div class="block">Returns a <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function"><code>Function</code></a> that creates new instances of <code>type</code>, using as arguments instances of
+ <code>argumentTypes</code>, i.e., using a constructor or factory method whose signature matches <code>argumentTypes</code>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="org/atlanmod/commons/service/OSGiContext.html#getServices-java.lang.Class-">getServices(Class&lt;S&gt;)</a></span> - Method in class org.atlanmod.commons.service.<a href="org/atlanmod/commons/service/OSGiContext.html" title="class in org.atlanmod.commons.service">OSGiContext</a></dt>
 <dd>&nbsp;</dd>
@@ -1230,6 +1245,12 @@
 </a>
 <h2 class="title">M</h2>
 <dl>
+<dt><span class="memberNameLink"><a href="org/atlanmod/commons/reflect/MoreReflection.html#matches-java.lang.reflect.Executable-java.lang.Class:A-">matches(Executable, Class[])</a></span> - Static method in class org.atlanmod.commons.reflect.<a href="org/atlanmod/commons/reflect/MoreReflection.html" title="class in org.atlanmod.commons.reflect">MoreReflection</a></dt>
+<dd>
+<div class="block">Checks whether an <code>Executable</code> (<code>Constructor</code> or <code>Method</code>) is compatible with
+ the <code>argumentTypes</code>, i.e., whether all parameters types are assignable from all types of
+ <code>argumentTypes</code>, respectively.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="org/atlanmod/commons/cache/CacheBuilder.html#maximumSize-long-">maximumSize(long)</a></span> - Method in interface org.atlanmod.commons.cache.<a href="org/atlanmod/commons/cache/CacheBuilder.html" title="interface in org.atlanmod.commons.cache">CacheBuilder</a></dt>
 <dd>
 <div class="block">Specifies the maximum number of entries the cache may contain.</div>

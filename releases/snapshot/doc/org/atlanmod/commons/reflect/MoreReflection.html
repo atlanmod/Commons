@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9};
+var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -132,12 +132,45 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util">Optional</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Constructor.html?is-external=true" title="class or interface in java.lang.reflect">Constructor</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/atlanmod/commons/reflect/MoreReflection.html#findConstructor-java.lang.Class-java.lang.Class:A-">findConstructor</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&nbsp;type,
+               <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>[]&nbsp;argumentTypes)</code>
+<div class="block">Returns the constructor for creating a new instance of <code>type</code>, whose parameters are assignable
+ with the <code>argumentTypes</code>.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util">Optional</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Method.html?is-external=true" title="class or interface in java.lang.reflect">Method</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/atlanmod/commons/reflect/MoreReflection.html#findFactoryMethod-java.lang.Class-java.lang.Class:A-">findFactoryMethod</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&nbsp;type,
+                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>[]&nbsp;argumentTypes)</code>
+<div class="block">Returns the static factory method for creating instances of <code>type</code>, whose parameters are
+ assignable with the <code>argumentTypes</code>.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>static <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/atlanmod/commons/reflect/MoreReflection.html#getAllInterfaces-java.lang.Class-">getAllInterfaces</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;&nbsp;type)</code>
 <div class="block">Retrieves all interfaces implemented by the given class and its superclasses.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>static &lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function">Function</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>[],T&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/atlanmod/commons/reflect/MoreReflection.html#getInstantiator-java.lang.Class-java.lang.Class:A-">getInstantiator</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;T&gt;&nbsp;type,
+               <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>[]&nbsp;argumentTypes)</code>
+<div class="block">Returns a <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function"><code>Function</code></a> that creates new instances of <code>type</code>, using as arguments instances of
+ <code>argumentTypes</code>, i.e., using a constructor or factory method whose signature matches <code>argumentTypes</code>.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/atlanmod/commons/reflect/MoreReflection.html#matches-java.lang.reflect.Executable-java.lang.Class:A-">matches</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Executable.html?is-external=true" title="class or interface in java.lang.reflect">Executable</a>&nbsp;executable,
+       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>[]&nbsp;argumentTypes)</code>
+<div class="block">Checks whether an <code>Executable</code> (<code>Constructor</code> or <code>Method</code>) is compatible with
+ the <code>argumentTypes</code>, i.e., whether all parameters types are assignable from all types of
+ <code>argumentTypes</code>, respectively.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>static &lt;T&gt;&nbsp;T</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/atlanmod/commons/reflect/MoreReflection.html#newInstance-java.lang.Class-">newInstance</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;T&gt;&nbsp;type)</code>
 <div class="block">Gets or creates a instance of the given <code>type</code> by using the static method named <code>name</code>.</div>
@@ -192,7 +225,7 @@ public static&nbsp;&lt;T&gt;&nbsp;T&nbsp;newInstance(<a href="https://docs.oracl
 <a name="getAllInterfaces-java.lang.Class-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getAllInterfaces</h4>
 <pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nonnull.html?is-external=true" title="class or interface in javax.annotation">@Nonnull</a>
@@ -207,6 +240,89 @@ public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/
 <dd><code>type</code> - the class to look up</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>a <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util"><code>Set</code></a> of interfaces in order</dd>
+</dl>
+</li>
+</ul>
+<a name="findConstructor-java.lang.Class-java.lang.Class:A-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>findConstructor</h4>
+<pre>public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util">Optional</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Constructor.html?is-external=true" title="class or interface in java.lang.reflect">Constructor</a>&gt;&nbsp;findConstructor(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&nbsp;type,
+                                                    <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>[]&nbsp;argumentTypes)</pre>
+<div class="block">Returns the constructor for creating a new instance of <code>type</code>, whose parameters are assignable
+ with the <code>argumentTypes</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>type</code> - the class to look for</dd>
+<dd><code>argumentTypes</code> - a set of types allowing to find the suitable constructor.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>an <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util"><code>Optional</code></a> containing the suitable constructor, or <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true#empty--" title="class or interface in java.util"><code>Optional.empty()</code></a> if no constructor
+ is found.</dd>
+</dl>
+</li>
+</ul>
+<a name="findFactoryMethod-java.lang.Class-java.lang.Class:A-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>findFactoryMethod</h4>
+<pre>public static&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util">Optional</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Method.html?is-external=true" title="class or interface in java.lang.reflect">Method</a>&gt;&nbsp;findFactoryMethod(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&nbsp;type,
+                                                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>[]&nbsp;argumentTypes)</pre>
+<div class="block">Returns the static factory method for creating instances of <code>type</code>, whose parameters are
+ assignable with the <code>argumentTypes</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>type</code> - the class to look for.</dd>
+<dd><code>argumentTypes</code> - a set of types allowing to find the suitable method.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>an <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true" title="class or interface in java.util"><code>Optional</code></a> containing the suitable factory method, or <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html?is-external=true#empty--" title="class or interface in java.util"><code>Optional.empty()</code></a>
+ if no constructor is found.</dd>
+</dl>
+</li>
+</ul>
+<a name="getInstantiator-java.lang.Class-java.lang.Class:A-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getInstantiator</h4>
+<pre>public static&nbsp;&lt;T&gt;&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function">Function</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>[],T&gt;&nbsp;getInstantiator(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;T&gt;&nbsp;type,
+                                                       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>[]&nbsp;argumentTypes)</pre>
+<div class="block">Returns a <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function"><code>Function</code></a> that creates new instances of <code>type</code>, using as arguments instances of
+ <code>argumentTypes</code>, i.e., using a constructor or factory method whose signature matches <code>argumentTypes</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>type</code> - the class to look for.</dd>
+<dd><code>argumentTypes</code> - the signature of the suitable constructor or method</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html?is-external=true" title="class or interface in java.util.function"><code>Function</code></a> that creates new instances of <code>type</code>, using either a <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Constructor.html?is-external=true" title="class or interface in java.lang.reflect"><code>Constructor</code></a> or
+ a static factory <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Method.html?is-external=true" title="class or interface in java.lang.reflect"><code>Method</code></a>.</dd>
+</dl>
+</li>
+</ul>
+<a name="matches-java.lang.reflect.Executable-java.lang.Class:A-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>matches</h4>
+<pre>public static&nbsp;boolean&nbsp;matches(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/reflect/Executable.html?is-external=true" title="class or interface in java.lang.reflect">Executable</a>&nbsp;executable,
+                              <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>[]&nbsp;argumentTypes)</pre>
+<div class="block">Checks whether an <code>Executable</code> (<code>Constructor</code> or <code>Method</code>) is compatible with
+ the <code>argumentTypes</code>, i.e., whether all parameters types are assignable from all types of
+ <code>argumentTypes</code>, respectively.
+
+ The <code>argumentTypes</code> parameter is an array of <code>Class</code> objects that are assignment-compatible
+ with the executable's formal parameter types, in declared order.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>executable</code> - the instance of <code>Executable</code> to be considered.</dd>
+<dd><code>argumentTypes</code> - an array of types to be compared with the executable parameters.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>true, if each parameter of <code>executable</code> is assignable from an element of <code>argumentTypes</code>.</dd>
 </dl>
 </li>
 </ul>
