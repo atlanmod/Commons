@@ -49,7 +49,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../org/atlanmod/testing/EqualsPredicate.html" title="class in org.atlanmod.testing"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../org/atlanmod/testing/EqualsVerifier.html" title="class in org.atlanmod.testing"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li>Next&nbsp;Class</li>
 </ul>
 <ul class="navList">
@@ -76,13 +76,13 @@ var activeTableTab = "activeTableTab";
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
-<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
-<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
@@ -111,29 +111,24 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public class <span class="typeNameLabel">Verifier</span>
 extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
+<div class="block">Entry point for verification methods that improve unit tests.
+ Each method in this class is a static factory for a specific verification object.
+
+ For instance:
+
+ <pre><code class='java'>
+ <a href="../../../org/atlanmod/testing/Verifier.html#verifyEqualsOf-java.lang.Class-"><code>verifyEqualsOf(String.class)</code></a>
+      .<a href="../../../org/atlanmod/testing/EqualsVerifier.html#withArguments-java.lang.Object...-"><code>withArguments("a String"</code></a>
+      .<a href="../../../org/atlanmod/testing/EqualsVerifier.html#andVariants-java.lang.Object...-"><code>andVariants("another String"</code></a>
+      .<a href="../../../org/atlanmod/testing/EqualsVerifier.html#check--"><code>check()</code></a>
+
+ </code></pre></div>
 </li>
 </ul>
 </div>
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
-<!-- ======== CONSTRUCTOR SUMMARY ======== -->
-<ul class="blockList">
-<li class="blockList"><a name="constructor.summary">
-<!--   -->
-</a>
-<h3>Constructor Summary</h3>
-<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
-<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colOne" scope="col">Constructor and Description</th>
-</tr>
-<tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../org/atlanmod/testing/Verifier.html#Verifier--">Verifier</a></span>()</code>&nbsp;</td>
-</tr>
-</table>
-</li>
-</ul>
 <!-- ========== METHOD SUMMARY =========== -->
 <ul class="blockList">
 <li class="blockList"><a name="method.summary">
@@ -147,8 +142,10 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>static <a href="../../../org/atlanmod/testing/EqualsPredicate.html" title="class in org.atlanmod.testing">EqualsPredicate</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/atlanmod/testing/Verifier.html#verifyEqualsOf-java.lang.Class-">verifyEqualsOf</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&nbsp;klass)</code>&nbsp;</td>
+<td class="colFirst"><code>static &lt;T&gt;&nbsp;<a href="../../../org/atlanmod/testing/EqualsVerifier.html" title="class in org.atlanmod.testing">EqualsVerifier</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/atlanmod/testing/Verifier.html#verifyEqualsOf-java.lang.Class-">verifyEqualsOf</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;T&gt;&nbsp;type)</code>
+<div class="block">Creates a <a href="../../../org/atlanmod/testing/EqualsVerifier.html" title="class in org.atlanmod.testing"><code>EqualsVerifier</code></a> for class <code>type</code>.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -166,23 +163,6 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
-<!-- ========= CONSTRUCTOR DETAIL ======== -->
-<ul class="blockList">
-<li class="blockList"><a name="constructor.detail">
-<!--   -->
-</a>
-<h3>Constructor Detail</h3>
-<a name="Verifier--">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>Verifier</h4>
-<pre>public&nbsp;Verifier()</pre>
-</li>
-</ul>
-</li>
-</ul>
 <!-- ============ METHOD DETAIL ========== -->
 <ul class="blockList">
 <li class="blockList"><a name="method.detail">
@@ -195,7 +175,16 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockListLast">
 <li class="blockList">
 <h4>verifyEqualsOf</h4>
-<pre>public static&nbsp;<a href="../../../org/atlanmod/testing/EqualsPredicate.html" title="class in org.atlanmod.testing">EqualsPredicate</a>&nbsp;verifyEqualsOf(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&nbsp;klass)</pre>
+<pre>public static&nbsp;&lt;T&gt;&nbsp;<a href="../../../org/atlanmod/testing/EqualsVerifier.html" title="class in org.atlanmod.testing">EqualsVerifier</a>&nbsp;verifyEqualsOf(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;T&gt;&nbsp;type)</pre>
+<div class="block">Creates a <a href="../../../org/atlanmod/testing/EqualsVerifier.html" title="class in org.atlanmod.testing"><code>EqualsVerifier</code></a> for class <code>type</code>.</div>
+<dl>
+<dt><span class="paramLabel">Type Parameters:</span></dt>
+<dd><code>T</code> - the actual class of the class .</dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>type</code> - the class whose <code>equals()</code> method will be verified.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>an instance of <a href="../../../org/atlanmod/testing/EqualsVerifier.html" title="class in org.atlanmod.testing"><code>EqualsVerifier</code></a>.</dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -226,7 +215,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../org/atlanmod/testing/EqualsPredicate.html" title="class in org.atlanmod.testing"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../org/atlanmod/testing/EqualsVerifier.html" title="class in org.atlanmod.testing"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li>Next&nbsp;Class</li>
 </ul>
 <ul class="navList">
@@ -253,13 +242,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
-<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
-<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
