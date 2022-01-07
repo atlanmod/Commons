@@ -21,8 +21,9 @@ public class RandomIntegerGenerator implements Generator<Integer> {
         int max= 20;
         Random r = new Random();
         int value = r.nextInt((max - min) + 1);
-        boolean bool = r.nextBoolean();
-       // if(!bool) value=-1*value;
+        boolean booleen;
+        booleen = r.nextBoolean();
+        if(!booleen) value=-1*value;
         return value;
     }
 

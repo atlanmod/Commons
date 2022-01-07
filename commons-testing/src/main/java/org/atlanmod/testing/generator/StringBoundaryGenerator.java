@@ -17,7 +17,7 @@ public class StringBoundaryGenerator implements Generator<String> {
   private int index;
 
   public StringBoundaryGenerator() {
-    this(new String[] {"monsieur", "yassine", "el", "kamel", ""});
+    this(new String[]{"monsieur", "yassine", "el", "kamel", ""});
   }
 
   public StringBoundaryGenerator(String[] values) {
@@ -33,13 +33,5 @@ public class StringBoundaryGenerator implements Generator<String> {
   @Override
   public Class<String>[] types() {
     return new Class[0];
-  }
-
-  public static void main(String[] args) {
-    int i;
-    StringBoundaryGenerator ibou = new StringBoundaryGenerator();
-    for (i = 0; i < 5; i++) {
-      System.out.println(ibou.generate());
-    }
   }
 }
