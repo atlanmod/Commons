@@ -9,7 +9,6 @@ package org.atlanmod.testing.generator;
 
 import org.atlanmod.commons.Guards;
 import org.atlanmod.testing.Generator;
-
 import java.util.Arrays;
 
 public class IntegerBoundaryGenerator implements Generator<Integer> {
@@ -18,6 +17,7 @@ public class IntegerBoundaryGenerator implements Generator<Integer> {
     private int index = 0;
 
     public IntegerBoundaryGenerator(){
+        
         this(new int[]{Integer.MIN_VALUE, 0, Integer.MAX_VALUE});
     }
 

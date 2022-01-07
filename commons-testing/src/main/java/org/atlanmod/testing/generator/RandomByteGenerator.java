@@ -11,22 +11,32 @@ import org.atlanmod.testing.Generator;
 import java.io.UnsupportedEncodingException;
 import java.util.Random;
 
+/**
+ *
+ * Generator class for values of the type Byte.
+ *
+ */
 public class RandomByteGenerator implements Generator<Byte> {
 
     @Override
     /**
-     *Generate a byte.
+     * Generates random Byte values.
+     *
+     * @return a single Byte value
      */
     public Byte generate() {
         Random rd = new Random();
         byte[] arr = new byte[7];
         rd.nextBytes(arr);
+
         return arr[2];
     }
 
     @Override
     /**
-     * return an array of class which contains the byte class.
+     * Returns all of the variation of the Byte data type the current class is able to generate.
+     *
+     * @return an array of class types.
      */
     public Class<Byte>[] types() {
         Class[] types={Byte.class,byte.class};

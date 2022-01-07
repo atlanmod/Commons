@@ -11,11 +11,18 @@ import org.atlanmod.testing.Generator;
 
 import java.util.Random;
 
+/**
+ *
+ *  Generator class for values of the type Boolean.
+ *
+ */
 public class RandomBooleanGenerator implements Generator<Boolean> {
 
     @Override
     /**
-     * Generate a boolean.
+     * Generates a random boolean value.
+     *
+     * @return a boolean value
      */
     public Boolean generate() {
         Random r = new Random();
@@ -25,7 +32,9 @@ public class RandomBooleanGenerator implements Generator<Boolean> {
 
     @Override
     /**
-     * return an array of class which contains the boolean class.
+     * Returns all of the variation of the boolean data type the current class is able to generate.
+     *
+     * @return an array of class types.
      */
     public Class<Boolean>[] types() {
         Class[] types={Boolean.class};
