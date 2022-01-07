@@ -150,7 +150,7 @@ public class Verifier {
     }
 
     /**
-     *Generate a new instance of a constructor and return it.
+     * Generate a new instance of a constructor and return it.
      * @param construc the constructor we want to generate
      * @return A new instance of a constructor
      */

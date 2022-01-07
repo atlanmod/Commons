@@ -35,11 +35,5 @@ public class StringBoundaryGenerator implements Generator<String> {
     return new Class[0];
   }
 
-  public static void main(String[] args) {
-    int i;
-    StringBoundaryGenerator ibou = new StringBoundaryGenerator();
-    for (i = 0; i < 5; i++) {
-      System.out.println(ibou.generate());
-    }
-  }
+
 }
