@@ -81,7 +81,7 @@ public class Verifier {
 
     /**
      * Register a new generator by adding it in the hashmap generators.
-     * <p>
+     * 
      * Register a new generator for a specific type.
      *
      * @param generator the generator of the target class.
@@ -95,7 +95,7 @@ public class Verifier {
 
     /**
      * Return a {@link Generator} that generates an array of type {@code arrayType}
-     * <p>
+     * 
      * creation of an array generator from his simple generator.
      *
      * @param gen       the  simple generator
@@ -128,14 +128,14 @@ public class Verifier {
 
     /**
      * Returns the appropriate generators for each of {@code constr} parameters
-     * <p>
+     * 
      * For each of {@code constr} parameters :
      * - if the parameter is a singular value and its generator is available : add generator to the list {@code generate}.
      * - if the parameter is an array and a generator for singular value is available :
      * call to createArrayGenerator, new array generator is added to the list {@code generate}
      * - if the parameter is a singular value or array but the generator for singular value is not available : return an empty instance of {@link Optional}
-     * <p>
-     * <p>
+     * 
+     * 
      * Provide an optional list which contains the specific generator of each parameter of the constructor
      *
      * @param constr the constructor to be verified
@@ -168,11 +168,12 @@ public class Verifier {
 
     /**
      * Return a new instance of the constructor {@code construc}
-     * <p>
+     * 
      * Get the list of generators of the different parameters of this constructor using {@code getGeneratorsForConstructor}.
      * Then call each of these generators to generate a value and add it to a list of objects.
      * Create a new instance of the constructor {@code construc} using the generated values.
-     * <p>
+     * 
+     *
      * Generate a new instance of a constructor and return it.
      *
      * @param construc the constructor we want to generate
@@ -197,7 +198,8 @@ public class Verifier {
      * For each constructor :
      * - Get the list of generators of the different parameters using {@code getGeneratorsForConstructor}
      * - If the list is not empty then generate the values and create a new instance of the constructor.
-     * <p>
+     * 
+     *
      * Generate a new instance of the constructors of a class and put them in a list.
      *
      * @param klass the class we want to generate all constructors
