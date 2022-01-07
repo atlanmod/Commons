@@ -8,7 +8,6 @@
 package org.atlanmod.testing.generator;
 
 import org.atlanmod.testing.Generator;
-
 import java.util.Random;
 
 /**
@@ -17,6 +16,7 @@ import java.util.Random;
  *
  */
 public class RandomBooleanGenerator implements Generator<Boolean> {
+    private Random random = new Random();
 
     @Override
     /**
@@ -25,9 +25,7 @@ public class RandomBooleanGenerator implements Generator<Boolean> {
      * @return a boolean value
      */
     public Boolean generate() {
-        Random r = new Random();
-        boolean bool = r.nextBoolean();
-        return bool;
+        return random.nextBoolean();
     }
 
     @Override
@@ -37,7 +35,6 @@ public class RandomBooleanGenerator implements Generator<Boolean> {
      * @return an array of class types.
      */
     public Class<Boolean>[] types() {
-        Class[] types={Boolean.class};
-        return types;
+        return new Class[]{Boolean.class};
     }
 }

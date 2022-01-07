@@ -7,11 +7,6 @@
  */
 package org.atlanmod.testing;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
-
 /**
  *
  * An object able to randomly generate values of different data types

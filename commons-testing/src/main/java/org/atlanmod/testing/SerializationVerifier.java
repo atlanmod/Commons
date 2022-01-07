@@ -8,7 +8,6 @@
 package org.atlanmod.testing;
 
 import org.atlanmod.commons.reflect.MoreReflection;
-
 import java.io.*;
 import java.util.function.Function;
 import java.util.stream.Stream;
@@ -72,7 +71,7 @@ public class SerializationVerifier<T extends Serializable> {
         oos.writeObject(object);
         //deserialiser object
         ObjectInputStream ois = new ObjectInputStream(new ByteArrayInputStream(boos.toByteArray()));
-        Object object2 = (Object) ois.readObject();
+        Object object2 = ois.readObject();
         assertIsEqual(object,object2);
     }
 

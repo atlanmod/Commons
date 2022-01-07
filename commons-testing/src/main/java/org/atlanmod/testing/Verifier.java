@@ -9,7 +9,6 @@ package org.atlanmod.testing;
 
 import org.atlanmod.commons.Throwables;
 import org.atlanmod.testing.generator.*;
-
 import java.io.Serializable;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;

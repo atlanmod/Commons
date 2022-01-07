@@ -7,8 +7,6 @@
  */
 package org.atlanmod.testing.generator;
 import org.atlanmod.testing.Generator;
-
-import java.io.UnsupportedEncodingException;
 import java.util.Random;
 
 /**
@@ -17,6 +15,7 @@ import java.util.Random;
  *
  */
 public class RandomByteGenerator implements Generator<Byte> {
+    private Random random = new Random();
 
     @Override
     /**
@@ -25,9 +24,8 @@ public class RandomByteGenerator implements Generator<Byte> {
      * @return a single Byte value
      */
     public Byte generate() {
-        Random rd = new Random();
         byte[] arr = new byte[7];
-        rd.nextBytes(arr);
+        random.nextBytes(arr);
 
         return arr[2];
     }
@@ -39,7 +37,6 @@ public class RandomByteGenerator implements Generator<Byte> {
      * @return an array of class types.
      */
     public Class<Byte>[] types() {
-        Class[] types={Byte.class,byte.class};
-        return types;
+        return new Class[]{Byte.class, byte.class};
     }
 }

@@ -14,7 +14,8 @@ import java.util.Random;
  *  * Generator class for String values composed of only numerical characters.
  *
  */
-public class RandomStringOfIntGenerator implements Generator {
+public class RandomStringOfIntGenerator implements Generator<String> {
+    private Random random = new Random();
 
     @Override
     /**
@@ -23,7 +24,6 @@ public class RandomStringOfIntGenerator implements Generator {
      * @return a single String value
      */
     public String generate() {
-        Random random = new Random();
         int length= random.nextInt(10)+1;
         StringBuilder sb = new StringBuilder(length);
         for (int i = 0; i < length; i++) {
@@ -41,7 +41,6 @@ public class RandomStringOfIntGenerator implements Generator {
      * @return an array of class types.
      */
     public Class[] types() {
-        Class[] types={String.class};
-        return types;
+        return new Class[]{String.class};
     }
 }
