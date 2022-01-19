@@ -6,18 +6,25 @@
  * this distribution, and is available at https://www.eclipse.org/legal/epl-2.0/
  */
 package org.atlanmod.testing.generator;
-import org.atlanmod.testing.Generator;
 
+import org.atlanmod.testing.Generator;
 import java.util.Random;
 
+/**
+ *
+ * Generator class for values of the type String.
+ *
+ */
 public class RandomStringGenerator implements Generator<String> {
+    private Random random = new Random();
 
-    @Override
     /**
-     *Generate a string.
+     * Generates random String values containing a mix of numerical characters and alphabets.
+     *
+     * @return a single String value
      */
+    @Override
  public String generate() {
-        Random random = new Random();
         int length= random.nextInt(10)+1;
         StringBuilder sb = new StringBuilder(length);
         for (int i = 0; i < length; i++) {
@@ -34,10 +41,11 @@ public class RandomStringGenerator implements Generator<String> {
 
     @Override
     /**
-     *return an array of class which contains the string class.
+     * Returns all of the variations of the String data type the current class is able to generate.
+     *
+     * @return an array of class types.
      */
     public Class<String>[] types() {
-        Class[] types={String.class};
-        return types;
+        return new Class[]{String.class};
     }
 }

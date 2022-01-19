@@ -8,31 +8,38 @@
 package org.atlanmod.testing.generator;
 
 import org.atlanmod.testing.Generator;
-
 import java.util.Random;
 
+/**
+ *
+ * Generator class for values of the type Char.
+ *
+ */
 public class RandomCharGenerator implements Generator<Character> {
+    private Random random = new Random();
+
     @Override
     /**
-     *Generate a char.
+     * Generates random Char values, alphabets or numerical characters .
+     *
+     * @return a single char value
      */
     public Character generate() {
-        Random random = new Random();
         int randomInt = random.nextInt(10) + 48;
         int randomUpperCaseAlphabet = random.nextInt(26) + 65;
         int randomLowerCaseAlphabet = random.nextInt(26) + 97;
         int[] possibleValues = {randomInt, randomLowerCaseAlphabet, randomUpperCaseAlphabet};
         int choice = random.nextInt(3);
-        char generatedChar = (char)possibleValues[choice];
-        return generatedChar;
+        return (char)possibleValues[choice];
     }
 
     @Override
     /**
-     *return an array of class which contains the Character class.
+     * Returns all of the variation of the Char data type the current class is able to generate.
+     *
+     * @return an array of class types.
      */
     public Class[] types() {
-        Class[] types={Character.class};
-        return types;
+        return new Class[]{Character.class};
     }
 }

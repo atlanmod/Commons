@@ -9,15 +9,18 @@ package org.atlanmod.testing.generator;
 
 import org.atlanmod.commons.Guards;
 import org.atlanmod.testing.Generator;
-
 import java.util.Arrays;
+import java.util.Random;
 
+/**
+ *
+ * Generator class for bound values of the type Integer.
+ */
 public class StringBoundaryGenerator implements Generator<String> {
   private String[] values;
-  private int index;
-
+  private Random random = new Random();
   public StringBoundaryGenerator() {
-    this(new String[] {"monsieur", "yassine", "el", "kamel", ""});
+    this(new String[]{"monsieur", "yassine", "el", "kamel", ""});
   }
 
   public StringBoundaryGenerator(String[] values) {
@@ -25,21 +28,24 @@ public class StringBoundaryGenerator implements Generator<String> {
     this.values = Arrays.copyOfRange(values, 0, values.length);
   }
 
+  /**
+   * Generates random String values containing a mix of numerical characters and alphabets.
+   *
+   * @return a single String value
+   */
   @Override
   public String generate() {
-    return this.values[index % values.length];
+    int index = random.nextInt(values.length);
+    return this.values[index];
   }
 
+  /**
+   * Returns all of the variations of the String data type the current class is able to generate.
+   *
+   * @return an array of class types.
+   */
   @Override
   public Class<String>[] types() {
-    return new Class[0];
-  }
-
-  public static void main(String[] args) {
-    int i;
-    StringBoundaryGenerator ibou = new StringBoundaryGenerator();
-    for (i = 0; i < 5; i++) {
-      System.out.println(ibou.generate());
-    }
+    return new Class[]{String.class};
   }
 }

@@ -8,18 +8,22 @@
 package org.atlanmod.testing.generator;
 
 import org.atlanmod.testing.Generator;
-
 import java.util.Random;
 
-public class RandomStringOfIntGenerator implements Generator {
-
+/**
+ *  * Generator class for String values composed of only numerical characters.
+ *
+ */
+public class RandomStringOfIntGenerator implements Generator<String> {
+    private Random random = new Random();
 
     @Override
     /**
-     *Generate a string.
+     * Generates random String values composed of numerical characters.
+     *
+     * @return a single String value
      */
     public String generate() {
-        Random random = new Random();
         int length= random.nextInt(10)+1;
         StringBuilder sb = new StringBuilder(length);
         for (int i = 0; i < length; i++) {
@@ -32,10 +36,11 @@ public class RandomStringOfIntGenerator implements Generator {
 
     @Override
     /**
-     *return an array of class which contains the string class.
+     * Returns all of the variation of the String data type the current class is able to generate.
+     *
+     * @return an array of class types.
      */
     public Class[] types() {
-        Class[] types={String.class};
-        return types;
+        return new Class[]{String.class};
     }
 }

@@ -9,13 +9,17 @@ package org.atlanmod.testing.generator;
 
 import org.atlanmod.commons.Guards;
 import org.atlanmod.testing.Generator;
-
 import java.util.Arrays;
+import java.util.Random;
 
+/**
+ *
+ * Generator class for bound values of the type Integer.
+ */
 public class IntegerBoundaryGenerator implements Generator<Integer> {
 
     private int[] values;
-    private int index = 0;
+    private Random random = new Random();
 
     public IntegerBoundaryGenerator(){
         this(new int[]{Integer.MIN_VALUE, 0, Integer.MAX_VALUE});
@@ -26,13 +30,25 @@ public class IntegerBoundaryGenerator implements Generator<Integer> {
         this.values = Arrays.copyOfRange(values, 0, values.length) ;
     }
 
+    /**
+     * Generates a single integer at a time
+     * Produced values are random using class java.util.Random
+     *
+     * @return a single integer value
+     */
     @Override
     public Integer generate() {
-        return this.values[index % values.length];
+        int index = random.nextInt(values.length);
+        return this.values[index];
     }
 
+    /**
+     *  Returns all of the variation of the integer data type the current class is able to generate.
+     *
+     * @return an array of class types.
+     */
     @Override
     public Class<Integer>[] types() {
-        return new Class[0];
+        return new Class[]{Integer.class, int.class};
     }
 }

@@ -7,31 +7,34 @@
  */
 package org.atlanmod.testing.generator;
 import org.atlanmod.testing.Generator;
-
 import java.util.Random;
 
+/**
+ *
+ * Generator class for values of the type Integer.
+ */
 public class RandomIntegerGenerator implements Generator<Integer> {
-
-    @Override
+    private Random random = new Random();
     /**
-     *Generate an integer.
+     * Generates a single integer at a time
+     * Produced values are random using class java.util.Random
+     *
+     * @return a single integer value
      */
+    @Override
     public Integer generate() {
         int min= 0;
         int max= 20;
-        Random r = new Random();
-        int value = r.nextInt((max - min) + 1);
-        boolean bool = r.nextBoolean();
-       // if(!bool) value=-1*value;
-        return value;
+        return random.nextInt((max - min) + 1);
     }
 
     @Override
     /**
-     *return an array of class which contains the integer and int class.
+     *  Returns all of the variation of the integer data type the current class is able to generate.
+     *
+     * @return an array of class types.
      */
     public Class<Integer>[] types() {
-        Class[] types={Integer.class,int.class};
-        return types;
+        return new Class[]{Integer.class, int.class};
     }
 }
