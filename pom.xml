@@ -105,7 +105,7 @@
         <osgi.version>8.0.0</osgi.version>
         <osgi-annotations.version>1.5.1</osgi-annotations.version><!-- 1.4.0: requires OSGi R7 -->
 
-        <assertj.version>3.24.2</assertj.version>
+        <assertj.version>3.27.7</assertj.version>
         <mockito.version>5.0.0</mockito.version>
         <junit.version>5.9.2</junit.version>
     </properties>
