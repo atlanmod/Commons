@@ -28,4 +28,34 @@ class StringPredicateTest {
     void falseIsNotEmptyRaisesError() {
         throwsPreconditionError(() -> requireThat("").isNotEmpty());
     }
+
+    @Test
+    void lengthIsGreaterThanDoesNothing() {
+        requireThat("aaabbbaaa").lengthIsGreaterThan(5);
+    }
+
+    @Test
+    void lengthIsNotLessThanRaisesError() {
+        throwsPreconditionError( () -> requireThat("abcd").lengthIsGreaterThan(5));
+    }
+
+    @Test
+    void stringIsBlankDoesNothing() {
+        requireThat("   ").isBlank();
+    }
+
+    @Test
+    void stringIsNotBlankDoesNothing() {
+        requireThat("abcd").isNotBlank();
+    }
+
+    @Test
+    void stringIsBlankRaisesError() {
+        throwsPreconditionError( () -> requireThat("abcd").isBlank());
+    }
+
+    @Test
+    void stringIsNotBlankRaisesError() {
+        throwsPreconditionError( () ->  requireThat("     ").isNotBlank());
+    }
 }

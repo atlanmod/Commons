@@ -35,5 +35,30 @@ public class StringPredicate extends ObjectPredicate<StringPredicate, String> {
         }
         return me();
     }
+
+    public StringPredicate lengthIsGreaterThan(int length) {
+        boolean expected = value.length() > length;
+        if (!expected) {
+            context.send("\nExpecting String length to be greater than (%s)", length);
+        }
+        return me();
+    }
+
+    public StringPredicate isBlank() {
+        boolean expected = value.isBlank();
+        if (!expected) {
+            context.send("\nExpecting String to be blank");
+        }
+        return me();
+    }
+
+    public StringPredicate isNotBlank() {
+        boolean expected = !value.isBlank();
+        if (!expected) {
+            context.send("\nExpecting String not to be blank");
+        }
+        return me();
+    }
+
 }
 
